@@ -39,3 +39,29 @@ Semanttisia ovat muun muassa:
 - ``<time>``
 
 HTML-dokumentin ``<body>`` kannattaa jakaa heti alkuun vähintään seuraaviin osiin: ``<header>``, ``<main>`` ja ``<footer>``. Header sisältää yleensä sivuston nimen, mahdollisesti logon sekä mahdollisesti myös esimerkiksi hakukentän. ``<header>``in alapuolella on hyvin usein ``<nav>`` eli navigaatiopalkki. ``<main>``in sisällä on sivuston varsinainen sisältö. ``<footer>`` sisältää muun muassa tekijänoikeudet ja yhteystietoja. Lisäksi sisältö kannattaa jakaa erilaisiin osioihin kuten ``<section>``, ``<article>`` ja ``<aside>``. Nämä sijoitetaan ``<main>``in sisälle. ``<section>`` on selkeä yksittäinen osuus sivustoa, kuten vaikka esittelyteksti pääotsikon alla. ``<article>`` on itsenäinen osakokonaisuus, kuten artikkeliteksti, blogiteksti tai vaikka tuote. ``<aside`` sijoittuu sivulla sivuun ja sisältää yleensä vähemmän merkityksellistä sisältöä kuten mainoksia. Tageja voidaan laittaa sisäkkäin hyvinkin paljon, jos se on tarpeen. Hyvä esimerkki eri osien käytöstä on [ w3schools.com ](https://www.w3schools.com/html/default.asp).
+
+```HTML 
+<body>
+    <header>
+        <h1>Pääotsikko</h1>
+    </header>
+    <main>
+        <section>
+            <header>
+                <h2>Ensimmäinen alaotsikko</h2>
+            </header>        
+            <p>Tässä on ensimmäinen kappale, joka varmaan jotenkin liittyy alaotsikkoon.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright Me</p>
+    </footer>
+</body>
+```
+
+---
+
+# Demotehtävä
+
+1. Avaa aiempi index.html-sivusi.
+2. Lisää siihen semanttisesti järkevät osuudet eli tässä kohtaa ``<header>``, johon jää oma nimesi, ``<main>``, johon tulee ``<section>``, jonka sisään tulee``<p>``-teksti. Lisää myös ``<footer>``, johon voit kirjoittaa esimerkiksi "Copyright Anna Metsäpelto 2023".
