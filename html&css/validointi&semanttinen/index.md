@@ -2,7 +2,7 @@
 
 Jos HTML-koodia ei ole kirjoittanut oikein, selain näyttää sen, mutta se saattaa näyttää sen huomattavan väärin. Eli jos tageja puuttuu tai niitä ei ole muistanut sulkea, sivustossa voi olla suuriakin ongelmia. Nykyisin koodieditorit huomaavat tällaisia puutteita aika hyvin, mutta nekään eivät ole erehtymättömiä.
 
-On suositeltavaa käyttää HTML-koodin laadun varmistamiseen validaattoria. Niitä on useampi, mutta hyvä on ainakin [ validator.w3.org ](https://validator.w3.org/). 
+On suositeltavaa käyttää HTML-koodin laadun varmistamiseen validaattoria. Niitä on useampi, mutta hyvä on ainakin [ validator.w3.org ](https://validator.w3.org/)<base target="_blank">. 
 
 
 ## Demotehtävä
@@ -38,7 +38,7 @@ Semanttisia ovat muun muassa:
 - ``<summary>``
 - ``<time>``
 
-HTML-dokumentin ``<body>`` kannattaa jakaa heti alkuun vähintään seuraaviin osiin: ``<header>``, ``<main>`` ja ``<footer>``. Header sisältää yleensä sivuston nimen, mahdollisesti logon sekä mahdollisesti myös esimerkiksi hakukentän. ``<header>``in alapuolella on hyvin usein ``<nav>`` eli navigaatiopalkki. ``<main>``in sisällä on sivuston varsinainen sisältö. ``<footer>`` sisältää muun muassa tekijänoikeudet ja yhteystietoja. Lisäksi sisältö kannattaa jakaa erilaisiin osioihin kuten ``<section>``, ``<article>`` ja ``<aside>``. Nämä sijoitetaan ``<main>``in sisälle. ``<section>`` on selkeä yksittäinen osuus sivustoa, kuten vaikka esittelyteksti pääotsikon alla. ``<article>`` on itsenäinen osakokonaisuus, kuten artikkeliteksti, blogiteksti tai vaikka tuote. ``<aside`` sijoittuu sivulla sivuun ja sisältää yleensä vähemmän merkityksellistä sisältöä kuten mainoksia. Tageja voidaan laittaa sisäkkäin hyvinkin paljon, jos se on tarpeen. Hyvä esimerkki eri osien käytöstä on [ w3schools.com ](https://www.w3schools.com/html/default.asp).
+HTML-dokumentin ``<body>`` kannattaa jakaa heti alkuun vähintään seuraaviin osiin: ``<header>``, ``<main>`` ja ``<footer>``. Header sisältää yleensä sivuston nimen, mahdollisesti logon sekä mahdollisesti myös esimerkiksi hakukentän. ``<header>``in alapuolella on hyvin usein ``<nav>`` eli navigaatiopalkki. ``<main>``in sisällä on sivuston varsinainen sisältö. ``<footer>`` sisältää muun muassa tekijänoikeudet ja yhteystietoja. Lisäksi sisältö kannattaa jakaa erilaisiin osioihin kuten ``<section>``, ``<article>`` ja ``<aside>``. Nämä sijoitetaan ``<main>``in sisälle. ``<section>`` on selkeä yksittäinen osuus sivustoa, kuten vaikka esittelyteksti pääotsikon alla. ``<article>`` on itsenäinen osakokonaisuus, kuten artikkeliteksti, blogiteksti tai vaikka tuote. ``<aside`` sijoittuu sivulla sivuun ja sisältää yleensä vähemmän merkityksellistä sisältöä kuten mainoksia. Tageja voidaan laittaa sisäkkäin hyvinkin paljon, jos se on tarpeen. Hyvä esimerkki eri osien käytöstä on [ w3schools.com ](https://www.w3schools.com/html/default.asp)<base target="_blank">.
 
 ```HTML 
 <body>
