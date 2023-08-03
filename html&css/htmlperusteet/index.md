@@ -71,4 +71,5 @@ ___
 5. Luo aikaisemmin käydyn perusteella pohja HTML-sivulle.
 6. Kirjoita pääotsikoksi (``<h1>``) oma nimesi.
 7. Kirjoita ensimmäiseen kappaleeseen (``<p>``) pari lausetta itsestäsi. Esimerkiksi "Olen Anna, tamperelainen ohjelmoinnin opettaja. Asun perheeni ja kissojeni kanssa Hervannassa." Muista sulkutagit!
-8. Käy katsomassa sivuasi. Mene Resurssienhallintaan, navigoi K-levylle ja oikeaan kansioon. Kaksoisklikkaa index.html-tiedoston tekstiä. Selaimen pitäisi avata sivu sinulle.
+8. Tallenna dokumentti.
+9. Käy katsomassa sivuasi. Mene Resurssienhallintaan, navigoi K-levylle ja oikeaan kansioon. Kaksoisklikkaa index.html-tiedoston tekstiä. Selaimen pitäisi avata sivu sinulle.
