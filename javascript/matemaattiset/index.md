@@ -36,3 +36,32 @@ ___
 ## Tyyppimuunnokset
 
 Koska JavaScript on dynaamisesti tyypitetty ohjelmointikieli, muuttujan tyyppiä on mahdollista vaihtaa ja joissakin tilanteissa JavaScript tekee sen automaattisesti. 
+
+Jos käyttäjä haluaa vähentää numeron merkkijonosta, se onnistuu, mikäli merkkijono sisältää ainoastaan numeroita. 
+
+![merkkijonosta miinustetaan numero](../kuvat/stringmiinusnumero.png)
+
+Kuitenkin jos merkkijonoon, jossa on vain numeroita, yrittää lisätä numeron, tapahtuukin jotain muuta. 
+
+![merkkijonoon lisätään numero](../kuvat/stringplusnumero.png)
+
+Tässä tapauksessa JavaScript kohtelee molempia ikään kuin ne olisivat merkkijonoja. 
+
+Ohjelmoija voi halutessaan muuntaa useita muuttujia eri tyyppisiksi välttääkseen tällaiset ongelmat.
+
+````JS
+let firstNumber = "12";
+let secondNumber = 8;
+firstNumber = Number(firstNumber);
+````
+
+Aiemman lisäämisongelman voisi ratkaista myös tällä tavalla: 
+
+![merkkijonon muuntaminen](../kuvat/numeronmuunto.png)
+
+Numeron voi muuntaa myös merkkijonoksi:
+
+````JS
+let secondNumber = 8;
+secondNumber = String(secondNumber);
+````
