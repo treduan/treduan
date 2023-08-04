@@ -5,7 +5,7 @@ Kirjoita itsestäsi neljä väitettä, joista yksi on vale. Yritä keksiä jotai
 Lähetä väitteet opettajalle seuraavalla tavalla Teamsin kautta.
 
 Anna Metsäpelto
-1. Omistan haarniskan ja olen taistellut turnajaisissa.
-2. Olen kirjoittanut romaanin verran tekstiä kuukaudessa.
-3. Olen käynyt Islannissa hevosvaelluksella.
-4. Olen esiintynyt mallina kanadalaisella televisiokanavalla.
+A. Omistan haarniskan ja olen taistellut turnajaisissa.
+B. Olen kirjoittanut romaanin verran tekstiä kuukaudessa.
+C. Olen käynyt Islannissa hevosvaelluksella.
+D. Olen esiintynyt mallina kanadalaisella televisiokanavalla.
