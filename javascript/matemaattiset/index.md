@@ -65,3 +65,11 @@ Numeron voi muuntaa myös merkkijonoksi:
 let secondNumber = 8;
 secondNumber = String(secondNumber);
 ````
+
+___
+
+## Merkkijonot
+
+___
+
+## Totuusarvojen vertailu

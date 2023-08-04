@@ -6,7 +6,8 @@ Erilaiset tekstityypit merkitään niiden merkityksen mukaan: lyhyt lainaus (q),
 ````HTML 
 <q>lyhyt lainaus</q>
 <blockquote>pidempi lainaus, jossa on paljon tekstiä</blockquote>
-<mark>selkeästi merkitty teksti</mark>
+<i>kursiivilla kirjoitettu</i>
+<mark>selkeästi merkitty teksti (myös kursiivia)</mark>
 <strong>tärkeä teksti</strong>
 <em>painotettu asia</em>
 <sub>alaindeksi</sub>
