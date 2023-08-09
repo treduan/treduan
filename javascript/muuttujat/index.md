@@ -5,8 +5,8 @@ Jotta JavaScript-koodia voidaan ajaa, täytyy tietokoneella olla joko verkkosela
 ## Demotehtävä 1
 Testataan ensimmäisenä ajaa JavaScript-koodia selaimella. 
 1. Selaimesta saa kehittäjätyökalut ja selaimen komentorivin auki näppäinyhdistelmällä Ctrl+Shift+J tai yläoikealta kolmen pisteen takaa kohdasta Lisää työkaluja kohdasta Developer Tools. Sieltä valitaan välilehti Console.
-2. Kirjoita riville: ``console.log("Hello World!");``
-3. Komentorivillä pitäisi lopulta lukea: Hello World!
+2. Kirjoita riville: ``console.log("Hello World!");`` Paina enteriä.
+3. Komentorivillä pitäisi lukea: Hello World!
 4. Onneksi olkoon, olet juuri kirjoittanut ensimmäisen JavaScript-ohjelmasi eli tulostanut jotain konsoliin! 
 
 # Muuttujat
@@ -28,6 +28,7 @@ Jos muuttujan nimi on moniosainen, JavaScriptissä käytetään yleensä *camelc
 
 ````JS
 let firstName = "Anna";
+const errorMessage = "Something went wrong!";
 ````
 ---
 
@@ -56,7 +57,7 @@ Keskitymme ensin viiteen ensimmäiseen.
 
 ## Boolean
 
-*boolean* merkitsee totuusarvoa ja sen arvot ovat aina joko *true* tai *false*. Niitä käytetään usein, kun tarkistetaan jonkin paikkaansapitävyyttä.
+*boolean* merkitsee totuusarvoa ja sen arvot ovat aina joko *true* tai *false*. Niitä käytetään usein, kun tarkistetaan jonkin ehdon paikkaansapitävyyttä.
 
 ## Null
 

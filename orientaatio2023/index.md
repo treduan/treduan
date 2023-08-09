@@ -15,4 +15,4 @@ Oppilaitoksessa
 
 - Yrityselämänedustajien esittäytyminen
 
-[Ensimmäinen päivä](./ensimmäinen/index.js)
+[Ensimmäinen päivä](./ensimmainen/index.js)
