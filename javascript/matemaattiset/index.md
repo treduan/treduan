@@ -93,6 +93,7 @@ info.length
 1. Luo muuttuja *name*, jos sitä ei vielä ole. Tulosta konsoliin teksti, jossa on alkuosana *Minun nimeni on*, sitten muuttuja *name* ja lopussa piste. Katso tarkkaan, onko lainausmerkkien sisällä oikea määrä välilyöntejä, jotta teksti ei tule putkeen.
 2. Testaa alert-laatikkoa. Luo ensin muuttuja nieltään *errorMessage* ja kirjoita siihen merkkijono, jossa lukee jotain vastaavaa kuin *Something went wrong. Contact ** ja luo lisäksi uusi muuttuja nimeltään *phoneNUmber* ja anna sille jokin arvo, joka näyttää puhelinumerolta. Sitten tulosta *errorMessage* + *phoneNumber* alert-laatikon kautta.
 3. Tarkista muuttuja errorMessage pituus. Tulosta se konsoliin.
+
 ___
 
 ## Totuusarvojen vertailu
@@ -115,3 +116,26 @@ Ehtolauseissa käytetään usein vertailuoperaattoreita. Vertailuoperaatio palau
 
 1. Testaa vertailuoperaatioita. Luo muuttujat *date* ja *date2* ja anna niille jokin eri numeroarvo. Kokeile ensin, ovatko ne samankokoiset konsolissa eli *console.log(date == date2);*. Sitten kokeile vertailla niitä vertailumerkeillä.
 2. Luo muuttuja *date3*, joka on merkkijono, jonka sisällä on numero ja joka on sama kuin *date2*. Testaa, ovatko ne samoja, kun käytät tuplayhtäläisyysmerkkejä. Sitte testaa, ovatko ne samoja, kun käytät kolmoisyhtäläisyysmerkkejä. 
+
+---
+
+### Ehtolause
+
+JavaScriptissä on kaksi tapaa tehdä ehtolause. Jos ehto on lyhyt sen voi kirjoittaa näin:
+
+```js
+let a = 10;
+let b = 9;
+a > b ? "kissa" : "koira";
+```
+
+Tässä alustettiin ensin muuttujat a ja b. Jos vertailu a > b saa arvon *true*, palautuu "kissa" muuten "koira.
+
+Jos tosihaarassa pitää suorittaa enemmän koodia, on parempi käytää if-else-rakennetta (aaltosulkujen sisään voi laittaa useita rivejä koodia ns. koodilohko):
+```js
+if(a > b){
+  "kissa"
+  } else {
+    "koira"
+    }
+```
