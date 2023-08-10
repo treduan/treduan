@@ -110,6 +110,8 @@ Ehtolauseissa käytetään usein vertailuoperaattoreita. Vertailuoperaatio palau
 | === (yhtäsuuri ja samaa tyyppiä) | ```90 === 900/10``` |
 | != (erisuuri) | ``` 2 != 10``` |
 
+
 ## Demotehtävä 3
 
 1. Testaa vertailuoperaatioita. Luo muuttujat *date* ja *date2* ja anna niille jokin eri numeroarvo. Kokeile ensin, ovatko ne samankokoiset konsolissa eli *console.log(date == date2);*. Sitten kokeile vertailla niitä vertailumerkeillä.
+2. Luo muuttuja *date3*, joka on merkkijono, jonka sisällä on numero ja joka on sama kuin *date2*. Testaa, ovatko ne samoja, kun käytät tuplayhtäläisyysmerkkejä. Sitte testaa, ovatko ne samoja, kun käytät kolmoisyhtäläisyysmerkkejä. 
