@@ -70,6 +70,29 @@ ___
 
 ## Merkkijonot
 
+Pidempiä merkkijonoja voidaan muodostaan yhdistelemällä lyhyempiä. Lausekkeessa voi olla mukana muuttujia sekä lukuja. Usein merkkijonoja tulostetaan konsolille:
+
+```js
+console.log("Tämän ohjelman nimi on: " + name + ".");
+```
+
+Selaimessa toimii myös alert-ikkuna (ei toimi node.js:n kanssa):
+
+```js
+alert('Soita numeroon ' + number);
+```
+
+Merkkijonon pituuden saat selville *length*:in avulla:
+
+```js
+info.length
+```
+
+## Demotehtävä 2
+
+1. Luo muuttuja *name*, jos sitä ei vielä ole. Tulosta konsoliin teksti, jossa on alkuosana *Minun nimeni on*, sitten muuttuja *name* ja lopussa piste. Katso tarkkaan, onko lainausmerkkien sisällä oikea määrä välilyöntejä, jotta teksti ei tule putkeen.
+2. Testaa alert-laatikkoa. Luo ensin muuttuja nieltään *errorMessage* ja kirjoita siihen merkkijono, jossa lukee jotain vastaavaa kuin *Something went wrong. Contact ** ja luo lisäksi uusi muuttuja nimeltään *phoneNUmber* ja anna sille jokin arvo, joka näyttää puhelinumerolta. Sitten tulosta *errorMessage* + *phoneNumber* alert-laatikon kautta.
+3. Tarkista muuttuja errorMessage pituus. Tulosta se konsoliin.
 ___
 
 ## Totuusarvojen vertailu
