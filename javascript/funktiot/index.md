@@ -32,3 +32,4 @@ const sum = (x , y) => {
 
 1. Kirjoita funktio nimeltään *print*, joka ottaa vastaan yhden parametrin, joka voi olla nimeltään *text*. Funktion pitää tulostaa sille annettu teksti. Kutsu funktiota ja anna sille merkkijono.
 2. Kirjoita funktio nimeltään *count*. Se ottaa vastaan kaksi parametriä, jotka ovat numeroita. Se kertoo ensimmäisen numeron kolmella ja miinustaa siitä jälkimmäisen numeron. Tulosta funktio konsoliin.
+3. Yhdistä funktioon ehtolauseke (if). Tee fuktio, joka saa kaksi numeroa parametrinä. Se vertailee niitä ja palauttaa niistä suuremman.
