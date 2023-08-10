@@ -96,3 +96,20 @@ info.length
 ___
 
 ## Totuusarvojen vertailu
+
+
+Ehtolauseissa käytetään usein vertailuoperaattoreita. Vertailuoperaatio palauttaa totuusarvon (true/false):
+
+| Vertailuoperaattori    | Esimerkkejä      | 
+| ---------------------- |:-------------:| 
+| < (pienempi kuin)   | ``` 2 < 2``` | 
+| > (suurempi kuin)     | ``` -1 > 0 ```     |  
+| <= (pienempi tai yhtäsuuri kuin)   | ``` 20 <= 2``` | 
+| >= (suurempi tai yhtäsuuri kuin)     | ``` -1 >= -1 ```     | 
+| == (yhtäsuuri)| ```90 == "90"``` |
+| === (yhtäsuuri ja samaa tyyppiä) | ```90 === 900/10``` |
+| != (erisuuri) | ``` 2 != 10``` |
+
+## Demotehtävä 3
+
+1. Testaa vertailuoperaatioita. Luo muuttujat *date* ja *date2* ja anna niille jokin eri numeroarvo. Kokeile ensin, ovatko ne samankokoiset konsolissa eli *console.log(date == date2);*. Sitten kokeile vertailla niitä vertailumerkeillä.
