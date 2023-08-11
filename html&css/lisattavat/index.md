@@ -31,7 +31,7 @@ Jos kuvaa joutuu suurentamaan selaimessa, sen laatu kärsii. Jos taas se on valt
 
 Verkkosivulle voi myös lisätä videoita ``<video>`` tagilla. Sen sisälle on lisättävä vähintään yksi ``<source>`` tag, jolla on ominaisuudet *src* ja *type*, 
 mutta voi olla järkevää lisätä videoon välittömästi ominaisuuksia, kuten *controls*, jotta sivun käyttäjä voi käyttää videota. Lisäksi videolla voi olla ominaisuuksia, kuten *autoplay*, *muted* tai *loop*. 
-Jos haluat ladata videon Youtubesta, siihen on [erillinen tapansa](https://www.w3schools.com/html/html_youtube.asp). 
+Jos haluat ladata videon Youtubesta, siihen on [erillinen tapansa](https://www.w3schools.com/html/html_youtube.asp) <base target="_blank">. 
 
 ````html
 <video controls muted>
