@@ -39,3 +39,8 @@ Listoja on kahta tyyppiä eli numeroitu lista eli ``<ol>`` (ordered list) ja num
     </ul>
 </nav>
 ```
+
+## Demotehtävä 1
+
+1. Avaa jälleen aiempi sivusi. Lisää sinne kappale tekstiä itsestäsi (esimerkiksi opiskelutilanteesta ja tavoitteista sen suhteen tai vaikka harrastamisesta). Testaa yllä mainittuja HTML-muotoiluelementtejä.
+2. Lisää sivullesi kaksi listaa, joista toinen on numeroitu ja toinen numeroimaton. Listaa vaikka kaikki vanhat koulusi tai suosikkiharrastuksesi.
