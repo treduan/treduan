@@ -6,7 +6,7 @@ Tee Visual Studio Code:lla uusi tiedosto, nimeä se *harjoitukset1.js*. Avaa VS:
 
 ### Tehtävä 1: Merkkijonojen yhdistäminen
 
-Tee funktio, joka saa parametrina merkkijonon *nimi* ja palauttaa tervehdystekstin "Hei, \< nimi \>, mitä kuuluu?". Kutsu funktiota kahdella eri nimellä ja tulosta funktion palauttamat merkkijonot konsolille.
+Tee funktio, joka saa parametrina merkkijonon *name* ja palauttaa tervehdystekstin "Hello, \< name \>, how are you?". Kutsu funktiota kahdella eri nimellä ja tulosta funktion palauttamat merkkijonot konsolille.
 
 ### Tehtävä 2: Neliöön korottaminen
 
@@ -14,11 +14,11 @@ Tee funktio, joka saa parametrina yhden luvun ja korottaa sen potenssiin 2. Kuts
 
 ### Tehtävä 3: Täysi-ikäisyys
 
-Tee funktio, joka saa parametrina iän ja palauttaa merkkijonon "täysi-ikäinen" jos ikä on 18 tai yli, muussa tapauksessa palautetaan "alaikäinen". Kutsu funktiota kolmella eri arvolla ja tulosta funktion palauttamat arvot konsolille.
+Tee funktio, joka saa parametrina iän ja palauttaa merkkijonon "major" jos ikä on 18 tai yli, muussa tapauksessa palautetaan "minor". Kutsu funktiota kolmella eri arvolla ja tulosta funktion palauttamat arvot konsolille.
 
 ### Tehtävä 4. Suurempi luku
 
-Tee funktio, joka joka saa kaksi lukua (x ja y) parametrina ja palauttaa merkkijonon "Annetuista luvuista x ja y, suurempi on ___". Kutsu funktiota kolme kertaa ja tulosta funktion palauttamat arvot konsolille.
+Tee funktio, joka joka saa kaksi lukua (x ja y) parametrina ja palauttaa merkkijonon "Of given numbers x and y, the larger is ___". Kutsu funktiota kolme kertaa ja tulosta funktion palauttamat arvot konsolille.
 
 Esimerkkitulostus:
 
@@ -36,12 +36,12 @@ Vihje 2: pyöristäminen yhde desimaalin tarkkuuteen: kerro pyöristettävä luk
 
 ### Tehtävä 6. Osamäärä
 
-Tee funktio, joka saa kaksilukua (jaettava, jakaja) ja laskee näiden osamäärän. Varmista ennen jakolaskua, että jakaja ei ole nolla (jos se on nolla palauta merkkijono "nollalla ei voi jakaa"). Kutsu funktiota kaksilla eri arvoilla ja tulosta tiedot konsolille.
+Tee funktio, joka saa kaksilukua (jaettava, jakaja) ja laskee näiden osamäärän. Varmista ennen jakolaskua, että jakaja ei ole nolla (jos se on nolla palauta merkkijono "you cannot divide with a zero"). Kutsu funktiota kaksilla eri arvoilla ja tulosta tiedot konsolille.
 
 
 ### Tehtävä 7. Taksimatka
 
-Tee funktio, jonka avulla voit laskea taksimatkan suuruuden euroissa, kun tiedetään matkustajien määrä ja kuljetut kilometrit. Tarkista myös funktion saamat arvot, että ne ovat järkeviä ja jos ne eivät ole palauta "tarkista tiedot".
+Tee funktio, jonka avulla voit laskea taksimatkan suuruuden euroissa, kun tiedetään matkustajien määrä ja kuljetut kilometrit. Tarkista myös funktion saamat arvot, että ne ovat järkeviä ja jos ne eivät ole palauta "check information".
 
 Taksimatkan hinta lasketaan seuraavasti:
 
