@@ -111,6 +111,12 @@ Ehtolauseissa käytetään usein vertailuoperaattoreita. Vertailuoperaatio palau
 | === (yhtäsuuri ja samaa tyyppiä) | ```90 === 900/10``` |
 | != (erisuuri) | ``` 2 != 10``` |
 
+Jos ehtoja on useampia, täytyy käyttää lisää operaattoreita.
+| Vertailuoperaattori    | Esimerkkejä      | 
+| ---------------------- |:-------------:| 
+| && jos kahden tai useamman ehdon pitää täyttyä   | ``` name != undefined && name.length >= 2``` | 
+| || jos ehto on joko tai     | ``` number > 0 || number > 10 ```     |  
+
 
 ## Demotehtävä 3
 
