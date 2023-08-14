@@ -20,9 +20,6 @@ Tee funktio, joka saa parametrina iän ja palauttaa merkkijonon "major" jos ikä
 
 Tee funktio, joka joka saa kaksi lukua (x ja y) parametrina ja palauttaa merkkijonon "Of given numbers x and y, the larger is ___". Kutsu funktiota kolme kertaa ja tulosta funktion palauttamat arvot konsolille.
 
-Esimerkkitulostus:
-
-![vertailu](../kuvat/vertailutulostus.PNG)
 
 ### Tehtävä 5. Kolmion pinta-ala
 

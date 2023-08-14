@@ -45,6 +45,7 @@ myList.length;
 *for*-silmukan avulla voidaan toteuttaa toistoa vaativia toimenpiteitä esim. käydä läpi taulukoita. *for*-silmukka toistaa sen sisään kirjoitettua koodia, kunnes sen ehtona oleva lauseke ei enää ole totta. *for*-lauseessa ensin alustetaan silmukka (esim. *let i=0*), sitten kirjoitetaan ehto, joka pitää silmukan toiminnassa, ja lopuksi lauseke, joka päivittää silmukan tilaa (esim. *i++*):
 
 ```js
+let myList = [5, 7, 22, 9];
 for(let i=0; i < myList.length; i++){
     console.log(myList[i]);
 }
@@ -70,8 +71,35 @@ Näissä esimerkeissä funktion on annettu perinteisessä muodossa (samat kuin y
 let newList = a.map(function(item){ return 10 * item });
 newList.forEach(function(item){ console.log(item) });
 ```
+## While-loop
 
-## Boolen operaattorit: and, or ja not
+*while* saa aikaan silmukan, jossa jotakin tehdään niin kauan, kun sille annettu ehto täyttyy. Jos ehto ei täyty lainkaan, silmukan sisään ei mennä.
+
+````js
+let i = 0;
+let text;
+while (i < 10) {
+  text += "The number is " + i;
+  console.log(text);
+  i++;
+}
+````
+
+## do while -loop
+*do while* on muunnos tavallisesta *while* loopista. Ero on se, että siinä *do*n sisällä oleva asia tehdään kerran, ennen kuin tarkistetaan ehdon täyttymistä.
+
+````js
+let i = 0;
+let text;
+do {
+  text += "The number is " + i;
+  i++;
+}
+while (i < 10);
+````
+
+
+## Boolean operaattorit: and, or ja not
 
 Kun kirjoitetaan monimutkaisempia ehtolauseita, on usein tarve ottaa huomioon useampi ehto kerrallaan. Se onnistuu loogisten operaattoreiden && (*and*), \|\| (*or*) ja ! (*not*) avulla.
 
@@ -98,4 +126,9 @@ JavaScript tukee seuraavia lyhennemerkintöjä:
 | i %= 5 | i = i % 5 |
 | i **= 3 | i = i ** 3 |
 
-## While
+
+## Demoharjoitus 2
+1. Luo taulukko, jossa on viisi päättämääsi numeroa. Luo funktio, joka saa taulukon ja tulostaa taulukon sisältö näkyviin käyttämällä *for* looppia.
+2. Luo funktio, joka saa saman taulukon, mutta tulostaakin sen päinvastaisessa järjestyksessä.
+3. Luo uusi taulukko vanhasta taulukosta käyttäen *map* -metodia. Kun luot uuden taulukon, kerro jokainen taulukon numero kolmella. Tulosta taulukon sisältö *forEach* -metodilla.
+4. Luo funktio, jossa on muuttuja, jonka arvo on alussa 0. Luo sinne *while* looppi, joka tulostaa tekstin *Inside while loop*, kunnes muuttujan arvo on 10. Kasvata arvoa joka tulostuksen jälkeen kahdella.
