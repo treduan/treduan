@@ -122,4 +122,4 @@ Jos laatikoiden väliin halutaan tilaa, asetetaan se *margin*:in avulla. Jos hal
 2. Lisää kaikille otsikoille marginaalia 100px ja kaikelle perustekstille 50px.
 3. Suurenna tekstikokoa, vaihda fonttia ja keskitä otsikot. Vaihda myös tekstin väri tummanharmaaksi.
 4. Lisää koko tiedostoon taustaväri. Halutessasi voit lisätä tiedostoon taustakuvan. Ohjeita [täällä](https://www.w3schools.com/cssref/pr_background-image.php)<base target="_blank">. 
-5. Luo jostakin osiosta laatikko, jolla on reunus (esimerkiksi *solid 1px grey*). Luo laatikolle myös oma varjo. Ohjeita [täällä](https://www.w3schools.com/cssref/css3_pr_box-shadow.php)<base target="_blank> 
+5. Luo jostakin osiosta laatikko, jolla on reunus (esimerkiksi *solid 1px grey*). Luo laatikolle myös oma varjo. Ohjeita [täällä](https://www.w3schools.com/cssref/css3_pr_box-shadow.php)<base target="_blank"> 
