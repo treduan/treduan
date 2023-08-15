@@ -7,3 +7,5 @@
 - [ Linkit, kuvat ja upotukset ](./lisattavat/index.md)
 - [ Taulukot ](./taulukot/index.md)
 - [HTML-harjoitus 1](./htmlharjoitus1/index.md)
+- [CSS perusperiaatteet](./cssperusteet/index.md)
+- [Perusmuotoilua CSS:llä](./perusmuotoilua/index.md)
