@@ -78,7 +78,7 @@ button {
 
 ## Listat
 
-Listamerkinnän tyylin voi muokata.
+Listamerkinnän tyylin voi muokata. Usein tyyli otetaan pois esimerkiksi navigaatiopalkissa laittamalla arvoksi *none*.
 
 ```js
 li {

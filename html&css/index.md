@@ -9,3 +9,4 @@
 - [HTML-harjoitus 1](./htmlharjoitus1/index.md)
 - [CSS perusteita](./cssperusteet/index.md)
 - [Perusmuotoiluja](./perusmuotoilua/index.md)
+- [Värit](./varit/index.md)

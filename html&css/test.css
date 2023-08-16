@@ -1,0 +1,13 @@
+.solid {
+    height: 50px;
+    width: 60px;
+    background-color: rgb(90, 90, 120);
+}
+.nonsolid {
+    height: 50px;
+    width: 60px;
+    background-color: rgb(90, 90, 120, 0.5);
+}
+body {
+    background-image: url(./varit/mountains.jpg);
+}
