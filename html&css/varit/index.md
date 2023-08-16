@@ -45,11 +45,11 @@ Alla esimerkissä on kaksi laatikkoa, joilla on sama RBG-sävy, mutta toisen lä
 
 Kuva lopputuloksesta.
 
-![Lopputulos](varisavylaatikot.png)
+![Lopputulos](varisavylaatikot.PNG)
 
 Mutta huomaathan, että läpinäkyvyys ei ole oikea tapa vaalentaa väriä, sillä joskus se sekoittuu muun taustan kanssa, kuten alla. Sillä on kuitenkin mahdollista saada aikaan kiinnostavia efektejä.
 
-![Lopputulos taustan kanssa](varisavyttaustalla.png)
+![Lopputulos taustan kanssa](varisavyttaustalla.PNG)
 
 Huom. jokin elementin läpinäkyvyyttä voi säätää myös *opacity* -ominaisuudella.
 ## HSL
