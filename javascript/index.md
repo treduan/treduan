@@ -6,5 +6,6 @@
 - [Muuttujat ja tyypit](./muuttujat/index.md)
 - [Muuttujien muuntaminen](./matemaattiset/index.md)
 - [Funktiot](./funktiot/index.md)
+- [Ehtolauseet](.ehtolauseet/index.md)
 - [Harjoitukset 1](./Harjoitukset1/index.md)
 - [Taulukot](./taulukot/index.md)
