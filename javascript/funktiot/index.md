@@ -28,6 +28,36 @@ const sum = (x , y) => {
 }
 ```
 
+Funktiota täytyy aina kutsua. Se tapahtuu kirjoittamalla funktion nimi ja sen jälkeen sulkeisiin parametrit pilkulla eroteltuna, mikäli niitä on useampia. Jos funktiolle ei anna oikeaa määrää parametrejä, funktio ei toimi.
+
+```js
+const sum = (x , y) => {
+  return x + y;
+}
+
+sum(6, 15);
+```
+
+Funktion tuloksen voi tulostaa konsoliin laittamalla funktion kutsu *console.log*in sisään.
+
+```js
+const sum = (x , y) => {
+  return x + y;
+}
+
+console.log(sum(6, 15));
+```
+
+Funktion tuloksen voi myös tallentaa muuttujaan, jotta tulosta voidaan käyttää johonkin toiseen tarkoitukseen.
+
+```js
+const sum = (x , y) => {
+  return x + y;
+}
+
+let combination = sum(6, 15);
+```
+
 ## Demotehtävä 1
 
 1. Kirjoita funktio nimeltään *print*, joka ottaa vastaan yhden parametrin, joka voi olla nimeltään *text*. Funktion pitää tulostaa sille annettu teksti. Kutsu funktiota ja anna sille merkkijono.
