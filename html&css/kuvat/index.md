@@ -27,7 +27,7 @@ Kuviin pätee kaikki samat asiat kuin muihin elementteihin. Kuvalle voi siis ant
 
 Eri filttereitä ovat mm. *greyscale*, *sepia*, *blur* *brightness*, *saturate* ja *invert*. Useimmat näistä ottavat jonkin prosenttiarvon, jonka perusteella ne muokkaavat kuvaa.
 
-Jos kuvan haluaa sävyttää jollakin värillä, taustan väriksi laitetaan haluttu värisävy ja sen päälle laitetaan kuva, jonka läpinäkyvyyttä vähennetään.
+Jos kuvan haluaa sävyttää jollakin värillä, taustan väriksi laitetaan haluttu värisävy ja sen päälle laitetaan kuva, jonka läpinäkyvyyttä vähennetään. Tämä vaatii sen, että kuva on jonkin toisen elementin sisällä.
 
 
 ````html
@@ -49,6 +49,11 @@ Jos kuvan haluaa sävyttää jollakin värillä, taustan väriksi laitetaan halu
 }
 ````
 
-## background-blend-mode
 
-Jos kuva on lisätty taustakuvaksi, sille voi lisätä efektejä *background-blend-mode*-ominaisuudella. 
+## Demotehtävä 1
+
+1. Lisää HTML-sivulle kuva. 
+2. Säädä sen koko niin, että sen leveys on 500 pikseliä ja maksimileveys 60 %.
+3. Tee kuvalle reunukset. Pyöristä myös kuvan reunoja 20 pikseliä. Voit lisätä myös varjoefektin halutessasi.
+4. Muokkaa kuvan ulkonäköä *filter*-ominaisuudella. Muuta se mustavalkoiseksi tai seepiansävyiseksi.
+5. Lisää kuvalle jokin sinertävä värisävy. 
