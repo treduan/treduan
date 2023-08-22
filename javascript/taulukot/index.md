@@ -53,6 +53,16 @@ for(let i=0; i < myList.length; i++){
 
 *i* on lyehennelmä sanasta *index* ja kuuluu niihin lyhenteisiin, joiden käyttö on täysin hyväksyttävää varsinkin *for*-loopissa.
 
+*for*-loopulla on mahdollista käydä taulukko läpi myös päinvastaisessa järjestyksessä seuraavalla koodilla:
+
+````js
+let array = [4, 7, 2, 9, 17];
+
+for(let i = array.length-1; i >= 0; i--) {
+    console.log(array[i]);
+}
+````
+
 ## map ja foreach
 
 *map* ja *foreach* ovat metodeja, jotka toimivat taulukoille. Niiden avulla voidaan toteuttaa toistoa vaativia operaatioita helposti (ilman *for*-looppia). Nämä funktiot ovat ns. *higher order*-funktioita, mikä tarkoittaa, että niille annetaan parametrina funktio.
