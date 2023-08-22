@@ -4,7 +4,7 @@
 Taulukkoon voi tallentaa erilaista tietoa: lukuja, merkkijonoja, totuusarvoja, toisia taulukoita, olioita tai jopa funktioita. Tieto sijaitsee taulukossa järjestyksessä, eli taulukon alkioihin voi viitata niiden sijaintiin liittyvällä indeksillä (kokonaisluku, indeksointi alkaa nollasta).
 
 ```js
-let myList = ["milk", 303, true, [1, 2, 3]];
+let myList = ["milk", 303, true, 5.5];
 ```
 
 Tämän taulukon toinen alkio (luku 303) saataisiin kirjoittamalla:
