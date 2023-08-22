@@ -126,6 +126,10 @@ JavaScript tukee seuraavia lyhennemerkintöjä:
 | i %= 5 | i = i % 5 |
 | i **= 3 | i = i ** 3 |
 
+## Loopin keskeytys
+
+Joskus jos loopissa on jokin vika, on mahdollista, että päädytään ikuiseen looppiin eli koodi toistuu loputtomasti. Minkä tahansa koodin suorittamisen voi keskeyttää konsolissa näppäinyhdistelmällä *Ctrl+C*. 
+
 
 ## Demoharjoitus 2
 1. Luo taulukko, jossa on viisi päättämääsi numeroa. Luo funktio, joka saa taulukon ja tulostaa taulukon sisältö näkyviin käyttämällä *for* looppia.
