@@ -147,3 +147,51 @@ flex-grow: 2;
 ```
 
 [Lue lisää flex-box:ista](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)<base target="_blanck">
+
+## Demoharjoitus 1
+
+1. Luo uusi html-tiedosto nimeltään asetteludemo1.html. Kopioi siihen allaoleva koodi. Luo sitten CSS-tiedosto, jonka nimi on asetteludemo.css.
+2. Tyylittele ensin listaa siten, että siinä ei ole listamerkintöjä. Lisää myös *main*in sisällä oleville diveille jokin taustaväri ja reunukset, jotta ne erottuvat selkeästi.
+3. Käytä flexboxia asettelemaan sivusto. Laita navigointipalkki vasempaan reunaan pystyyn ja anna sille leveydeksi 200px. 
+4. Asettele sitten tuotteet riviin navigoinnin oikealle puolelle omaksi flexboxikseen. Säädä niitä niin, että ne rivittyvät uudelle riville ja että niiden välillä on tyhjää tilaa (joko justify-content: space-between tai justify-content: space-evenly).
+
+````html
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Flexbox-harjoitus</title>
+        <link rel="stylesheet" href="asetteludemo.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>Etusivu</li>
+                    <li>Tuotteet</li>
+                    <li>Laatutakuu</li>
+                    <li>Yhteystiedot</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="tuotteet">
+        <div class="subdiv">
+            <h1>Tuote 1</h1>
+            <p>Tuote 1 on upea.</p>
+        </div>
+        <div class="subdiv">
+            <h1>Tuote 2</h1>
+            <p>Tuote 2 on hieno.</p>
+        </div>
+        <div class="subdiv">
+            <h1>Tuote 3</h1>
+            <p>Tuote 3 on mahtava.</p>
+        </div>
+        <div class="subdiv">
+            <h1>Tuote 4</h1>
+            <p>Tuote 4 on loistava.</p>
+        </div>
+    </div>
+    </body>
+</html>
+````

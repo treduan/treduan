@@ -15,6 +15,7 @@
 }
 
 .leaves {
+    width: 400px;
     display: block;
     margin: auto;
     filter:sepia(100%);
