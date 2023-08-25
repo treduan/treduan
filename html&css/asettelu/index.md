@@ -195,3 +195,8 @@ flex-grow: 2;
     </body>
 </html>
 ````
+
+## Grid
+
+Monimutkaisempia asetteluja varten voi olla kannattavaa käyttää grid-menetelmää, sillä se toimii täsmällisemmin kuin flex.
+
