@@ -28,8 +28,7 @@ Tee funktio, joka saa kaksi lukua parametrina (kanta ja korkeus) ja laskee ko. k
 Vihje 1: kanta kertaa korkeus jaettuna kahdella.
 Vihje 2: pyöristäminen yhde desimaalin tarkkuuteen: kerro pyöristettävä luku kymmenellä, pyöristä saatu luku (Math.round), jaa pyöristetty luku kymmenellä.
 
-<!-- ![pyöristys](../kuvat/round_example.PNG) -->
-<img src="img/round_example.PNG" alt="pyöristys" width="150"/>
+![pyöristys](../kuvat/round_example.PNG)
 
 ### Tehtävä 6. Osamäärä
 
@@ -55,8 +54,7 @@ Aloitusmaksu on 5,40€
 
 Tee funktio, joka pyöristää desimaaliluvun lähimpään kokonaislukuun "tie-breaking"-sääntönä "pyöristä nollasta poispäin": Kun x on positiivinen, pyöristetään alaspäin (floor) lauseke: (x + 0,5) ja kun x on negatiivinen, pyöristetään ylöspäin (ceil) lauseke: (x – 0,5). Kutsu funktiota kolmella eri arvoilla ja tulosta tiedot konsolille.
 
-<!-- ![pyöristysesimerkki](../kuvat/floor_ceil_example.PNG) -->
-<img src="img/floor_ceil_example.PNG" alt="pyöristysesimerkki" width="150"/>
+![pyöristysesimerkki](../kuvat/floor_ceil_example.PNG)
 
 ### Tehtävä 9. Tuotteen hinta
 

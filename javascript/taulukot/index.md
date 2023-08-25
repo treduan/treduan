@@ -4,7 +4,7 @@
 Taulukkoon voi tallentaa erilaista tietoa: lukuja, merkkijonoja, totuusarvoja, toisia taulukoita, olioita tai jopa funktioita. Tieto sijaitsee taulukossa järjestyksessä, eli taulukon alkioihin voi viitata niiden sijaintiin liittyvällä indeksillä (kokonaisluku, indeksointi alkaa nollasta).
 
 ```js
-let myList = ["milk", 303, true, [1, 2, 3]];
+let myList = ["milk", 303, true, 5.5];
 ```
 
 Tämän taulukon toinen alkio (luku 303) saataisiin kirjoittamalla:
@@ -52,6 +52,16 @@ for(let i=0; i < myList.length; i++){
 ```
 
 *i* on lyehennelmä sanasta *index* ja kuuluu niihin lyhenteisiin, joiden käyttö on täysin hyväksyttävää varsinkin *for*-loopissa.
+
+*for*-loopulla on mahdollista käydä taulukko läpi myös päinvastaisessa järjestyksessä seuraavalla koodilla:
+
+````js
+let array = [4, 7, 2, 9, 17];
+
+for(let i = array.length-1; i >= 0; i--) {
+    console.log(array[i]);
+}
+````
 
 ## map ja foreach
 
@@ -125,6 +135,10 @@ JavaScript tukee seuraavia lyhennemerkintöjä:
 | i /= 10 | i = i / 10 |
 | i %= 5 | i = i % 5 |
 | i **= 3 | i = i ** 3 |
+
+## Loopin keskeytys
+
+Joskus jos loopissa on jokin vika, on mahdollista, että päädytään ikuiseen looppiin eli koodi toistuu loputtomasti. Minkä tahansa koodin suorittamisen voi keskeyttää konsolissa näppäinyhdistelmällä *Ctrl+C*. 
 
 
 ## Demoharjoitus 2

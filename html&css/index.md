@@ -10,3 +10,5 @@
 - [CSS perusperiaatteet](./cssperusteet/index.md)
 - [Perusmuotoilua CSS:llä](./perusmuotoilua/index.md)
 - [Värit](./varit/index.md)
+- [Kuvat](./kuvat/index.md)
+- [Asettelu](./asettelu/index.md)

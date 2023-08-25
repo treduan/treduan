@@ -51,7 +51,8 @@ Mutta huomaathan, että läpinäkyvyys ei ole oikea tapa vaalentaa väriä, sill
 
 ![Lopputulos taustan kanssa](varisavyttaustalla.PNG)
 
-Huom. jokin elementin läpinäkyvyyttä voi säätää myös *opacity* -ominaisuudella.
+Huom. jokin elementin läpinäkyvyyttä voi säätää myös *opacity* -ominaisuudella. Jos opacity on 1, se on täysin näkyvä, jos se on 0, on se täysin läpinäkyvä. Desimaalit ilmoitetaan pisteen kanssa eli esimerkiksi *0.7*.
+
 ## HSL
 
 HSL tulee sanoista *hue*, *saturation* ja *lightness* eli sävy, kylläisyys ja valoisuus. Se koostuu kolmesta osasta, joista ensimmäinen on luku 0-360 ja seuraavat kaksi prosenttilukuja. Lisäksi perään voi lisätä RGB:n tavoin läpinäkyvyyden 0-1.

@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+}
+.castle {
+    background-color: rgb(222, 122, 41);
+    width: 500px;
+    max-width: 80%;
+    border-radius: 30px;
+    border: solid 5px black;
+}
+.castle img {
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
+
+.leaves {
+    width: 400px;
+    display: block;
+    margin: auto;
+    filter:sepia(100%);
+}
