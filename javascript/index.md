@@ -10,3 +10,5 @@
 - [Harjoitukset 1](./Harjoitukset1/index.md)
 - [Taulukot](./taulukot/index.md)
 - [Harjoitukset2](./harjoitukset2/index.md)
+- [Kaksiulotteiset taulukot](./kaksiulotteiset/index.md)
+- [Oliot](./oliot/index.md)
