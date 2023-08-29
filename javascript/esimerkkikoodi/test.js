@@ -28,3 +28,5 @@ scores.forEach((score) => {
         console.log(item);
     })
 })
+
+console.log(typeof(this));
