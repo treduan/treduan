@@ -196,6 +196,8 @@ flex-grow: 2;
 </html>
 ````
 
+Flexboxin käyttöä voi treenata myös hauskalla tavalla pelaten [Flexbox Froggya, onnistuu myös suomeksi](https://flexboxfroggy.com/#fi)<base target="_blank">
+
 ## Grid
 
 Monimutkaisempia asetteluja varten voi olla kannattavaa käyttää grid-menetelmää, sillä se toimii täsmällisemmin kuin flex. Gridiä voi ajatella ruudukkona, jonka ruutujen määrän itse päätät ja päätät myös, miten ja moneenko ruutuun sijoitat sisällön.
