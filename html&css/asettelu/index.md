@@ -146,6 +146,8 @@ Laatikot voivat kasvaa myös suhteessa nopeammin kuin muut laatikot. Aseta yhdel
 flex-grow: 2;
 ```
 
+Havainnollistava kuva *flex*in justify-contentista: ![justify-content](flex.jfif)
+
 [Lue lisää flex-box:ista](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)<base target="_blanck">
 
 ## Demoharjoitus 1
