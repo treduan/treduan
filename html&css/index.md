@@ -12,3 +12,5 @@
 - [Värit](./varit/index.md)
 - [Kuvat](./kuvat/index.md)
 - [Asettelu](./asettelu/index.md)
+- [Efektejä (hover, active, visited)](./efektit/index.md)
+- [Harjoitus 2: Single Page Website](./harjoitus2/index.md)

@@ -34,9 +34,11 @@ Lisäksi hyvällä lomakkeella pitää olla jokin tapa lähettää tiedot, usemm
 </form>
 ````
 
-*<input>*in tyyppi voi olla myös *password*, jolloin kirjoitettu teksti on automaattisesti piilossa, jotta ulkopuoliset tahot eivät näkisi, mikä salasana on.
+*input*in tyyppi voi olla *email*, jolloin selain odottaa, että syöte on muodoltaan sähköpostiosoite. 
 
-*<input>*in tyyppi voi olla myös *checkbox*. Silloin annetun tekstin eteen luodaan pieni laatikko, jonka voi valita. Silloin tarvitaan myös *value*, joka lähetetään käsiteltäväksi, mikäli laatikko on valittu.
+*input*in tyyppi voi olla myös *password*, jolloin kirjoitettu teksti on automaattisesti piilossa, jotta ulkopuoliset tahot eivät näkisi, mikä salasana on.
+
+*input*in tyyppi voi olla myös *checkbox*. Silloin annetun tekstin eteen luodaan pieni laatikko, jonka voi valita. Silloin tarvitaan myös *value*, joka lähetetään käsiteltäväksi, mikäli laatikko on valittu.
 
 ````html
       <form>
@@ -69,6 +71,8 @@ Jos haluaa tehdä lomakkeeseen monivalinta napin, silloin useampaan *input*-elem
     <input type="file" name="poster" accept="image/png, image/jpeg" />
 </form>
 ````
+
+*date* *input*in tyyppinä avaa päiväyksenvalintaikkunan.
 
 ## Textarea
 
@@ -108,8 +112,20 @@ Kun jokin *input* halutaan liittää *label*iin, täytyy *input*iin lisätä *id
 
 ## Muita atribuutteja
 
-*input*ille voi monissa tilanteissa laittaa muitakin atribuutteja. 
+*input*ille voi monissa tilanteissa laittaa muitakin atribuutteja, joista tärkeimmät esitellään tässä. 
 
 Tärkeä atribuutti on *required* eli pakollinen. Jos tämä on lisätty *input*-elementtiin, lomaketta ei voi lähettää, jos kyseiseen *input*iin ei ole kirjoitettu mitään.
 
 *disabled* tarkoittaa, että kenttä ei ole aktiivinen eikä siihen voi kirjoittaa mitään. Useimmiten tämä on säädetty jollakin ohjelmointikielellä kuten Javascript tai PHP.
+
+*size* määrittää *input*in koon merkkimääräisenä.
+
+*maxlength* ja *minlength* määrittävät syötteen maksimi- ja minimipituudet. 
+
+*multiple* tarkoittaa, että on mahdollista antaa useampi syötä. Se toimii vain *email* ja *file* -tyyppien kanssa.
+
+*placeholder* on nimensä mukaan teksti tai arvo, joka on laitettu kenttään ja jonka tilalle voi kirjoittaa.
+
+*autofocus* tarkoittaa, että kun sivu ladataan, on kyseinen kenttä automaattisesti fokusoitu ja siihen voi alkaa kirjoittaa suoraan.
+
+*autocomplete* tarkoittaa, että selain ehdottaa syötettä perustuen aikaisempiin syötteisiin.
