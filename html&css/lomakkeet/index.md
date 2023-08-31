@@ -26,7 +26,7 @@ Lisäksi hyvällä lomakkeella pitää olla jokin tapa lähettää tiedot, usemm
     <input type="submit" name="submit"> Search
 </form>
 ````
-*input*in tyyppi voi olla myös *number*. Tällöin kentän vierelle tulee palkki, josta voi naputella numeroa suuremmaksi tai pienemmäksi, mutta siihen voi myös kirjoittaa. Sille voi antaa myös minimi- ja maksimiarvot.
+*input*in tyyppi voi olla myös *number*. Tällöin kentän vierelle tulee palkki, josta voi naputella numeroa suuremmaksi tai pienemmäksi, mutta siihen voi myös kirjoittaa. Sille voi antaa myös minimi- ja maksimiarvot. Kannattaa huomioda, että vaikka arvot näyttävät numeroilta, kun lomake lähetetään ne ovat kuitenkin merkkijonoja eli niillä ei voi suorittaa laskutoimituksia ilman tyyppimuunnosta.
 
 ````html
 <form>
@@ -72,4 +72,44 @@ Jos haluaa tehdä lomakkeeseen monivalinta napin, silloin useampaan *input*-elem
 
 ## Textarea
 
-*textarea* on suurempi tekstikenttä, jonka
+*textarea* on suurempi tekstikenttä, jonka ainoa tyyppi on teksti, joten sille ei yleensä erikseen anneta tyyppiä. Sen sijaan sille usein määritellään koko pystyriveinä (*cols*) ja vaakariveinä (*rows*).
+
+````html
+<form>
+    <textarea name="description" cols="50" rows="8"></textarea>
+</form>
+````
+
+## Select
+
+*select*illä voi tehdä alasvetovalikon, jossa on vaihtoehtoja käyttäjälle. Sen sisään vaihtoehdot lisätään *option*-tagillä.
+
+````html
+<select name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+````
+
+## Label
+
+Lomakkeessa *label*-tagia voi käyttää antamaan kuvaus jollekin *input*ille, *textarea*lle tai *select*ille. Periaatteessa sen voi tehdä myös kirjoittamalla haluttu teksti ennen tai jälkeen halutun alueen, mutta se ei toimi hyvin ruudunlukijoiden kanssa eli on semanttisesti huono tapa.
+
+Kun jokin *input* halutaan liittää *label*iin, täytyy *input*iin lisätä *id*-atribuutti. Sen lisäksi *label*issa pitää olla sitä vastaava *for*-atribuutti.
+
+````html
+<form>
+    <label for="username">Username</label>
+    <input id="username" name="username" type="text">
+</form>
+````
+
+## Muita atribuutteja
+
+*input*ille voi monissa tilanteissa laittaa muitakin atribuutteja. 
+
+Tärkeä atribuutti on *required* eli pakollinen. Jos tämä on lisätty *input*-elementtiin, lomaketta ei voi lähettää, jos kyseiseen *input*iin ei ole kirjoitettu mitään.
+
+*disabled* tarkoittaa, että kenttä ei ole aktiivinen eikä siihen voi kirjoittaa mitään. Useimmiten tämä on säädetty jollakin ohjelmointikielellä kuten Javascript tai PHP.
