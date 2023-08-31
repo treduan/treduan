@@ -42,6 +42,12 @@ printInformation: function() {
 }
 ````
 
+JavaScript-oliot saavat automaattisesti joitakin metodeja *perittynä* niiden prototyypiltä. Esim. jokaisen olion voi tulostaa merkkijonoksi sen JavaScript-olion *toString()*-metodin avulla:
+
+```js
+myObject.toString();
+```
+
 ## Ominaisuuksien valitseminen oliosta
 
 Toisin kuin tavallisessa taulukossa, olion ominaisuuksia ei valita indeksillä, vaan pisteellä. Jos haluamme tulostaa *student*-olioltamme vaikkapa syntymävuoden, se toimii seuraavalla koodilla: 
@@ -73,4 +79,4 @@ JavaScriptissä *this* viittaa aina olioon, mutta tilanteesta riippuen se olio v
 1. Luo olio lemmikkieläimestä. Anna sille nimi, laji, rotu ja ikä. Lisää sille myös taulukko suosikkileluista. Lisää vielä funktio, jolla kyseinen eläin ääntelee (esimerkiksi kissan kohdalla konsoliin tulostetaan "Miau").
 2. Tulosta erikseen lemmikin nimi ja laji.
 3. Tulosta lemmikin suosikkilelut.
-4. Tulosta lemmikin ääntely.
+4. Tulosta lemmikin ääntely kutsumalla sen funktiota.
