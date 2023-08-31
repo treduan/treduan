@@ -48,3 +48,13 @@ a:visited {
 }
 ````
 
+## Focus
+
+Kun jokin lomakkeen kenttä on valittu, voidaan lisätä *pseudo-class* *focus*, mikä ilmaisee sitä, että juuri siihen kenttään on mahdollista kirjoittaa. Tyypillisesti silloin muuttuu kentän taustaväri tai reunojen väri tai paksuus.
+
+````css
+input:focus {
+    background-color: lightblue;
+}
+````
+
