@@ -20,3 +20,18 @@ div:hover {
   width: 300px;
 }
 ````
+
+*transition*ille voi lisätä ajan, jossa siirtymä tapahtuu. Se tekee siirtymästä yleensä paremman näköisen.
+
+````css
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+div:hover {
+  width: 300px;
+}
+````
