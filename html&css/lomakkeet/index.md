@@ -145,3 +145,6 @@ Tärkeä atribuutti on *required* eli pakollinen. Jos tämä on lisätty *input*
 *autocomplete* tarkoittaa, että selain ehdottaa syötettä perustuen aikaisempiin syötteisiin.
 
 ## Demotehtävä
+
+1. Luo uusi HTML-tiedosto. Luo siihen ilmoittautumislomake tapahtumaa varten.
+2. Lomake kysyy nimeä, sähköpostia ja puhelinnumeroa.
