@@ -29,7 +29,7 @@ body {
     height: 200px;
     width: 200px;
     background-color: blue;
-    transition: width 3s;
+    transition: width 3s, transform 1s;
 }
 .red:hover {
     width: 400px;
@@ -37,4 +37,5 @@ body {
 }
 .blue:hover {
     width: 400px;
+    transform: rotate(45deg);
 }
