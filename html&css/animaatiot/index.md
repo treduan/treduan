@@ -187,7 +187,7 @@ Oletuksena on, että animaation loputtua tyyli palaa takaisin alkuperäiseksi el
 
 1. Luo uusi HTML-sivu, jolle teet kaksi *div*-elementtiä, joille annat haluamasi luokat (esim. *first* ja *second*).
 2. Luo CSS-tiedosto ja linkitä se HTML-tiedostoon.
-3. Anna *div*eille koko (esim. 200px molempiin suuntiin) ja jokin taustaväri. Anna myös marginaalia ylös, jotta ne eivät ole kiinni toisissaan.
+3. Anna *div*eille koko (esim. 200px molempiin suuntiin) ja jokin taustaväri. Anna myös marginaalia, jotta ne eivät ole kiinni toisissaan.
 4. Tee ensimmäiselle *div*ille *hover*-efekti eli sille ilmestyy paksut reunukset (*border*) sekä se vääntyy (*skew*). Kokeile eri nopeustyylejä esim. *ease-out*.
 5. Tee toiselle *div*ille animaatio, jossa sen väri vaihtuu kaksi kertaa ja se liikkuu oikealle 500px ja takaisin. Testaa eri nopeuksia ja nopeustyylejä. Laita se liikkumaan loputtomiin.
 
