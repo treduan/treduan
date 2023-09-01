@@ -20,6 +20,7 @@ div:hover {
   width: 300px;
 }
 ````
+## Nopeus
 
 *transition*ille voi lisätä ajan, jossa siirtymä tapahtuu. Se tekee siirtymästä yleensä paremman näköisen.
 
@@ -35,3 +36,10 @@ div:hover {
   width: 300px;
 }
 ````
+
+Nopeudelle voi myös määrittää tyylin eli sen, onko nopeus koko ajan sama vai vaihteleeko se muutoksen aikana. Oletuksena on *ease* eli siirtymä on alussa ja lopussa vähän hitaampi kuin keskellä. 
+
+- linear - siirtymä on yhtä nopea koko ajan alusta loppuun 
+- ease-in - siirtymä on hitaampi alussa 
+- ease-out - siirtymä on hitaampi lopussa
+- ease-in-out - siirtymä on hitaampi sekä alussa että lopussa

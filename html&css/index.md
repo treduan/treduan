@@ -14,3 +14,4 @@
 - [Asettelu](./asettelu/index.md)
 - [Efektejä (hover, active, visited)](./efektit/index.md)
 - [Harjoitus 2: Single Page Website](./harjoitus2/index.md)
+- [Lomakkeet](./lomakkeet.index.md)
