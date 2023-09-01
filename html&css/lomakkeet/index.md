@@ -97,6 +97,20 @@ Jos haluaa tehdä lomakkeeseen monivalinta napin, silloin useampaan *input*-elem
 </select>
 ````
 
+## Napit (button)
+
+*input* muuttuu napiksi, kun sen tyyppi on joko *submit*, *button*, *reset* tai *image*. *submit* on nimensä mukaan tietojen lähetysnappi. *reset* toimii automaattisesti tietojen tyhjentämiseen. *button*ille voi antaa omat arvonsa. *image* on kuvallinen nappi, jolle voi antaa omat arvot.
+
+Lomakkeessa voi käyttää myös tagia ``<button>``, mutta silloin joutuu kirjoittamaan pikkuisen enemmän koodia.
+
+Esimerkissä luodaan *input*ista nappi, joka luo alert-ikkunan, jossa lukee "Hello World!". Napissa lukee "Click Me!" 
+
+````html
+<form>
+    <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+</form>
+````
+
 ## Label
 
 Lomakkeessa *label*-tagia voi käyttää antamaan kuvaus jollekin *input*ille, *textarea*lle tai *select*ille. Periaatteessa sen voi tehdä myös kirjoittamalla haluttu teksti ennen tai jälkeen halutun alueen, mutta se ei toimi hyvin ruudunlukijoiden kanssa eli on semanttisesti huono tapa.
@@ -129,3 +143,5 @@ Tärkeä atribuutti on *required* eli pakollinen. Jos tämä on lisätty *input*
 *autofocus* tarkoittaa, että kun sivu ladataan, on kyseinen kenttä automaattisesti fokusoitu ja siihen voi alkaa kirjoittaa suoraan.
 
 *autocomplete* tarkoittaa, että selain ehdottaa syötettä perustuen aikaisempiin syötteisiin.
+
+## Demotehtävä
