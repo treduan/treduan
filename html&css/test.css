@@ -13,15 +13,3 @@
     border-radius: 25px;
     background-color: lightblue;
 }
-
-.highdiv {
-    height: 350px;
-    width: 200px;
-    background-color: lightseagreen;
-}
-
-.widediv {
-    height: 100px;
-    width: 250px;
-    background-color: lightslategray;
-}
