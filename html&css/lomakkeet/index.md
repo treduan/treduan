@@ -148,3 +148,9 @@ Tärkeä atribuutti on *required* eli pakollinen. Jos tämä on lisätty *input*
 
 1. Luo uusi HTML-tiedosto. Luo siihen ilmoittautumislomake tapahtumaa varten.
 2. Lomake kysyy nimeä, sähköpostia ja puhelinnumeroa.
+3. Lomakkeella voi valita päivämäärän, jolloin hän haluaa tulla tapahtumaan.
+4. Lomakkeella on monivalinta, jossa kysytään, yöpyykö käyttäjä tapahtumapaikalla, yöpyykö hän jossain muualla tai onko hän vain päiväkäynnillä.
+5. Lomakkeella on tekstialue, johon käyttäjä voi kirjoittaa ruoka-aineallergiansa.
+6. Lomakkeella on alasvetovalikko, josta käyttäjä voi valita neljästä ruoka-annoksesta mieluisensa.
+7. Lomakkeella on valinta, jossa käyttäjä voi valita, tarvitseeko hän aamupalan.
+8. Lomakkeella on napit, joilla lomakkeen voi tyhjentää ja jolla lomakkeen voi lähettää.
