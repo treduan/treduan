@@ -7,11 +7,10 @@ Tee Visual Studio Code:lla uusi tiedosto, nimeä se *harjoitukset3.js*. Avaa VS:
 
 ## Tehtävä 1
 
-Tee taulukko (array), johon tallennat viisi muistettavaa asiaa (muistilista). Tallenna taulukko muuttujaan. Tulosta taulukon alkiot ranskalaisin viivoin consolille kolmella eri tavalla:
+Tee taulukko (array), johon tallennat viisi muistettavaa asiaa (muistilista). Tallenna taulukko muuttujaan. Tulosta taulukon alkiot ranskalaisin viivoin consolille kahdella eri tavalla:
 
 - for-loopin avulla
 - foreach()-metodin avulla
-- toString() - metodin avulla
 
 
 ## Tehtävä 2
