@@ -2,6 +2,8 @@
 
 ## Osuudet
 
+### Perusohjelmointi JavaScriptillä
+
 - [Johdanto](./johdatus/index.md)
 - [Muuttujat ja tyypit](./muuttujat/index.md)
 - [Muuttujien muuntaminen](./matemaattiset/index.md)
@@ -13,3 +15,7 @@
 - [Kaksiulotteiset taulukot](./kaksiulotteiset/index.md)
 - [Oliot](./oliot/index.md)
 - [Harjoitukset 3](./harjoitukset3/index.md)
+
+### JavaScript selaimessa
+
+- [JavaScriptin lisääminen HTML:ään](./html/index.md)
