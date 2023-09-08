@@ -30,3 +30,13 @@ scores.forEach((score) => {
 })
 
 console.log(typeof(this));
+
+
+const teams = [
+    {name: "Hervannan joukkue", members: 8, representative: "John Doe"},
+    {name: "Vuoreksen Joukkue", members: 4, representative: "Jane Doe"},
+    {name: "Hallilan joukkue", members: 7, representative: "Mark Mayhem"},
+    {name: "Lukonmäen joukkue", members: 10, representative: "Milly Mae"},
+    {name: "Kaukajärven joukkue", members: 9, representative: "Peter Potter"},
+    {name: "Annalan joukkue", members: 3, representative: "Pia Peer"}
+];
