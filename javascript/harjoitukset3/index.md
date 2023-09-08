@@ -44,3 +44,31 @@ Tee kaksiulotteinen taulukko, jossa on päiväjärjestys eli jokaisella rivillä
 ## Lisätehtävä 1
 
 Kokeile lisätä henkilötieto-oliolle tehtävästä 5 metodi, joka tekee tulostuksen. Metodi on funktio, joka liitetään olion ominaisuudeksi. Tulosta yksi olio konsolille metodin avulla. Vinkki: muista käyttää *this*.
+
+## Lisätehtävä 2 
+Laadi pieni ohjelma, joka tervehtii Sinua päivän ajankohdasta riippuen eri tavoilla. Oikean ajankohdan saat seuraavasti:
+
+let time = new Date().getHours();
+
+Testaa myös keksityillä ajankohdilla, jotta näet, että kaikki ajankohdat toimivat.
+
+Jos aika on alle 10, ohjelma tervehtii "Hyvää huomenta"
+Jos aika on alle 18, ohjelma tervehtii "Hyvää päivää"
+Jos aika on alle 21, ohjelma tervehtii "Hyvää iltaa"
+Muuten ohjelma tervehtii "Hyvää yötä"
+Mieti, mikä ehtorakenne antaa luontevimman ratkaisun.
+
+## Lisätehtävä 3
+
+Kisaa varten on ilmoittautunut muutama joukkue. Valitettavasti mukaan pääsevät vain ne, joissa on vähintään viisi jäsentä. Tulosta niiden joukkueiden nimet ja yhteyshenkilöt, joissa on viisi tai useampi jäsentä. Tulosta myös osallistujien kokonaismäärä.
+
+````js
+const teams = [
+    {name: "Hervannan joukkue", members: 11, representative: "John Doe"},
+    {name: "Vuoreksen Joukkue", members: 4, representative: "Jane Doe"},
+    {name: "Hallilan joukkue", members: 7, representative: "Mark Mayhem"},
+    {name: "Lukonmäen joukkue", members: 10, representative: "Milly Mae"},
+    {name: "Kaukajärven joukkue", members: 9, representative: "Peter Potter"},
+    {name: "Annalan joukkue", members: 3, representative: "Pia Peer"}
+];
+````
