@@ -18,4 +18,4 @@
 - [Animaatiot](./animaatiot/index.md)
 - [Responsiivisuus](./responsiivisuus/index.md)
 
-- [Lisätehtävät 1](./lisatahtavat/index.md)
+- [Lisätehtävät 1](./lisatehtavat/index.md)
