@@ -68,8 +68,8 @@ window.alert(5 + 6);
 
 ## Demotehtävä 1
 
-1. Luo uusi HTMl dokumentti. 
+1. Luo uusi HTML dokumentti. 
 2. Lisää dokumenttiin ``<h1>``, jossa lukee "Moi!"
 3. Lisää dokumenttiin myös nappi, jossa lukee "Muuta otsikko". 
 4. Lisää dokumenttiin JavaScript koodi, joka valitsee otsikon ja muuttaa sen muotoon "Hei kaikki!", kun nappia painetaan.
-5. Lisää samalle napin painallukselle myös konsoliteksti, jossa kerrotaan "Nappia painettiin". Huom, tätä varten on tehtävä funktio ``<script>``in sisään.
+5. Lisää samalle napin painallukselle myös konsoliteksti, jossa kerrotaan "Nappia painettiin". Huom, tätä varten on tehtävä funktio ``<script>``in sisään. Ei ole mahdollista lisätä useampia toimintoja suoraan napin *onClick*-ominaisuuteen.
