@@ -179,7 +179,7 @@ div {
 
 Oletuksena on, että animaation loputtua tyyli palaa takaisin alkuperäiseksi eli *animation-fill-mode* on *none*, mutta tätä voi muokata halutessaan.
 
-*forwards* tarkoittaa, että tyyliksi jää *keyframes*in viimeisin arvo. Tämä tosin ei toimi esimerkiksi silloin, jos *animation-iteration-count* in *infinite*.
+*forwards* tarkoittaa, että tyyliksi jää *keyframes*in viimeisin arvo. Tämä tosin ei toimi esimerkiksi silloin, jos *animation-iteration-count* on *infinite*.
 
 *backwards* tarkoittaa, että tyyliksi jää *keyframes*in ensimmäinen arvo.
 
