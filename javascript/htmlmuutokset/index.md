@@ -73,3 +73,37 @@ window.alert(5 + 6);
 3. Lisää dokumenttiin myös nappi, jossa lukee "Muuta otsikko". 
 4. Lisää dokumenttiin JavaScript koodi, joka valitsee otsikon ja muuttaa sen muotoon "Hei kaikki!", kun nappia painetaan.
 5. Lisää samalle napin painallukselle myös konsoliteksti, jossa kerrotaan "Nappia painettiin". Huom, tätä varten on tehtävä funktio ``<script>``in sisään. Ei ole mahdollista lisätä useampia toimintoja suoraan napin *onClick*-ominaisuuteen.
+
+## Lomakkeiden käsittely
+
+Yksi yleisimpiä tapoja, millä käyttäjä kommunikoi verkkosivun kanssa, on lomakkeet. JavaScriptillä on mahdollista käsitellä lomakkeella otettuja tietoja.
+
+Alla lomakkeella annetaan nimi, joka sitten kirjoitetaan lomakkeen alla olevaan aluksi tyhjään elementtiin.
+
+````html
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    const showInput = () => {
+        let input = document.getElementById("name").value;
+        document.getElementById("demo").innerHTML = "Hello, " + input + "!";
+    }
+</script>    
+<h1>My First Web Page</h1>
+
+<form>
+    <label for="name">Enter your name</label>
+    <input id="name" name="name" type="text">
+    <input type="button" onclick="showInput()" value="Try it">
+</form>
+<p id="demo"></p>
+</body>
+</html>
+````
+
+## Demotehtävä
+
+1. Luo uusi HTML-sivu.
+2. Tee sivulle lomake, jolla käyttäjä voi rekisteröityä kuvitteelliseen palveluun. Kenttinä on oltava nimi, sähköposti ja salasana.
+3. Kun käyttäjä painaa nappia, ruudulle tulee teksti, jossa kiitetään henkilöä rekisteröitymisestä ja sanotaan, että vahvistusviesti tulee annettuun sähköpostiin. Viestissä pitää näkyä nimi ja sähköposti.

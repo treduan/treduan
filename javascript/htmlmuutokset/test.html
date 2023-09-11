@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    const showInput = () => {
+        let input = document.getElementById("name").value;
+        document.getElementById("demo").innerHTML = "Hello, " + input + "!";
+    }
+</script>    
+<h1>My First Web Page</h1>
+
+<form>
+    <label for="name">Nimi</label>
+    <input id="name" name="name" type="text">
+    <input type="button" onclick="showInput()" value="Try it">
+</form>
+<p id="demo"></p>
+</body>
+</html>

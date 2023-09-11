@@ -19,3 +19,4 @@
 ### JavaScript selaimessa
 
 - [JavaScriptin lisääminen HTML:ään](./html/index.md)
+- [Elementtien muuttaminen JavaScriptillä](./htmlmuutokset/index.md)
