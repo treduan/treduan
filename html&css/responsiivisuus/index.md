@@ -80,14 +80,21 @@ Pienellä ruudulla taas voi olla järkevämpää valita kuvasta vain tärkein el
 
  ![linnapuutarhan linna](linnapuutarhalinna.jpg)
 
- ## Testaaminen
+ ### Testaaminen
 
  Selaimen kehittäjätyökaluissa on mahdollisuus valita mobiilinäkymä sekä säätää selaimen leveyttä siinä näkymässä.
 
  ![Kehittäjätyökalujen mobiilinäyttö](mobiilinaytto.png)
 
- ## Lisätietoa
+ ### Lisätietoa
 
 - Tutustu @media-säännön käyttöön [@media w3school](https://www.w3schools.com/cssref/css3_pr_mediaquery.asp)
 - Video @media-säännön käytöstä  
 [HTML5 and CSS3 Responsive design with media queries](https://www.youtube.com/watch?v=fA1NW-T1QXc)
+
+### Demotehtävä
+
+1. Luo uusi HTML-tiedosto.
+2. Etsi jokin kuva, joka sopii taustakuvaksi leveällä näytöllä (eli kuva, joka on selkeästi korkeuttaan leveämpi. Voit käyttää esimerkiksi LinkedIn-banneriasi). Pienennä tai rajaa siitä PhotoShopilla pienempi kuva, joka sopii mobiiliversioon. 
+3. Aseta kuva taustakuvaksi ``<header>``iin niin, että leveällä näytöllä käytetään leveää kuvaa ja kapealla kapeaa kuvaa. Kirjoita sen päälle jokin otsikko.
+4. Lisää kuvan alle navigointipalkki, jossa on vähintään neljä linkkiä. Asettele se niin, että leveällä näytöllä linkit ovat vierekkäin ja kapealla näytöllä ne ovat allekkain.
