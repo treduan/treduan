@@ -42,3 +42,7 @@ Savulohisalaatti ja kokin sämpylä Naudan paahtopaistia, punaviinikastiketta, k
 
 # Tehtävä 2: Palautelomake
 Tee ravintolalle asiakaspalautelomake, jossa kysytään mahdollisimman monipuolisesti ravintolakokemuksesta. Muista kysyä ainakin päivämäärä, jolloin asiakas on käynyt ravintolassa, kuinka kauan ruokaa joutui odottamaan, palauttetta ruoan mausta, lämpötilasta, ulkonäöstä, hinnasta, palvelusta, vapaan palautteen kenttä jne. Anna mahdollisuus jättää yhteystiedot, jos asiakas haluaa että ravintola ottaa häneen yhteyttä. Linkitä palautelomake ravintolan pääsivulle. Muokkaa CSS-tiedostoa niin, että saat lomakkeen tyylin sopimaan ravintolan pääsivun tyyliin (voit myös tehdä uuden CSS-tiedoston lomakkeelle).
+
+# Tehtävä 3: Tee sivustosta responsiivinen
+
+Säädä sivustoa siten, että se toimii hyvin myös kapealla mobiililaitteella.
