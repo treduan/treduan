@@ -76,6 +76,6 @@ const myFunction = () => {
 ## Demotehtävä
 
 1. Luo uusi HTML-sivu tai käytä edellisessä demossa tehtyä pohjaa (lomake, jolla rekisteröidytään).
-2. Lisätään lomakkeelle validointia eli sisällön tarkistusta. Nimen pituuden täytyy olla vähintään kaksi merkkiä. Jotta lomake ei ota välilyöntejä merkeiksi, tee syötteelle ensin *trim()* (eli sijoita funktion sisään annettu syöte). Jos tämän jälkeen nimen pituus on lyhyempi kuin kaksi merkkiä, luo virheilmoitus, että nimi on liian lyhyt.
+2. Lisätään lomakkeelle validointia eli sisällön tarkistusta. Nimen pituuden täytyy olla vähintään kaksi merkkiä. Jotta lomake ei ota tyhjiä välilyöntejä merkeiksi, tee syötteelle ensin *trim()* (eli sijoita funktion sisään annettu syöte). Tämä poistaa mahdolliset välilyönnit syötteen alusta ja lopusta. Jos tämän jälkeen nimen pituus on lyhyempi kuin kaksi merkkiä, luo virheilmoitus, että nimi on liian lyhyt.
 3. Salasana pitää kirjoittaa kaksi kertaa. Jos salasanat eivät täsmää, luodaan virheilmoitus, että salasanat eivät täsmää. 
-4. Vasta kun syöte on kunnossa, lähetetään ilmoitus, jossa henkilö toivotetaan tervetulleeksi ja hänen sähköpostiinsa on lähetetty vahvistuslinkki. Varsinainen validointi kannattaa laittaa omaan funktioonsa, joka palauttaa booleanin. Jos se palauttaa *true*, näytetään viesti, muuten näytetään virheet.
+4. Vasta kun syöte on kunnossa, lähetetään ilmoitus, jossa henkilö toivotetaan tervetulleeksi ja hänen sähköpostiinsa on lähetetty vahvistuslinkki. Varsinainen validointi kannattaa laittaa omaan funktioonsa, joka palauttaa booleanin. Jos se palauttaa *true*, näytetään viesti tietoineen, muuten näytetään virheet.

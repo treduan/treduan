@@ -102,8 +102,16 @@ Alla lomakkeella annetaan nimi, joka sitten kirjoitetaan lomakkeen alla olevaan 
 </html>
 ````
 
-## Demotehtävä
+## Demotehtävä 2
 
 1. Luo uusi HTML-sivu.
 2. Tee sivulle lomake, jolla käyttäjä voi rekisteröityä kuvitteelliseen palveluun. Kenttinä on oltava nimi, sähköposti ja salasana.
 3. Kun käyttäjä painaa nappia, ruudulle tulee teksti, jossa kiitetään henkilöä rekisteröitymisestä ja sanotaan, että vahvistusviesti tulee annettuun sähköpostiin. Viestissä pitää näkyä nimi ja sähköposti.
+4. Muotoile sivu.
+
+## Demotehtävä 3
+
+1. Luo uusi HTML-sivu.
+2. Sivu on taksimatkalaskuri. Luo sivulle lomake, jossa käyttäjä antaa matkustajien määrän, kilometrimäärän sekä aloituskellonajan.
+3. Harjoituksissa 1 tehtävässä 7 laskettiin taksimatkan hintaa. Kopioi kyseinen funktio, mutta lisää vielä se, että jos aloituskellonaika on 22-24 tai 0-6, aloitusmaksu on 7,40 €. Muuten se on 5,40 €. Muokkaa funktiota tarvittavasti.
+4. Näytä taksimatkan hinta sivulla.
