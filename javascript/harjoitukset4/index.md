@@ -7,3 +7,5 @@ Tee BMI-laskuri, johon yhdistät HTML:ää ja JavaScriptiä. Tee lomake, joka ot
 ## Tehtävä 2
 
 ## Tehtävä 3
+
+Tee nelilaskin, joka voi tehdä peruslaskutoimitukset eli lisäämisen, vähentämisen, kertomisen ja jakamisen. Luo ensin HTML-pohja, jossa on tarvittavat napit aseteltuna järkevästi. Sitten tee funktiot, miten saisit laskimen toimimaan. Nappien yläpuolelle pitää saada näkymään sekä laskutoimitus että laskutoimituksen tulos, kun "="-nappia painetaan.
