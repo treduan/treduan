@@ -115,3 +115,7 @@ Alla lomakkeella annetaan nimi, joka sitten kirjoitetaan lomakkeen alla olevaan 
 2. Sivu on taksimatkalaskuri. Luo sivulle lomake, jossa käyttäjä antaa matkustajien määrän, kilometrimäärän sekä aloituskellonajan.
 3. Harjoituksissa 1 tehtävässä 7 laskettiin taksimatkan hintaa. Kopioi kyseinen funktio, mutta lisää vielä se, että jos aloituskellonaika on 22-24 tai 0-6, aloitusmaksu on 7,40 €. Muuten se on 5,40 €. Muokkaa funktiota tarvittavasti.
 4. Näytä taksimatkan hinta sivulla.
+
+## Elementtien luominen
+
+JavaScriptillä voidaan myös luoda uusia elementtejä. Näin toimitaan erityisesti, jos meillä on taulukkoja, joiden tietoja haluamme esittää sivustolla.
