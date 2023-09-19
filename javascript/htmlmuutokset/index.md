@@ -118,4 +118,35 @@ Alla lomakkeella annetaan nimi, joka sitten kirjoitetaan lomakkeen alla olevaan 
 
 ## Elementtien luominen
 
-JavaScriptillä voidaan myös luoda uusia elementtejä. Näin toimitaan erityisesti, jos meillä on taulukkoja, joiden tietoja haluamme esittää sivustolla.
+JavaScriptillä voidaan myös luoda uusia elementtejä. Näin toimitaan erityisesti, jos meillä on JavaScript-taulukkoja tai listoja, joiden tietoja haluamme esittää sivustolla ja joiden sisältö tai pituus eivät välttämättä ole ennalta selvät. Tapoja on muutama erilainen, joista yksi on tässä eli tässä käytetään *forEach*-metodia. Ensin HTML-sivulle luodaan tyhjä lista, jolla on id. JavaScriptin sisään kirjoitetaan lista. Ensin valitaan lista uudeksi muuttujaksi, jotta sitä voidaan muokata. Sitten käydään läpi lista *forEach*illa. Blokin sisällä luodaan uusi muuttuja, jossa luodaan uusi elementti, jonka arvo on *li*. Sen sisällöksi laitetaan listan *item*. Lopuksi se liitetään HTML-listaelementtiin.
+
+````html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test</title> 
+</head>
+<body>
+    <ul id="myList"></ul>
+    <script>
+        let data = ["Ram", "Shyam",
+                    "Sita", "Gita"];
+        let list =
+            document.getElementById("myList");
+ 
+        data.forEach((item) => {
+            let li =
+                document.createElement("li");
+            li.innerText = item;
+            list.appendChild(li);
+        });
+    </script>
+</body>
+ </html>
+````
+
+## Demotehtävä 4
+
+1. Luo uusi HTML-sivu.
+2. Tee sivulle lomake, jolla voidaan lisätä listaan to-do -tehtävä (tai mikä tahansa sana) nappia painamalla.
+3. Näytä lista sivulla.
