@@ -118,7 +118,7 @@ Alla lomakkeella annetaan nimi, joka sitten kirjoitetaan lomakkeen alla olevaan 
 
 ## Elementtien luominen
 
-JavaScriptillä voidaan myös luoda uusia elementtejä. Näin toimitaan erityisesti, jos meillä on JavaScript-taulukkoja tai listoja, joiden tietoja haluamme esittää sivustolla ja joiden sisältö tai pituus eivät välttämättä ole ennalta selvät. Tapoja on muutama erilainen, joista yksi on tässä eli tässä käytetään *forEach*-metodia. Ensin HTML-sivulle luodaan tyhjä lista, jolla on id. JavaScriptin sisään kirjoitetaan lista. Ensin valitaan lista uudeksi muuttujaksi, jotta sitä voidaan muokata. Sitten käydään läpi lista *forEach*illa. Blokin sisällä luodaan uusi muuttuja, jossa luodaan uusi elementti, jonka arvo on *li*. Sen sisällöksi laitetaan listan *item*. Lopuksi se liitetään HTML-listaelementtiin.
+JavaScriptillä voidaan myös luoda uusia elementtejä. Näin toimitaan erityisesti, jos meillä on JavaScript-taulukkoja tai listoja, joiden tietoja haluamme esittää sivustolla ja joiden sisältö tai pituus eivät välttämättä ole ennalta selvät. Tapoja on muutama erilainen, joista yksi on tässä eli tässä käytetään *forEach*-metodia. Ensin HTML-sivulle luodaan tyhjä lista, jolla on id. JavaScriptin sisään kirjoitetaan lista. Ensin valitaan HTML-lista uudeksi muuttujaksi, jotta sitä voidaan muokata. Sitten käydään läpi lista *forEach*illa. Blokin sisällä luodaan uusi muuttuja, jossa luodaan uusi elementti, jonka arvo on *li*. Sen sisällöksi laitetaan listan *item* muuttaen ominaisuutta *innerText*. Lopuksi se liitetään HTML-listaelementtiin.
 
 ````html
 <!DOCTYPE html>
