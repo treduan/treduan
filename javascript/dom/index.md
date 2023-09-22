@@ -41,4 +41,5 @@ Näitä asioita voi kirjoittaa joko HTML-koodiin *script*-tagin sisään, erilli
 3. Tutki *elements*-välilehteä ja etsi sieltä kaikki *label*-elementit ja katso niiden tyylit napsauttamalla jotain niistä.
 4. Vaihta *console*-välilehdelle ja ala kirjoittaa JavaScript-koodia.
 5. Valitse kaikki *label*-elementit ja muuta niiden väri punaiseksi (muista, että kyseessä on taulukko).
+6. Muuta myös koko sivun tausta vaaleansiniseksi (aliceblue).
 
