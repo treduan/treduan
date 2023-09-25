@@ -6,7 +6,7 @@ Tee BMI-laskuri, johon yhdistät HTML:ää ja JavaScriptiä. Kirjoita JavaScript
 
 ## Tehtävä 2
 
-Tee HTML-sivu, jolla on numeronarvauspeli. Kirjoita JavaScript omaan tiedostoonsa, jonka linkität HTML-sivulle. Peli arpoo numeron välillä 1-10. Käyttäjän kuuluu arvata se eli hänen kuuluu kirjoittaa arvauksensa lomakekenttään. Jos luku on suurempi, se ilmoittaa sen, samoin jos luku on pienempi. Näkyvillä pitää olla myös arvausten lukumäärä. Kun vastaus on oikein, peli ilmoittaa sen. Peli ei ole heti sivulla näkyvillä, vaan se tulee näkyviin vasta nappia painamalla. Kun peli on pelattu loppuun, napissa lukee "Pelaa uudelleen". Nappia painamalla myös arvotaan uusi numero. Pelin yläreunassa lukee pelattujen pelien kokonaismäärä sekä tehtyjen arvausten kokonaismäärä.
+Tee HTML-sivu, jolla on numeronarvauspeli. Kirjoita JavaScript omaan tiedostoonsa, jonka linkität HTML-sivulle. Peli arpoo numeron välillä 1-10. Käyttäjän kuuluu arvata se eli hänen kuuluu kirjoittaa arvauksensa lomakekenttään. Jos luku on suurempi, se ilmoittaa sen, samoin jos luku on pienempi. Näkyvillä pitää olla myös arvausten lukumäärä. Kun vastaus on oikein, peli ilmoittaa sen. Peli ei ole heti sivulla näkyvillä, vaan se tulee näkyviin vasta nappia painamalla. Napissa lukee "Pelaa". Kun peli on pelattu loppuun, napissa lukee "Pelaa uudelleen". Nappia painamalla myös arvotaan uusi numero. Pelin yläreunassa lukee pelattujen pelien kokonaismäärä sekä tehtyjen arvausten kokonaismäärä.
 
 ## Tehtävä 3
 
