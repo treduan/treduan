@@ -82,3 +82,6 @@ const myFunction = () => {
 
 # Ongelmien etsintä
 
+Kun koodiin tulee virheitä, luonnollisesti ensin katsomme erilaisia virheilmoituksia. Koodieditori näyttää useimmat syntaksivirheet sekä kirjoitusvirheet. Silloin on tarpeen tarkistaa kyseisen koodin käyttö eli ovatko esimerkiksi sulut oikeanlaiset, sillä kaarisulkujen ja aaltosulkujen välillä on eronsa ja kaikille pitää aina löytää pari.
+
+Virheilmoitukset konsolissa tai selaimessa kertovat myös siitä, minkä tyyppinen virhe on kyseessä, ja usein se kertoo myös, missä kohtaa virhe ilmenee. On hyvä opetella lukemaan näitä virheilmoituksia, mutta nekään eivät aina kerro kaikkea ja joskus johtavat harhaan. Lisää JavaScriptin virheilmoituksista voi lukea [täältä](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors)<base target="_blanck">
