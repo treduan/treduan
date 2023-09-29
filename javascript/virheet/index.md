@@ -80,6 +80,37 @@ const myFunction = () => {
 3. Salasana pitää kirjoittaa kaksi kertaa. Jos salasanat eivät täsmää, luodaan virheilmoitus, että salasanat eivät täsmää. 
 4. Vasta kun syöte on kunnossa, lähetetään ilmoitus, jossa henkilö toivotetaan tervetulleeksi ja hänen sähköpostiinsa on lähetetty vahvistuslinkki. Varsinainen validointi kannattaa laittaa omaan funktioonsa, joka palauttaa booleanin. Jos se palauttaa *true*, näytetään viesti tietoineen, muuten näytetään virheet.
 
+
+# Error-luokan käyttäminen
+
+Vaikka virheilmoituksille voidaan antaa monia eri arvoja, on suositeltua, että siihen käytetään varsinaista virheluokkaa. Oman virheluokan voi luoda myös itse. Siihen käytetään olio-ohjelmointia, jota opiskelemme tarkemmin myöhemmin. Scriptiin voimme luoda seuraavaa koodia mukaillen oman luokan.
+
+````js
+  class ValidationError extends Error {
+    constructor(message) {
+        super(message);
+        this.name = "ValidationError";
+    }
+}
+````
+
+Oleellista on huomata ensimmäisen rivin *extends Error*, mikä tarkoittaa, että se saa ominaisuuksia JavaScriptin yleiseltä *Error*-oliolta. Sitä voidaan käyttää seuraavalla tavalla scriptin sisällä (oletuksena on, että kyseisellä HTML-sivulla on lomake sekä elementti, jonka id on *demo* eli koko tiedosto ei ole näkyvissä).
+
+````js
+const showInput = () => {
+        try {        
+            let input = document.getElementById("name").value;
+            if (input === "") {
+                throw new ValidationError("The name cannot be empty.");
+            }
+            document.getElementById("demo").innerHTML = "Hello, " + input + "!";
+    }
+    catch(error) {
+        document.getElementById("demo").innerHTML = error.message;
+    }
+}
+````
+
 # Ongelmien etsintä
 
 Kun koodiin tulee virheitä, luonnollisesti ensin katsomme erilaisia virheilmoituksia. Koodieditori näyttää useimmat syntaksivirheet sekä kirjoitusvirheet. Silloin on tarpeen tarkistaa kyseisen koodin käyttö eli ovatko esimerkiksi sulut oikeanlaiset, sillä kaarisulkujen ja aaltosulkujen välillä on eronsa ja kaikille pitää aina löytää pari.
