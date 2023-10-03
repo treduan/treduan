@@ -1,17 +1,14 @@
-
 .products
 {
-    display: grid;
-    column-gap: 10px;
-    row-gap: 20px;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
 }
 .subdiv {
-
+    flex-basis: 300px;
+    flex-grow: 1;
+    margin: 10px;
     padding: 1em;
-    border-style: solid;
-    border-width: 3px;
+    border: solid 3px rgb(22, 139, 102);
     border-radius: 25px;
     background-color: rgb(178, 224, 199);
 }
