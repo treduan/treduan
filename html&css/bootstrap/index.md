@@ -1,6 +1,8 @@
 # Bootstrap
 
-Bootstrap on muotoilukirjasto, jolla voi osin tai täysin korvata CSS:n käytön HTML:n muotoilussa. Siinä on myös sisään rakennettuja toiminnallisuuksia, joilla voi osin korvata JavaScriptiä. Opettelemme käyttämän versiota 3, mutta myös versiot 4 ja 5 ovat olemassa (kaikki selaimet eivät tue niitä, mistä syystä keskitymme vähän vanhempaan versioon). Bootstrapin merkittävin hyöty on siinä, että sitä käyttämällä suurin osa elementeistä on helposti responsiivisia eli ne skaalautuvat näytön leveyden mukaan, kun niitä käytetään oikein. Bootstrapin muotoilut yhdistetään elementin luokkaan eli *class*iin.
+Bootstrap on muotoilukirjasto, jolla voi osin tai täysin korvata CSS:n käytön HTML:n muotoilussa. Siinä on myös sisään rakennettuja toiminnallisuuksia, joilla voi osin korvata JavaScriptiä. Kun sitä osaa käyttää, on mahdollista luoda siistin näköisiä sivuja nopeammin. Toisaalta yhtä aikaa menettää hieman vapautta tehdä omannäköistä tyyliä. Bootstrapin merkittävin hyöty on siinä, että sitä käyttämällä suurin osa elementeistä on helposti responsiivisia eli ne skaalautuvat näytön leveyden mukaan, kun niitä käytetään oikein. Bootstrapin muotoilut yhdistetään elementin luokkaan eli *class*iin.
+
+Opettelemme käyttämän versiota 3, mutta myös versiot 4 ja 5 ovat olemassa (kaikki selaimet eivät tue niitä, mistä syystä keskitymme vähän vanhempaan versioon). Emme käy läpi kaikkia Bootstrapin mahdollisuuksia, vaan tutustumme siihen sen verran, että on mahdollista etsiä siitä lisää hyödyllisiä ominaisuuksia. 
 
 ## Bootstrapin ottaminen käyttöön
 
@@ -25,6 +27,8 @@ Jotta sitä voidaan käyttää, täytyy HTML-tiedostoon linkittää joitakin asi
 
 ## Bootstrapin ominaisuuksia
 
+Useimmat elementit on kannattavaa laittaa luokan *container* sisään. Se antaa niille järkevät marginaalit useimmissa tapauksissa.
+
 ### Grid
 
 CSS:ssä on asettelussa mahdollista käyttää *grid*iä tai muita asettelumenetelmiä, mutta Bootstrapissa se on ensisijainen asettelutyökalu. Bootstrapin gridissä on kaksitoista pystyriviä, joista on mahdollista jakaa tilaa elementeille. Alla olevassa kuvassa on demonstroitu, miten sivun voi jakaa joko tasakokoisiin tai vaihtuvakokoisiin paloihin.
@@ -47,13 +51,15 @@ Jotta pääsemme käyttämään Bootsrapin gridiä, ensin meidän pitää määr
 </div>
 ````
 
+
 ## Demotehtävä 1
 
 1. Luo uusi HTML-sivu, jolle linkkaat tarvittavan Bootstrapin (voit kopioida ylempänä olevan pohjan).
 2. Luo sivulle neljä elementtiä, joihin kirjoitat jotain tekstiä.
 3. Asettele nämä elementit niin, että leveällä ruudulla kolmas elementti vie tilaa yhtä paljon kuin kolme muuta yhteensä, ja kapealla ruudulla ne asettuvat allekkain.
+4. Laita kaikki elementit luokan *container* sisään ja katso, millainen ero asettelussa on.
 
-## Tekstinkäsittely
+### Tekstinkäsittely
 
 Yksittäiselle elementille voidaan antaa monta eri luokkaa, jolloin ne erotetaan välilyönnillä.
 
@@ -68,3 +74,11 @@ Esimerkiksi tekstin taustan värin voi säätää sen merkityksen mukaan eli esi
 3. Muuta toista tekstielementtiä niin, että se on kirjoitettu pienellä tekstillä.
 4. Muuta kolmatta tekstielementtiä niin, että se on "onnistumisteksti" eli vihreällä kirjoitettu.
 5. Muuta neljättä tekstielementtiä niin, että se on muotoiltu koodiksi.
+
+### Kuvat
+
+Kuvia voi nopeasti käsitellä Bootstrapilla eli niille voi lisätä pyöristetyt kulmat (*img-rounded*), niistä voi tehdä täysin pyöristetyt (*img-circle*) tai niille voi antaa kehykset (*img-thumbnail*). *thumbnail*-luokkaa voi hyödyntää esimerkiksi kuvagallerian luomiseen ([ks. esimerkki](https://www.w3schools.com/bootstrap/bootstrap_images.asp)<base target="_blanck">).
+
+### Taulukot
+
+Taulukoille on monia muotoiluvaihtoehtoja Bootstrapissa. Perustaulukon saa, kun antaa ``<table>`` -elementille luokan *table*. 
