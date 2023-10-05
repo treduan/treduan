@@ -111,7 +111,7 @@ const showInput = () => {
 }
 ````
 
-# Virheilmoitsten lukeminen
+# Virheilmoitusten lukeminen
 
 Kun koodiin tulee virheitä, luonnollisesti ensin katsomme erilaisia virheilmoituksia. Koodieditori näyttää useimmat syntaksivirheet sekä kirjoitusvirheet, joten niiden paikantaminen on suhteellisen yksinkertaista. Silloin on tarpeen tarkistaa kyseisen koodin käyttö eli ovatko esimerkiksi sulut oikeanlaiset, sillä kaarisulkujen ja aaltosulkujen välillä on eronsa ja kaikille pitää aina löytää pari. Myös pilkut tai puolipisteet voivat joissakin tilanteissa olla tärkeitä.
 
