@@ -108,6 +108,14 @@ Bootstrap tarjoaa joukon valmiita nappityylejä erilaisiin tilanteisiin. Ne eroa
 
 [Bootstrapin napit](https://www.w3schools.com/bootstrap4/bootstrap_buttons.asp)<base target="_blank">
 
-Lisäksi napin kokoa voi säätää antamalla vielä uuden luokan eli suurentaa *btn-lg*:llä tai pienentää *btn-sm*:llä tai *btn-xs*:llä.
+Lisäksi napin kokoa voi säätää antamalla vielä uuden luokan eli suurentaa *btn-lg*:llä tai pienentää *btn-sm*:llä.
 
 Jos taas haluaa täysleveän napin, luokka on *btn-block*.
+
+### Navigaatio
+
+Bootstrapilla saa tehtyä myös navigaatiopalkkeja. Perusmuotoinen navigaatiopalkki syntyy, kun ``<nav>`` -elementtiin lisää luokan *navbar*. Jos siitä haluaa responsiivisen, siihen voi lisätä osat *-expand-md* (tai *lg* tai *sm* riippuen, missä kohtaa haluaa palkin osat vaakariviksi). Muuten palkki on pystyrivinä.
+
+Linkit voi asettaa keskelle käyttämällä luokkaa *justify-content-center* tai oikealle luokalla *justify-content-end*.
+
+Navigaation väriä voi vaihtaa käyttämällä teksteistä ja napeista tuttuja väriluokkia, esim *bg-success* luo vihreän taustan. 
