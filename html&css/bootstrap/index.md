@@ -104,7 +104,7 @@ Lisää taulukoista voi lukea [täältä](https://www.w3schools.com/bootstrap4/b
 
 ### Napit
 
-Bootstrap tarjoaa joukon valmiita nappityylejä erilaisiin tilanteisiin. Ne eroavat väriltään ja niissä on valmiit hover-efektit. Ensin jokaisessa pitää olla luokka *btn*, minkä jälkeen sen ominaisuuksia voi tarkentaa. Kaikki luokat löytyvät tästä kuvasta.
+Bootstrap tarjoaa joukon valmiita nappityylejä erilaisiin tilanteisiin. Ne eroavat väriltään ja niissä on valmiit hover-efektit. Ensin jokaisessa pitää olla luokka *btn*, minkä jälkeen sen ominaisuuksia voi tarkentaa. Napit voivat olla joko taustavärillisiä tai vain reunoiltaan väritettyjä.
 
 [Bootstrapin napit](https://www.w3schools.com/bootstrap4/bootstrap_buttons.asp)<base target="_blank">
 
