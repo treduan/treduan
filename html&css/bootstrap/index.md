@@ -119,3 +119,19 @@ Bootstrapilla saa tehtyä myös navigaatiopalkkeja. Perusmuotoinen navigaatiopal
 Linkit voi asettaa keskelle käyttämällä luokkaa *justify-content-center* tai oikealle luokalla *justify-content-end*.
 
 Navigaation väriä voi vaihtaa käyttämällä teksteistä ja napeista tuttuja väriluokkia, esim *bg-success* luo vihreän taustan. 
+
+Navigaation voi tehdä myös hampurilaismallisen pienennyksen tai alasvetovalikon.
+
+Lisää navigointipalkin malleista löytyy [täältä](https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp)<base target="_blank">.
+
+### Lomakkeet
+
+Lomakkeita voidaan muotoilla Bootstrapilla. Jos ``<label>`` ja sen vastaava ``<input>`` laitetaan elementtiin, jonka luokka on *form-group*, luo Bootstrap niille oman muotoilun.
+
+Lisää lomakkeista voi lukea [täältä](https://www.w3schools.com/bootstrap4/bootstrap_forms.asp)<base target="_blank">.
+
+## Demotehtävä 4
+
+1. Lisää sivullesi navigointipalkki, jossa on vähintään neljä linkkiä. Tee siitä responsiivinen. Testaa joko hampurilaismallia tai lisää siihen yksi pudotusvalikko. Muotoile se Bootstrapilla.
+2. Lisää testisivullesi lomake ja muotoile se Bootstrapilla.
+3. Lisää lomakkeeseen kolme nappia, joista yksi on peruutus, yksi on tyhjennys ja yksi on lähetysnappi. Muotoile ne Bootstrapilla haluamallasi tavalla.
