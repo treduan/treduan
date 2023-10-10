@@ -18,5 +18,6 @@
 - [Animaatiot](./animaatiot/index.md)
 - [Responsiivisuus](./responsiivisuus/index.md)
 - [Harjoitus 3: Ohimaan marjatila](./harjoitus3/index.md)
+- [Bootstrap](./bootstrap/index.md)
 
 - [Lisätehtävät 1](./lisatehtavat/index.md)
