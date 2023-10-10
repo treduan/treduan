@@ -98,7 +98,7 @@ Lisää taulukoista voi lukea [täältä](https://www.w3schools.com/bootstrap4/b
 
 ## Demotehtävä 3
 
-1. Lisätkää aikaisemmalle sivulle jokin kuva, jolle annat kehykset ja kuvatehstin Bootstrapilla (ks. esimerkkilinkki kuvagalleriasta ylempänä).
+1. Lisätkää aikaisemmalle sivulle jokin kuva, jolle annat kehykset ja kuvatekstin Bootstrapilla (ks. esimerkkilinkki kuvagalleriasta ylempänä).
 2. Lisää sivulle pieni taulukko, johon on kerätty vähintään neljä hedelmää, niiden ostopaikka ja niiden kilohinta (saat keksiä itse). Valitse taulukolle Bootstrap-luokka, joita voit katsoa lisää yllä olevan linkin takaa.
 3. Väritä taulukon kalleimman tuoterivin tausta punaisella ja taulukon edullisimman tuoterivin tausta vihreällä käyttämällä Bootstrapia.
 
@@ -135,3 +135,54 @@ Lisää lomakkeista voi lukea [täältä](https://www.w3schools.com/bootstrap4/b
 1. Lisää sivullesi navigointipalkki, jossa on vähintään neljä linkkiä. Tee siitä responsiivinen. Testaa joko hampurilaismallia tai lisää siihen yksi pudotusvalikko. Muotoile se Bootstrapilla.
 2. Lisää testisivullesi lomake ja muotoile se Bootstrapilla.
 3. Lisää lomakkeeseen kolme nappia, joista yksi on peruutus, yksi on tyhjennys ja yksi on lähetysnappi. Muotoile ne Bootstrapilla haluamallasi tavalla.
+
+### Modaali
+
+Modaali on eräänlainen infoikkuna, joka ilmestyy varsinaisen sivun päälle. Tyypillinen modaali on vaikka evästeasetuksien tiedostusmodaali, mutta ne voivat antaa paljon muutakin tietoa tai olla vaikka kirjautumisikkunana tms.
+
+Bootstrapilla voi luoda oman modaalin. Muuten se vaatisi JavaScriptiä. Ensin tarvitaan nappi, jolla modaali tulee esiin. Sille annetaan ominaisuudet *data-toggle="modal"* ja *data-target="#myModal"* (eli modaalille annettu id). Itse modaali on ``<div>``, jonka luokka on *modal* ja jolla on id. Sen sisällä on ``<div>``, jonka luokka on *modal-dialog*, jonka sisällä on ``<div>``, jonka luokka on *modal-content*. Sitten päästään varsinaiseen modaalin sisältöön, joka jaetaan *header*iin, *body*yn ja *footer*iin.
+
+````html 
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  Open modal
+</button>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Modal body..
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+````
+
+Modaalia voi vielä säätää esimerkiksi luokalla *fade*, joka luo pienen animaation, jotta modaali ilmestyy ja lähtee pienellä siirtymällä.
+
+Myös modaalin kokoa voi säätää luokilla *modal-sm*, *modal-lg* ja *modal-xl*.
+
+Lisää voi katsoa [täältä](https://www.w3schools.com/bootstrap4/bootstrap_modal.asp)<base target="_blank">.
+
+## Demotehtävä 5
+
+1. Lisää sivulle modaali, joka on kooltaan erityisen suuri.
+
+## Demotehtävä 6
+
+1. Lisää sivullesi kolme sellaista elementtiä Bootstrapilla, jota emme ole tunnilla käyneet läpi. Katso elementtejä [w3schoolsista](https://www.w3schools.com/bootstrap4/default.asp)<base target="_blank">.
