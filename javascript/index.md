@@ -9,12 +9,9 @@
 - [Muuttujien muuntaminen](./matemaattiset/index.md)
 - [Funktiot](./funktiot/index.md)
 - [Ehtolauseet](./ehtolauseet/index.md)
-- [Harjoitukset 1](./Harjoitukset1/index.md)
 - [Taulukot](./taulukot/index.md)
-- [Harjoitukset 2](./harjoitukset2/index.md)
 - [Kaksiulotteiset taulukot](./kaksiulotteiset/index.md)
 - [Oliot](./oliot/index.md)
-- [Harjoitukset 3](./harjoitukset3/index.md)
 
 ### JavaScript selaimessa
 
@@ -22,4 +19,9 @@
 - [Elementtien muuttaminen JavaScriptillä](./htmlmuutokset/index.md)
 - [DOM](./dom/index.md)
 - [Virheiden käsittely](./virheet/index.md)
+
+### Palautettavat harjoitukset
+- [Harjoitukset 1](./Harjoitukset1/index.md)
+- [Harjoitukset 2](./harjoitukset2/index.md)
+- [Harjoitukset 3](./harjoitukset3/index.md)
 - [Harjoitukset 4](./harjoitukset4/index.md)
