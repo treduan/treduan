@@ -18,7 +18,7 @@
 - [Bootstrap](./bootstrap/index.md)
 
 ## Palautettavat harjoitukset
-- [HTML-harjoitus 1](./htmlharjoitus1/index.md)
+- [Harjoitus 1: vapaavalintainen sivupohja](./htmlharjoitus1/index.md)
 - [Harjoitus 2: Single Page Website](./harjoitus2/index.md)
 - [Harjoitus 3: Ohimaan marjatila](./harjoitus3/index.md)
 
