@@ -4,9 +4,17 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
@@ -14,7 +22,28 @@
   <h1>My First Bootstrap Page</h1>
   <p>Resize this responsive page to see the effect!</p> 
 </div>
-  
+<nav class=" navbar navbar-expand-sm bg-dark justify-content-end">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Linkki 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Linkki 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Linkki 3</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardropdown" data-toggle="dropdown">Lisää</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+        <a class="dropdown-item" href="#">Link 4</a>
+      </div>
+    </li>
+  </ul>
+</nav>  
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
@@ -36,9 +65,12 @@
 </div>
 <div class="container">
 <div class="row">
-  <div class="col-sm-3">Here is the first part</div>
-  <div class="col-sm-3">Here is the second part</div>
-  <div class="col-sm-6">Here is the third part which is wider than the first two</div>
+  <div class="col-sm-4">Here is the first part</div>
+  <div class="col-sm-4">Here is the second part</div>
+  <div class="col-sm-4">Here is the third part which is wider than the first two</div>
 </div></div>
+<form>
+  <input type="button" class="btn btn-primary" value="Press me">
+</form>
 </body>
 </html>

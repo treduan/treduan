@@ -22,3 +22,4 @@
 - [Elementtien muuttaminen JavaScriptillä](./htmlmuutokset/index.md)
 - [DOM](./dom/index.md)
 - [Virheiden käsittely](./virheet/index.md)
+- [Harjoitukset 4](./harjoitukset4/index.md)
