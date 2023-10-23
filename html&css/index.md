@@ -21,6 +21,7 @@
 - [Harjoitus 1: vapaavalintainen sivupohja](./htmlharjoitus1/index.md)
 - [Harjoitus 2: Single Page Website](./harjoitus2/index.md)
 - [Harjoitus 3: Ohimaan marjatila](./harjoitus3/index.md)
+- [Harjoitus 4: Reseptisivu Bootstrapilla](./harjoitus4/index.md)
 
 ## Lisätehtävät
 - [Lisätehtävät 1](./lisatehtavat/index.md)
