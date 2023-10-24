@@ -11,3 +11,7 @@ Tee HTML-sivu, jolla on numeronarvauspeli. Kirjoita JavaScript omaan tiedostoons
 ## Tehtävä 3
 
 Tee nelilaskin, joka voi tehdä peruslaskutoimitukset eli lisäämisen, vähentämisen, kertomisen ja jakamisen. Luo ensin HTML-pohja, jossa on tarvittavat napit aseteltuna järkevästi. Sitten tee funktiot, miten saisit laskimen toimimaan. Kirjoita JavaScript omaan tiedostoonsa, jonka linkität HTML-sivulle. Nappien yläpuolelle pitää saada näkymään sekä laskutoimitus että laskutoimituksen tulos, kun "="-nappia painetaan. Laskimessa pitää olla myös nappi, joka poistaa tiedot.
+
+## Lisätehtävä
+
+Laadi lyhyt tietovisa haluamastasi aiheesta. Siinä tulee olla vähintään viisi kysymystä, jotka ovat monivalintoja ja monivalinnoissa on neljä vaihtoehtoa. Jokaisella kysymyksellä on myös oma nappi, jolla tarkistaa kysymys. Vastaaja saa heti napin painalluksella tietää, oliko hänen vastauksensa oikein ja mikä oli oikea vastaus, jos oma vastaus oli väärin (sen voi tehdä tekstillä, mutta mielellään myös värikoodauksella eli vihreä oikein ja punainen väärin). Koko visan lopuksi vastaaja saa tietää kokonaispisteensä. 
