@@ -16,3 +16,4 @@ Oppilaitoksessa
 - Yrityselämänedustajien esittäytyminen
 
 [Leirikeskusprojekti](./projekti1/index.md)
+[Git](./git/index.md)
