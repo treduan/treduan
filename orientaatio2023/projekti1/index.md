@@ -152,7 +152,7 @@ Voit seurata meitä myös Facebookissa ja Instagramissa (logot)
 
 ### Viikko 1
 
-1. Tiimit sopivat keskenään roolit sekä tiimilleen nimen, joka ilmoitetaan opettajalle.
+1. Tiimit sopivat keskenään roolit sekä tiimilleen nimen, joka ilmoitetaan opettajalle. Tietoja voi jakaa Teamsin kautta.
 2. Tiimit alkavat tehdä sivustolle ulkonäkösuunnitelmaa. Jokainen tekee suunnitelman etusivusta AdobeXD:llä. Yhdessä tiimit käyvät läpi kaikkien suunnitelmat ja valitsevat niistä mieluisimman tai yhdistävät suunnitelmista itselleen miellyttävimmän yhdistelmän.
 3. Alustavan suunnitelman mukaisesti graafikko alkaa tehdä yksityiskohtaisempaa ulkoasusuunnitelmaa jokaiselle sivulle. Hän suunnittelee myös logon ja etsii sopivat kuvat sivustolle. Logosta kannattaa olla muutama eri vaihtoehto.
 4. Ohjelmoijat alkavat luoda sivuston pohjaa aluksi ilman muotoilua pelkällä HTML:llä ja JavaScriptillä (JavaScriptiä tarvitaan lähinnä lomakkeiden avautumiseen.) Ensimmäisenä he valitsevat joukostaan ns. pääohjelmoijan, jonka Githubiin luodaan projekti. Toinen ohjelmoija sekä graafikko että scrum master voivat kopioida tämän projektin itselleen, kun se on luotu. (Toisella kerralla alamme katsoa, miten yhteistyö Gitissä toimii. Tästä syystä korkeintaan pääohjelmoija saa ensimmäisellä kerralla tehdä projektiin muutoksia.)
