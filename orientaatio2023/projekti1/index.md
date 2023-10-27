@@ -104,6 +104,40 @@ Varaa huone tästä. (Avautuu lomake.)
 
 ### Ruokailu
 
+Leirintäkeskuksen päärakennuksessa on oma ravintola sekä tilausravintolapuoli. Ravintola Taival tarjoaa joka aamu monipuolisen aamiaisen yöpyjille hintaan 8 € aikuisille ja 4 € kouluikäisille lapsille. Nuoremmat saavat ruokailla huoltajien kanssa ilmaiseksi. Aamiaista tarjotaan kello 7-10.
+
+Kesäkaudella ravintolamme tarjoaa maukkaan ja kesäisen lounaan kello 11-14 noutopöydästä. Otamme huomioon yleisimmät ruokarajoitukset. Kysy harvinaisemmista allergeeneistä henkilökunnaltamme. Lounaan hinta on 12,90 € aikuisilta, 8,90 € kouluikäisiltä lapsilta ja 4,90 € alle kouluikäisiltä lapsilta.
+
+Kesäkaudella ravintolamme tarjoaa myös illallista noutopöydästä kello 17-20. Illallisen hinta on 14,90 € aikuisilta, 9,90 € kouluikäisiltä ja 4,90 € alle kouluikäisiltä lapsilta.
+
+Muina aikoina ruokailun voi tilata vähintään kuuden hengen ryhmille ruokalistamme mukaisesti. Tilaus tulee tehdä vähintään kolme vuorokautta aikaisemmin. Meiltä saa myös kaikkiin tiloissamme pidettäviin juhliin pitopalvelun.
+
 ### Tilat
 
+Meiltä löytyy vuokrattavia tiloja eri tarpeisiin.
+
+Juhlatila
+
+Meiltä löytyy ruokasali maksimissaan 80 hengelle. Se sopii hyvin esimerkiksi häiden tai syntymäpäiväjuhlien järjestämiseen, mutta tilassa onnistuvat myös kokoukset. Tarjoamme myös pitopalvelun. Tilan hinta on kesäkaudella 50 € per tunti ja talvikaudella 35 € tunti. Pitopalvelu maksaa erikseen.
+
+Kokoustila
+
+Kokoustilaamme mahtuu yhtä aikaa 35 henkilöä. On myös mahdollista tilata pitopalvelustamme kahvitarjoilu lisähintaan. Tilan hinta on 29 € tunnilta.
+
+Luokkahuone
+
+Meillä on myös pienempiä tapaamisia varten luokkahuone, johon mahtuu maksimissaan 30 henkilöä. Se soveltuu pienemmille kokouksille tai esimerkiksi koulutuksiin. On myös mahdollista tilata pitopalvelustamme kahvitarjoilu lisähintaan. Tilan hinta on 25 € tunnilta.
+
+Tiedustelut tiloista tästä. (Avautuu lomake.)
+
 ### Yhteystiedot
+
+Taipaleen leirikeskus sijaitsee Tampereen Teiskossa, noin 30 kilometrin päässä Tampereen keskustasta koilliseen.
+
+Levälahdentie 28
+34260 Teisko
+
+taival.info@leirikeskustaival.fi
+0400171177
+
+Voit seurata meitä myös Facebookissa ja Instagramissa (logot)
