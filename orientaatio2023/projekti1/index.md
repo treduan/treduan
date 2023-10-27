@@ -6,13 +6,19 @@ Harjoittelemme pprojektityöskentelyä kolmen viikon ajan noin neljän hengen ry
 
 - Scrum master/projektipäällikkö
 - Graafikko
-- Ohjelmoijat
+- Ohjelmoijat (1-3)
 
 Kuitenkin kaikki osallistuvat tarpeen mukaan kaikkeen, jos on esimerkiksi poissaoloja.
 
+Tiimit:
+1. Onni, Julius, Bruno, Patrik
+2. Eemeli, Tarik, Juho, Julia
+3. Lassi, Eerik, Jere, Noel
+4. Niklas, Luka, Akseli, Ilmari, Elias
+
 ### Scrum master
 
-Scrum masterin pääasiallinen tehtävä on järjestää tiimin toimintaa ja seurata sen etenemistä. Hän pyrkii auttamaan tiimiläisiä ongelmissa parhaan taitonsa mukaan ja tarvittaessa tekee lopulliset päätökset sisällön ja ulkoasun suhteen. Hän opiskelee myös virallista scrum metodia projektin aikana.
+Scrum masterin pääasiallinen tehtävä on järjestää tiimin toimintaa ja seurata sen etenemistä sekä pitää huolta tarvittavista dokumenteista. Hän pyrkii auttamaan tiimiläisiä ongelmissa parhaan taitonsa mukaan ja tarvittaessa tekee lopulliset päätökset sisällön ja ulkoasun suhteen. Hän opiskelee myös virallista scrum metodia projektin aikana. Työelämässä hän olisi kaikkein eniten yhteydessä asiakkaaseen ja esihenkilöihin projektin puolesta.
 
 ### Graafikko
 
@@ -26,7 +32,7 @@ Ohjemoijat kirjoittavat lopullisen koodin ja ulkoasun, mutta osallistuvat myös 
 
 Taipaleen leirintäkeskuksen sivusto täytyy uusia kokonaan. Sille luodaan täysin uusi ulkoasu ja rakenne.
 
-Sivustolla pitää olla seuraavat sivut: Etusivu, Toiminta, Majoitus, Ruokailu, Tilat, Yhteystiedot. Sen pitää olla saavutettava sekä skaalautuva. Siitä pitää löytyä navigaatiopalkki.
+Sivustolla pitää olla seuraavat sivut: Etusivu, Toiminta, Majoitus, Ruokailu, Tilat, Yhteystiedot. Sen pitää olla saavutettava sekä skaalautuva. Jokaisella sivulla on samanlainen header-osio, jonka olla alla on navigaatiopalkki. Jokaisella sivulla on myös samanlainen footer-osio, jossa on copyright sekä linkki Yhteystiedot-sivulle.
 
 ### Etusivu
  
@@ -54,7 +60,7 @@ Katso kesän 2024 esiintyjät tästä. (Avautuu osio, jossa lukee: "Kesän 2024 
 
 Venevuokraus
 
-Soutuveneitä voi vuokrata päärakennukselta hintaan 5 € tunti. Maksimiaika vuokraukselle on kuusi tuntia.
+Soutuveneitä voi vuokrata päärakennukselta kesäkaudella hintaan 5 € tunti. Maksimiaika vuokraukselle on kuusi tuntia.
 
 Kylpyläosasto
 
@@ -141,3 +147,10 @@ taival.info@leirikeskustaival.fi
 0400171177
 
 Voit seurata meitä myös Facebookissa ja Instagramissa (logot)
+
+## Projektin kulku
+
+1. Tiimit sopivat keskenään roolit sekä tiimilleen nimen, joka ilmoitetaan opettajalle.
+2. Tiimit alkavat tehdä sivustolle ulkonäkösuunnitelmaa. Jokainen tekee suunnitelman etusivusta AdobeXD:llä. Yhdessä tiimit käyvät läpi kaikkien suunnitelmat ja valitsevat niistä mieluisimman tai yhdistävät suunnitelmista itselleen miellyttävimmän yhdistelmän.
+3. Alustavan suunnitelman mukaisesti graafikko alkaa tehdä yksityiskohtaisempaa ulkoasusuunnitelmaa jokaiselle sivulle. Hän suunnittelee myös logon ja etsii sopivat kuvat sivustolle.
+4. Ohjelmoijat alkavat luoda sivuston pohjaa aluksi ilman muotoilua pelkällä HTML:llä ja JavaScriptillä (JavaScriptiä tarvitaan lähinnä lomakkeiden avautumiseen.)
