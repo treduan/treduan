@@ -11,9 +11,9 @@ Harjoittelemme pprojektityöskentelyä kolmen viikon ajan noin neljän hengen ry
 Kuitenkin kaikki osallistuvat tarpeen mukaan kaikkeen, jos on esimerkiksi poissaoloja.
 
 Tiimit:
-1. Onni, Julius, Bruno, Patrik
+1. Onni, Julius, Noel, Patrik
 2. Eemeli, Tarik, Juho, Julia
-3. Lassi, Eerik, Jere, Noel
+3. Lassi, Eerik, Jere, Bruno
 4. Niklas, Luka, Akseli, Ilmari, Elias
 
 ### Scrum master
@@ -150,8 +150,19 @@ Voit seurata meitä myös Facebookissa ja Instagramissa (logot)
 
 ## Projektin kulku
 
+### Viikko 1
+
 1. Tiimit sopivat keskenään roolit sekä tiimilleen nimen, joka ilmoitetaan opettajalle.
 2. Tiimit alkavat tehdä sivustolle ulkonäkösuunnitelmaa. Jokainen tekee suunnitelman etusivusta AdobeXD:llä. Yhdessä tiimit käyvät läpi kaikkien suunnitelmat ja valitsevat niistä mieluisimman tai yhdistävät suunnitelmista itselleen miellyttävimmän yhdistelmän.
-3. Alustavan suunnitelman mukaisesti graafikko alkaa tehdä yksityiskohtaisempaa ulkoasusuunnitelmaa jokaiselle sivulle. Hän suunnittelee myös logon ja etsii sopivat kuvat sivustolle.
+3. Alustavan suunnitelman mukaisesti graafikko alkaa tehdä yksityiskohtaisempaa ulkoasusuunnitelmaa jokaiselle sivulle. Hän suunnittelee myös logon ja etsii sopivat kuvat sivustolle. Logosta kannattaa olla muutama eri vaihtoehto.
 4. Ohjelmoijat alkavat luoda sivuston pohjaa aluksi ilman muotoilua pelkällä HTML:llä ja JavaScriptillä (JavaScriptiä tarvitaan lähinnä lomakkeiden avautumiseen.) Ensimmäisenä he valitsevat joukostaan ns. pääohjelmoijan, jonka Githubiin luodaan projekti. Toinen ohjelmoija sekä graafikko että scrum master voivat kopioida tämän projektin itselleen, kun se on luotu. (Toisella kerralla alamme katsoa, miten yhteistyö Gitissä toimii. Tästä syystä korkeintaan pääohjelmoija saa ensimmäisellä kerralla tehdä projektiin muutoksia.)
 5. Scrum master alkaa lukea läpi [scrumin opasta](https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-Finnish.pdf)<base target="_blank">.
+
+### Viikko 2
+1. Pidetään tiimipalaveri scrum masterin johdolla ja tarkistetaan, mikä on tiimin tilanne.
+2. Tutustutaan tiimeinä, miten Gitin kanssa toimitaan tiimityöskentelyssä, jotta vältetään pahimmat virheet ja saadaan siitä hyödyt irti.
+3. Jatketaan projektin edistämistä.
+
+### Viikko 3
+
+### Viikko 4
