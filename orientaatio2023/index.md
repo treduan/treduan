@@ -15,4 +15,4 @@ Oppilaitoksessa
 
 - Yrityselämänedustajien esittäytyminen
 
-[Ensimmäinen päivä](./ensimmainen/index.md)
+[Leirikeskusprojekti](./projekti1/index.md)
