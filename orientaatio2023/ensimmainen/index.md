@@ -9,3 +9,5 @@ A. Omistan haarniskan ja olen taistellut turnajaisissa.
 B. Olen kirjoittanut romaanin verran tekstiä kuukaudessa.
 C. Olen käynyt Islannissa hevosvaelluksella.
 D. Olen esiintynyt mallina kanadalaisella televisiokanavalla.
+
+Sekoilen tänne testin vuoksi.
