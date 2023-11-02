@@ -12,6 +12,7 @@
 - [Taulukot](./taulukot/index.md)
 - [Kaksiulotteiset taulukot](./kaksiulotteiset/index.md)
 - [Oliot](./oliot/index.md)
+- [Näkyvyys](./nakyvyys/index.md)
 
 ### JavaScript selaimessa
 
