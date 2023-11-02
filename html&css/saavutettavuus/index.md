@@ -21,9 +21,11 @@ Erilaisia rajoitteita ja rajoitteellisia käyttäjiä on siis paljon. Lisäksi h
 
 Aluehallintovirastolla on suomeksi saavutettavuusvaatimuksia listaava sivusto, jolla käydään läpi myös [WCAG 2.1 lain vaatimukset](https://www.saavutettavuusvaatimukset.fi/digipalvelulain-vaatimukset/wcag-2-1/)<base target="_blank">. Laissa todetaan, että kaikki A- ja AA-tason kriteerit tulee täyttää, AAA-tason kriteerit eivät ole pakollisia.
 
+Alla käymme läpi osan yleisimmistä saavutettavuuteen liittyvistä asioista, jotka on hyvä käydä tässä vaiheessa läpi ja ottaa säännölliseen käyttöön. Osa liittyy enemmän sivuston ulkoasun ja suunnitteluun kuin varsinaiseen koodaamiseen.
+
 ## Kontrastit
 
-Yksi saavutettavuuden kriteereitä on värikontrastit eli tekstin tulee erottua riittävän selkeästi taustasta. Kontrastia voi testata erilaisilla verkkopalveluilla, esimerkiksi [WebAIMin palvelulla](https://webaim.org/resources/contrastchecker/)<base target="_blank">. Se antaa vastaukseksi jonkin astearvon. Hyvä taso AA on lain mukaan 4.5:1, mutta siihen vaikuttaa muun muassa tekstin koko jne. 
+Yksi saavutettavuuden kriteereitä on värikontrastit eli tekstin tulee erottua riittävän selkeästi taustasta. Kontrastia voi testata erilaisilla verkkopalveluilla, esimerkiksi [WebAIMin palvelulla](https://webaim.org/resources/contrastchecker/)<base target="_blank">. Se antaa vastaukseksi jonkin astearvon. Hyvä taso AA on lain mukaan 4.5:1, mutta siihen vaikuttaa muun muassa tekstin koko jne. Yllä oleva palvelu kertoo, riittääkö astearvo eri tilanteissa.
 
 ## Elementtien koko
 
@@ -52,4 +54,15 @@ Kuvilla kuuluu olla aina koodissa kuvausteksti eli *alt*. Ruudunlukija lukee sen
 <img src=".../Ladybug.jpg" role="presentation">
 <img src=".../Ladybug.jpg" role="none">
 <img src=".../Ladybug.jpg" aria-hidden="true">
+````
+## Lomakkeet
+
+Lomakkeet ovat jossakin määrin haastavia saavutettavuuden suhteen. Niiden käytettävyys paranee, kun esimerkiksi ``<input>``-elementeille annetaan oikea tyyppi, jolloin vääränlaisia syötteitä on vaikeampi antaa. On myös suositeltavaa antaa jokaiselle ``<input>``-elementille selkeästi ``<label>``, joka on oikeaoppisesti yhdistetty joko käyttämällä *id*tä tai yhdistämällä ``<input>`` ``<label>``in sisään, kuten esimerkissä.
+
+````html 
+<form id="sundae-order-form">
+  <p><label>Name (required): <input type="name" autocomplete="name" required></label></p>
+  <p><label>Telephone (required): <input type="tel" autocomplete="tel" required></label></p>
+  <p><label>Email address: <input type="email" autocomplete="email"></label></p>
+</form>
 ````
