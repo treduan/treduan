@@ -13,6 +13,7 @@
 - [Kaksiulotteiset taulukot](./kaksiulotteiset/index.md)
 - [Oliot](./oliot/index.md)
 - [Näkyvyys](./nakyvyys/index.md)
+- [Tyyli ja parhaat käytännöt](./tyyli/index.md)
 
 ### JavaScript selaimessa
 
