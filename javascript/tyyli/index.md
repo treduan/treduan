@@ -33,6 +33,26 @@ Jokaisessa ohjelmintoikielessä on myös joukko parhaiksi katsottuja käytäntö
 1. Kopioi alla oleva koodi omaan tiedostoonsa.
 2. Korjaa siinä olevat käytäntöihin liittyvät virheet.
 
+````js
+    switch (pet) {
+        case "Dog":
+            console.log("You must like walking in bad weather.");
+            break;
+        case "Cat":
+        console.log("You must like scratched furniture.")
+        break;
+    }
+    if (discount == 0.09) {
+    console.log("Discount is pretty low")
+    }
+    let discount = new String();
+    let car = {type: "Opel", model: "Zafira", color: "Metallic red"}
+    discount = 0.09;
+    let petArray;
+    petArray =["Dog", "Cat", "Hamster", "Rat"]
+
+````
+
 ## JavaScriptin varatut sanat
 
 Jokaisessa ohjelmointikielessä on joukko sanoja, jotka on varattu eli niitä ei voi käyttää muuttujien tai funktioiden niminä. [Täällä](https://www.w3schools.com/js/js_reserved.asp)<base target="_blank"> on lista sanoista, jotka on varattu JavaScriptissä.
