@@ -1,6 +1,6 @@
 # Oliot (objects) eli assosiatiiviset taulukot
 
-Oliot ovat periaatteessa taulukoita (joissakin tapauksissa myös kaksiulotteisia taulukoita), joissa jokaiselle alkiolle on annettu jokin nimi.
+Oliot ovat periaatteessa taulukoita (joissakin tapauksissa myös kaksiulotteisia taulukoita), joissa jokaiselle alkiolle on annettu jokin nimi. Niitä voi käyttää myös periyttävästi.
 
 ## Tietotyyppien kertaus
 
