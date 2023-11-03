@@ -164,5 +164,8 @@ Voit seurata meitä myös Facebookissa ja Instagramissa (logot)
 3. Jatketaan projektin edistämistä.
 
 ### Viikko 3
+1. Pidetään tiimipalaveri scrum masterin johdolla ja tarkistetaan, mikä on tiimin tilanne.
+2. Ohjelmoijat ja graafikko jatkavat työtään. Toivon mukaan graafikon työ on siinä määrin valmis, että ohjelmoijat voivat alkaa toteuttaa myös ulkoasua ainakin joiltakin osin.
+3. Scrum master työstää projektin dokumentteja eli päivittää projektin README.md -tiedoston sekä tekee Excelillä tuntikirjanpidon, jossa näkyy jokaisen tiimiläisen käyttämä aika projektiin. [README ohjeet](./readmeohjeet.md) 
 
 ### Viikko 4
