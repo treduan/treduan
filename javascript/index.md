@@ -21,6 +21,7 @@
 - [Elementtien muuttaminen JavaScriptillä](./htmlmuutokset/index.md)
 - [DOM](./dom/index.md)
 - [Virheiden käsittely](./virheet/index.md)
+- [Pohjoismaat-demo](./pohjoismaatdemo/index.md)
 
 ### Palautettavat harjoitukset
 - [Harjoitukset 1](./Harjoitukset1/index.md)
