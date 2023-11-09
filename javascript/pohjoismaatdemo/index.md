@@ -1,4 +1,6 @@
-# Pohjoismaat - demo
+## Pohjoismaat - demo
+
+<iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/73ea182a-5c04-49fb-93d3-3e4b73faef3d?autoplay=false&amp;showinfo=true" allowfullscreen style="border:none;"></iframe>
 
 ### Koodin jakaminen useampaan tiedostoon
 
@@ -11,34 +13,29 @@ Kopioi seuraava koodi ja tallenna se *countries-data.js*-nimellä. Tiedosto sis�
 ```js
 export let countries = [
     {   name:"Finland",
-        capital:"Helsinki", 
+        capital:"Helsinki",
         population:5491817,
-        currencies:[{code:"EUR",name:"Euro",symbol:"€"}],
-        flag:"https://restcountries.eu/data/fin.svg"
+        flag:"https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg"
     },
     {   name:"Sweden",
-        capital:"Stockholm", 
+        capital:"Stockholm",
         population:9894888,
-        currencies:[{code:"SEK",name:"Swedish krona",symbol:"kr"}],
-        flag:"https://restcountries.eu/data/swe.svg"
+        flag:"https://upload.wikimedia.org/wikipedia/en/4/4c/Flag_of_Sweden.svg"
     },
     {   name:"Norway",
         capital:"Oslo",
         population:5223256,
-        currencies:[{code:"NOK",name:"Norwegian krone",symbol:"kr"}],
-        flag:"https://restcountries.eu/data/nor.svg"
+        flag:"https://commons.wikimedia.org/wiki/File:Flag_of_Norway.svg"
     },
     {   name:"Denmark",
         capital:"Copenhagen",
-        population:5717014, 
-        currencies:[{code:"DKK",name:"Danish krone",symbol:"kr"}],
-        flag:"https://restcountries.eu/data/dnk.svg"
+        population:5717014,
+        flag:"https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg"
     },
     {   name:"Iceland",
         capital:"Reykjavík",
-        population:334300, 
-        currencies:[{code:"ISK",name:"Icelandic króna",symbol:"kr"}],
-        flag:"https://restcountries.eu/data/isl.svg"
+        population:334300,
+        flag:"https://commons.wikimedia.org/wiki/File:Flag_of_Iceland.svg"
     }]
 ```
 
@@ -87,7 +84,35 @@ img {
 }
 ```
 
-### Pure JavaScript, part 1
+### Webbiserverin käynnistys
+
+Tämä demo tarvitsee toimiakseen webbiserverin (PHP-development server riittää), käynnistä se:
+
+```cmd
+php -S localhost:8888
+```
+
+Huom! Jos teet näitä tehtäviä kotona, [asenna XAMPP](https://www.apachefriends.org/download.html), sen mukana saat PHP-development server:in.
+
+### Plan B (jos et saa edellistä kohtaa toimimaan)
+
+HUOM! Jos et saa PHP-development serveriä toimimaan, voit tehdä tämän demon myös ilman koodimoduleja. Kopioi *countries*-taulukko suoraan countries.js-tiedoston alkuun (et siis tarvitse *countries-data.js* - tiedostoa). Kommentoi pois *export* ja *import* osuudet koodista:
+
+```js
+/*export*/ let coutries = ...
+/*import { countries } from './countries-data.js';*/
+```
+
+Poista moduulit käytöstä myös *countries.html*-tiedostosta:
+
+```html
+  <!-- <script type="module" src="countries-data.js"></script> -->
+  <script src="countries.js"></script>
+```
+
+Nyt voit avata *countries.html*-tiedoston suoraan levyltä selaimeen, etkä tarvitse webbiserveriä.
+
+### Step 1:  Maiden nimet sivulle
 
 Tämä harjoitus tehdään kokonaan kirjoittamalla JavaScript:iä. Emme siis muokkaa HTML-tiedostoa tai CSS-tiedostoa ollenkaan. Tieto pohjoismaista liitetään HTML-tiedostossa sijaitsevaan *div*:iin, jonka *id* on "countrylist". Tähän *div*:iin luodaan dynaamisesti riittää määrä pohjoismaiden tietoa sisältäviä *div*:ejä. Ensin haetaan ko. elementti ja tallennetaan se muuttujaan "countryList"
 
@@ -95,110 +120,124 @@ Tämä harjoitus tehdään kokonaan kirjoittamalla JavaScript:iä. Emme siis muo
 let countryList = document.getElementById("countrylist");
 ```
 
-Tehdään apufunktio *makeTextNode*, jonka avulla voidaan tehdä uusia tekstiä sisältäviä elementtejä. Funktiolle annetaan parametriksi halutun elementin *type* (esim. "H1"), sekä tekstinodeen kirjoitettava teksti *text* (esim. "Heippa"). Funktio palauttaa uuden elementin (*return*);
+Tehdään apufunktio *newTextElem*, jonka avulla voidaan luoda uusia tekstiä sisältäviä elementtejä. Funktiolle annetaan parametriksi halutun elementin teksti *text* (esim. "Heippa") sekä elementin tyyppi *type* (esim. "H1"). Funktio palauttaa luodun elementin.
 
 ```js
-const makeTextNode = function(type, text){
-    let elem = document.createElement(type);
-    let textNode = document.createTextNode(text);
-    elem.appendChild(textNode);
-    return elem;
+function newTextElem(text, type){
+    let myElem = document.createElement(type)
+    myElem.textContent = text;
+    return myElem;
 }
 ```
 
-Aloitetaan tekemällä pelkät otsikot kullekin maalle. Tehdään funktio, joka saa parametrinaan *country*-olion. Funktiossa luodaan maan tietoja varten tyhjä *div*-elementti. Siihen liitetään uusi tekstinode, jonka tyyppi on "H3" ja jonka tekstinä on maan nimi. Jotta CSS-selektori toimisi oikein, lisätään *div*:lle luokaksi "country". Funktio palauttaa uuden elementin (*return*);
+Kutsutaan nyt *newTextElem*-funktiota taulukon *forEach*-metodin avulla (HUOM! tässä käytetään JavaScriptin nuolifunktiota), jokaiselle maan nimelle. Jokainen luotu elementti lisätään *countryList*-div:iin (*append*):
 
 ```js
-const countryTitle = function(country){
-    let newDiv = document.createElement("div");
-    newDiv.className = "country";
-    let elem = makeTextNode("H3", country.name)
-    newDiv.appendChild(elem);
-    return newDiv;
+countries.forEach(country => {
+    let elem = newTextElem(country.name, "p");
+    countryList.appendChild(elem);
+});
+```
+
+Sivulla näkyy nyt maiden nimet:
+
+![maat_step1](./img/maa_step1.PNG)
+
+### Step 2: Lisätään maalle oma div ja luokka
+
+Koska maat tulevat sisältämään enemmänkin tietoa, tehdään niille jokaiselle oma div. Muutetaan samalla maan nimi *H3*-tyypin otsikoksi.
+
+Tehdään funktio *newCountryDiv*, joka saa parametrinaan *country*-olion. Funktiossa luodaan maan tietoja varten tyhjä *div*-elementti. Lisätään siihen uusi tekstielementti, jonka tyyppi on "H3" ja jonka tekstinä on maan nimi. Jotta CSS-selektori toimisi oikein, lisätään *div*:lle myös luokaksi "country". Funktio palauttaa luodun div:in.
+
+```js
+function newCountryDiv(country){
+    let myDiv = document.createElement("div");
+    myDiv.className = "country";
+
+    let myTitle = newTextElem(country.name,"H3")
+
+    myDiv.append(myTitle);
+
+    return myDiv;
 }
 ```
 
-Sivulla ei vielä näy mitään, koska emme ole kutsuneet näitä funktioita. Tehdään se käyttämällä taulukon *map*-metodia. *map* käy läpi taulukon alkiot järjestyksessä ja kutsuu sille annettua funktiota jokaisella taulukon alkiolla. *map* palauttaa uuden taulukon, johon se kerää saamansa paluuarvot. Tässä tapauksessa *map* kutsuu *countryTitle*-funktiota viisi kertaa, jonka jälkeen *countryElems*-taulukossa on viisi uutta *div*-elementtiä (joissa kussakin on maan nimi otsikko-elementissä).
-
-*Huom!* Tässä käytetään JavaScript:in nuolifunktio-notaatiota.
+Sivulla ei vielä näy mitään, koska emme ole kutsuneet tätä uutta funktiota. Tehdään se jälleen käyttämällä *forEach*-metodia. Jokainen luotu elementti lisätään kuten aikaisemminkin *countryList*-div:iin (*append*):
 
 ```js
-let countryElems = countries.map(country => countryTitle(country));
-```
-
-Viimeinen vaihe on liittää taulukossa olevat elementit yksikerrallaan DOM:iin, aikaisemmin hakemaamme *countryList*-elementtiin.
-
-```js
-for(let i = 0; i < countryElems.length; i++){
-    countryList.appendChild(countryElems[i]);
-}
-```
-
-*for*-silmukan tilalla voi käyttää lyhyempää *forEach*-rakennetta:
-
-```js
-countryElems.forEach(elem => countryList.appendChild(elem));
+countries.forEach(country => {
+    let elem = newCountryDiv(country);
+    countryList.appendChild(elem);
+});
 ```
 
 Nyt HTML-sivulla pitäisi näkyä pohjoismaiden nimet omissa *div*:eissään.
 
-### Pure JavaScript, part 2 (addEventListener)
+![maat_step2](./img/maa_step2.PNG)
 
-Lisätään maiden otsikoille tapahtumakuuntelijat (addEventListener) määrittämällä tapahtuman (*event*) tyypin jota kuunnellaan (tässä "mouseon" ja "mouseout"), sekä antamalla *callback*-funktio, jota kutsutaan kun ko. tapahtuma tapahtuu. Tässä *callback*-funktion nimi on *changeColor*.
+### Step 3: Lisätään maalle tapahtumakuuntelija
+
+Lisätään otsikoihin toiminallisuus, jossa hiiren vieminen otsikon päälle muuttaa sen värin punaiseksi.
+
+Lisätään maiden otsikoille tapahtumakuuntelijat (addEventListener) määrittämällä tapahtuman (*event*) tyyppi jota kuunnellaan (tässä "mouseon" ja "mouseout"), sekä antamalla *callback*-funktio, jota kutsutaan kun ko. tapahtuma tapahtuu. Tässä *callback*-funktion nimi on *changeColor*.
 
 ```js
-function changeColor(item, color){
-    item.style.color = color;
+function changeColor(elem, color){
+    elem.style.color = color;
 }
 ```
 
-Lisää nämä koodirivit *countryTitle*-funktioon:
+Lisää nämä koodirivit *countryDiv*-funktioon:
 
 ```js
-elem.addEventListener("mouseover", () => changeColor(elem, "red"));
-elem.addEventListener("mouseout", () => changeColor(elem, "black"));
+myTitle.addEventListener("mouseover", () => changeColor(myTitle, "red"));
+myTitle.addEventListener("mouseout", () => changeColor(myTitle, "black"));
 ```
 
-Nyt maan nimen pitäisi muuttua punaiseksi, kun hiiri viedään sen päälle.
+Nyt maan nimen pitäisi muuttua punaiseksi, kun hiiri viedään sen päälle ja mustaksi kun se viedään pois.
 
-### Pure JavaScript, part 3
+### Step 4: Lisätään maatietoa
 
-Nyt lisätään otsikoiden alle uudet *div*-elementit, jotka sisältävät lisätietoa kustakin maasta ml. maan lipun. Tehdään uusi funktio datan käsittelyä varten:
+Nyt lisätään otsikoiden alle lisätietoa kustakin maasta ml. maan lipun. Tehdään sitä varten uusi apufunktio *countryData*, joka luo uuden divin, ja sinne tiedot pääkaupungista, asukasluvusta ja maan lipun kuvan. Funktio palauttaa luodun div:in. Huom! *append*:in avulla voi lisätä useammankin elementin kerralla, *appendChild* toimii vain yhdelle kerrallaan.
 
 ```js
-const countryData = function(country){
-    let newDiv = document.createElement("div");
-    let capital = makeTextNode("p", "Pääkaupunki:" + country.capital);
-    let population = makeTextNode("p", "Asukasluku:" + country.population);
-    let image = document.createElement("img");
-    image.src = country.flag;
-    newDiv.appendChild(capital);
-    newDiv.appendChild(population);
-    newDiv.appendChild(image);
-    return newDiv;
+function newInfoDiv(country){
+    let myDiv = document.createElement("div");
+
+    let myCapital = newTextElem( "Pääkaupunki:" + country.capital, "p");
+    let myPopulation = newTextElem("Asukasluku:" + country.population, "p");
+    let myImage = document.createElement("img");
+    myImage.src = country.flag;
+
+    myDiv.append(myCapital, myPopulation, myImage);
+
+    return myDiv;
 }
 ```
 
-Jotta uusi *countryData*:n palauttama *div*-elementti saadaan mukaan, lisätään seuraava koodirivi *countryTitle*-funktioon, juuri ennen *return*:ia:
+Jotta uusi *countryData*:n palauttama *div*-elementti saadaan mukaan, kutsutaan sitä (*newCountryDiv*-funktiossa) ja lisätään se append:illa otsikon perään:
 
 ```js
-    newDiv.appendChild(countryData(country));
+let myInfoDiv = newInfoDiv(country);
+myDiv.append(myTitle, myInfoDiv);
 ```
 
 Nyt sivulla pitäis näkyä maiden nimet, sekä niihin liittyvä lisätieto jokaisen otsikon alla.
 
-### Pure JS, part 4
+![maat_step4](./img/maa_step4.PNG)
 
-Jotta sivulle mahtuisi enemmänkin maita, piilotetaan yksityiskohtaista dataa sisältävät *div*:t. Lisää seuraava koodirivi *countryData*-funktioon:
+### Step 5: Piilotetaan/näytetään lisätieto otsikkoa klikkaamalla
+
+Jotta sivulle mahtuisi enemmänkin maita, piilotetaan yksityiskohtaista dataa sisältävät *div*:t. Lisää seuraava koodirivi *countryDiv*-funktioon:
 
 ```js
-    newDiv.style.display = "none";
+myInfoDiv.style.display = "none";
 ```
 
-Lisätään uusi tapahtumakuuntelija (*countryTitle*-funktioon edellisten jatkoksi), niin että maan nimeä klikkaamalla saadaan data näkyviin ja uudelleen klikkaamalla taas piilotettua. Huomaa, että *toggleData*:lle annetaan parametrina ko. elementin (maan otsikko - elementti) sisarus (*nextSibling*), joka sisältä piilotettavan datan. Ilman tätä otsikko itse piilotettaisiin.
+Nyt lisätiedot katosivat näkyviltä. Lisätään uusi tapahtumakuuntelija (*newCountryDiv*-funktioon edellisten jatkoksi), niin että maan nimeä klikkaamalla saadaan data näkyviin ja uudelleen klikkaamalla taas piilotettua. 
 
 ```js
-elem.addEventListener("click", () => toggleData(elem.nextSibling));
+myTitle.addEventListener("click", () => toggleData(myInfoDiv));
 ```
 
 Tässä *callback*-funktioksi annetaan *toggleData*-funktio, joka muuttaa elementin näkyvyyttä:
