@@ -8,3 +8,8 @@ Harjoitellaan CSS:ää vielä. [Linkin takana](https://preview.themeforest.net/i
 2. Tee ensin sivuston asettelu. Huomio myös esimerkiksi paikalleen jäävä header (toimii position-ominaisuudella).
 3. Lisää kuviin väriefektit.
 4. Lisää viimeisenä animaatioita.
+
+
+Kevennykseksi
+
+![No matter, I misspelled a variable](./misspelled.jpg)
