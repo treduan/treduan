@@ -91,6 +91,8 @@ Tämä demo tarvitsee toimiakseen webbiserverin (PHP-development server riittä�
 php -S localhost:8888
 ```
 
+Korjaus: Jotta tämä toimii, pitää HTML-tiedoston sijaan olla php-tiedosto, jonka nimen täytyy olla *index.php*.
+
 Huom! Jos teet näitä tehtäviä kotona, [asenna XAMPP](https://www.apachefriends.org/download.html), sen mukana saat PHP-development server:in.
 
 ### Plan B (jos et saa edellistä kohtaa toimimaan)
