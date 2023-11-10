@@ -18,7 +18,7 @@ Muuttujiin voi tallentaa Php:ssä samoja tietoja kuin JavaScriptissäkin. Näkyv
 
 Merkkijonoja ja muuttujia voi yhdistää merkkijonoiksi pisteellä (.) eli plussaa ei käytetä muihin kuin laskutoimituksiin. Muuttujia voi käyttää merkkijonojen sisällä joustavammin eli niitä ei ole pakko yhdistää pisteellä muun merkkijonon kanssa.
 
-```php
+````php
 <?php
 
 $greeting = "Hello there";
@@ -27,5 +27,10 @@ $name = "Anna";
 echo $greeting . " " . $name . "\n";
 echo "How are you $name? \n";
 echo "Nice to meet you.";
-``
+?>
+````
 
+## Demotehtävä
+1. Kopioi ylläoleva Php-koodi ja tallenna se tiedostoon, jonka nimi on *greeting.php*.
+2. Vaihda muuttujien arvot ja tallenna.
+3. Aja koodi konsolista komennolla *php greeting.php*.
