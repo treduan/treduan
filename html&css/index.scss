@@ -1,4 +1,4 @@
-$primary: rgb(207, 45, 45);
+$primary: rgb(200, 45, 45);
 
 .products
 {
@@ -41,4 +41,8 @@ body {
 
 .add {
     color: $primary;
+    border: solid 2px brown;
+    border-radius: 12px;
+    box-shadow: grey 8px 8px 5px; 
+    padding: 10px;
 }
