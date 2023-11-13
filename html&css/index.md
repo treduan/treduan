@@ -17,6 +17,7 @@
 - [Responsiivisuus](./responsiivisuus/index.md)
 - [Bootstrap](./bootstrap/index.md)
 - [Saavutettavuus](./saavutettavuus/index.md)
+- [SASS](./sass/index.md)
 
 ## Palautettavat harjoitukset
 - [Harjoitus 1: vapaavalintainen sivupohja](./htmlharjoitus1/index.md)
