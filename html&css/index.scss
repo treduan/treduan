@@ -1,3 +1,5 @@
+$primary: rgb(207, 45, 45);
+
 .products
 {
     display: flex;
@@ -35,4 +37,8 @@ body {
 .blue:hover {
     width: 400px;
     transform: rotate(45deg);
+}
+
+.add {
+    color: $primary;
 }
