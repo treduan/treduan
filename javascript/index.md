@@ -14,6 +14,7 @@
 - [Oliot](./oliot/index.md)
 - [Näkyvyys](./nakyvyys/index.md)
 - [Tyyli ja parhaat käytännöt](./tyyli/index.md)
+- [Taulukot ja JSON](./taulukot2/index.md)
 
 ### JavaScript selaimessa
 
