@@ -1,3 +1,6 @@
+let sent = "This is a test sentence.";
+
+/*
 let scores = [
     ["Mary Sue", 66, 87, 78],
     ["John Doe", 55, 68, 74],
@@ -40,3 +43,4 @@ const teams = [
     {name: "Kaukajärven joukkue", members: 9, representative: "Peter Potter"},
     {name: "Annalan joukkue", members: 3, representative: "Pia Peer"}
 ];
+*/
