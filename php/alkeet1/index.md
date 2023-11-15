@@ -30,7 +30,7 @@ echo "Nice to meet you.";
 ?>
 ````
 
-## Demotehtävä
+## Demotehtävä 1
 1. Kopioi ylläoleva Php-koodi ja tallenna se tiedostoon, jonka nimi on *greeting.php*.
 2. Vaihda muuttujien arvot ja tallenna.
 3. Aja koodi konsolista komennolla *php greeting.php*.
@@ -105,7 +105,11 @@ function wear_jacket($temperature) {
 ?>
 ````
 
-### Kommenttimerkit
+## Demotehtävä 2
+1. Jatka edelliseen php-tiedostoon.
+2. 
+
+## Kommenttimerkit
 
 PHP:ssä toimivat samat kommenttimerkit kuin JavaScriptissä:
 
@@ -123,3 +127,9 @@ Jos kommentti osuu HTML-osaan (php-tagien ulkopuolelle) se on:
 ```html
 <!-- html kommmentti -->
 ```
+## Harjoitukset:
+Harjoittelemme Php:n perussyntaksia käyttäen w3schoolsin materiaaleja. Sieltä löytyy myös lisää Php:n syntaksista.
+
+1. Tee [w3schoolin PHP-harjoitukset](https://www.w3schools.com/php/php_exercises.asp)<base target="_blank">
+
+2. Tee [w3schoolin PHP-quiz](https://www.w3schools.com/php/php_quiz.asp)<base target="_blank">

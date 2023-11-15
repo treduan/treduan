@@ -4,31 +4,17 @@
     <title>Test</title> 
 </head>
 <body>
-    <ul id="myList"></ul>
-    <script>
-        let data = ["Ram", "Shyam",
-                    "Sita", "Gita"];
-        let lastIndex = 0;
-
-        const addToList = () => {
-            let word = document.getElementById("word").value;
-            data.push(word);
-            updateList();
-        }; 
-        const updateList = () => {
-            let list = document.getElementById("myList");
-            for (let i = lastIndex; i < data.length; i++) {
-                let li = document.createElement("li");
-                li.innerText = data[i];
-                list.appendChild(li);
-                lastIndex++; // Update the last index
-        }; 
-        }
-        updateList();
-
-    </script>
-    <input type="text" id="word">
-    <button onclick="addToList()">Add</button>
-
+    <script>const text = {books:
+[
+    {"title": "Fellowship of the Ring", "author": "J. R. R. Tolkien", "genre": "Fantasy"},
+    {"title": "Dune", "author": "Frank Herbert", "genre": "Science Fiction"},
+    {"title": "Pride and Prejudice", "author": "Jane Austen", "genre": "Fiction"},
+    {"title": "Harry Potter and the Philosopher's Stone", "author": "J. K. Rowling", "genre": "Fantasy"},
+    {"title": "Game of Thrones", "author": "G. R. R. Martin", "genre": "Fantasy"},
+    {"title": "Anna Karenina", "author": "Leo Tolstoi", "genre": "Fiction"}
+]};
+ 
+        console.log(text.books[2].title);
+        </script>
 </body>
  </html>
