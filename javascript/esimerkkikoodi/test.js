@@ -1,5 +1,7 @@
 let sent = "This is a test sentence.";
 
+const d = new Date("2022");
+console.log(d);
 /*
 let scores = [
     ["Mary Sue", 66, 87, 78],
