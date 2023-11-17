@@ -172,3 +172,17 @@ Voit seurata meitä myös Facebookissa ja Instagramissa (logot)
 1. Pidetään tiimipalaveri.
 2. Jatketaan työskentelyä. Ohjelmoijat viimeistelevät koodia, graafikko ulkoasusuunnitelman ja scrum master dokumentit.
 3. Aletaan valmistella Powerpoint-esitystä, joka pidetään seuraavalla viikolla.
+
+### Viikko 5
+1. Pidetään tiimipalaveri.
+2. Viimeistellään Powerpoint ja sovitaan, kuka esittelee mitäkin.
+3. Jos sivusto on valmis, julkaistaan se Github pagesin kautta. Jos se on vaiheessa, otetaan muutama kuvakaappaus mahdollisimman valmiista sivuista.
+4. Esitellään projekti ryhmälle.
+5. Pidetään sprint rewiew eli scrum masterin johdolla keskustelu, jossa käydään läpi, mitkä asiat projektissa onnistuivat hyvin, missä oli ongelmia ja miten niitä olisi ehkä voinut ratkaista.
+
+### Ohjeet Powerpointiin
+
+1. Kansisivulla esitellään projektin nimi ja projektitiimiläiset. Esityksessä myös jokainen tiimiläinen esittelee itsensä ja pääasiallisen roolinsa projektissa.
+2. Näytetään ensimmäinen ulkoasusuunnitelma sekä kaksi lopullista suunnitelmasivua sekä logo.
+3. Näytetään joko netissä olevalta sivulta lopputulosta tai näytetään muutama kuvakaappaus mahdollisimman valmiista sivuista.
+4. Esitellään vielä tuntikirjanpito.
