@@ -169,3 +169,6 @@ Voit seurata meitä myös Facebookissa ja Instagramissa (logot)
 3. Scrum master työstää projektin dokumentteja eli päivittää projektin README.md -tiedoston sekä tekee Excelillä tuntikirjanpidon, jossa näkyy jokaisen tiimiläisen käyttämä aika projektiin. [README ohjeet](./readmeohjeet.md) 
 
 ### Viikko 4
+1. Pidetään tiimipalaveri.
+2. Jatketaan työskentelyä. Ohjelmoijat viimeistelevät koodia, graafikko ulkoasusuunnitelman ja scrum master dokumentit.
+3. Aletaan valmistella Powerpoint-esitystä, joka pidetään seuraavalla viikolla.
