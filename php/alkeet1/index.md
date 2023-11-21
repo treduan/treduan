@@ -35,6 +35,28 @@ echo "Nice to meet you.";
 2. Vaihda muuttujien arvot ja tallenna.
 3. Aja koodi konsolista komennolla *php greeting.php*.
 
+## Muuttujien tietotyypit
+
+Php ei ole vahvasti tyypitetty ohjelmointikieli kuten ei ole JavaScriptkään. Silti muuttujilla on olemassa tietotyypit. Php:ssä ne ovat: 
+
+- String (merkkijonot)
+- Integer (kokonaisluvut)
+- Float (desimaaliluvut)
+- Boolean (totuusarvo)
+- Array (taulukko)
+- Object (olio)
+- NULL
+- Resource (referenssi ulkoiseen resurssiin kuten teitokantakyselyyn)
+
+Jos haluat tarkistaa jonkin muuttujan tietotyypin ja arvon, se onnistuu koodilla esimerkiksi seuraavasti:
+
+````php
+    <?php
+    $x = 8.33;
+    echo var_dump($x);
+    ?>
+````
+
 ## Funktiot
 
 Kuten JavaScriptissäkin, Php:ssä on funktioita. Niille voi sekä antaa parametrejä että ne voivat palauttaa paluuarvoja. Functio aloitetaan sanalla *function*, minkä jälkeen tulee funktion nimi, suluissa mahdolliset parametrit ja aaltosulkeiden sisällä varsinainen sisältö. Tyypillisesti Php:ssä käytetään sn. snakecase -nimeämistä eli jos funktion nimi on moniosainen, eri osat erotetaan alaviivalla.
@@ -90,7 +112,7 @@ PHP:ssä toimivat samat vertailuoperaattorit kuin JavaScriptissäkin:
 |$a <= $b	|$a on pienempi tai yhtäsuuri kuin $b|
 |$a >= $b	|$a on suurempi tai yhtäsuuri kuin $b|
 
-Funktiot voivat sisältää myös ehtolauseita, joissa operoidaan ylläolevilla asioilla.
+Funktiot voivat sisältää myös ehtolauseita, joissa operoidaan ylläolevilla asioilla. Eli luodaan *if*, *elseif* ja *else* -rakenteita.
 
 ````php
 <?php
@@ -107,7 +129,8 @@ function wear_jacket($temperature) {
 
 ## Demotehtävä 2
 1. Jatka edelliseen php-tiedostoon.
-2. 
+2. Luo funktio, jossa on ehtolauseke, joka palauttaa sopivan tervehdyksen riippuen siitä, mikä kellonaika sille annetaan. Eli se vastaa "Good morning!" aamulla ja aamupäivällä, "Good afternoon!" iltapäivällä, "Good evening!" alkuillasta ja "Good night!" myöhään illalla ja yöllä.
+3. Tulosta tulos konsoliin.
 
 ## Kommenttimerkit
 
@@ -130,6 +153,6 @@ Jos kommentti osuu HTML-osaan (php-tagien ulkopuolelle) se on:
 ## Harjoitukset:
 Harjoittelemme Php:n perussyntaksia käyttäen w3schoolsin materiaaleja. Sieltä löytyy myös lisää Php:n syntaksista.
 
-1. Tee [w3schoolin PHP-harjoitukset](https://www.w3schools.com/php/php_exercises.asp)<base target="_blank">
+1. Tee [w3schoolin PHP-harjoitukset](https://www.w3schools.com/php/php_exercises.asp)<base target="_blank">. Lue ensin kyseinen osio. Osiot ovat Variables, Echo/Print, Data Types, Strings, Numbers ja Functions.
 
-2. Tee [w3schoolin PHP-quiz](https://www.w3schools.com/php/php_quiz.asp)<base target="_blank">
+2. Tee [w3schoolin PHP-quiz](https://www.w3schools.com/php/php_quiz.asp)<base target="_blank">. Samat osiot.
