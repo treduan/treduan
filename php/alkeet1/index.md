@@ -153,6 +153,6 @@ Jos kommentti osuu HTML-osaan (php-tagien ulkopuolelle) se on:
 ## Harjoitukset:
 Harjoittelemme Php:n perussyntaksia käyttäen w3schoolsin materiaaleja. Sieltä löytyy myös lisää Php:n syntaksista.
 
-1. Tee [w3schoolin PHP-harjoitukset](https://www.w3schools.com/php/php_exercises.asp)<base target="_blank">. Lue ensin kyseinen osio. Osiot ovat Variables, Echo/Print, Data Types, Strings, Numbers ja Functions.
+1. Tee [w3schoolin PHP-harjoitukset](https://www.w3schools.com/php/php_exercises.asp)<base target="_blank">. Lue ensin kyseinen osio. Osiot ovat Variables, Echo/Print, Data Types, Strings, Numbers, Math, Constants, Operators, If...Else...Elseif, Switch ja Functions.
 
 2. Tee [w3schoolin PHP-quiz](https://www.w3schools.com/php/php_quiz.asp)<base target="_blank">. Samat osiot.
