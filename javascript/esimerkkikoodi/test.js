@@ -2,6 +2,14 @@ let sent = "This is a test sentence.";
 
 const d = new Date("2022");
 console.log(d);
+const birthday = new Date(1987, 0, 18, 22, 55, 0, 0);
+const now = new Date();
+let difference = now-birthday;
+let thisMonth = now.getMonth();
+
+console.log(thisMonth);
+
+console.log(Math.floor(difference / (365.25 * 24 * 60 * 60 * 1000)));
 /*
 let scores = [
     ["Mary Sue", 66, 87, 78],

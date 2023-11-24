@@ -15,6 +15,7 @@
 - [Näkyvyys](./nakyvyys/index.md)
 - [Tyyli ja parhaat käytännöt](./tyyli/index.md)
 - [Taulukot ja JSON](./taulukot2/index.md)
+- [Päiväykset](./paivaykset/index.md)
 
 ### JavaScript selaimessa
 
