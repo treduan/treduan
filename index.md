@@ -5,6 +5,6 @@
 
 [ Ohjelmoinnin perusteet JavaScriptilla ](./javascript/index.md)
 
-[ Tietokannat ](./Tietokannat/index.md)
+[Sähköinen asiointipalvelu - PHP](./php/index.md)
 
 [ Orientaatio ](./orientaatio2023/index.md)
