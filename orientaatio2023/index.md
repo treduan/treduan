@@ -17,3 +17,4 @@ Oppilaitoksessa
 
 [Leirikeskusprojekti](./projekti1/index.md)
 [Git](./git/index.md)
+[Portfolio](./portfolio/index.md)

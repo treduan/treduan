@@ -16,7 +16,9 @@ Portfoliosivulla on myös yhteystietosi (sähköposti vähintään, mutta esimer
 
 Portfoliosivulla voi olla myös muuta tietoa itsestäsi, esimerkiksi asuinpaikkakunta, mutta painottuen koulutukseen tai ammatillisiin asioihin, kuten erityisiin kiinnostuksenkohteisiin tai vahvuuksiin. Koko elämäntarina ei kuulu portfoliosivulle.
 
-Esimerkki portfoliosta löytyy [täältä](https://riccardozanutta.com/?ref=hackernoon.com)<base target="_blank">
+Esimerkki näyttävästä portfoliosta löytyy [täältä](https://riccardozanutta.com/?ref=hackernoon.com)<base target="_blank">.
+
+Tässä toinen, vähän [asiallisempi](https://brittanychiang.com/?ref=hackernoon.com#projects)<base target="_blank">.
 
 1. Tee itsellesi github-pages - portfolio, ja linkkaa siihen vähintään yksi HTML/CSS -projekti. Voit käyttää jotakin valmista portfolio-templatea, esim. Boostrap (HTML/CSS + JS) tai Tailwind (CSS + React) tai luoda oman suunnitelman täysin itse tai pohjautuen johonkin linkeistä löytyvään sivuun. Lopuksi laita linkki portfolioosi Teamsin tiedostoon.
 
