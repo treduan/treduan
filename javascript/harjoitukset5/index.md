@@ -34,10 +34,14 @@ Tulosta nimi sekä saatu käyttäjätunnus HTML-sivulle.
 nimi: Leevi Syrjäkylä
 käyttäjätunnus: treduleesyr
 
-## Tehtävä 3
+## Tehtävä 3: Kauppalista
 
 Luo lomake, jossa yksi input ottaa vastaan tekstiä ja vieressäoleva ottaa vastaan numeroita. Tarkoitus on ottaa vastaan ostoslista, jossa ensimmäiseen kirjoitetaan tuote ja jälkimmäiseen lukumäärä. Napilla tuotteet lisätään listaan.
 
 Tarkista ensin, ettei tuote ole tyhjä tai sen pituus ole lyhyempi kuin kaksi merkkiä. Jos numero on tyhjä, oletus on yksi kappale. Muuta tuotteen nimi isoille kirjaimille. Näytä tuote ja kappalemäärä listana lomakkeen alla.
 
 Lisää toinen nappi, jolla listan voi tyhjentää.
+
+## Tehtävä 4: Pelilogiikkaa
+
+Tutustu oheisen [pelin koodiin](https://github.com/otredu/js-games/tree/master/game-demo). Kopioi sitten koodi itsellesi. Kokeile muuttaa koodia niin, että esineet liikkuvat eri tavalla (esim. eri erineet eri nopeuksilla) ja/tai pelaaja liikkuu eri tavalla. Lisää peliin pisteenlasku niin, että ruudulla näkyvät pisteet (saat itse päättää paljonko pisteitä kustakin esineestä saa, tuleeko jostain miinuspisteitä jne). Lisää *game over*-ilmoitus kun pisteet menevät alle nollan tai pelaajan "elämät" loppuvat. Voit myös halutessasi tehdä täysin oman pelin hyödyntäen valmista koodia.
