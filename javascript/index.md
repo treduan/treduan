@@ -16,6 +16,7 @@
 - [Tyyli ja parhaat käytännöt](./tyyli/index.md)
 - [Taulukot ja JSON](./taulukot2/index.md)
 - [Päiväykset](./paivaykset/index.md)
+- [Tapahtumat (events)](./tapahtumat/index.md)
 
 ### JavaScript selaimessa
 
