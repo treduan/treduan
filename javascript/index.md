@@ -34,3 +34,4 @@
 
 ### Lisätehtävät
 - [Lottopeli](./lisatehtava/index.md)
+- [Taulukot ja tapahtumat](./lisatehtava2/index.md)
