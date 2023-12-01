@@ -70,3 +70,21 @@ function mouseOut(obj) {
 2. Luo sivulle nappi, jossa lukee: "Press". 
 3. Kun hiiri on napin päällä, napin teksti muuttuu ja siinä lukee: "Come on, press me!". Kun hiiri siirtyy pois, teksti on jälleen "Press".
 4. Kun nappia pidetään pohjassa, näkyy sen alla teksti: "Button is being pressed." Kun se vapautetaan, teksti vaihtuu ja siinä lukee: "Button was pressed."
+
+## Event Listener
+
+Tapahtumia voi seurata myös käyttämällä *event listener*iä ylläolevien sijaan. Silloin on mahdollista ottaa käyttöön paljon enemmän toiminnallisuuksia. Silloin myös pitää kirjoittaa funktio, joka hoitaa muutokset. HTML-koodiin ei silloin tarvitse tehdä mitään muutoksia, kunhan siinä on id tai class, jolla valita elementti.
+
+````html 
+<button id="btn">Press me</button>
+<script>
+let button = getElementById("btn");
+button.addEventListener("click", myFunction);
+
+const myFunction = () => {
+  console.log("Hello!");
+}
+</script>
+````
+w3schoolsissa on [lista](https://www.w3schools.com/jsref/dom_obj_event.asp)<base target="_blank"> kaikista DOM-eventeistä.
+
