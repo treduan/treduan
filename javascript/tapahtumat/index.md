@@ -63,3 +63,10 @@ function mouseOut(obj) {
 ````
 
 *onmousedown*, *onmouseup* ja *onclick* ovat kaikki hiireen liittyviä tapahtumia. *onmousedown* tapahtuu, kun hiiri painetaan pohjaan, *onmouseup* kun hiiren painallus poistuu, ja *onclick*, kun painallustapahtuma on ohi. Useimmiten käytetään vain *onclick*iä.
+
+## Demotehtävä 1
+
+1. Luo uusi HTML-sivu.
+2. Luo sivulle nappi, jossa lukee: "Press". 
+3. Kun hiiri on napin päällä, napin teksti muuttuu ja siinä lukee: "Come on, press me!". Kun hiiri siirtyy pois, teksti on jälleen "Press".
+4. Kun nappia pidetään pohjassa, näkyy sen alla teksti: "Button is being pressed." Kun se vapautetaan, teksti vaihtuu ja siinä lukee: "Button was pressed."
