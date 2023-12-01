@@ -73,7 +73,7 @@ function mouseOut(obj) {
 
 ## Event Listener
 
-Tapahtumia voi seurata myös käyttämällä *event listener*iä ylläolevien sijaan. Silloin on mahdollista ottaa käyttöön paljon enemmän toiminnallisuuksia. Silloin myös pitää kirjoittaa funktio, joka hoitaa muutokset. HTML-koodiin ei silloin tarvitse tehdä mitään muutoksia, kunhan siinä on id tai class, jolla valita elementti.
+Tapahtumia voi seurata myös käyttämällä *event listener*iä ylläolevien sijaan. Silloin on mahdollista ottaa käyttöön paljon enemmän toiminnallisuuksia. Silloin myös pitää kirjoittaa funktio, joka hoitaa muutokset. HTML-koodiin ei silloin tarvitse tehdä mitään muutoksia, kunhan siinä on id tai class, jolla valita elementti. 
 
 ````html 
 <button id="btn">Press me</button>
@@ -88,3 +88,11 @@ const myFunction = () => {
 ````
 w3schoolsissa on [lista](https://www.w3schools.com/jsref/dom_obj_event.asp)<base target="_blank"> kaikista DOM-eventeistä.
 
+*event listener*in hyvä puoli on se, että niitä voi olla useita eli esimerkiksi yhtä nappia painamalla voi saada aikaan monta eri asiaa.
+
+## Demotehtävä 2
+
+1. Voit jatkaa edelliseen tehtävään tai luoda uuden HTML-sivun.
+2. Luo sinne *input*-kenttä, joka ottaa vastaan numeroita.
+3. Luo sille event listener, joka seuraa muutoksia. 
+4. Linkitä event listeneriin funktio, jossa annettu numero kerrotaan kolmella. Inputin alla pitäisi lopulta näkyä teksti, jossa lukee "You gave number 5. Three times 5 is 15." Luonnolisesti vitosen tilalla annettu numero ja lopputuloksena laskutoimituksen tulos.
