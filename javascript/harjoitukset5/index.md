@@ -1,4 +1,4 @@
-# Tehtäviä
+# Harjoitukset 5
 
 Käy tutustumassa JavaScriptin taulukkometodeihin [täällä](https://www.w3schools.com/js/js_array_methods.asp)<base target="_blank">. Tee sitten tehtäviä. Osa liittyy taulukoihin, osa ei.
 
@@ -24,7 +24,9 @@ Lue taulukosta etunimi kokonaan ja sukunimestä vain ensimmäinen merkki, yhdist
 
 Käytä aiempaa HTML-sivua.
 
-Valitse käyttäjän etunimen ja sukunimen. Tee toinen funktio, joka luo käyttäjän nimen avulla käyttäjätunnuksen seuraavasti: alkuosa on tredu ja lisäksi siinä on etu- ja sukunimen kolme ensimmäistä kirjainta, isot kirjaimet muutetaan pieniksi ja ääkköset korvataan ä -> a, ö -> o, å -> o
+Valitse käyttäjän etunimen ja sukunimen. Tee ensin funktiossa tarkistus, että nimet ovat riittävän pitkät eli niissä on oltava vähintään kaksi kirjainta molemmissa. Käytä *trim()*-funktiota tarkistamaan, että syötteessä ei ole tyhjiä lyöntejä. 
+
+Tee toinen funktio, joka luo käyttäjän nimen avulla käyttäjätunnuksen seuraavasti: alkuosa on tredu ja lisäksi siinä on etu- ja sukunimen kolme ensimmäistä kirjainta, isot kirjaimet muutetaan pieniksi ja ääkköset korvataan ä -> a, ö -> o, å -> o
 
 Tulosta nimi sekä saatu käyttäjätunnus HTML-sivulle.
 

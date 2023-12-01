@@ -31,7 +31,7 @@
 - [Harjoitukset 2](./harjoitukset2/index.md)
 - [Harjoitukset 3](./harjoitukset3/index.md)
 - [Harjoitukset 4](./harjoitukset4/index.md)
+- [Harjoitukset 5](./harjoitukset5/index.md)
 
 ### Lisätehtävät
 - [Lottopeli](./lisatehtava/index.md)
-- [Taulukot ja tapahtumat](./lisatehtava2/index.md)
