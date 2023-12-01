@@ -33,3 +33,11 @@ Tulosta nimi sekä saatu käyttäjätunnus HTML-sivulle.
 *Esimerkki:*
 nimi: Leevi Syrjäkylä
 käyttäjätunnus: treduleesyr
+
+## Tehtävä 3
+
+Luo lomake, jossa yksi input ottaa vastaan tekstiä ja vieressäoleva ottaa vastaan numeroita. Tarkoitus on ottaa vastaan ostoslista, jossa ensimmäiseen kirjoitetaan tuote ja jälkimmäiseen lukumäärä. Napilla tuotteet lisätään listaan.
+
+Tarkista ensin, ettei tuote ole tyhjä tai sen pituus ole lyhyempi kuin kaksi merkkiä. Jos numero on tyhjä, oletus on yksi kappale. Muuta tuotteen nimi isoille kirjaimille. Näytä tuote ja kappalemäärä listana lomakkeen alla.
+
+Lisää toinen nappi, jolla listan voi tyhjentää.
