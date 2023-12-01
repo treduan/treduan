@@ -15,6 +15,6 @@ Oppilaitoksessa
 
 - Yrityselämänedustajien esittäytyminen
 
-[Leirikeskusprojekti](./projekti1/index.md)
-[Git](./git/index.md)
-[Portfolio](./portfolio/index.md)
+- [Leirikeskusprojekti](./projekti1/index.md)
+- [Git](./git/index.md)
+- [Portfolio](./portfolio/index.md)
