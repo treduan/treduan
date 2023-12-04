@@ -4,4 +4,5 @@ Php on suosittu skriptauskieli, joka soveltuu ja jota käytetään paljon verkko
 
 ## Osiot
 
-[Alkeet 1](./alkeet1/index.md)
+- [Alkeet 1](./alkeet1/index.md)
+- [Taulukot](./taulukot/index.md)
