@@ -130,3 +130,49 @@ print_r(array_map("myfunction",$a));
 1. Käytä aiemmin luotua taulukkoa.
 2. Tee funktio, jossa ensin poistat taulukon ensimmäisen alkion ja lisäät sitten uuden ohjelmointikielen nimen taulukon loppuun.
 3. Tee *array_map*-funktio, jossa jokainen alkio muutetaan [isoille kirjaimille](https://www.w3schools.com/php/func_string_strtoupper.asp)<base target="_blank">. Tulosta sitten jokainen alkio konsoliin käyttäen esimerkiksi *foreach*ia.
+
+## Assosiatiiviset taulukot
+
+Php:ssä on myös taulukoita, joissa kaikilla alkioilla on nimet. Sellaisen voi luoda kahdella eri tavalla.
+
+````php
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+````
+
+tai
+
+````php
+$age = array();
+$age['Peter'] = "35";
+$age['Ben'] = "37";
+$age['Joe'] = "43";
+````
+
+Jos haluamme tulostaa jokin alkion, meidän täytyy käyttää alkion nimeä.
+
+````php
+<?php
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+echo "Peter is " . $age['Peter'] . " years old.";
+?>
+````
+
+Assosiatiivisen taulukon läpikäyminen onnistuu seuraavasti:
+
+````php
+<?php
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+
+foreach($age as $x => $x_value) {
+  echo "Key = " . $x . ", Value = " . $x_value;
+  echo "<br>";
+}
+?>
+````
+
+## Demotehtävä 3
+
+1. Jatka aiempaan tiedostoon.
+2. Luo assosiatiivinen taulukko, jossa on neljä ohjelmointiekielen nimeä, mutta alkioilla on nimet *Most popular*, *Second*, *Third* ja *Fourth*.
+3. Lisää taulukkoon vielä yksi ohjelmointikieli, joka on *Fifth*.
+4. Tulosta taulukko konsoliin.
