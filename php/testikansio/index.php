@@ -18,9 +18,9 @@
     function expenses($income, $price) {
         $percent = $price/$income;
         if($percent >= 0.3)
-            return " that is quite costly.";
+            return " that is quite costly";
         else 
-            return " you can afford that.";
+            return " you can afford that";
     }
 ?>
 <p>If your income is <?php echo $income . " and you buy an item with $price, " . expenses($price, $income) . "." ?></p> 
