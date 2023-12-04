@@ -176,3 +176,56 @@ foreach($age as $x => $x_value) {
 2. Luo assosiatiivinen taulukko, jossa on neljä ohjelmointiekielen nimeä, mutta alkioilla on nimet *Most popular*, *Second*, *Third* ja *Fourth*.
 3. Lisää taulukkoon vielä yksi ohjelmointikieli, joka on *Fifth*.
 4. Tulosta taulukko konsoliin.
+
+## Kaksiulotteiset taulukot
+
+Myös Php:ssä voi olla kaksiulotteisia taulukoita eli taulukoita toisten taulukoiden sisällä. Esimerkkinä voisi olla vaikka taulukko kaupan tuotteista varastossa. Silloin meillä voi olla taulukko, jossa on taulukoita, joissa on tuotenumero, tuotteen nimi, tilausmäärä, varastosaldo, hinta jne.
+
+Kaksiulotteinen taulukko voidaan luoda seuraavasti:
+
+````php
+$cars = array (
+  array("Volvo",22,18),
+  array("BMW",15,13),
+  array("Saab",5,2),
+  array("Land Rover",17,15)
+);
+````
+
+Sen läpikäymiseen tarvitaan kaksi sisäkkäistä silmukkaa. Usein käytetään kahta *for*-silmukkaa. Tässä luodaan uusi taulukko supersankareista.
+
+````php
+<?php
+// Multidimensional array
+$superheroes = array(
+    "spider-man" => array(
+        "name" => "Peter Parker",
+        "email" => "peterparker@mail.com",
+    ),
+    "super-man" => array(
+        "name" => "Clark Kent",
+        "email" => "clarkkent@mail.com",
+    ),
+    "iron-man" => array(
+        "name" => "Harry Potter",
+        "email" => "harrypotter@mail.com",
+    )
+);
+ 
+// Printing all the keys and values one by one
+$keys = array_keys($superheroes);
+for($i = 0; $i < count($superheroes); $i++) {
+    echo $keys[$i] . "{<br>";
+    foreach($superheroes[$keys[$i]] as $key => $value) {
+        echo $key . " : " . $value . "<br>";
+    }
+    echo "}<br>";
+}
+?>
+````
+
+## Demotehtävä 4
+
+1. Jatka edelliseen tiedostoon.
+2. Luo kaksiulotteinen taulukko lemmikkieläimistä. Taulukossa on vähintään kolme lemmikkieläintä, joilla on nimi, laji ja ikä.
+3. Tulosta lemmikkieläimet konsoliin.
