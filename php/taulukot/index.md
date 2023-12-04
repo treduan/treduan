@@ -192,6 +192,16 @@ $cars = array (
 );
 ````
 
+tai
+
+````php
+$cars = array [
+  ["Volvo",22,18],
+  ["BMW",15,13],
+  ["Saab",5,2],
+  ["Land Rover",17,15]
+];
+
 Sen läpikäymiseen tarvitaan kaksi sisäkkäistä silmukkaa. Usein käytetään kahta *for*-silmukkaa. Tässä luodaan uusi taulukko supersankareista.
 
 ````php
@@ -223,6 +233,8 @@ for($i = 0; $i < count($superheroes); $i++) {
 }
 ?>
 ````
+
+Lisää kaksiulotteisista taulukoista voi lukea [täältä](https://www.phptutorial.net/php-tutorial/php-multidimensional-array/)<base target="_blank">.
 
 ## Demotehtävä 4
 
