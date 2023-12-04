@@ -242,3 +242,5 @@ Lisää kaksiulotteisista taulukoista voi lukea [täältä](https://www.phptutor
 1. Jatka edelliseen tiedostoon.
 2. Luo kaksiulotteinen taulukko lemmikkieläimistä. Taulukossa on vähintään kolme lemmikkieläintä, joilla on nimi, laji ja ikä.
 3. Tulosta lemmikkieläimet konsoliin.
+4. Muuta viimeisen lemmikin nimeä.
+5. Poista ensimmäinen lemmikki ja lisää taulukon alkuun uusi lemmikki.
