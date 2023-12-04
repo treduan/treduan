@@ -81,3 +81,52 @@ Taulukon sisältöä voi muuttaa monin tavoin. Yksittäisen taulukon alkion voi 
 $names[1] = "Miriam";
 ?>
 ````
+
+Taulukon loppuun voi lisätä alkion tai useita funktiolla *array_push*. Sulkujen sisällä on ensin taulukon nimi ja sen jälkeen lisättävät alkiot.
+
+````php
+<?php
+array_push($names, "Mary", "John");
+?>
+````
+
+Taulukon alkuun voi lisätä alkion tai useamman funktiolla *array_unshift*.
+
+````php
+<?php
+array_unshift($names, "Mary", "John");
+?>
+````
+
+Taulukon lopusta voi poistaa alkion funktiolla *array_pop*. Alusta voi poistaa alkion funktiolla *array_shift*.
+
+*array-map*-funktiolla luodaan uusi taulukko siten, että jokaista sen alkiota voidaan muokata. Tässä esimerkissä jokainen alkio kerrotaan itsellään.
+
+````php
+<?php
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>
+<?php
+function myfunction($num)
+{
+  return($num*$num);
+}
+
+$a=array(1,2,3,4,5);
+print_r(array_map("myfunction",$a));
+?>
+</p>
+
+</body>
+</html>
+?>
+````
+
+## Demotehtävä 2
+
+1. Käytä aiemmin luotua taulukkoa.
+2. Tee funktio, jossa ensin poistat taulukon ensimmäisen alkion ja lisäät sitten uuden ohjelmointikielen nimen taulukon loppuun.
+3. Tee *array_map*-funktio, jossa jokainen alkio muutetaan [isoille kirjaimille](https://www.w3schools.com/php/func_string_strtoupper.asp)<base target="_blank">. Tulosta sitten jokainen alkio konsoliin käyttäen esimerkiksi *foreach*ia.
