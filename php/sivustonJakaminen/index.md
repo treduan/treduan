@@ -1,6 +1,6 @@
 # Sivuston jakaminen eri tiedostoihin
 
-On hyvin tyypillistä, että Php:llä sivuston rakenne jaetaan osiin, erityisesti, jos meillä on osia, joita toistetaan eri sivuilla. Sellaisia ovat esimerkiksi header ja footer. Voimme haluta tehdä omaan tiedostoonsa, jolloin käytännössä muokkaamme vain yhtä tiedostoa, joka ei paisu valtavan suureksi. Jos sivulla on monta eri osiota, nekin usein jaetaan eri tiedostoihin. Ne voidaan yhdistää lopulliseen sivuun *require*n avulla.
+On hyvin tyypillistä, että Php:llä sivuston rakenne jaetaan osiin, erityisesti, jos meillä on osia, joita toistetaan eri sivuilla. Sellaisia ovat esimerkiksi header ja footer, jotka toistuvat samanlaisia sivuston kaikilla sivuilla, kun sivujen muu sisältö vaihtuu. Voimme haluta tehdä ne omaan tiedostoonsa, jolloin käytännössä muokkaamme vain yhtä tiedostoa, joka ei paisu valtavan suureksi ja vältymme toistamasta paljon koodia. Jos sivulla on monta eri osiota, nekin usein jaetaan eri tiedostoihin. Ne voidaan yhdistää lopulliseen sivuun *require*n avulla.
 
 Meillä voi esimerkiksi olla seuraavanlainen verkkosivun alku, jossa on käytännössä tiedoston *head*, johon kuuluu myös CSS-tiedoston linkitys, *header*, jossa on sivuston otsikko, sekä navigointi.
 
@@ -35,7 +35,7 @@ Sivuston viimeisenä oleva *footer* puolestaan voisi näyttää seuraavalta. Sii
 </html>
 ```
 
-Seuraavana palasena olisi sivun varsinainen sisältö, jossa voi olla ohjelmointilogiikkaa. Eri palasten *require* on sillä kohdalla tiedostoa, mihin sen sisltö halutaan.
+Seuraavana palasena olisi sivun varsinainen sisältö, jossa voi olla ohjelmointilogiikkaa. Eri palasten *require* on sillä kohdalla tiedostoa, mihin sen sisältö halutaan.
 
 ```php
 <?php require "header.php"; ?>
@@ -44,3 +44,11 @@ Seuraavana palasena olisi sivun varsinainen sisältö, jossa voi olla ohjelmoint
 
 <?php require "footer.php"; ?>
 ```
+
+## Demotehtävä 1
+
+1. Luo uuteen kansioon tiedostot nimiltään *index.php*, *header.php*, *article.php* ja *footer.php*. 
+2. *header.php*-tiedostoon tulee HTML-sivun alku sekä *header*, jossa on otsikko, ja navigointi. Teemana on uutissivu eli otsiko voi olla vaikka Tredun uutiset. Navigoinnissa voi olla esimerkiksi Etusivu, Tuoreimmat, Kaikki uutiset, Arkisto, Toimitus.
+3. *article.php*-tiedostoon tulee esimerkkiartikkeli, johon kuuluu artikkelin nimi, kirjoittaja, julkaisuajankohta, kuva ja tekstiä (tässä tapauksessa teksti voi olla lorem ipsumia tms).
+4. *footer.php*-tiedostoon tulee footerille tyypillisiä asioita kuten copyright sekä HTML-tiedoston sulkutagit.
+5. Yhdistä nämä tiedostot toisiinsa *index.php*-tiedostossa ja tarkista, että ne toimivat.
