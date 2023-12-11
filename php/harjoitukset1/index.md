@@ -37,14 +37,14 @@ Tulosta *&* konsoliin kahdeksalle riville niin, että jokaisella rivillä kuviot
 
 Lopputulos voi näyttää esimerkiksi seuraavalta:
 
-&&&
-&
-&&&&&&
-&&
-&
-&&&&&&&&&
-&&&&&&
-&&
+&&& \
+& \
+&&&&&& \
+&& \
+& \
+&&&&&&&&& \
+&&&&&& \
+&& 
 
 ## Tehtävä 5
 
