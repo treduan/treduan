@@ -24,6 +24,5 @@
     }
 ?>
 <p>If your income is <?php echo $income . " and you buy an item with $price, " . expenses($price, $income) . "." ?></p> 
- 
-</body>
-</html>
+<?php require "article.php" ?> 
+<?php require "footer.php" ?>
