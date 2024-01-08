@@ -8,3 +8,5 @@
 [Sähköinen asiointipalvelu - PHP](./php/index.md)
 
 [ Orientaatio ](./orientaatio2023/index.md)
+
+[Sähköinen asiakaspalvelu - verkkokauppa](./verkkokauppa/index.md)
