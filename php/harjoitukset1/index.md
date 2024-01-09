@@ -53,3 +53,8 @@ Luo kaksi taulukkoa, joista yhdessä on viisi etunimeä ja toisessa viisi sukuni
 ## Tehtävä 6
 
 Luo neljä Php-tiedostoa, jotka yhdistät toimivaksi HTML:ksi. Ensimmäisen nimi on *header.php*, jossa on HTML-tiedoston alku sekä *header*, jossa on otsikko (*Tredun uutiset*) ja logokuva (voit valita jonkin vanhoje prjektien kuvan). Toisen nimi on *index.php*, johon tiedostot kootaan. Kolmas on nimeltään *news.php*, jossa on lista uutisartikkeleista, joka tulostetaan sivulle. Listassa pitää olla uutisen nimi ja päivämäärä. Neljännen tiedoston nimi on *footer.php* ja siinä on copyright sekä logo toistettuna. Lisää vielä CSS-tiedosto ja muotoile sivua kevyesti. Tarkista lopuksi validaattorilla, että sivu on oikeaoppista HTML:ää (kun sivu pyörii, katso lähdekoodi ja kopioi se validaattoriin).
+
+
+## Lisätehtävä
+
+Tee funktio, joka ottaa vastaan taulukon, jossa on koearvosanoja nnalta tuntematon määrä (asteikko 4-10, plussat, miinukset ja puolikkaat desimaaleilla, muista, että desimaali merkitään pisteellä). Funktio palauttaa arvosanojen keskiarvon eli arvosanat laskettuna yhteen ja jaettuna arvosanojen määrällä. Lopuksi ohjelma antaa seuraavat viestit: jos keskiarvo on 9 tai yli "Excellent!", jos se on alle 9 ja 8 tai yli "Good work!", jos se on alle 8 ja 7 tai yli "Decent work.", jos alle 7 ja yli tai tasan 6 "There is room for improvement.", jos alle 6 ja yli 4.25 "You pass but barely." ja jos se on alle 4.25 "You have failed.".
