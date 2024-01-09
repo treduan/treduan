@@ -1,7 +1,5 @@
 # Harjoitukset 2
 
-# Harjoitukset 2
-
 **Ennen näitä harjoituksia tutustu osioihin parametrit sivustolla ja lomakkeet.**
 
 Käytä *submit form*:ia parametrien välittämiseen ohjelmalle (saat ne superglobaalin muuttujan *$_GET* kautta).
