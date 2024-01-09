@@ -1,9 +1,9 @@
 # Parametrien välittäminen osoitekentässä
 
-Kun sivu pyydetään palvelimelta, sille voidaan pyynnön mukana erilaisia parametreja. Esim. käyttäjältä voidaan kysyä hänen nimeään. Tämä tieto välitetään palvelimelle osoitekentässä kuljetettavissa muuttujissa. Esimerkiksi *name*-muuttujalle voidaan antaa arvo:
+Kun sivu pyydetään palvelimelta, sille voidaan pyynnön mukana erilaisia parametreja. Esim. käyttäjältä voidaan kysyä hänen nimeään. Tämä tieto välitetään palvelimelle osoitekentässä kuljetettavissa muuttujissa. Esimerkiksi *name*-muuttujalle voidaan antaa arvo osoitekentässä:
 
 ```browser
-index2.php?name=Tiina
+index.php?name=Tiina
 ```
 
 PHP:ssa näin saatuja arvoja kutsutaan superglobaaleiksi muuttujiksi. Ne tallentuvat taulukkoon, jonka nimi on $_GET[]. Superglobaalin muuttujan 'name' saa poimittua taulukosta sen nimen avulla:
@@ -22,21 +22,23 @@ Käytännössä tämä tapahtuu niin, että kaikki erikoismerkit muunnetaan HTML
  <?= "Hello, " .  htmlspecialchars($_GET['name']); ?>
  ```
 
- Kokeile kirjoittaa superglobaaliin muuttujaan ilman sanitointia:
+## Demotehtävä 1
+
+1. Kokeile kirjoittaa superglobaaliin muuttujaan ilman sanitointia:
 
 ```cmd
- index2.php?name=<a href="http://google.com">Tiina</a>
+ index.php?name=<a href="http://google.com">Anna</a>
 ```
 
-Annettu merkkijono tulkitaan HTML-koodina. Vielä vaarallisempaa olisi saada JavaScriptiä sivulle:
+2. Kokeile, mitä tapahtuu, jos superglobaali koodi sisältääkin JavaScriptiä:
 
 ```cmd
- index2.php?name=<script>alert("hakkeri iski")</script>
+ index.php?name=<script>alert("You got hacked!")</script>
 ```
 
-Kokeile nyt samaa sanitoinnin kanssa. Sanitointi tekee koodista pelkkää tekstiä.
+3. Kokeile nyt samaa sanitoinnin kanssa. Sanitointi tekee koodista pelkkää tekstiä.
 
-### Parametrien tarkistaminen
+## Parametrien tarkistaminen
 
 PHP-ohjelman kannalta on oleellista testata lähettikö selain tietyt parametrit vai eli onko muuttujalle annettu arvo. Sen voi testata *isset()*-funktion avulla. *isset()* - palauttaa totuusarvon, jota voi testata joko perinteisellä if-else - ehtolauseella tai sitä vastaavalla lyhennettyllä muodolla, joka muodostetaan kysymysmerkin avulla (*ternary operator*).
 
@@ -67,3 +69,7 @@ Myös ehtolauseen voi katkaista ja kirjoittaa väliin HTML-koodia:
     <p> Hello, stranger </p>
 <?php endif?>
 ```
+
+## Demotehtävä 2
+
+1. Laita 
