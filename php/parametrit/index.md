@@ -72,4 +72,6 @@ Myös ehtolauseen voi katkaista ja kirjoittaa väliin HTML-koodia:
 
 ## Demotehtävä 2
 
-1. Laita 
+1. Laita osoitekentän parametriksi jokin tervehdys. Eli $namen sijaan siellä on *greeting*.
+2. Tarkista koodilla, onko parametri olemassa. Jos se on olemassa, sanitoi se ja näytä se sivustolla.
+3. Jos parametriä ei ole olemassa, näytä sivustolla teksti "I don't know how to greet you".
