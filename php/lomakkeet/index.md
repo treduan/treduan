@@ -6,20 +6,22 @@ Yksinkertainen HTML-lomake, joka käsittelee lomakkeeseen syötetyt arvot näytt
 ```php
 <?php require "header.php"; ?>
 
-<h2>Harjoitus</h2>
+<h2>Assignment 2</h2>
 
 <?php
     if(isset($_GET['name'], $_GET['age'])){
         $name = htmlspecialchars($_GET['name']);
         $age = htmlspecialchars($_GET['age']);
-        echo "Mitä kuuluu  $name? ", "Olet $age vuotta vanha";
+        echo "How are you  $name? " . "You are $age years old.";
     }
 ?>
 
 <form action="lomakedemo.php" method="get">
-    Etunimi: <input type="text" name="name" maxlength=30><br>
-    Ikä:     <input type="number" name="age"><br>
-             <input type="submit" value="Lähetä">
+    <label for="name">First name: </label> 
+    <input type="text" name="name" id="name" maxlength=30><br>
+    <label for="age">Age:</label>
+    <input type="number" name="age" id="age"><br>
+    <input type="submit" value="Send">
 </form>
 
 
@@ -45,18 +47,25 @@ Edellinen esimerkki toimii, mutta jos halutaan näyttää lomake vain, jos sitä
         if(isset($_GET['name'], $_GET['age'])){
             $name = htmlspecialchars($_GET['name']);
             $age = htmlspecialchars($_GET['age']);
-            echo "Mitä kuuluu  $name? ", "Olet $age vuotta vanha";
+            echo "How are you,  $name? ", "You are $age years old.";
         } else {
-            echo "Et voi jätttää kenttiä tyhjäksi";
+            echo "You cannot leave fields empty.";
         }
     ?>
 <?php else: ?>
-    <h3>Anna tietosi</h3>
+    <h3>Enter your information</h3>
     <form action="h1.php" method="get">
-        Etunimi: <input type="text" name="name" maxlength=30><br>
-        Ikä:     <input type="number" name="age"><br>
-        <input type="submit" value="Lähetä">
-        <input type="hidden" name="form_submitted" value="1" />
+    <label for="name">First name: </label> 
+    <input type="text" name="name" id="name" maxlength=30><br>
+    <label for="age">Age:</label>
+    <input type="number" name="age" id="age"><br>
+    <input type="submit" value="Send">
+    <input type="hidden" name="form_submitted" value="1" />
     </form>
 <?php endif; ?>
 ```
+
+## Demotehtävä
+
+1. Luo uuteen php-tiedostoon HTML-koodia, jossa on palautelomake juhlapalvelutilalle. Lomakkeessa on kolme kenttää, joista yksi on palautteenantajan nimi, yksi avoin tekstikenttä palautteelle ja yksi numerokenttä kokonaisarvosanalle välillä 1-5.
+2. Kun lomake lähetetään, näkyy lomakkeen alla tiedot siten, että palautteenantajaa kiitetään, näytetään sanallinen arvio ja kokonaisarvosana esim: "Thank you for your feedback, Anna. You wrote: "The service was very good". The grade you gave us was: "4".".

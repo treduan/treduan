@@ -8,6 +8,7 @@ Php on suosittu skriptauskieli, joka soveltuu ja jota käytetään paljon verkko
 - [Taulukot](./taulukot/index.md)
 - [Sivustojen jakaminen](./sivustonJakaminen/index.md)
 - [Parametrit sivustolla](./parametrit/index.md)
+- [Lomakkeet](./lomakkeet/index.md)
 
 
 ## Harjoitukset
