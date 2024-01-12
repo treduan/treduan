@@ -123,3 +123,19 @@ Voit tehdä toisen valituksi kirjoittamalla:
 ```html
 suurempi: <input type="radio" name="valinta" value="suurempi" checked="checked">
 ```
+## Lisätehtävä 1
+
+Laadi tietokoneaiheinen tietokilpailu (voit myös valita jonkin muun aiheen esim. sanakoe, päässälaskukoe):
+
+Kysymyksiä on 10, jokaisesta voi saada yhden pisteen.
+
+Lomakkeessa on tekstikenttiä, radionappeja ja valintaluetteloita (miksi ei valintaruutuja?). Pisteitä kertyy jokaisesta kysymyksestä, mutta vertailutaulukko on seuraava:
+
+pisteitä 1 - 3, arvosana on välttävä
+pisteitä 4 - 5, arvosana on tyydyttävä
+pisteitä 6 - 8, arvosana on hyvä
+pisteitä 9 - 10, arvosana on kiitettävä
+
+Peli näyttää arviointitaulukon ja antaa käyttäjälleen selkeän palautteen siitä mikä vastaus oli oikein ja paljonko siitä tuli pisteitä. Tee palaute switch-case-rakenteen avulla.
+
+Muotoile ulkoasusta hyvännäköinen.
