@@ -1,0 +1,4 @@
+# WordPress
+
+Jos WordPressista tekee hakuja, huomaa äkkiä, että sillä on kaksi sivustoa. Nämä kaksi ovat [wordpress.com](https://wordpress.com/)<base target="_blank"> ja [wordpress.org](https://wordpress.org/)<base target="_blank">. wordpress.com tarjoaa hostingpalvelun WordPressilla julkaisuun. Se on helppo ja siisti tapa tehdä verkkosivuja, mutta se on myös aika rajoittunut, sillä sen kautta tehdyihin sivuihin ei ole helppoa tehdä suurempia muutoksia toiminnallisuuksien tai ulkoasun suhteen. wordpress.org taas tarjoaa WordPressista version, jota on mahdollista muokata paljon laajemmin omien tarpeiden mukaan, mutta jota täytyy enemmän myös itse ylläpitää ja säätää, jos jotain menee pieleen. Molemmille versioille voi valita monista ulkoasuteemavaihtoehdoista, mutta vain wordpress.org-versioon voi lisätä omia plugineja, joilla sivuston toiminnallisuutta voi itse säätää.
+

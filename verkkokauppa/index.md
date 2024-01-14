@@ -5,3 +5,4 @@ Tällä kurssilla tutustutaan ensinnä siihen, mistä koostuu toimiva verkkokaup
 ## Osiot
 
 -[Sisällönhallintajärjestelmät](./jarjestelmat/index.md)
+-[WordPress](./wordpress/index.md)
