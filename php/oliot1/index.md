@@ -21,7 +21,10 @@ class pet {
 }
 ?>
 ````
-Tämän lisäksi yleensä on niin sanotut setter ja getter -funktiot, joiden avulla oliota muutellaan. Niinpä lopulta luokka näyttää seuraavalta:
+
+## Getter ja setter
+
+Tämän lisäksi yleensä on niin sanotut setter ja getter -funktiot, joiden avulla oliota muutellaan. Setter-funktiolla asetetaan olion muuttujaan arvo ja getter-funktiolla haetaan olion muuttujan arvo. Niinpä lopulta luokka näyttää seuraavalta:
 
 ````php
 <?php
@@ -63,11 +66,27 @@ class pet {
 
 Setter-metodeihin voidaan laittaa joukko ehtoja, joiden mukaan arvot voi asettaa, mikä on niiden suurin etu. Voimme esimerkiksi määritellä, että nimellä pitää olla vähimmäis- ja enimmäispituus.
 
+## Constructor
+
+Näiden lisäksi luokassa voi olla yksi tai useampi *constructor*-funktio. Se on ikään kuin malli siitä, mitä uutta oliota määritellessä tapahtuu eli mitä muuttujia oliolla voi heti alkuun olla.
+
+Jos *constructor* lisätään lemmikkiluokkaan kaikkien ominaisuuksien kanssa, se näyttäisi tältä:
+
+````php
+function __construct($spec, $bree, $na, $birth) {
+    $this->species = $spec;
+    $this->breed = $bree;
+    $this->name = $na;
+    $this->birthday = $birth;
+}
+````
+
+*constructor*eja voi olla myös useampi, jos jotkut ominaisuudet eivät ole pakollisia eli meillä voisi olla vaikka versio lemmikistä, jossa lemmikin syntymäpäivä ei ole tiedossa, jolloin on *constructor*, josta ei löydy syntymäpäivää.
 
 ## Demotehtävä 1
 
 1. Luo oma luokka verkkokaupassa olevasta tuotteesta. Mieti siis, mitä muuttujia tarvitaan esimerkiksi verkkokaupassa olevalla tuotteella. Voisiko tuotteella olla myös omia funktioita? 
-2. Lisää tuotteelle myös getter- ja setter-funktiot.
+2. Lisää tuotteelle myös getter- ja setter-funktiot sekä constructor.
 
 ## Olio
 
@@ -79,3 +98,34 @@ Olion luomisessa käytetään avainsanaa *new*. Samasta luokasta voi luoda loput
 $rekku = new pet;
 $misse = new pet;
 ````
+
+Voimme sitten määritellä lemmikin muuttujien arvot käyttämällä setter-funktiota.
+
+````php
+$rekku->setSpecies("Dog");
+$rekku->setBreed("Golden retriever");
+$rekku->setName("Rekku");
+$rekku->setBirthday("2021/10/21");
+
+$misse->setSpecies("Cat");
+$rekku->setBreed("Norwegian Forestcat");
+$rekku->setName("Misse");
+$rekku->setBirthday("2019/05/25");
+````
+
+Tosin useammin asetamme muuttujille arvot jo luodessamme ne.
+
+````php
+$marvin = new pet("Hamster", "Robovski", "Marvin", "2022/03/15");
+````
+
+Voimme hakea ja tulostaa olion muuttujien arvoja seuraavalla tavalla:
+
+````php
+echo $marvin->getName();
+````
+
+## Demotehtävä 2
+
+1. Luo tekemästäsi tuoteluokasta vähintään kaksi oliota, jonka muuttujille annat arvot.
+2. Tulosta molemmista toisen ominaisuuden arvo.
