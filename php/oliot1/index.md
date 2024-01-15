@@ -66,7 +66,16 @@ Setter-metodeihin voidaan laittaa joukko ehtoja, joiden mukaan arvot voi asettaa
 
 ## Demotehtävä 1
 
-1. Luo oma luokka 
+1. Luo oma luokka verkkokaupassa olevasta tuotteesta. Mieti siis, mitä muuttujia tarvitaan esimerkiksi verkkokaupassa olevalla tuotteella. Voisiko tuotteella olla myös omia funktioita? 
+2. Lisää tuotteelle myös getter- ja setter-funktiot.
+
 ## Olio
 
-Luokasta voidaan tehdä joukko olioita. Silloin luokan määrittelemille muuttujille annetaan arvot sen antaman mallin mukaan.
+Luokasta voidaan tehdä joukko olioita. Silloin luokan määrittelemille muuttujille annetaan arvot sen antaman mallin mukaan. Jos mietitään verkkokaupan tuotetta, josta loimme luokkia, tässä kohtaa alamme nimetä tuotteita sekä asettaa niille kuvauksia, hintoja. Ne ovat silloin olioita eli luokasta luotuja luokan ilmentymiä, joilla on konkreettisia arvoja.
+
+Olion luomisessa käytetään avainsanaa *new*. Samasta luokasta voi luoda loputtoman määrän uusia olioita.
+
+````php
+$rekku = new pet;
+$misse = new pet;
+````
