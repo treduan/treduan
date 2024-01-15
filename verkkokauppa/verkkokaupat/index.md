@@ -8,10 +8,10 @@ Laadi Word-dokumentti, johon kirjaat muutamia huomiota verkkokaupoista, joiden s
 
 Tässä muutamia, mitä voit vilkaista, jos et keksi itse sopivia:
 
-[Ruohotupa](https://ruohotupa.vilkas.shop/)<base target="_blank">
-[House of Simone](https://holvi.com/shop/hosfin/)<base target="_blank>
-[Triosoft](https://www.triosoft.fi/index.html)<base target="_blank">
-[Finsket](https://finsket.com/fi)<base target="_blank">
+- [Ruohotupa](https://ruohotupa.vilkas.shop/)<base target="_blank">
+- [House of Simone](https://holvi.com/shop/hosfin/)<base target="_blank">
+- [Triosoft](https://www.triosoft.fi/index.html)<base target="_blank">
+- [Finsket](https://finsket.com/fi)<base target="_blank">
 
 1. Millaisista osista verkkokauppa koostuu? Kiinnitä huomiota erityisesti sivuston ylä- ja alaosiin.
 2. Millaisia navigointiratkaisuja verkkokaupoissa on?
