@@ -7,3 +7,27 @@ Olion sisäisillä muuttujilla on määriteltynä näkyvyys eli ne ovat tyyppiä
 1. Kopioi alla oleva luokka.
 2. Luo muuttujasta olio. 
 3. Kokeile tulostaa jokainen muuttuja (esim. ``echo $object->public``) ja lopuksi kutsu olion *printHello*-funktiota.
+
+```php
+<?php
+class MyClass
+{
+    public $public = 'Public';
+    protected $protected = 'Protected';
+    private $private = 'Private';
+
+    function printHello()
+    {
+        echo $this->public;
+        echo $this->protected;
+        echo $this->private;
+    }
+}
+
+$obj = new MyClass();
+echo $obj->public; 
+echo $obj->protected; 
+echo $obj->private; 
+$obj->printHello(); 
+
+````
