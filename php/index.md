@@ -10,6 +10,11 @@ Php on suosittu skriptauskieli, joka soveltuu ja jota käytetään paljon verkko
 - [Parametrit sivustolla](./parametrit/index.md)
 - [Lomakkeet](./lomakkeet/index.md)
 
+### Olio-ohjelmointi
+
+- [Luokat ja oliot](./oliot1/index.md)
+- [Näkyvyys](./olionakyvyys/index.md)
+
 
 ## Harjoitukset
 
