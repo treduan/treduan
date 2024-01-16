@@ -16,3 +16,11 @@ Tässä muutamia, mitä voit vilkaista, jos et keksi itse sopivia:
 1. Millaisista osista verkkokauppa koostuu? Kiinnitä huomiota erityisesti sivuston ylä- ja alaosiin.
 2. Millaisia navigointiratkaisuja verkkokaupoissa on?
 3. Mieti (ja voit testata jollakin verkkokaupalla osittain), miten toimii tuotteen katsominen ja sen tilaaminen? Millaisia eroja huomaat verkkokauppojen välillä? Mitkä asiat tekevät tilaamisesta helppoa ja mitkä hankaloittavat sitä?
+
+## Huomioon otettavia ominaisuuksia
+
+### Rekisteröityminen ja kirjautuminen
+
+Useimmissa verkkokaupoissa on mahdollisuus rekisteröityä. Osassa se on jopa pakollista, jotta voi tilata yhtään mitään. Rekisteröitymisessä on se hyvä puoli, että käyttäjä voi tallentaa nimensä, osoitteensa ja mahdollisesti maksutapansa verkkokaupassa. Lisäksi yleensä löytyy ostohistoria. Edistyneemmät verkkokaupat voivat käyttää tekoälyä antamaan suosituksia perustuen selaus- ja tilaushistoriaan. Toisaalta jos ei ole aikeissa jäädä säännölliseksi asiakkaaksi, rekisteröityminen voi tarkoittaa, että kynnys tehdä tilaus nousee. Rekisteröitymisestä kannattaa siis tehdä mahdollisimman helppoa.
+
+Linkki rekisteröitymiseen löytyy yleensä yläpalkista oikeasta laidasta kuten myös sisäänkirjautuminen. Joskus rekisteröityminen avautuu uudelle sivulle, joskus avautuu modaali tai dialogi-ikkuna sivun päälle.
