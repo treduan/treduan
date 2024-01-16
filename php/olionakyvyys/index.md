@@ -24,10 +24,4 @@ class MyClass
     }
 }
 
-$obj = new MyClass();
-echo $obj->public; 
-echo $obj->protected; 
-echo $obj->private; 
-$obj->printHello(); 
-
 ````
