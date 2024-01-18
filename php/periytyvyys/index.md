@@ -2,7 +2,7 @@
 
 Yksi syy käyttää luokkia on se, että niiden kanssa voi käyttää periytyvyyttä, mikä vähentää koodin kirjoittamista ja tekee koodista joissakin tapauksissa monikäyttöisempää.
 
-Periytyvyys tarkoittaa, että luokasta voidaan tehdä toinen luokka (tai monta uutta luokkaa), joka saa perimänsä luokan ominaisuudet, mutta sille voidaan lisätä vielä uusia ominaisuuksia. Luokkaa, josta tehdään uusi luokka, kutsutaan *vanhemmaksi* (parent) ja luokkaa, joka tehdään vanhemmasta, kutsutaan *lapseksi* (child).
+Periytyvyys tarkoittaa, että luokasta voidaan tehdä toinen luokka (tai monta uutta luokkaa), joka saa perimänsä luokan ominaisuudet, mutta sille voidaan lisätä vielä uusia ominaisuuksia. Luokkaa, josta tehdään uusi luokka, kutsutaan *vanhemmaksi* (parent) ja luokkaa, joka tehdään *vanhemmasta*, kutsutaan *lapseksi* (child).
 
 Käytännön esimerkkinä voisi olla vaikkapa verkkokauppayrityksen järjestelmässä henkilö (lyhentämisen vuoksi luokasta puuttuu muun muassa getterit ja setterit). 
 
@@ -37,7 +37,7 @@ Tästä pohjasta saattaisimme haluta luoda esimerkiksi asiakkaan, jolla on kaikk
 ?>
 ````
 
-Samasta person-luokasta voimme sitten tehdä toisen luokan, joka kuvaa työntekijää. Silloin sanotaan, että *person* on *parent* -luokka ja *customer* ja *employee* ovat *sibling* -luokkia.
+Samasta person-luokasta voimme sitten tehdä toisen luokan, joka kuvaa työntekijää. Silloin sanotaan, että *person* on *vanhempi*-luokka ja *customer* ja *employee* ovat *sibling* eli *sisarus*-luokkia.
 
 ````php
 <?php
@@ -72,3 +72,14 @@ Jos emme lisää periytyneeseen luokkaan omaa constructoria, se voi käyttää s
         $this->orderHistory = $history;
     }
 ?>
+````
+
+## Demotehtävä 2
+
+1. Jos aiemman tehtävän *loanable*lla ei ole construktoria, lisää se.
+2. Lisää myös *loanable*sta tekemiisi *lapsi*-luokkiin construktorit, jotka välittävät *loanable*-luokan ominaisuudet sille ja asettavat loput ominaisuudet itse.
+3. Luo uusista luokista kaksi oliota.
+
+## Override
+
+Joskus jos *vanhempi*-luokassa on omia funktioita, emme haluakaan käyttää niitä samanlaisina, vaan muutamme niitä. 
