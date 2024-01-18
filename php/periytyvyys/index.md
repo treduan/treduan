@@ -1,10 +1,10 @@
-# Periytyvyys
+# Periytyvyys (inheritance)
 
 Yksi syy käyttää luokkia on se, että niiden kanssa voi käyttää periytyvyyttä, mikä vähentää koodin kirjoittamista ja tekee koodista joissakin tapauksissa monikäyttöisempää.
 
-Periytyvyys tarkoittaa, että luokasta voidaan tehdä toinen luokka (tai monta uutta luokkaa), joka saa perimänsä luokan ominaisuudet, mutta sille voidaan lisätä vielä uusia ominaisuuksia.
+Periytyvyys tarkoittaa, että luokasta voidaan tehdä toinen luokka (tai monta uutta luokkaa), joka saa perimänsä luokan ominaisuudet, mutta sille voidaan lisätä vielä uusia ominaisuuksia. Luokkaa, josta tehdään uusi luokka, kutsutaan *vanhemmaksi* (parent) ja luokkaa, joka tehdään vanhemmasta, kutsutaan *lapseksi* (child).
 
-Käytännön esimerkkinä voisi olla vaikkapa verkkokauppayrityksen järjestelmässä henkilö (lyhentämisen vuoksi luokasta puuttuu asioita). 
+Käytännön esimerkkinä voisi olla vaikkapa verkkokauppayrityksen järjestelmässä henkilö (lyhentämisen vuoksi luokasta puuttuu muun muassa getterit ja setterit). 
 
 ````php
 <?php
@@ -24,7 +24,7 @@ Tästä pohjasta saattaisimme haluta luoda esimerkiksi asiakkaan, jolla on kaikk
 ````php
 <?php
     class customer extends person {
-        protected $orderHistory;
+        protected $orderHistory[];
     }
 ?>
 ````
@@ -50,4 +50,6 @@ Tässä tehtävässä lähdetään miettimään kirjaston lainausjärjestelmää
 
 ## Constructor ja periytyminen
 
-Jos emme lisää 
+Jos emme lisää periytyneeseen luokkaan omaa constructoria, se voi käyttää suoraan vanhempi-luokan construktoria, jolloin oliota luodessa sille täytyy antaa *vanhempi*-luokan ominaisuudet.
+
+*lapsi*-luokalle voidaan tehdä myös oma construktori, joka ottaa vastaan kaikki tarvittavat ominaisuudet, mutta ikään kuin lähettää *vanhempi*-luokassa olevat ominaisuudet sen construktorille.
