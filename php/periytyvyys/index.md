@@ -16,6 +16,14 @@ Käytännön esimerkkinä voisi olla vaikkapa verkkokauppayrityksen järjestelm�
         protected $username;
         protected $password;
     }
+    public function __construct($first, $last, $addr, $emai, $user, $pass) {
+        $this->firstName = $first;
+        $this->lastName = $last;
+        $this->address = $addr;
+        $this->email = $emai;
+        $this->username = $user;
+        $this->password = $pass; 
+    }
 ?>
 ````
 
@@ -52,4 +60,15 @@ Tässä tehtävässä lähdetään miettimään kirjaston lainausjärjestelmää
 
 Jos emme lisää periytyneeseen luokkaan omaa constructoria, se voi käyttää suoraan vanhempi-luokan construktoria, jolloin oliota luodessa sille täytyy antaa *vanhempi*-luokan ominaisuudet.
 
-*lapsi*-luokalle voidaan tehdä myös oma construktori, joka ottaa vastaan kaikki tarvittavat ominaisuudet, mutta ikään kuin lähettää *vanhempi*-luokassa olevat ominaisuudet sen construktorille.
+*lapsi*-luokalle voidaan tehdä myös oma construktori, joka ottaa vastaan kaikki tarvittavat ominaisuudet, mutta ikään kuin lähettää *vanhempi*-luokassa olevat ominaisuudet sen construktorille. Huomioithan, että vain kaikki *vanhempi*-luokasta perittävät ominaisuudet lähetetään *vanhempi*-luokan construktorille, ei niitä, jotka ovat *lapsi*-luokan omia ominaisuuksia. Esimerkissä käytetään aiempaa *customer*-luokkaa.
+
+````php
+<?php
+    class customer extends person {
+        protected $orderHistory[];
+    }
+    public function __construct($first, $last, $addr, $emai, $user, $pass, $history) {
+        parent::__construct($first, $last, $addr, $emai, $user, $pass);
+        $this->orderHistory = $history;
+    }
+?>
