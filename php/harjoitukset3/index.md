@@ -1,6 +1,7 @@
 # Harjoitukset 3 (luokat ja oliot)
 
-Nämä harjoitukset voi tehdä yhteen ja samaan tiedostoon, jonka nimi on harjoitukset3.php. Harjoittelemme luokkien ja olioiden luomista ja käsittelyä.
+Nämä harjoitukset voi tehdä yhteen ja samaan tiedostoon, jonka nimi on harjoitukset3.php. Harjoittelemme luokkien ja olioiden luomista ja käsittelyä eli ennen harjoituksien tekemistä tutustu kurssin olio-ohjelmointiosioon tai lue lisää [täältä englanniksi](https://www.phptutorial.net/php-oop/)<base target="_blank">.
+
 
 1. Luo abstrakti luokka *animal*. Voit miettiä sille joukon muuttujia, jotka sopivat jokaiselle eläimelle. Lisäksi sillä pitää olla abstrakti funktio nimeltään *makeSound*. Lisää construktori ja getter- ja setter- funktiot.
 
