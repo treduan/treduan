@@ -99,14 +99,6 @@ Ajatellaan, että *person*-luokassa olisi funktio, jolla vaihdetaan salasanaa.
     public function changePassword($pass) {
         $this->password = $pass;
     }
-    public function __construct($first, $last, $addr, $emai, $user, $pass) {
-        $this->firstName = $first;
-        $this->lastName = $last;
-        $this->address = $addr;
-        $this->email = $emai;
-        $this->username = $user;
-        $this->password = $pass; 
-    }
 ?>
 ````
 
@@ -114,30 +106,18 @@ Tämä hyvin yksinkertainen funktio voi toimia asiakkaalla. Kuitenkin jos meill�
 
 ````php
 <?php
-    class person {
-        protected $firstName;
-        protected $lastName;
-        protected $address;
-        protected $email;
-        protected $username;
-        protected $password;
+    class employee extends person {
+        protected $department;
+        protected $salary;
+        protected $startDate;
     }
-    public function changePassword($pass) {
+        public function changePassword($pass) {
         if (strlen($pass)> 8) {
             $this->password = $pass;
             }
         else {
             echo "Your password is too short";
         }   
-    } 
-        
-    public function __construct($first, $last, $addr, $emai, $user, $pass) {
-        $this->firstName = $first;
-        $this->lastName = $last;
-        $this->address = $addr;
-        $this->email = $emai;
-        $this->username = $user;
-        $this->password = $pass; 
     }
 ?>
 ````
@@ -145,6 +125,12 @@ Tämä hyvin yksinkertainen funktio voi toimia asiakkaalla. Kuitenkin jos meill�
 ## Demotehtävä 3
 
 1. Käytä aiempaa *loanable*-luokkaa.
-2. Lisää luokkaan funktio, joka antaa tekstin "This is a loanable."
+2. Lisää luokkaan funktio nimeltään *tellType*, joka antaa tekstin "This is a loanable."
 3. Testaa ensin *lapsi*-luokista tehdyillä olioilla, että saat tulostettua sen tekstin.
-4. Lisää sitten *lapsi*-luokkiin samannimiset funktiot ja vaihda niihin teksti esim: "This is a book."
+4. Lisää sitten *lapsi*-luokkiin samannimiset funktiot ja vaihda niihin teksti esim: "This is a book.".
+
+## Abstract
+
+Joskus tahdomme, että luokka onkin sellainen, että siitä ei suoraan voi tehdä olioita, vaan siinä on ainoastaan ominaisuuksia ja funktioita, jotka on tarkoitus periä. Esimerkiksi emmehän me oikeasti ole kirjastoesimerkissä tekemässä yhtään oliota *loanable*-luokasta, koska mikä ihme se lainattava edes olisi? Sen sijaan me haluamme sen luokan, jotta teemme joukon uusia luokkia, joilla on tietyt ominaisuudet. Tällaista luokkaa, josta ei luoda olioita, kutsutaan *abstraktiksi* luokaksi.
+
+Samaten luokan funktiot voivat olla abstrakteja eli silloin niissä ei lue, mitä ne funktiot tekevät, vaan ainoastaan tarkoittavat sitä, että abstraktin luokan *lapsi*-luokassa pitää olla samanniminen funktio, jossa sille oikeasti annetaan sisältö.
