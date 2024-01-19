@@ -21,3 +21,4 @@ Php on suosittu skriptauskieli, joka soveltuu ja jota käytetään paljon verkko
 
 - [Harjoitukset 1](./harjoitukset1/index.md)
 - [Harjoitukset 2](./harjoitukset2/index.md)
+- [Harjoitukset 3 (luokat ja oliot)](./harjoitukset3/index.md)
