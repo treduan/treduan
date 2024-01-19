@@ -66,10 +66,11 @@ Jos emme lisää periytyneeseen luokkaan omaa constructoria, se voi käyttää s
 <?php
     class customer extends person {
         protected $orderHistory[];
-    }
-    public function __construct($first, $last, $addr, $emai, $user, $pass, $history) {
+
+        public function __construct($first, $last, $addr, $emai, $user, $pass, $history) {
         parent::__construct($first, $last, $addr, $emai, $user, $pass);
         $this->orderHistory = $history;
+        }
     }
 ?>
 ````
