@@ -82,4 +82,69 @@ Jos emme lisää periytyneeseen luokkaan omaa constructoria, se voi käyttää s
 
 ## Override
 
-Joskus jos *vanhempi*-luokassa on omia funktioita, emme haluakaan käyttää niitä samanlaisina, vaan muutamme niitä. 
+Joskus *vanhempi*-luokassa on omia funktioita, joita voi kutsua myös *lapsi*-luokasta ja ne toimivat täysin. Kuitenkaan joskus emme haluakaan käyttää niitä samanlaisina, vaan muutamme niitä. PHP:ssä riittää, että kirjoittaa uuteen luokkaan saman funktion uudelleen halutuin muutoksin. Tätä kutsutaan *override*ksi.
+
+Ajatellaan, että *person*-luokassa olisi funktio, jolla vaihdetaan salasanaa.
+
+````php
+<?php
+    class person {
+        protected $firstName;
+        protected $lastName;
+        protected $address;
+        protected $email;
+        protected $username;
+        protected $password;
+    }
+    public function changePassword($pass) {
+        $this->password = $pass;
+    }
+    public function __construct($first, $last, $addr, $emai, $user, $pass) {
+        $this->firstName = $first;
+        $this->lastName = $last;
+        $this->address = $addr;
+        $this->email = $emai;
+        $this->username = $user;
+        $this->password = $pass; 
+    }
+?>
+````
+
+Tämä hyvin yksinkertainen funktio voi toimia asiakkaalla. Kuitenkin jos meillä on työntekijä, salasanalla on tietty määrä vaatimuksia turvallisuussyistä, jolloin täysin sama funktio ei kelpaakaan. Silloin voimme kirjoittaa funktion uudelleen.
+
+````php
+<?php
+    class person {
+        protected $firstName;
+        protected $lastName;
+        protected $address;
+        protected $email;
+        protected $username;
+        protected $password;
+    }
+    public function changePassword($pass) {
+        if (strlen($pass)> 8) {
+            $this->password = $pass;
+            }
+        else {
+            echo "Your password is too short";
+        }   
+    } 
+        
+    public function __construct($first, $last, $addr, $emai, $user, $pass) {
+        $this->firstName = $first;
+        $this->lastName = $last;
+        $this->address = $addr;
+        $this->email = $emai;
+        $this->username = $user;
+        $this->password = $pass; 
+    }
+?>
+````
+
+## Demotehtävä 3
+
+1. Käytä aiempaa *loanable*-luokkaa.
+2. Lisää luokkaan funktio, joka antaa tekstin "This is a loanable."
+3. Testaa ensin *lapsi*-luokista tehdyillä olioilla, että saat tulostettua sen tekstin.
+4. Lisää sitten *lapsi*-luokkiin samannimiset funktiot ja vaihda niihin teksti esim: "This is a book."

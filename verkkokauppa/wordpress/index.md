@@ -13,3 +13,8 @@ Jotta WordPress-sivuston saa julkaistua, tarvitaan hosting-palvelu. Tähän ei r
 Ensimmäinen askel on kirjautua tunnuksilla C-Paneliin.
 
 Kirjautumisen jälkeen vasemmassa palkissa on linkki WPTookitiin. Sitä kautta WordPressin voi asentaa. Tässä voi kestää jonkin aikaa.
+
+Huom. Jos/kun joskus haluatte julkaista WordPress-sivun koulun cpanelin ulkopuolella, tarvitsette hosting-palvelun lisäksi oman domain-nimen.
+
+## Aloitus
+
