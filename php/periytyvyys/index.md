@@ -133,4 +133,25 @@ Tämä hyvin yksinkertainen funktio voi toimia asiakkaalla. Kuitenkin jos meill�
 
 Joskus tahdomme, että luokka onkin sellainen, että siitä ei suoraan voi tehdä olioita, vaan siinä on ainoastaan ominaisuuksia ja funktioita, jotka on tarkoitus periä. Esimerkiksi emmehän me oikeasti ole kirjastoesimerkissä tekemässä yhtään oliota *loanable*-luokasta, koska mikä ihme se lainattava edes olisi? Sen sijaan me haluamme sen luokan, jotta teemme joukon uusia luokkia, joilla on tietyt ominaisuudet. Tällaista luokkaa, josta ei luoda olioita, kutsutaan *abstraktiksi* luokaksi.
 
-Samaten luokan funktiot voivat olla abstrakteja eli silloin niissä ei lue, mitä ne funktiot tekevät, vaan ainoastaan tarkoittavat sitä, että abstraktin luokan *lapsi*-luokassa pitää olla samanniminen funktio, jossa sille oikeasti annetaan sisältö.
+Samaten luokan funktiot voivat olla abstrakteja eli silloin niissä ei lue, mitä ne funktiot tekevät, vaan ainoastaan tarkoittavat sitä, että abstraktin luokan *lapsi*-luokassa pitää olla samanniminen funktio, jossa sille oikeasti annetaan sisältö. 
+
+Luokasta tulee abstrakti, kun sen eteen kirjoitetaan *abstract*, samoin funktiosta. Funktion perään ei tule aaltosulkeita, vaan vain puolipiste.
+
+````php
+<?php
+    abstract class person {
+        protected $firstName;
+        protected $lastName;
+        protected $address;
+        protected $email;
+        protected $username;
+        protected $password;
+    }
+    abstract public function changePassword($pass);
+?>
+````
+
+## Demotehtävä 4
+
+1. Muuta *loanable*-luokka abstraktiksi. Samoin muuta siihen kirjoitettu funktio abstraktiksi ja poista sen sisällä oleva teksti.
+2. Testaa, toimivatko *lapsi*-luokkien oliot edelleen.
