@@ -147,8 +147,9 @@ Luokasta tulee abstrakti, kun sen eteen kirjoitetaan *abstract*, samoin funktios
         protected $email;
         protected $username;
         protected $password;
-    }
+
     abstract public function changePassword($pass);
+    }
 ?>
 ````
 
