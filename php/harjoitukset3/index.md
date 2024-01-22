@@ -8,3 +8,7 @@ Nämä harjoitukset voi tehdä yhteen ja samaan tiedostoon, jonka nimi on harjoi
 2. Luo *animal*-luokasta vähintään kaksi luokkaa, esimerkiksi *cat* ja *dog*. Voit miettiä molemmille omia muuttujia tai funktioita. Lisää niille construktorit, jotka lähettävät *animal*-luokan muuttujat sille ja asettavat loput muuttujat. Kirjoita luokille omat *makeSound*-funktiot (esimerkiksi tulostus "Cat says meow." ja "Dog barks.").
 
 3. Luo molemmista lapsi-luokista yksi olio ja anna sen ominaisuuksille arvot. Testaa myös, että ne pystyvät käyttämään onnistuneesti *makeSound*-funktiotaan.
+
+## Extra
+
+Tutustu olioiden __toString-metodiin [täällä](https://www.phptutorial.net/php-oop/php-__tostring/)<base target="_blank">. Laadi sitten luokkiin omat __toString-metodit.
