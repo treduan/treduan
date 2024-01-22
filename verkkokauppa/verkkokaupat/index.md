@@ -37,6 +37,6 @@ Navigaation tyypillisin paikka on headerin alaosassa, mutta joskus se voi olla y
 
 Ala hahmotella omaa verkkokauppaasi.
 1. Päätä vekkokaupalle teema vapaasti, kunhan siellä ei myydä mitään laitonta. Muistathan, että verkkokauppa tulee olemaan jonkin aikaa julkisessa internetissä.
-2. Kehitä verkkokaupalle vähintään 12 myytävää tuotetta. Etsi tuotteille tuotekuvat ja hyödynnä PhotoShopia niin, että kuvista on sekä isompi että pienempi versio. Mieti, voitko jakaa tuotteet eri kategorioihin.
+2. Kehitä verkkokaupalle vähintään 12 myytävää tuotetta. Etsi tuotteille tuotekuvat ja hyödynnä PhotoShopia niin, että kuvista on sekä isompi että pienempi versio. Mieti, voitko jakaa tuotteet eri kategorioihin. Tuotteille pitää kehittää myös soveltuvat esttelytekstit (laajuus riippuu siitä, millainen tuote on).
 3. Kehitä verkkokaupalle nimi ja logo. Voit miettiä myös muita kuvituselementtejä, mutta pääosa ulkoasusta tehdään käyttäen WordPress-teemoja.
 4. Kehitä verkkokaupalle myös tekstit eli jokin lyhyt esittelyteksti, kuvitteellinen sijainti ja yhteystiedot sekä maksu- ja toimitusehdot jne, mitkä kaikilta luotettvilta verkkokaupoilta löytyy.
