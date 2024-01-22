@@ -18,3 +18,4 @@ Huom. Jos/kun joskus haluatte julkaista WordPress-sivun koulun cpanelin ulkopuol
 
 ## Aloitus
 
+www.metann.com/wp-admin
