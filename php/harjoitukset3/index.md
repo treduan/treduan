@@ -12,3 +12,4 @@ Nämä harjoitukset voi tehdä yhteen ja samaan tiedostoon, jonka nimi on harjoi
 ## Extra
 
 Tutustu olioiden __toString-metodiin [täällä](https://www.phptutorial.net/php-oop/php-__tostring/)<base target="_blank">. Laadi sitten luokkiin omat __toString-metodit.
+
