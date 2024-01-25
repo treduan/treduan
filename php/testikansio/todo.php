@@ -77,5 +77,14 @@
    echo 7/intval($num) . "<br>";
    echo $num;
 ?>
+<?php
+function upper(?string $str): string
+{
+    return "Returning " . strtoupper($str);
+}
+
+$str = "moikka";
+echo upper($str);
+?>
  </body>
  </html> 
