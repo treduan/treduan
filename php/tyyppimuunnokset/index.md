@@ -91,3 +91,9 @@ echo upper($str);
 ?>
 ````
 
+## Demotehtävä
+
+1. Luo funktio, joka plussaa kaksi lukua yhteen ja palauttaa tuloksen. Tulosta tulos konsoliin tai verkkosivulle.
+2. Katso, mitä tapahtuu, jos annat sille parametreiksi "3.5" ja "4.8". Pidä lainausmerkit.
+3. Katso, mitä tapahtuu, jos muutat funktiota ottamaan parametreiksi vain *int*-tyyppisiä lukuja.
+4. Katso, mitä tapahtuu, jos poistat funktion parametreistä *int*it ja vaihdat funktion palauttamaan *int*-tyyppisen muuttujan.

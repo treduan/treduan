@@ -86,5 +86,11 @@ function upper(?string $str): string
 $str = "moikka";
 echo upper($str);
 ?>
+<?php
+function add($x, $y): int {
+    return strval($x)+(string)$y;
+}
+echo "<br>" . add("3.5", "4.8");
+?>
  </body>
  </html> 
