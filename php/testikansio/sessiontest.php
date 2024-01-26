@@ -19,3 +19,4 @@ echo "Favorite animal is " . $_SESSION["favanimal"] . ".";
 ?>
 </body>
 </html>
+````
