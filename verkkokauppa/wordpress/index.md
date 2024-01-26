@@ -16,6 +16,14 @@ Kirjautumisen jälkeen vasemmassa palkissa on linkki WPTookitiin. Sitä kautta W
 
 Huom. Jos/kun joskus haluatte julkaista WordPress-sivun koulun cpanelin ulkopuolella, tarvitsette hosting-palvelun lisäksi oman domain-nimen.
 
+Sivun pitäisi nyt olla julkisessa internetissä osoitteessa (oma tunnus).treok.io.
+
 ## Aloitus
 
-www.metann.com/wp-admin
+Kun Wordpress on asennettu, sitä voidaan alkaa säätää. Näkymässä pitäisi olla suunnilleen vastaava osa keskellä.
+
+![wordpress login](wordpresslogin.png)
+
+Ensimmäisenä täytyy tarkistaa ja asettaa käyttäjätunnus ja salasana. Se onnistuu linkistä *Setup*, joka löytyy sivun esikatselukuvan alta. Sieltä näet adminkäyttäjän tunnuksen sekä salasanan. Kirjoita ne jonnekin ylös. Voit myös halutessasi vaihtaa salasanan.
+
+
