@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 class ToDo {
     protected $identify;
     protected $description;
@@ -36,16 +36,24 @@ class ToDo {
     }
 }
 
-$ide = 1;
-$ray = [];
+// Check if 'ray' and 'ide' exist in the session, and initialize if not
+if (!isset($_SESSION['ray'])) {
+    $_SESSION['ray'] = [];
+}
 
+if (!isset($_SESSION['ide'])) {
+    $_SESSION['ide'] = 1;
+}
 if(isset($_GET["unformal"], $_GET["date"], $_GET["submit"])){
     $unformal = htmlspecialchars($_GET["unformal"]);
     $date = htmlspecialchars($_GET["date"]);
-    array_push($ray, new ToDo($ide, $unformal, $date));
-    $ide++;
+    array_push($_SESSION['ray'], new ToDo($_SESSION['ide'], $unformal, $date));
+    
+    // Increment the identifier
+    $_SESSION['ide']++;
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,12 +68,15 @@ if(isset($_GET["unformal"], $_GET["date"], $_GET["submit"])){
         <input type="text" name="date" id="date">
         <input type="submit" name="submit" id="submit">
     </form>
-    <ul>
-        <?php
-        foreach ($ray as $task) {
-            echo "<li>{$task->getDescription()}</li>";
-        }
-        ?>
+    <p>
+</p>
+
+<ul>
+    <?php
+    foreach ($_SESSION['ray'] as $key=>$todo) {
+        echo $todo->getDescription() . " " . $todo->getStartDate() . " <br />";
+    }
+    ?>
     </ul>
 </body>
 </html>

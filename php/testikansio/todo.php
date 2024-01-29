@@ -36,6 +36,7 @@
      array_push($ray, new toDo($ide,$unformal,$date));
      $ide++;
      $_SESSION['ide'] = $ide;
+     $_SESSION['ray'] = $ray;
  }
  ?>
  <!DOCTYPE html>
