@@ -22,7 +22,7 @@ Sivun pitäisi nyt olla julkisessa internetissä osoitteessa (oma tunnus).treok.
 
 Kun Wordpress on asennettu, sitä voidaan alkaa säätää. Näkymässä pitäisi olla suunnilleen vastaava osa keskellä.
 
-![wordpress login](wordpresslogin.png)
+![wordpress login](wordpresslogin.PNG)
 
 Ensimmäisenä täytyy tarkistaa ja asettaa käyttäjätunnus ja salasana. Se onnistuu linkistä *Setup*, joka löytyy sivun esikatselukuvan alta. Sieltä näet adminkäyttäjän tunnuksen sekä salasanan. Kirjoita ne jonnekin ylös. Voit myös halutessasi vaihtaa salasanan.
 
