@@ -7,3 +7,4 @@ Tällä kurssilla tutustutaan ensinnä siihen, mistä koostuu toimiva verkkokaup
 - [Sisällönhallintajärjestelmät](./jarjestelmat/index.md)
 - [WordPress](./wordpress/index.md)
 - [Verkkokaupan ominaisuuksia](./verkkokaupat/index.md)
+- [Artikkelit ja kommentit](./artikkelit/index.md)
