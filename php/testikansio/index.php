@@ -8,8 +8,18 @@
 <body>
     <?php 
     require "./dbfunctions.php";
-  
-    $pdo = connect(); 
+    function getAllGames() {
+        $pdo = connect();
+        $sql = "SELECT * FROM test_games";
+        $stm = $pdo->query($sql);
+        $games = $stm->fetchAll(PDO::FETCH_ASSOC);
+        return $games;
+    } 
+    $games = getAllGames();
+    foreach($games as $game) {
+        echo $game["name"] . "    " . $game["company"] . "    " . $game["release"]. "<br>";
+    }
+    
     ?>
 </body>
 </html>
