@@ -75,7 +75,7 @@ Ja seuraava koodi poistaa pelin id:n perusteella:
  }  
  ````
 
- ## Demotehtävä
+## Demotehtävä 1
 
  1. Tulosta kaikki pelit verkkosivulle.
  2. Tulosta kolmas peli verkkosivulle.
@@ -83,6 +83,12 @@ Ja seuraava koodi poistaa pelin id:n perusteella:
  4. Muokkaa olemassaolevaa peliä.
  5. Poista viides peli tietokannasta.
 
- ### Extra
+### Extra
 
 Hae kaikki pelit jollakin kriteerillä eli muokkaa SQL-koodiin jokin ehto esimerkiksi *company*n mukaan. 
+
+## Demotehtävä 2
+
+Jatka edelliseen tehtävään.
+1. Sen sijaan, että tiedot haettaisiin välittömästi, lisää HTML-sivulle nappi, jolla käyttäjä voi hakea kaikki pelit tietokannasta.
+2. Lisää sivulle myös lomake, johon voi laittaa numeron, ja nappi, josta sivulle haetaan kyseisen id:n peli, jos se on olemassa.
