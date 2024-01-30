@@ -23,6 +23,7 @@ Php on suosittu skriptauskieli, joka soveltuu ja jota käytetään paljon verkko
 ### Backend
 
 - [Tietokantayhteys](./pdo/index.md)
+- [CRUD (Create, Read, Update, Delete)](./crud/index.md)
 
 ## Harjoitukset
 
