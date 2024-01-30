@@ -1,4 +1,5 @@
-````sql
+# SQL-tiedot
+````
 --
 -- Rakenne taululle `games`
 --
