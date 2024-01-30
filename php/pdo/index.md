@@ -11,6 +11,7 @@ Lisää samariumille phpmyadminiin taulu ja tiedot lukemalla [sql-tiedosto](./sq
 - Tämän jälkeen tee uusi käyttäjä, (oma tunnus)_sasp, luo salasana Password Generatorin avulla, kopioi salasana itsellesi talteen!
 - Lisää vielä tekemäsi käyttäjä tietokannalle (Add User to Database), voit antaa kaikki oikeudet (ALL PRIVILEGES).
 - Avaa seuraavaksi cPanelin työkaluista phpMyAdmin, tuo sql-tiedosto tietokantaasi.
+- Tarvittaessa käy lisäämässä cPanelissa Remote Host (ohjeita alla linkin takana).
 
 Jos olet epävarma siitä, miten se tapahtuu, löydät ohjeita [täältä](https://eermau.github.io/sasp23/sivut/cpanel_ohjeita.html)<base target="_blank">.
 
