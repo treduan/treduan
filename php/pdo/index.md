@@ -2,6 +2,8 @@
 
 PHP:llä voidaan luoda tietokantaan yhteys.
 
+## Luo tietokanta
+
 Lisää samariumille phpmyadminiin taulu ja tiedot lukemalla [sql-tiedosto](./sql.md)<base target="_blank"> (kopioi linkin takaa sql-tietostoksi).
 
 - Kirjaudu cPaneliin (https://cpanel.tunnus.treok.io/) ja avaa MySQL Databases
@@ -47,8 +49,13 @@ Toisessa tiedostossa voimme sitten käyttää *require*a tuomaan kyseisen funkti
 
 ````php
 <?php
-  require "./dbfunctions10.php";
+  require "./dbfunctions.php";
 
   $pdo = connect(); 
   ````
+## Demotehtävä
 
+1. Luo ensin ohjeen mukaan kurssia varten tietokanta.
+2. Luo tietokantaan ohjeen mukaan taulu ja syötä sinne tietoja linkin takaa.
+3. Luo uusi kansio, johon luot tiedoston dbfunctions.php. Voit kopioida yllä olevan sisällön, mutta vaihda siihen oman tietokantasi tiedot.
+4. Luo samaan kansioon toinen tiedosto, index.php, johon yhdistät tiedoston dbfunctions.php ja avaat tietokantayhteyden.
