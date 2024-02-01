@@ -21,6 +21,19 @@ Ensin tämän fuktion pitäisi hakea kaikki pelit tietokannasta:
  } 
  ````
 
+Funktion kutsu palauttaa taulukon, joka sisältää assosiatiivisia taulukoita. Jos haluamme luoda verkkosivulle listan kaikista noudetuista pelien nimistä, se onnistuu seuraavalla koodilla:
+
+````php
+<ul>
+<?php 
+$games = getAllGames();
+foreach($games as $game) {
+  echo "<li>" . $game["name"] . "</li>";
+}
+?>
+</ul>
+````
+
  Tämä funktio hakee yhden pelin sen id:n avulla:
 
  ````php
