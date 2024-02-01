@@ -2,6 +2,8 @@
 
 PHP:llä voidaan luoda tietokantaan yhteys.
 
+## Luo tietokanta
+
 Lisää samariumille phpmyadminiin taulu ja tiedot lukemalla [sql-tiedosto](./sql.md)<base target="_blank"> (kopioi linkin takaa sql-tietostoksi).
 
 - Kirjaudu cPaneliin (https://cpanel.tunnus.treok.io/) ja avaa MySQL Databases
@@ -9,6 +11,7 @@ Lisää samariumille phpmyadminiin taulu ja tiedot lukemalla [sql-tiedosto](./sq
 - Tämän jälkeen tee uusi käyttäjä, (oma tunnus)_sasp, luo salasana Password Generatorin avulla, kopioi salasana itsellesi talteen!
 - Lisää vielä tekemäsi käyttäjä tietokannalle (Add User to Database), voit antaa kaikki oikeudet (ALL PRIVILEGES).
 - Avaa seuraavaksi cPanelin työkaluista phpMyAdmin, tuo sql-tiedosto tietokantaasi.
+- Tarvittaessa käy lisäämässä cPanelissa Remote Host (ohjeita alla linkin takana).
 
 Jos olet epävarma siitä, miten se tapahtuu, löydät ohjeita [täältä](https://eermau.github.io/sasp23/sivut/cpanel_ohjeita.html)<base target="_blank">.
 
@@ -47,8 +50,13 @@ Toisessa tiedostossa voimme sitten käyttää *require*a tuomaan kyseisen funkti
 
 ````php
 <?php
-  require "./dbfunctions10.php";
+  require "./dbfunctions.php";
 
   $pdo = connect(); 
   ````
+## Demotehtävä
 
+1. Luo ensin ohjeen mukaan kurssia varten tietokanta.
+2. Luo tietokantaan ohjeen mukaan taulu ja syötä sinne tietoja linkin takaa.
+3. Luo uusi kansio, johon luot tiedoston dbfunctions.php. Voit kopioida yllä olevan sisällön, mutta vaihda siihen oman tietokantasi tiedot.
+4. Luo samaan kansioon toinen tiedosto, index.php, johon yhdistät tiedoston dbfunctions.php ja avaat tietokantayhteyden.

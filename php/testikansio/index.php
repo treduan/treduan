@@ -6,22 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <p>
-    <?php
-    $price = 550;
-    $income = 2500;
-    function expenses($income, $price) {
-        $percent = $price/$income;
-        if($percent >= 0.3)
-            return " that is quite costly";
-        else 
-            return " you can afford that";
+    <?php 
+    require "./dbfunctions.php";
+    function getAllGames() {
+        $pdo = connect();
+        $sql = "SELECT * FROM test_games";
+        $stm = $pdo->query($sql);
+        $games = $stm->fetchAll(PDO::FETCH_ASSOC);
+        return $games;
+    } 
+    $games = getAllGames();
+    foreach($games as $game) {
+        echo $game["name"] . "    " . $game["company"] . "    " . $game["release"]. "<br>";
     }
-
     
-?>
-<p>If your income is <?php echo $income . " and you buy an item with $price, " . expenses($price, $income) . "." ?></p> 
-<?php require "article.php" ?> 
-<?php require "sessiontest.php"?>
-<?php require "todo.php" ?>
-<?php require "footer.php" ?>
+    ?>
+</body>
+</html>
