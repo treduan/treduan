@@ -8,3 +8,4 @@ Tällä kurssilla tutustutaan ensinnä siihen, mistä koostuu toimiva verkkokaup
 - [WordPress](./wordpress/index.md)
 - [Verkkokaupan ominaisuuksia](./verkkokaupat/index.md)
 - [Artikkelit ja kommentit](./artikkelit/index.md)
+- [Asetukset](./asetukset/index.md)
