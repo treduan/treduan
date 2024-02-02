@@ -15,9 +15,22 @@
         $games = $stm->fetchAll(PDO::FETCH_ASSOC);
         return $games;
     } 
+    function deleteGame($id) {
+        $pdo = connect();
+        $sql = "DELETE FROM test_games WHERE gameid=?";
+        $stm = $pdo->prepare($sql);
+        $ok = $stm->execute([$id]);
+        return $ok;
+    }
+    if (isset($_GET["deletedid"])) {
+        $id = $_GET["deletedid"];
+        $ok = deleteGame($id);
+        // ohjataan sivu lataamaan uudestaan
+        header("Location: ./index.php");
+      }
     $games = getAllGames();
     foreach($games as $game) {
-        echo $game["name"] . "    " . $game["company"] . "    " . $game["release"]. "<br>";
+        echo $game["name"] . " " . $game["company"] . " " . $game["release"]. "<a href='./index.php?deletedid=" . $game["gameid"] . "'>Remove</a>" . "<br>";
     }
     
     ?>
