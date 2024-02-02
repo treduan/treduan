@@ -105,3 +105,64 @@ Hae kaikki pelit jollakin kriteerillä eli muokkaa SQL-koodiin jokin ehto esimer
 Jatka edelliseen tehtävään.
 1. Sen sijaan, että tiedot haettaisiin välittömästi, lisää HTML-sivulle nappi, jolla käyttäjä voi hakea kaikki pelit tietokannasta.
 2. Lisää sivulle myös lomake, johon voi laittaa numeron, ja nappi, josta sivulle haetaan kyseisen id:n peli, jos se on olemassa.
+
+## Poistaminen, lisääminen ja muokkaaminen sivulla
+
+Ylläolevat toimivat sellaisenaan koodin puolella, mutta yleensä ne halutaan toimivan sivustolla, jotta käyttäjät voivat todella lisätä ja poistaa asioita.
+
+### Poistaminen
+
+Tyypillisintä sivustolla on, että listassa on jokaisen rivin lopussa joko linkki tai nappi, josta rivin voi poistaa. Tässä tapauksessa esimerkkinä on linkki. Eli lisäämme tällaisen rivin koodia jokaiselle riville: ``"<a href='./index.php?deletedid=" . $game["gameid"] . "'>Remove</a>" .`` Linkki siis johtaa reitityksellä sivulle *?deletedid=*, johon lisätään kyseisen pelin id. Kaikkien pelien näyttäminen näyttää siis seuraavalta:
+
+````php
+<?php
+$games = getAllGames();
+    foreach($games as $game) {
+        echo $game["name"] . " " . $game["company"] . " " . $game["release"]. "<a href='./index.php?deletedid=" . $game["gameid"] . "'>Remove</a>" . "<br>";
+    }
+?>
+````
+
+Lisäksi täytyy seurata, painetaanko jotain linkeistä. Se onnistuu seuraavalla koodilla:
+
+````php
+    if (isset($_GET["deletedid"])) {
+        $id = $_GET["deletedid"];
+        $ok = deleteGame($id);
+        // ohjataan sivu lataamaan uudestaan
+        header("Location: ./index.php");
+      }
+````
+
+Ensin siis tarkistetaan, onko *deletedid*tä asetettu, jos se on asetettu, haetaan se ja sitten kutsutaan poistofunktiota, jolle id annetaan. Lopuksi ladataan pääsivu uudelleen, jotta muutos myös päivittyy sivulle.
+
+### Lisääminen
+
+Lisäämistä varten tarvitaan lomake.
+
+Luodaan siis uusi PHP-tiedosto, jolle lomake laitetaan. Lomake tarvitsee kolme kenttää eli Name, Company ja Year sekä tallennusnapin. Lisäksi alkuun pitää liittää tiedosto, jolla tietokantaan luodaan yhteys sekä funktio, jolla kirjan voi lisätä.
+
+````php 
+// tarkista, onko muuttujat asetettu
+if (isset($_GET["name"], $_GET["company"], $_GET["year"])) {
+  //luo muuttujat ja sanitoi ne
+  $name = htmlspecialchars($_GET["name"]);
+  $company = htmlspecialchars($_GET["company"]);
+  $year = htmlspecialchars($_GET["year"]);
+  // käytä apufunktiota, joka tarkistaa vielä syötteen tiedot
+  if (checkInput($name, $company, $year)) {
+    $ok = insertNewGame($name, $company, $year);
+  } else {
+    echo "<p>Failed to insert a new game. Input is not valid.</p>";
+  }
+}
+// funktio saa kaikki lomakkeen tiedot ja tarkistaa, täyttävätkö ne ehdot
+function checkInput($name, $company, $year): boolean {
+  $inputIsFine = false;
+  if (strlen($name >= 2) || strlen($company >= 2) || $year > 1950) {
+    $inputIsFine = true;
+  } 
+  // palautetaan totuusarvo
+  return $inputIsFine;
+}
+````
