@@ -9,3 +9,4 @@ Tällä kurssilla tutustutaan ensinnä siihen, mistä koostuu toimiva verkkokaup
 - [Verkkokaupan ominaisuuksia](./verkkokaupat/index.md)
 - [Artikkelit ja kommentit](./artikkelit/index.md)
 - [Asetukset](./asetukset/index.md)
+- [Käyttäjäroolit](./kayttajat/index.md)
