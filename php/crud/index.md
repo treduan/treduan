@@ -166,3 +166,46 @@ function checkInput($name, $company, $year): boolean {
   return $inputIsFine;
 }
 ````
+
+### Muokkaaminen
+
+Myös muokkaamista varten tarvitaan lomake, ja se näyttää täsmälleen samanlaiselta kuin lisäämisessä. Kuitenkin muokkaamista varten tarvitaan jälleen linkki, jotta saadaan tietoon id. 
+
+Lisätään siis pelien listaan seuraava koodi, jotta saamme siihen linkin:
+
+````php
+<?php
+$games = getAllGames();
+    foreach($games as $game) {
+        echo $game["name"] . " " . $game["company"] . " " . $game["release"]. "<a href='./index.php?deletedid=" . $game["gameid"] . "'>Remove</a>" . "<a href='./edit.php?editedid=" . $game["gameid"] . "'>muokkaa</a>" . "<br>";
+    }
+?>
+````
+
+Jos muokkaaminen halutaan tehdä oikein hyvin, ensin sivulla haetaan kyseinen peli id:n avulla ja vanhat arvot laitetaan kenttiin oletusarvoiksi. Lomake voi siis näyttää seuraavalta:
+
+````php
+<?php
+  require "./dbfunctions.php";
+  require "./index.php";
+  $id = $_GET["editedid"];
+  $game = getGameById($id);
+?>
+<h3>Muokkaa peliä</h3>
+<form action="" method="POST">
+    <label for="name">Name</label><br>
+    <input type="text" name="name" id="" value="<?= $game['name'] ?>"><br>
+    <label for="company">Company</label><br>
+    <input type="text" name="company" id="" value="<?= $game['company'] ?>"><br>
+    <label for="release">Year</label><br>
+    <input type="number" name="release" id="" value="<?= $game['release'] ?>"><br>
+    <input type="hidden" name="gameid" value="<?= $game['gameid'] ?>">
+    <input type="submit" value="Save">
+</form>
+````
+
+Muutoin voidaan toimia hyvin pitkälle samoin kuin uuden pelin luomisen kanssa, mutta toki epäonnistuessa teksti on eri.
+
+## Demotehtävä 3
+
+Toteuta esimerkin pohjalta pelien poistaminen, lisääminen ja muokkaaminen.
