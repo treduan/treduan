@@ -26,7 +26,7 @@ Lisää toiminto rotujen lisäämiselle ja poistamiselle. Näytä rodut taulukos
 
 ### Hahmon luominen
 
-Hahmon lisääminen vaatii lomakkeen jossa haetaan SELECT-ohjaimiin rodut ja luokat. Kannattaa ensimmäisenä pyytää käyttäjältä vain nimi, luokka ja rotu ja testata toimintaa tässä vaiheessa. Käyttäjä voi lisätä tiedot muille kentille (strength, agility ja wisdom) tai voit arpoa nämä automaattisesti. Se voi näyttää alkuun tältä:
+Hahmon lisääminen vaatii lomakkeen, jossa haetaan SELECT-ohjaimiin rodut ja luokat. Kannattaa ensimmäisenä pyytää käyttäjältä vain nimi, luokka ja rotu ja testata toimintaa tässä vaiheessa. Käyttäjä voi lisätä tiedot muille kentille (strength, dexterity ja wisdom) tai voit arpoa nämä automaattisesti. Se voi näyttää alkuun tältä:
 
 ![hahmon lisäys](./hahmolisays.png)
 
@@ -44,6 +44,6 @@ Kun näytät select-ohjaimessa tiedon tarvitset if/else-rakennetta. Valittu opti
 
 ### Lisätehtävät
 
-Lisää hahmonluontiin strength, agility ja wisdom niin, että hahmoa luodessa voi käyttää yhteensä 16 pistettä.
+Lisää hahmonluontiin strength, dexterity ja wisdom niin, että hahmoa luodessa voi käyttää yhteensä 16 pistettä. Käyttäjä näkee maksimipisteet ja niiden määrä pienenee, kun käyttäjä lisää pisteen johonkin ominaisuuksista.
 
 Lisää hahmoille kuvat. Käytännössä tietokantaan pitää lisätä URL, jossa kuva on.
