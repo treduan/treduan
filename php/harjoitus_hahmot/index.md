@@ -47,3 +47,5 @@ Kun näytät select-ohjaimessa tiedon tarvitset if/else-rakennetta. Valittu opti
 Lisää hahmonluontiin strength, dexterity ja wisdom niin, että hahmoa luodessa voi käyttää yhteensä 16 pistettä. Käyttäjä näkee maksimipisteet ja niiden määrä pienenee, kun käyttäjä lisää pisteen johonkin ominaisuuksista.
 
 Lisää hahmoille kuvat. Käytännössä tietokantaan pitää lisätä URL, jossa kuva on.
+
+Lisää sekä rodulle että hahmoluokalle sellainen ominaisuus, että valinnat vaikuttavat hahmoon. Eli jokainen hahmoluokka ja rotu antaa yhden bonuspisteen strengthiin, dexterityyn tai wisdomiin. Tämä voidaan kysyä Selectillä rodun ja hahmoluokan luonnissa.
