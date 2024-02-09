@@ -49,3 +49,5 @@ Lisää hahmonluontiin strength, dexterity ja wisdom niin, että hahmoa luodessa
 Lisää hahmoille kuvat. Käytännössä tietokantaan pitää lisätä URL, jossa kuva on.
 
 Lisää sekä rodulle että hahmoluokalle sellainen ominaisuus, että valinnat vaikuttavat hahmoon. Eli jokainen hahmoluokka ja rotu antaa yhden bonuspisteen strengthiin, dexterityyn tai wisdomiin. Tämä voidaan kysyä Selectillä rodun ja hahmoluokan luonnissa.
+
+Lisää hahmolle vielä varusteet eli sillä on esimerkiksi armor ja weapon, joihin voi kirjoittaa haluamansa tekstin. Jos haluat oikeasti haastaa itseäsi, armor ja weapon ovat omia taulujaan, jolloin armorilla on jokin puolustuspistemäärä ja weaponilla on jokin hyökkäyspistemäärä. Näytä sitten hahmossa sen armor ja weapon ja niiden mahdolliset bonukset.
