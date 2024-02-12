@@ -12,3 +12,32 @@ Teeman valinta voi olla suuren työn takana. Vaakakupissa painaa se, miltä sivu
 
 Kaksi suositeltua ilmaista teemaa ovat Astra ja Kadence, jotka ovat molemmat nopeita ja laajalti muokattavissa. Lisää tietoa Astrasta löytyy [wpastra.com](wpastra.com)<base target="_blank"> ja lisää Kadencesta löytyy [kadencewp.com](kadencewp.com)<base target="_blank">.
 
+Kun kumman tahansa lataa, voi mukana ladata pari lisäosaa, jotka kannattaa ottaa. 
+
+On yleistä, että kun valitsee teeman, sitä joutuu säätämään alkuun eli sivustolta voi kadota monia asioita, jotka pitää säätää uudelleen päälle. Kadencessa ja Astrassa on myös valmiita aloittelijatemplateja, jotka voi valita ja joissa on valmiina enemmän asetuksia, värimaailmoja jne.
+
+## Teeman säätäminen
+
+Kun teema on valittu ja otettu käyttöön, sitä täytyy alkaa säätää itselle sopivaksi. Eri teemoissa säädöt ovat hieman toisistaan poikkeavat, mutta lähtökohtaisesti kaikkea voi jollakin tavalla säätää. WordPress-teemat tehdään lähtökohtaisesti niin, että ne toimivat niin suurella kuin pienelläkin näytöllä, ja niin suuren näytön, tablettikokoisen näytön että kännykkäkokoisen näytön ulkoasua voi säätää.
+
+Esimerkissä on käytetty Astraa teemana, mutta useimmat koskevat myös Kadencea ja suurinta osaa muista teemoista.
+
+Osa säädöistä tehdään Ulkoasusta ja osa Sivusta.
+
+### Sivuston identiteetti
+
+Sivuston identiteetti (Page identity) -kohta löytyy, kun mennään Ulkoasuun ja sen alta Mukauttamiseen. Sieltä lisätään sivustolle logo ja favicon eli Sivuston kuvake. Lisäksi sitä kautta pääsee esimerkiksi vaihtamaan sivuston otsikon tai kuvauksen.
+
+### Header Builder ja Footer Builder
+
+Niin ylä- kuin alapalkkiakin voi säätää hyvin samankaltaisella tavalla. Kun valitsee joho Header- tai Footer Builderin, saa valikon, jossa on normaalisti kolme riviä. Niille kolmelle riville voi asettaa erilaisia elementtejä esimerkiksi viemällä hiiren oikean kohdan päälle ja ilmestyvästä plussasta löyvästä valikosta. Sieltä löytyy vaihtoehtoina muun muassa sosiaalisen median linkit, hakukenttä, lisävalikkoja tai itse määriteltäviä HTML-elementtejä. Näitä voi myös siirrellä vetämällä niitä eri paikkoihin.
+
+### Yleinen
+
+Täältä löydät muun muassa sivuston värimaailman säädön, fonttien säädön, nappien säädön jne.
+
+## Sisällön vaihtaminen
+
+Teemojen mukana tulee usein teeman omaa sisältöä. Sisällön vaihto tapahtuu menemällä kyseisille sivuille ja vaihtamalla sisältöä sieltä.
+
+Kadencen ja Astran mukana tulee joukko uusia lohkomalleja eli oletusteemoja enemmän erilaisia vaihtoehtoja, joita lisätä sivustolle. Sieltä löytyy esimerkiksi lohko lomakkeelle (eri vaihtoehtoja), laskurille, FAQ, Google Maps-upotus jne.
