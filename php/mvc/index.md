@@ -34,3 +34,58 @@ Me tutustumme yhteen esimerkkiin MVC-mallista [news-sivuston avulla](https://git
 - Kirjaudu järjestelmään.
 - Kirjoita uusi uutinen, varmista että uutinen tallennettu tietokantaan ja että uutisen userid oikein.
 - Testaa uutisen muokkaamista ja poistamista.
+
+## Demotehtävä 2
+
+1. Käyttäjän syntymäpäivä
+
+Lisää tietokantaan user-tauluun uusi date-tyyppinen kenttä birthday
+Lisää register.view-tiedostoon uusi date-kenttä, nimeä birthday.
+Lisää users.php:n addUser-funktioon mukaan birthday parametriksi, data-taulukkoon sekä SQL-lauseeseen.
+Lisää birthday mukaan userManagement.php:n registerController()-funktioon.
+
+2. Uutisen osasto
+
+Lisää article-taululle uusi kenttä section (varchar 50)
+Lisää newArticle.view.php:ssa kovakoodattu select-ohjain uutisosaston valinnalle.
+
+Kotimaa
+Lisää uusi muuttuja $section mukaan article.php:n addArticle-funktiolle.
+Lisää articleManagement.php:ssa addArticleController()-funktiolle uusi kenttäsi.
+
+3. Artikkelien hakeminen osaston mukaan
+
+Kopioi select-ohjaimesi articles.view.php:lle. Lisää submit-painike sekä näiden ympärille form.
+Muutetaan articleManagement.php:ssa viewArticlesController()-funktiota
+
+````php
+function viewArticlesController(){
+    $allnews = null;
+    if (isset($_POST['section'])) {
+        $section = cleanUpInput($_POST['section']);
+        $allnews = getSectionArticles($section);
+    }
+    else {
+        $allnews = getAllArticles();
+    }
+    require "views/articles.view.php";    
+}
+````
+
+Lisätään article.php:lle funktio getSectionArticles:
+
+````php
+function getSectionArticles($section){
+    $pdo =connectDB();
+    $sql = "SELECT * FROM articles WHERE section = ?";
+    $stm=$pdo->prepare($sql);
+    $stm->execute(array($section));
+    $all = $stm->fetchAll(PDO::FETCH_ASSOC);
+    return $all;
+} 
+````
+
+4. Ulkoasu
+
+Kokeile muuttaa ylä- ja alatunnisteen tekstit.
+Muuta hieman CSS-tyylitiedostoa haluamallasi tavalla. Voit käyttää myös Google Fonts-fontteja
