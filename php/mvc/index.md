@@ -25,6 +25,6 @@ Me tutustumme yhteen esimerkkiin MVC-mallista [news-sivuston avulla](https://git
 
 ## Demotehtävä
 
-1. Kopioikaa itsellenne News-sivuston koodi uuteen kansioon. Pitäkää sivuston oma kansiorakenne samanlaisena.
+1. Kloonaa repository uuteen kansioon omasi sisään.
 2. Luokaa sivustoa varten kaksi tietokantataulua käyttäen valmista database dumpia sivustolta. Säätäkää connection.php -tiedostoa niin, että se toimii teidän oman tietokantanne kanssa.
 3. Testatkaa, toimiiko sivusto. Rekisteröikää ensin uusi käyttäjä ja kirjautukaa sisään. Sitten kokeilette lisätä uuden artikkelin ja poistaa sen.
