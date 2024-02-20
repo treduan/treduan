@@ -25,6 +25,7 @@ Php on suosittu skriptauskieli, joka soveltuu ja jota käytetään paljon verkko
 
 - [Tietokantayhteys](./pdo/index.md)
 - [CRUD (Create, Read, Update, Delete)](./crud/index.md)
+- [MVC](./mvc/index.md)
 
 ## Harjoitukset
 
