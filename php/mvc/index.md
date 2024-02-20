@@ -37,14 +37,14 @@ Me tutustumme yhteen esimerkkiin MVC-mallista [news-sivuston avulla](https://git
 
 ## Demotehtävä 2
 
-1. Käyttäjän syntymäpäivä
+### Käyttäjän syntymäpäivä
 
 Lisää tietokantaan user-tauluun uusi date-tyyppinen kenttä birthday
 Lisää register.view-tiedostoon uusi date-kenttä, nimeä birthday.
 Lisää users.php:n addUser-funktioon mukaan birthday parametriksi, data-taulukkoon sekä SQL-lauseeseen.
 Lisää birthday mukaan userManagement.php:n registerController()-funktioon.
 
-2. Uutisen osasto
+### Uutisen osasto
 
 Lisää article-taululle uusi kenttä section (varchar 50)
 Lisää newArticle.view.php:ssa kovakoodattu select-ohjain uutisosaston valinnalle.
@@ -53,7 +53,7 @@ Kotimaa
 Lisää uusi muuttuja $section mukaan article.php:n addArticle-funktiolle.
 Lisää articleManagement.php:ssa addArticleController()-funktiolle uusi kenttäsi.
 
-3. Artikkelien hakeminen osaston mukaan
+### Artikkelien hakeminen osaston mukaan
 
 Kopioi select-ohjaimesi articles.view.php:lle. Lisää submit-painike sekä näiden ympärille form.
 Muutetaan articleManagement.php:ssa viewArticlesController()-funktiota
@@ -85,7 +85,7 @@ function getSectionArticles($section){
 } 
 ````
 
-4. Ulkoasu
+### Ulkoasu
 
 Kokeile muuttaa ylä- ja alatunnisteen tekstit.
 Muuta hieman CSS-tyylitiedostoa haluamallasi tavalla. Voit käyttää myös Google Fonts-fontteja
