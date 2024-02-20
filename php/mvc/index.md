@@ -23,8 +23,14 @@ Tässä kaaviokuvana MVC-mallin osien toimintaa.
 
 Me tutustumme yhteen esimerkkiin MVC-mallista [news-sivuston avulla](https://github.com/otredu/news_2021)<base target="_blank">.
 
-## Demotehtävä
+## Demotehtävä 1
 
 1. Kloonaa repository uuteen kansioon omasi sisään.
-2. Luokaa sivustoa varten kaksi tietokantataulua käyttäen valmista database dumpia sivustolta. Säätäkää connection.php -tiedostoa niin, että se toimii teidän oman tietokantanne kanssa.
-3. Testatkaa, toimiiko sivusto. Rekisteröikää ensin uusi käyttäjä ja kirjautukaa sisään. Sitten kokeilette lisätä uuden artikkelin ja poistaa sen.
+2. Luo sivustoa varten kaksi tietokantataulua käyttäen valmista database dumpia sivustolta. Säädä connection.php -tiedostoa niin, että se toimii oman tietokantasi kanssa.
+3. Testaa, toimiiko sivusto. 
+- Kokeile sovelluksen käyttämistä.
+- Luo uusi käyttäjä rekisteröitymällä.
+- Tarkista tietokannasta menikö käyttäjä tauluun users.
+- Kirjaudu järjestelmään.
+- Kirjoita uusi uutinen, varmista että uutinen tallennettu tietokantaan ja että uutisen userid oikein.
+- Testaa uutisen muokkaamista ja poistamista.
