@@ -108,3 +108,18 @@ Tehdään itse yksinkertainen reititys.
 
 1. Luo uuteen kansioon ensin kansiot public ja views. Luo public-kansioon tiedosto index.php ja views-kansioon home.php ja info.php. Lisää home.php ja info.php -sivuille HTML-pohja ja jokin otsikko, joka näkyy sivulla.
 2. index.php-sivulle luot yksinkertaisen reitityksen, jonka avulla pääsee sivuille home ja info. Ota oletukseksi, että sivulle kirjoitetaan "404, the page could not be found." 
+
+## Uudelleenohjaus
+
+Joskus koodilla täytyy tehdä uudelleenohjaus eli jos vaikka käyttäjä kirjautuu ulos sivustolta, pitää näkyvä sivu vaihtaa sellaiseksi, jolle kirjautumaton henkilö voi päästä. Esimerkiksi uloskirjautunut henkilö voidaan ohjata kirjautumissivulle.
+
+````php
+function logoutController(){
+    session_unset(); //poistaa kaikki muuttujat
+    session_destroy();
+    setcookie(session_name(),'',0,'/'); //poistaa evästeen selaimesta
+    session_regenerate_id(true);
+    header("Location: /login"); // forward eli uudelleenohjaus
+    die();
+}
+````
