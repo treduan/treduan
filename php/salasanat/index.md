@@ -12,3 +12,23 @@ function hashPassword($password){
     return $hashedpassword;
 }
 ````
+
+Kun taas halutaan tarkistaa salasana, käytetään funktiota *password-verify()*, jolle annetaan tarkistettava salasana sekä hash-versio salasanasta. Se tarkistaa, vastaavatko nämä toisiaan.
+
+*password_verify()* -funktiota käytetään sisäänkirjautumisessa seuraavasti:
+
+````php
+function login($username, $password){
+    $pdo = connectDB();
+    $sql = "SELECT * FROM users WHERE username=?";
+    $stm= $pdo->prepare($sql);
+    $stm->execute([$username]);
+    $user = $stm->fetch(PDO::FETCH_ASSOC);
+    $hashedpassword = $user["password"];
+
+    if($hashedpassword && password_verify($password, $hashedpassword))
+        return $user;
+    else 
+        return false;
+}
+````
