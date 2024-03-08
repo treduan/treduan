@@ -12,3 +12,4 @@ Tällä kurssilla tutustutaan ensinnä siihen, mistä koostuu toimiva verkkokaup
 - [Käyttäjäroolit](./kayttajat/index.md)
 - [Teemat](./teemat/index.md)
 - [Lisäosat (Plugins)](./lisaosat/index.md)
+- [WooCommerce](./woocommerce/index.md)
