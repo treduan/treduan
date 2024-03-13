@@ -10,7 +10,9 @@ WordPressissa on mahdollista valita sellainen vaihtoehto, että sivusto ei näy 
 
 Sen lisäksi, että sivusto löytyy hakukoneesta, kannattaa sen sijoitusta pyrkiä nostamaan mahdollisimman korkealle. Tähän on joukko erilaisia keinoja.
 
-Yksi on sopivan teeman valitseminen. Teeman nopeus vaikuttaa siihen, kuinka korkealla listauksessa sivut ovat, sillä varsinkin Google priorisoi nopeita ja korkealaatuisia sivuja. Nopeuteen vaikuttaa myös kuvien koko eli niiden kannattaa olla järkevän kokoisia eli mahdollisimman lähellä sitä, mikä niiden maksimikoko sivustolla tulee olemaan. Esimerkiksi jos suurin kuvakoko on 1024 px * 1024 px, on siitä vain haittaa, jos kuvien koko on siitä selkeästi suurempi. Tämä ei luonnollisesti koske taustakuvia, jotka voivat olla tätä suurempia.
+Yksi on sopivan teeman valitseminen. Teeman nopeus vaikuttaa siihen, kuinka korkealla listauksessa sivut ovat, sillä varsinkin Google priorisoi nopeita ja korkealaatuisia sivuja. Suositellut teemat eli Astra ja Kadence ovat itsessään nopeita teemoja. 
+
+Nopeuteen vaikuttaa myös kuvien koko eli niiden kannattaa olla järkevän kokoisia eli mahdollisimman lähellä sitä, mikä niiden maksimikoko sivustolla tulee olemaan. Esimerkiksi jos suurin kuvakoko on 1024 px * 1024 px, on siitä vain haittaa, jos kuvien koko on siitä selkeästi suurempi. Tämä ei luonnollisesti koske taustakuvia, jotka voivat olla tätä suurempia.
 
 Url-osoitteiden rakenne on yllättävän tärkeä. Sen pitäisi olla napakan pituinen, mutta myös informatiivinen. WordPressin oletus artikkeleille on tyyliä *https://www.esimerkki.fi/?p=123*, mikä ei kerro mitään sisällöstä eikä ole hakukoneille hyödyllinen. Sen voi muuttaa muistuttamaan tätä: *esimerkki.fi/palvelut/palvelun-nimi*. Muutoksen voi tehdä Asetukset -> Osoiterakenne. Huomiona, että tämä pitää säätää varhaisessa vaiheessa, sillä se rikkoo kaikki vanhat linkit, joita on kenties jaettu jostakin artikkelista.
 
@@ -18,7 +20,7 @@ Url-osoitteiden rakenne on yllättävän tärkeä. Sen pitäisi olla napakan pit
 
 WordPressissa on järkevää käyttää jotain lisäosaa parantamaan hakukonenäkyvyyttä. Yoast SEO on niistä todennäköisesti suosituin. Se voi auttaa esimerkiksi avainsanojen optimoinnissa, sillä avainsanat ovat tärkeä osa hakukoneoptimointia. 
 
-## Optimoiavainsanoilla
+## Optimoi avainsanoilla
 
 Hakukoneet katsovat tiettyjä elementtejä erityisen tarkasti silloin kun ne yrittävät ymmärtää mistä aiheesta sivulla puhutaan. Tämän takia on tärkeää käyttää avainsanoja oikeissa kohdissa. Tärkeimmät elementit ovat:
 
@@ -45,3 +47,15 @@ Huomiona, että nämä keinot toimivat pääosin myös muilla verkkosivuilla, va
 ## Tehtävä
 
 Lisätään omalle WordPress-verkkosivulle hakukoneoptimointia. Käy ensimmäisenä lukemassa artikkeli avainsanatutkimuksesta: [sampsavainio.fi](https://sampsavainio.fi/blogi/avainsanatutkimus/)<base target="_blank">.
+
+Artikkelia mukaillen:
+
+1. Mieti muutama avainsana, jotka sopivat verkkokauppaasi.
+2. Tee niillä avainsanoilla muutama Google-haku ja katso, millaisia verkkokauppoja tai sivustoja avainsanat nostavat esiin. Käy vilkaisemassa niistä lähinnä omaa kauppaasi olevia ja lukaise pikaisesti niiden tekstejä ja katso, millaisia sanoja siellä käytetään aihepiiristä.
+3. Lisää määrittelemiäsi avainsanoja oman verkkosivusi teksteihin eli osin metateksteihin, otsikoihin ja leipätekstiin (tarvittaessa lisää tällainen).
+
+## Tehtävä
+
+Käy lukemassa artikkeli WordPressin Yoast SEO:sta osoitteessa [https://sampsavainio.fi/tyokalut/yoast-seo/](https://sampsavainio.fi/tyokalut/yoast-seo/)<base target="_blank">.
+
+1. Asenna WordPress-sivustollesi Yoast SEO.
