@@ -20,7 +20,7 @@ Alla olevalla koodilla luodaan koodin kanssa samaan kansioon tekstitiedosto writ
 <?php
     $myfile = fopen("myfile.txt", "w");
     $text = "Hello world!";
-    $fwrite($myfile, $text);
+    fwrite($myfile, $text);
 ?>
 ````
 
@@ -33,7 +33,7 @@ On myös hyvä tapa tehdä tiedoston avaukseen tarkistus, onnistuuko avaus.
 <?php
     $myfile = fopen("myfile.txt", "w") or die("Unable to open file!");
     $text = "Hello world!";
-    $fwrite($myfile, $text);
+    fwrite($myfile, $text);
     fclose($myfile);
 ?>
 ````
