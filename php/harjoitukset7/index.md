@@ -2,13 +2,13 @@
 
 Luo näille harjoituksille oma kansio nimeltään Harjoitukset 7 tai Assignments 7.
 
-1. Tiedoston kirjoittaminen.
+## 1. Tiedoston kirjoittaminen.
 
 Luo sivu, jolla on lomake, jonka avulla voit lisätä erilliseen tiedostoon lomakkeen sisällön. Luo kansioosi oma kansio nimeltään temp, johon tiedostot tallentuvat. Lomakkeella on kaksi kenttää eli kenttä tiedoston nimelle sekä sisällölle sekä tallennusnappi. Tiedosto tallennetaan .txt-muodossa. Lomake saattaisi näyttää seuraavanlaiselta.
 
-![tallennuslomake](./tallennuslomake.png)
+![tallennuslomake](./tallennuslomake.PNG)
 
-2. Rekisteröityminen
+## 2. Rekisteröityminen
 
 Olette tekemässä tapahtumalle sivustoa. Tapahtumaan tulijoiden täytyy rekisteröityä tapahtumaan etukäteen. Sivustolla on lomake, johon voi syöttää seuraavat tiedot:
 
@@ -23,7 +23,7 @@ Pakollisia tietoja ovat nimi, sähköpostiosoite, puhelinnumero ja onko henkilö
 
 Kun henkilö on täyttänyt tiedot, tulosta ne ensin ruudulle. Lisäksi esillä on teksti "Tarkistathan tietosi ja paina sitten "Lähetä" -nappia." Esiin tulee uusi nappi, jota painamalla tiedot kirjoitetaan tiedostoon, johon voi lisätä loputtoman määrän osallistujia. Tiedoston nimi on participants.txt.
 
-3. Kuvagalleria
+## 3. Kuvagalleria
 
 Tee sivu, jolla on lomake, joka ottaa vastaan vain kuvatiedostoja eikä samaa tiedostoa voi tallentaa useaan kertaan.
 
@@ -54,7 +54,7 @@ foreach ($files as $file) {
 ?>
 ````
 
-4. Palautelomake
+## 4. Palautelomake
 
 Suunnittele palautelomake jolla voidaan pyytää kotisivun kävijöiltä palautetta. Mieti mitä kenttiä palautelomakkeella voisi olla. Kun käyttäjä lähettää lomakkeen Lähetä palaute-painikkeella niin uusi palaute tallennetaan CSV-tiedostoon uudelle riville. CSV-tiedostossa jokainen kenttä on erotettu erotinmerkillä, käytä erotinmerkkinä ";".
 
