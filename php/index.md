@@ -13,7 +13,7 @@ Php on suosittu skriptauskieli, joka soveltuu ja jota käytetään paljon verkko
 - [Evästeet (cookies)](./evasteet/index.md)
 - [Tyyppimuunnokset](./tyyppimuunnokset/index.md)
 - [Aika](./aika/index.md)
-- [Tiedostot](./tiedostot.md)
+- [Tiedostot](./tiedostot/index.md)
 
 ### Olio-ohjelmointi
 
