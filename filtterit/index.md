@@ -19,13 +19,13 @@ echo $newstr;
 ?>
 ````
 
-On myös mahdollista tarkistaa, onko syöte numeroarvoinen. Koska ``filter_var()`` palauttaa joko suodatetun datan tai ``false``n, jos suodatus epäonnistuu, täytyy meidän tarkistaa, että filtteröinnin lopputulos ei ole ``false``, koskase ei koskaan voi olla ``true``. 
+On myös mahdollista tarkistaa, onko syöte numeroarvoinen. Koska ``filter_var()`` palauttaa joko suodatetun datan tai ``false``n, jos suodatus epäonnistuu, täytyy meidän tarkistaa, että filtteröinnin lopputulos ei ole ``false``, koska se ei koskaan voi olla ``true``. 
 
 ````php
 <?php
 $int = 100;
 
-if (!filter_var($int, FILTER_VALIDATE_INT) === false) {
+if (filter_var($int, FILTER_VALIDATE_INT) === 0 || !filter_var($int, FILTER_VALIDATE_INT) === false) {
   echo("Integer is valid");
 } else {
   echo("Integer is not valid");
