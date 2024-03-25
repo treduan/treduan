@@ -73,3 +73,25 @@ if (!filter_var($url, FILTER_VALIDATE_URL) === false) {
 2. Lomakkeen käsittelyyn lisäät ``filter_var``ia käyttäen sanitoinnin ja validoinnin. Tarkistat siis, että sähköposti on sähköposti ja syntymävuosi on numero.
 3. Lisää myös lomakkeen tiedot sivulle lomakkeen alle.
 4. Testaa, miltä sivulle tuleva teksti näyttää, jos nimeen laitat seuraavan: *<h1 style="color: red">Someone tries to hack you</h1>*. Testaa myös, jos sähköposti on väärässä muodossa. Mitä tapahtuu, jos poistat sanitoinnin nimestä ja lisäät sitten aiemman koodipätkän?
+
+## filter_var options
+
+Tässä on esimerkki siitä, että tarkistetaan, onko numero tietyn rajan sisällä.
+
+````php
+<?php
+$int = 122;
+$min = 1;
+$max = 200;
+
+if (filter_var($int, FILTER_VALIDATE_INT, array("options" => array("min_range"=>$min, "max_range"=>$max))) === false) {
+  echo("Variable value is not within the legal range");
+} else {
+  echo("Variable value is within the legal range");
+}
+?>
+````
+
+## Demotehtävä 2
+
+1. Lisää aiempaan tehtävään numeroille tarkistus. Halutaan, että syntymävuosi on sellainen, että henkilö täyttää tänä vuonna 15 mutta on tänä vuonna maksimissaan 25-vuotias (laske siis, minkä syntymävuosien välillä syntymävuoden pitää olla).
