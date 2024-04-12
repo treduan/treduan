@@ -7,8 +7,8 @@
 <script>
         // JavaScript function to validate the form
         function validateForm() {
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
 
             if (name.trim() === '') {
                 alert('Please enter your name.');
@@ -21,7 +21,7 @@
             }
 
             // Additional email validation (basic format)
-            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailPattern.test(email)) {
                 alert('Please enter a valid email address.');
                 return false;
