@@ -50,8 +50,8 @@ Lisätään omalle WordPress-verkkosivulle hakukoneoptimointia. Käy ensimmäise
 
 Artikkelia mukaillen:
 
-1. Mieti muutama avainsana, jotka sopivat verkkokauppaasi.
-2. Tee niillä avainsanoilla muutama Google-haku ja katso, millaisia verkkokauppoja tai sivustoja avainsanat nostavat esiin. Käy vilkaisemassa niistä lähinnä omaa kauppaasi olevia ja lukaise pikaisesti niiden tekstejä ja katso, millaisia sanoja siellä käytetään aihepiiristä.
+1. Mieti muutama avainsana, jotka sopivat Lähimmäisenrakkaus ry:n sivulle.
+2. Tee niillä avainsanoilla muutama Google-haku ja katso, millaisia sivustoja avainsanat nostavat esiin. Käy vilkaisemassa niistä muutamaa ja lukaise pikaisesti niiden tekstejä ja katso, millaisia sanoja siellä käytetään aihepiiristä.
 3. Lisää määrittelemiäsi avainsanoja oman verkkosivusi teksteihin eli osin metateksteihin, otsikoihin ja leipätekstiin (tarvittaessa lisää tällainen).
 
 ## Tehtävä
