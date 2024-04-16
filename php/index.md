@@ -15,6 +15,7 @@ Php on suosittu skriptauskieli, joka soveltuu ja jota käytetään paljon verkko
 - [Aika](./aika/index.md)
 - [Tiedostot](./tiedostot/index.md)
 - [Filtterit](./filtterit/index.md)
+- [Javascript ja PHP](./javascript/index.md)
 
 ### Olio-ohjelmointi
 
