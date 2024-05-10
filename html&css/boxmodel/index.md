@@ -15,3 +15,7 @@ Kaikki HTML-elementit ovat periaatteessa laatikoita, useimmiten suorakulmioita. 
 ## Width
 
 ## Height
+
+# Border-box
+
+# Display

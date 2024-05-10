@@ -1,6 +1,6 @@
 # CSS:n perusteet
 
-CSS (Cascading Style Sheet) on merkintäkieli, jolla HTML-koodia muotoillaan.
+CSS (Cascading Style Sheet) on merkintäkieli, jolla HTML-koodia muotoillaan. Sillä voidaan muokata niin pieniä asioita kuten tekstin väriä kuin suuriakin kokonaisuuksia kuten sivuston elementtien asettelua.
 
 ## CSS:n lisääminen
 
