@@ -16,7 +16,7 @@ Selaimen täytyy tietää, mitä tyyppiä dokumentti on, mistä syystä HTML dok
 
 Sen jälkeen kaikki koodi tulee ``<html>`` tagin sisään. Sen sisään kannattaa lisätä sivuston pääasiallinen kieli, esim. ````<html lang=”fi”>````, jos sivusto on suomeksi.
 
-Kaikki tagit kuuluu sulkea oikeassa kohdassa. Tageja voi olla sisäkkäin. Jos tageja ei sulje oikein, on vaarana, että selain tulkitsee HTML:ää väärin ja se sotkee sivuston, vaikka se edelleen näkyy. Siksi ``<html>`` tagin parina täytyy tiedoston lopussa olla ``</html>`` eli sulkutag.
+Kaikki tagit kuuluu sulkea oikeassa kohdassa. Tageja voi olla sisäkkäin. Jos tageja ei sulje oikein, on vaarana, että selain tulkitsee HTML:ää väärin ja se sotkee sivuston, vaikka se edelleen näkyy. Siksi ``<html>`` tagin parina täytyy tiedoston lopussa olla ``</html>`` eli sulkutag. Tagit esiintyvät siis lähes aina pareina.
 
 ```HTML 
 <!DOCTYPE html>
@@ -53,23 +53,44 @@ Otsikot merkitään h-tagilla (h = headline). Niitä on 1-6. Jokaisella sivulla 
 Perusteksti kirjoitetaan p-tagilla (p = paragraph). Se rivittyy automaattisesti annettuun tilaan sopivaksi, ellei sitä säädä CSS:llä toisin. Koodin luettavuuden vuoksi kannattaa kuitenkin rivittää kappaleita, vaikka editori sallii erittäin leveälle kirjoittamisen.
 
 ```HTML 
-<body>
-    <h1>Pääotsikko</h1>
-    <h2>Ensimmäinen alaotsikko</h2>
-    <p>Tässä on ensimmäinen kappale, joka varmaan   jotenkin liittyy alaotsikkoon.</p>
-</body>
+<!DOCTYPE html>
+    <html lang="fi">
+        <head>
+            <meta charset="UTF-8"/>
+            <title>Aloitussivu</title>
+        </head>
+        <body>
+            <h1>Pääotsikko</h1>
+            <h2>Ensimmäinen alaotsikko</h2>
+            <p>Tässä on ensimmäinen kappale, joka varmaan   jotenkin liittyy alaotsikkoon.</p>
+        </body>
+    </html>
 ```
 
 ___
 
 ## Demotehtävä 1
 
-1. Mene omaan Githubiisi ja luo uusi kansio nimellä htlmdemoharjoitus1_2023. Luo samalla README, johon voit kirjoittaa otsikoksi HTML-harjoitus 1 markdownilla (eli pääotsikon eteen tulee #). Tätä voi täydentää myöhemmin
-2. Kopioi kansion osoite. 
-3. Avaa sitten koodieditori (Visual Studio Code). Kloonaa Github-kansio ja tallenna se K-levylle. Voit tehdä sitä varten kansion ”HTML&CSS”, jotta koodi löytyy myöhemmin helposti. 
-4. Kun projekti on auki, luo siihen kansio ”demoharjoitus1”. Luo kansioon tiedosto nimeltään ”index.html”. 
-5. Luo aikaisemmin käydyn perusteella pohja HTML-sivulle.
-6. Kirjoita pääotsikoksi (``<h1>``) oma nimesi.
-7. Kirjoita ensimmäiseen kappaleeseen (``<p>``) pari lausetta itsestäsi. Esimerkiksi "Olen Anna, tamperelainen ohjelmoinnin opettaja. Asun perheeni ja kissojeni kanssa Hervannassa." Muista sulkutagit!
-8. Tallenna dokumentti.
-9. Käy katsomassa sivuasi. Mene Resurssienhallintaan, navigoi K-levylle ja oikeaan kansioon. Kaksoisklikkaa index.html-tiedoston tekstiä. Selaimen pitäisi avata sivu sinulle.
+1. Avaa Githubista kloonaamasi kansio VisualStudio Codella.
+2. Luo sinne uusi kansio nimeltään HTML.
+3. Luo HTML-kansion sisään kansio nimeltään Demotehtävät.
+4. Luo Demotehtävät-kansioon tiedosto nimeltään demo1.html.
+5. Lisää tiedostoon HTML-pohja yllä olevan esimerkin mukaisesti.
+6. Lisää tiedoston body-osioon otsikko, jossa on oma nimesi, ja lyhyt teksti, jossa kerrot, kuka olet.
+
+_________
+
+## HTML-tiedoston tarkasteleminen
+
+On useampia tapoja, miten HTML-tiedoston voi avata omalla koneella.
+
+Yksinkertaisin on navigoida tietokoneella siihen sijaintiin, jossa tiedosto on, ja kaksoisklikata sitä. Silloin tietokone avaa sivun oletusselaimella.
+
+Vaihtoehtoisesti VisualStudio Codeen on asennettavissa lisäosia, jotka voivat avata tiedoston.
+
+
+____
+
+## Demotehtävä 2
+
+1. Etsi tietokoneeltasi paikka, johon olet tallentanut demo1.html-tiedoston. Tuplaklikkaa sitä ja avaa se selaimeen.
