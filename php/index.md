@@ -49,3 +49,6 @@ Php on suosittu skriptauskieli, joka soveltuu ja jota käytetään paljon verkko
 - [Taitaja kevät 2023](https://github.com/Taitaja2023/semifinal)<base target="_blank">
 - [Taitaja kevät 2024](https://github.com/Taitaja2024/semifinal)<base target="_blank">
 - Portfolio
+
+## Hackathon
+- [Hackathon](./loppuharjoitus/index.md)
