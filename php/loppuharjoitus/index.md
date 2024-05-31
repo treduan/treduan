@@ -14,9 +14,9 @@ ___
 
 ### Tiimit:
 1. Tarik, Bruno, Lassi, Akseli
-2. Patrik, Noel, Juho, Jere
-3. Onni, Luka, Eemeli, Iryna
-4. Eerik, Elias, Niklas, Julius
+2. Patrik, Noel, Juho 
+3. Eemeli, Iryna, Elias, Jere
+4. Eerik, Niklas, Julius
 
 ____
 
