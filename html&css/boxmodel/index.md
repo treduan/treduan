@@ -37,7 +37,24 @@ Lopputulos kapealla näytöllä on tämä:
 
 ## Margin
 
+Margin eli marginaali on tilaa reunusten ulkopuolella. Sitä voi säätää joko joka suuntaan erikseen (esim. margin-top ja margin-left) tai kahta tai kaikki yhdessä.
+
+Alla lisätään joka suuntaan marginaalia 30 pikseliä.
+
+````css
+.mydiv {
+    padding: 8px 15px;
+    border: 2px solid black;
+    margin: 30px;
+}
+````
 ## Margin Collapse
+
+Margin collapse on sitä, että jos meillä on allekkain tai vierekkäin kaksi elementtiä, joille on lisätty marginaali, niistä marginaaleista lasketaan vain yksi. Eli toinen marginaali ikään kuin katoaa/kaatuu pois. 
+
+Esimerkissä on kaksi laatikkoa, joilla molemmilla on joka suuntaan marginaalia 30 px. Kuva on otettu aivan selaimen reunasta. Huomaatte, että laatikoiden vasemmalla puolella on sama etäisyys reunasta kuin laatikoiden välillä eli 30 pikseliä eikä tuplia eli kaksi kertaa 30 pikseliä. Tätä margin collapse käytännössä tarkoittaa.
+
+![margincollapse.PNG](margincollapse.PNG)
 
 # Height ja Width
 
