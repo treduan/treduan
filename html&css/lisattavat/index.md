@@ -1,7 +1,7 @@
 # Linkit
 
 HTML-sivuille täytyy usein lisätä linkkejä joko toisille verkkosivuille tai toiseen kohtaan saman sivun sisällä. Linkkiin käytetään tagia ````<a>````. 
-Sen sisään lisätää *href*, joka osoittaa haluttuun verkkosivuun. Tagin väliin kirjoitetaan teksti, jonka halutaan toimivan linkkinä. Myös kuva voi toimia linkkinä.
+Sen sisään lisätää *href*, joka osoittaa haluttuun verkkosivuun. Tagin väliin kirjoitetaan teksti, jonka halutaan toimivan linkkinä. Myös kuva tai kokonainen elementti voi toimia linkkinä, jolloin se sijoitetaan ``<a>`` tagien väliin.
 ````html
 <a href="https://www.google.com/">Google</a>
 ````
@@ -18,12 +18,14 @@ Jos halutaan, että linkistä avataan myös uusi välilehti, tagiin voidaan lis�
 
 Kuvia lisätään ``<img>`` tagilla. Sitä varten täytyy olla kaksi osaa eli reitti kuvan tallennuspaikkaan *src* (source) ja vaihtoehtokuvaus ruudunlukijoita varten, 
 tai jos kuvan lataus ei onnistu, *alt* (alternative). 
-Sopivat formaatit ovat jpg, png ja gif, muut eivät toimi selaimessa. Kuvan kokoa ja muita ominaisuuksia muokataan CSS:llä, mutta lähtökohtaisesti on järkevää valita suunnilleen tarkoitukseen sopiva kuva. 
+Sopivat formaatit ovat jpg, png ja gif, muut eivät toimi selaimessa varmuudella. Kuvan kokoa ja muita ominaisuuksia muokataan CSS:llä, mutta lähtökohtaisesti on järkevää valita suunnilleen tarkoitukseen sopivan kokoinen kuva. 
 Jos kuvaa joutuu suurentamaan selaimessa, sen laatu kärsii. Jos taas se on valtavan paljon suurempi, se vaatii paljon tilaa ja on hitaampi ladata.
 
 ````html
 <img src="lilies.png" alt="Lily flowers"/>
 ````
+
+HTML-projektissa voi olla järkevää luoda oma kansio kaikille kuville, mikäli kuvia on yhtään suurempi määrä.
 
 ---
 
