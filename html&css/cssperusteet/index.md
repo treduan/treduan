@@ -10,7 +10,7 @@ CSS-koodin voi sijoittaa kolmeen eri kohtaan. Niin sanottu *inline style* sijoit
 <h1 style="color: red;">Headline</h1>
 ````
 
-HTML-tiedoston yläosaan voi myös kirjoittaa CSS-koodia niin sanotulla sisäisellä tyylitiedostolla.
+HTML-tiedoston yläosaan voi myös kirjoittaa CSS-koodia niin sanotulla sisäisellä tyylitiedostolla. Tätä suositellaan käyttöön vain, jos rivejä tulee vähän.
 
 ````html
 <head>
@@ -35,7 +35,7 @@ Mikäli käyttää näistä tavoista useampaa ja samaa elementtiä yrittää muo
 
 ## CSS-selektorit
 
-Jotta selain osaa yhdistää muotoilun oikeaan paikkaan, käytetään CSS:ssä selektoreja. Selektorina voi olla elementin nimi (h1), luokka (``<h1 class="mainheader">Header</h1>``) tai id (``<h1 id="mainheader1">Header</h1>``).
+Jotta selain osaa yhdistää muotoilun oikeaan paikkaan, käytetään CSS:ssä selektoreja. Selektorina voi olla elementin nimi (``<h1>``), luokka (``<h1 class="mainheader">Header</h1>``) tai id (``<h1 id="mainheader1">Header</h1>``) tai jopa koko dokumentti, jota merkitään asteriskilla eli *.
 
 ````css
 h1 {
@@ -77,6 +77,12 @@ h1, h3, p {
 ````
 
 Jos samaan elementtiin kohdistuu keskenään ristiriitaisia ohjeita, CSS:llä on oma järjestyksensä, missä se ottaa ohjeita vastaan. Yleisohjeena on, että viimeisenä kirjoitettu ohje toimii. Kuitenkin eri selektorityypeillä on eroa eli id ohittaa muut tavat, luokka ohittaa elementin ja kaikkein alimpana on asteriski, joka muotoilee koko dokumenttia.
+
+HTML-elementillä voi myös olla useampi luokka, jolloin ne kirjoitetaan peräkkäin ilman pilkkua välilyönnillä erotettuina.
+
+````html
+<h1 class="mainheader mainheadline">Main Header</h1>
+````
 
 ## CSS:n kirjoittaminen
 
