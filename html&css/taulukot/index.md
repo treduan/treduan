@@ -30,7 +30,7 @@ Taulukoiden eli *table*n avulla voidaan esittää tietoa, joka sisältää rivej
 
 Kyseinen taulukko näyttää siis seuraavalta:
 
-![Taulukko](taulukkoesimerkki.PNG)
+![Taulukko](taulukkoesimerkki.png)
 
 Seuraavassa taulukossa ovat opettajan kissat. Niistä annetaan tietoina nimi, rotu, väri ja syntymävuosi.
 
@@ -73,7 +73,7 @@ Seuraavassa taulukossa ovat opettajan kissat. Niistä annetaan tietoina nimi, ro
 
 Lopputulos näyttää seuraavalta:
 
-![Kissataulukko](kissataulukko.PNG)
+![Kissataulukko](kissataulukko.png)
 ---
 
 Jos taulukko on suuri tai jos taulukon osia haluaa muotoilla CSS-määrittelyillä, siihen kannattaa lisätä vielä *thead*, *tbody* ja *tfoot* osiot (ks. [lisätietoja](https://www.w3schools.com/tags/tag_thead.asp)).
