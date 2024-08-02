@@ -94,3 +94,35 @@ ____
 ## Demotehtävä 2
 
 1. Etsi tietokoneeltasi paikka, johon olet tallentanut demo1.html-tiedoston. Tuplaklikkaa sitä ja avaa se selaimeen.
+
+____________
+
+## HTML-pohjan oikoluominen
+
+Visual Studio Code tarjoaa jonkin verran apuja koodin kirjoittamiseen, minkä tulette huomaamaan. Sitä voi käyttää apuna myös HTML-pohjan luomiseen.
+
+Pohja luodaan siten, että ensin luodaan uusi tiedosto, jonka pääte on .html (esimerkiksi *testi.html*). Sitten tyhjässä tiedostossa kirjoitataan huutomerkki ja painetaan enteriä. Sen pitäisi luoda seuraavan näköisen tiedoston:
+
+
+````html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+````
+
+Tuo toinen <meta> vaikuttaa CSS:än ja siihen, miten asiat voisivat asettua sivulle. Sen voi antaa olla paikoillaan, vaikka emme tarvitse sitä pitkään aikaan.
+
+
+_________
+
+## Demotehtävä 3
+
+Luo kansioon uusi .html-loppuinen tiedosto. Luo siihen HTML-pohja käyttämällä oikotapaa.
