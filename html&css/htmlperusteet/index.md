@@ -26,16 +26,23 @@ Kaikki tagit kuuluu sulkea oikeassa kohdassa. Tageja voi olla sisäkkäin. Jos t
 
 HTML-tiedostossa ``<html>``-tagin sisällä on vähintään kaksi osaa eli ``<head>`` ja ``<body>``.
 
+## Dokumentin tiedot eli head
+
 ``<head>`` sisältää monenlaista metatietoa, mutta se ei näy internetsivulla pääosin. Poikkeuksena mahdollinen favicon (välilehdellä näkyvä pikkukuvake) sekä ``<title>`` eli sivuston nimi, joka näkyy myös välilehdellä ja joka on merkittävä hakukoneille. 
 
 ``<head>``in sisään kannattaa laittaa myös tieto käytetystä merkistöstä, jotta varsinkaan suomen kanssa ei tulisi ääkkösongelmaa. Tyypillisimmin käytetty merkistö on UTF-8, mutta myös UTF-16 ja UTF-32 ovat olemassa, mutta ne vaativat enemmän tallennustilaa eivätkä ole suomen tai muidenkaan länsimaisten kielten kannalta olennaisia, joten todennäköisesti UTF-8 soveltuu kaikkeen. Merkistö ilmoitetaan metatagilla, joita voi olla useampiakin. ``<meta charset=”UTF-8”>`` ``<head>``in sisään voidaan myös linkittää ulkopuolisia tyylitiedostoja kuten CSS-tiedostoja tai ulkopuolisia muita tyylikirjastoja.
 
+Näiden lisäksi, jos HTML-pohja generoidaan, sinne tulee rivi: "<meta name="viewport" content="width=device-width, initial-scale=1.0">", joka liittyy siihen, miten sivu toimii kapeammala näytöllä.
+
+Käyttövalmis HTML-pohja voi siis näyttää seuraavalta:
+
 ```HTML 
 <!DOCTYPE html>
-    <html lang="fi">
+    <html lang="en">
         <head>
             <meta charset="UTF-8"/>
-            <title>Aloitussivu</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Start Page</title>
         </head>
         <body>
         </body>
@@ -44,11 +51,11 @@ HTML-tiedostossa ``<html>``-tagin sisällä on vähintään kaksi osaa eli ``<he
 
 ___
 
-## Dokumentin sisältö
+## Dokumentin sisältö eli body
 
-Varsinainen käyttäjälle näkyvä sisältö tulee kirjoittaa ``<body>``n sisään. 
+Varsinainen käyttäjälle näkyvä sisältö tulee kirjoittaa ``<body>``n sisään. Erilaiset verkkosivun osat merkitään erilaisilla tageilla sen mukaan, mikä niiden rooli sivulla on.
 
-Otsikot merkitään h-tagilla (h = headline). Niitä on 1-6. Jokaisella sivulla pitäisi olla ``<h1>`` ja siitä loogisessa järjestyksessä pienempiä otsikoita. Otsikon näkyvä koko säädetään lopuksi CSS:llä eikä valitsemalla visuaalisesti miellyttävä h-tag. 
+Otsikot merkitään h-tagilla (h = headline). Niitä on 1-6. Jokaisella sivulla pitäisi olla ``<h1>`` ja siitä loogisessa järjestyksessä pienempiä otsikoita. Otsikon näkyvä koko säädetään lopuksi CSS:llä eikä valitsemalla visuaalisesti miellyttävä h-tag. Eli jos sivulla on ``<h1>``, seuraava otsikkotaso ei voi olla ``<h5>``, vaan sen kuuluu olla ``<h2>``.
 
 Perusteksti kirjoitetaan p-tagilla (p = paragraph). Se rivittyy automaattisesti annettuun tilaan sopivaksi, ellei sitä säädä CSS:llä toisin. Koodin luettavuuden vuoksi kannattaa kuitenkin rivittää kappaleita, vaikka editori sallii erittäin leveälle kirjoittamisen.
 
@@ -57,12 +64,13 @@ Perusteksti kirjoitetaan p-tagilla (p = paragraph). Se rivittyy automaattisesti 
     <html lang="fi">
         <head>
             <meta charset="UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Aloitussivu</title>
         </head>
         <body>
             <h1>Pääotsikko</h1>
             <h2>Ensimmäinen alaotsikko</h2>
-            <p>Tässä on ensimmäinen kappale, joka varmaan   jotenkin liittyy alaotsikkoon.</p>
+            <p>Tässä on ensimmäinen kappale, joka varmaan jotenkin liittyy alaotsikkoon.</p>
         </body>
     </html>
 ```
@@ -93,4 +101,4 @@ ____
 
 ## Demotehtävä 2
 
-1. Etsi tietokoneeltasi paikka, johon olet tallentanut demo1.html-tiedoston. Tuplaklikkaa sitä ja avaa se selaimeen.
+1. Etsi tietokoneeltasi Resurssienhallinnan kautta paikka, johon olet tallentanut demo1.html-tiedoston. Tuplaklikkaa sitä ja avaa se selaimeen.

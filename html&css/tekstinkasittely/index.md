@@ -19,7 +19,7 @@ Erilaiset tekstityypit merkitään niiden merkityksen mukaan: lyhyt lainaus (q),
 
 # Listat
 
-Listoja on kahta tyyppiä eli numeroitu lista eli ``<ol>`` (ordered list) ja numeroimaton lista eli ``<ul>`` (unordered list). Listan sisällä jokainen listan osa kuuluu merkitä ``<li>``-elementin (list item) sisään. Navigointi eli semanttinen ``<nav>``-elementti sisältää yleensä numeroimattoman listan.
+Listoja on kahta tyyppiä eli numeroitu lista eli ``<ol>`` (ordered list) ja numeroimaton lista eli ``<ul>`` (unordered list). Listan sisällä jokainen listan osa kuuluu merkitä ``<li>``-elementin (list item) sisään. Navigointi eli semanttinen ``<nav>``-elementti sisältää yleensä numeroimattoman listan. Listoja käytetään runsaasti HTML-sivuilla.
 
 ```HTML 
     <ol>
