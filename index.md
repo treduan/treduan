@@ -4,6 +4,8 @@
 
 [ HTML & CSS ](./htmlcss2024/index.md)
 
+[ Orientaatio ](./orientoituminen2024/index.md)
+
 ## Kurssit 2023-2024
 [ HTML & CSS ](./html&css/index.md)
 
