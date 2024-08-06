@@ -1,4 +1,4 @@
-let sent = "This is a test sentence.";
+/*let sent = "This is a test sentence.";
 
 const d = new Date("2022");
 console.log(d);
@@ -10,7 +10,7 @@ let thisMonth = now.getMonth();
 console.log(thisMonth);
 
 console.log(Math.floor(difference / (365.25 * 24 * 60 * 60 * 1000)));
-/*
+
 let scores = [
     ["Mary Sue", 66, 87, 78],
     ["John Doe", 55, 68, 74],
@@ -54,3 +54,15 @@ const teams = [
     {name: "Annalan joukkue", members: 3, representative: "Pia Peer"}
 ];
 */
+
+let myList = [koira, syöminen, kotityöt, hammaspesu, nukkuminen ];
+for(let i=0; i < myList.length; i++){
+    console.log(myList[i]);
+}
+
+let list = [koira, syöminen, kotityöt, hammaspesu, nukkuminen ];
+let newList = list.map(item => 10 * item);
+newList.forEach(item => console.log(item));
+
+myList.push("butter");
+myList.pop();
