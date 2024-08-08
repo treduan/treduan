@@ -8,6 +8,8 @@
 
 ## CSS
 
+- [CSS:n perusteet](./cssperusteet/)<base target="_blank">
+
 ## Palautettavat harjoitukset
 
 ## Lisätehtävät
