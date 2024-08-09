@@ -6,6 +6,8 @@
 - [ Semanttinen HTML ](./semanttinen/index.md)<base target="_blank">
 - [ Lisättäviä asioita HTML-sivuilla](./lisattavat/index.md)<base target="_blank">
 - [ Tekstinkäsittely ja listat ](./tekstinkasittely/)<base target="_blank">
+- [ Taulukot ](./taulukot/index.md)<base target="_blank">
+- [ HTML-koodin validointi ](./validointi/index.md)<base target="_blank">
 
 ## CSS
 
