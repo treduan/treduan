@@ -15,6 +15,8 @@
 
 ## Palautettavat harjoitukset
 
+- [Harjoitus 1 (vapaavalintainen HTML-sivu)](./htmlharjoitus1/index.md)<base target="_blank">
+
 ## Lisätehtävät
 
 - [Lisätehtävä 1 (HTML-tageja)](./lisatehtava1/)<base target="_blank">
