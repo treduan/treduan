@@ -55,7 +55,7 @@ li {
 }
 ```
 
-Lista erilaisista listatyyleistä löydät [täältä](https://www.w3schools.com/cssref/pr_list-style-type.php)<base target="_blank">.
+Listan erilaisista listatyyleistä löydät [täältä](https://www.w3schools.com/cssref/pr_list-style-type.php)<base target="_blank">.
 
 ## Demoharjoitus 1
 
