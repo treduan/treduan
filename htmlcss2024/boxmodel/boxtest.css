@@ -1,0 +1,8 @@
+* {
+    margin:0;
+}
+
+.box {
+    background-color: rgb(191, 158, 223);
+    margin-bottom: 10px;
+}
