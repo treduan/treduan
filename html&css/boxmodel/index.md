@@ -16,9 +16,10 @@ Alla olevalla koodilla säädetään sivut ja ylä- ja alasuunta erikseen, ensin
 .mydiv {
     padding: 8px 15px;
 }
-``````
+````
 
 ## Border
+
 Elementille voi antaa reunukset. Reunuksille voi antaa värin (border-color), paksuuden (border-width) ja kuviotyylin (border-style). Ne voi antaa erikseen tai yhdistelmällä. On mahdollista määritellä reunus vain johonkin yksittäiseen suuntaan (esim. boder-left).
 
 [w3schools](https://www.w3schools.com/css/css_border.asp)<base target="_blank"> esittelee eri reunustyylivaihtoehdot.
@@ -35,6 +36,8 @@ Lopputulos kapealla näytöllä on tämä:
 
 ![box with border](boxwithborder.PNG)
 
+Jos elementille annetaan taustaväri eli background-color, reunukset tulevat tämän taustan lisäksi.
+
 ## Margin
 
 Margin eli marginaali on tilaa reunusten ulkopuolella. Sitä voi säätää joko joka suuntaan erikseen (esim. margin-top ja margin-left) tai kahta tai kaikki yhdessä.
@@ -48,6 +51,9 @@ Alla lisätään joka suuntaan marginaalia 30 pikseliä.
     margin: 30px;
 }
 ````
+
+HTML-sivulla on automaattisesti pikkuinen marginaali olemassa. Yleensä omaa CSS:ää kirjoitettaessa se halutaan poistaa, jotta voimme säätää omat marginaalit. Tämä tehdään mieluiten aivan CSS-tiedoston alussa kirjoittamalla sinne: ``* {margin:0;}``. Tähti tarkoittaa kaikkea eli tuolla koodilla säädetään, että kaikkialla on lähtökohtaisesti marginaali 0.
+
 ## Margin Collapse
 
 Margin collapse on sitä, että jos meillä on allekkain tai vierekkäin kaksi elementtiä, joille on lisätty marginaali, niistä marginaaleista lasketaan vain yksi. Eli toinen marginaali ikään kuin katoaa/kaatuu pois. 
@@ -58,9 +64,16 @@ Esimerkissä on kaksi laatikkoa, joilla molemmilla on joka suuntaan marginaalia 
 
 # Height ja Width
 
-## Width
+Jokaiselle elementille voi määrittää korkeuden (height) ja leveyden (width). Se voidaan antaa suoraan pikseleinä tai esimerkiksi prosentteina käytettävästä tilasta.
 
 ## Height
+
+Korkeuden säätäminen on yleensä selkeää ja siihen käytetään hyvin yleisesti pikselimäärää. Mahdolliset paddingit ja borderit tulevat tämän korkeuden sisälle, mutta margin on sen ulkopuolella.
+
+## Width
+
+
+
 
 # Border-box
 
