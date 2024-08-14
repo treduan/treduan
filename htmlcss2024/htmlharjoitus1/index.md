@@ -7,3 +7,4 @@
 3. Lisää sivulle aiheestasi tekstiä ja tekstiin sopivia otsikoita. Lisää tekstiin ainakin yksi muotoiluelementti.
 4. Lisää sivulle ainakin yksi kuva ja yksi linkki toiselle sivulle.
 5. Lisää sivulle ainakin yksi taulukko, joka liittyy aiheeseen.
+6. Lopuksi käy validoimassa HTML-koodisi.

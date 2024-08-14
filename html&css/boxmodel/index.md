@@ -19,7 +19,6 @@ Alla olevalla koodilla säädetään sivut ja ylä- ja alasuunta erikseen, ensin
 ````
 
 ## Border
-
 Elementille voi antaa reunukset. Reunuksille voi antaa värin (border-color), paksuuden (border-width) ja kuviotyylin (border-style). Ne voi antaa erikseen tai yhdistelmällä. On mahdollista määritellä reunus vain johonkin yksittäiseen suuntaan (esim. boder-left).
 
 [w3schools](https://www.w3schools.com/css/css_border.asp)<base target="_blank"> esittelee eri reunustyylivaihtoehdot.

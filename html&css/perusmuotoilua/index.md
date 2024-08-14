@@ -43,6 +43,8 @@ h2 {
 }
 ```
 
+Lisäksi fonttikoon vaihtoehtoina ovat large, larger, medium, small, smaller, xlarge, xsmall, xxlarge, xxsmall. 
+
 ## Reunaviivat ja taustaväri
 
 Taulukoille, kuten muillekin elementeille, voidaan piirtää reunaviivoja. Jos haluaa tekstin ja sen reunaviivan väliin tilaa, kannattaa lisätä *padding*:iä. Jos annetaan yksi *padding* arvo, sitä sovelletaan laatikon joka reunalle. Jos annetaan kaksi arvoa, ensimmäinen kertoo *padding*:in ylös/alas ja toinen vasemmalle/oikealle. Neljällä arvolla voidaan antaa eri *padding*-arvo kaikille neljälle reunalle (ylhäältä alkaen myötäpäivään).
