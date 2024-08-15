@@ -37,6 +37,16 @@ Lopputulos kapealla näytöllä on tämä:
 
 Jos elementille annetaan taustaväri eli background-color, reunukset tulevat tämän taustan lisäksi.
 
+____________
+
+## Demotehtävä 1
+
+1. Luo uusi html-tiedosto nimeltään boxes.html. Luo siihen html-pohja. Luo myös uusi tiedosto boxes.css ja linkitä se html-tiedostoon.
+2. Luo html-tiedostoon kaksi div-elementtiä, joista ensimmäisessä on p-elementissä teksti "box1" ja toisessa "box2". Voit antaa niille myös luokat samoilla nimillä.
+3. Lisää molemmille elementeille haluamasi reunus ja padding. Näet, miten ne vaikuttavat elementin ulkoasuun.
+
+_________________
+
 ## Margin
 
 Margin eli marginaali on tilaa reunusten ulkopuolella. Sitä voi säätää joko joka suuntaan erikseen (esim. margin-top ja margin-left) tai kahta tai kaikki yhdessä.
@@ -60,6 +70,13 @@ Margin collapse on sitä, että jos meillä on allekkain tai vierekkäin kaksi e
 Esimerkissä on kaksi laatikkoa, joilla molemmilla on joka suuntaan marginaalia 30 px. Kuva on otettu aivan selaimen reunasta. Huomaatte, että laatikoiden vasemmalla puolella on sama etäisyys reunasta kuin laatikoiden välillä eli 30 pikseliä eikä tuplia eli kaksi kertaa 30 pikseliä. Tätä margin collapse käytännössä tarkoittaa.
 
 ![margincollapse.PNG](margincollapse.PNG)
+
+____________
+
+## Demotehtävä 2
+
+1. Jatka aiempiin boxes.html ja boxes.css -tietostoihin.
+2. Lisää molemmille laatikoille marginaalia. Testaa molemmille eri määrä. Tarkista kehittäjätyökaluista, millainen marginaali jää elementtien väliin. 
 
 # Height ja Width
 
