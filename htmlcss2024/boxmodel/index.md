@@ -129,4 +129,18 @@ ____________
 
 # Display
 
-Display on tärkeä ominaisuus, joka säätelee sitä, miten asiat asettuvat ruudulle tai miten ne näkyvät. Tulemme opettelemaan näitä useammassa osassa.
+Display on tärkeä ominaisuus, joka säätelee sitä, miten asiat asettuvat ruudulle tai miten ne näkyvät. Osalla elementeistä on jokin oletus display. Tulemme opettelemaan näitä useammassa osassa.
+
+*block* elementti alkaa aina uudelta riviltä ja se vie niin paljon tilaa leveydestä, kuin sitä on saatavilla niin oikealla kuin vasemmallakin. *block* on oletuksena seuraavilla elementeillä: ``<div>, <h1>-<h6>, <p>, <form>, <header>, <footer>, <section>``.
+
+*inline* sen sijaan ei ala uudelta riviltä, ja se vie vain sen verran tilaa, kuin se välttämättä tarvitsee. Esimerkiksi ``<span>, <a>, ja <img>`` ovat tällaisia elementtejä.
+
+*none* poistaa elementin näkyvistä siten, että sen varaama tila täytetään muilla sivun elementeillä, mikäli sellaisia on. On myös toinen tapa tehdä jostakin elementistä näkymätön ja se on *visibility: hidden;*, jolloin elementti vie edelleen vanhan tilan, mutta se vain on poissa näkyviltä.
+
+_____________
+
+## Demotehtävä 5
+
+1. Jatka aiempiin tiedostoihin. Testaa, mitä tapahtuu, jos vaihdat molempiin laatikoihin *display: inline;*.
+2. Vaihda ensimmäiseen laatikkoon *display: none;* ja katso, mitä tapahtuu.
+3. Vaihda ensimmäisen laatikon *display: none;* *visibility: hidden;*iksi. Mitä muutoksia tapahtuu?
