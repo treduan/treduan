@@ -57,8 +57,23 @@ li {
 
 Listan erilaisista listatyyleistä löydät [täältä](https://www.w3schools.com/cssref/pr_list-style-type.php)<base target="_blank">.
 
+_______________
+
 ## Demoharjoitus 1
 
 1. Muokkaa aiemmin tehtyä HTML-tiedostoasi linkitetyllä CSS-tiedostolla. Ensimmäisenä valitse *body* ja poista siltä margin eli kirjoita ``margin: 0;`` Tämä estää myöhemmin marginaaliongelmia.
 2. Suurenna tekstikokoa ja vaihda fonttia. Vaihda myös tekstin väri tummanharmaaksi.
 3. Lisää tiedostoon numeroimaton lista. Testaa erilaisia listatyyppejä. Lopuksi testaa, että osaat poistaa listatyypin näkyvistä.
+
+_______________
+
+## Tekstin asemointi
+
+Tekstit on automaattisesti rivitetty vasempaan reunaan. *text-align* -ominaisuudella se voidaan kuitenkin asettaa myös oikeaan reunaan, keskitetyksi tai jakautumaan tilaan tasaisesti. *text-align*illa on siis neljä eri arvoa, jotka ovat *left* (oletus), *right*, *center* ja *justify*.
+
+___________
+
+## Demoharjoitus 2
+
+1. Jatka aiempaan tiedostoon. Kokeile keskittää jokin tiedoston otsikoista. Voit valita selektoriksi joko kaikki sen elementin otsikot tai antaa yhdelle otsikolle luokan.
+2. Laita ``<p>`` -elementeille *text-align: right;* ja katso, mitä tapahtuu. Vaihda se nyt *text-align: justify*ksi ja katso, mitä tapahtuu. 

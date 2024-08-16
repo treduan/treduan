@@ -37,13 +37,23 @@ Lopputulos kapealla näytöllä on tämä:
 
 Jos elementille annetaan taustaväri eli background-color, reunukset tulevat tämän taustan lisäksi.
 
+## Box-shadow ja text-shadow
+
+Sekä tekstille että laatikoille voi laittaa varjoefektejä.
+
+Ohjeita ja esimerkkejä tekstien varjoista löytyy [www.w3schools.comista](https://www.w3schools.com/css/css3_shadows.asp)<base target="_blank">.
+
+Ohjeita ja esimerkkejä laatikoiden varjoista löytyy [www.w3schools.comista](https://www.w3schools.com/css/css3_shadows.asp)<base target="_blank">.
+
 _____________
 
 ## Demotehtävä 1
 
 1. Luo demo-kansioon uusi html-tiedosto nimeltään boxes.html ja uusi css-tiedosto nimeltään boxes.css. Luo html-tiedostoon html-pohja ja linkitä css-tiedosto siihen.
-2. Luo html-tiedostoon kaksi div-elementtiä, joiden sisällä on p-elementissä tekstit "Box 1" ja "Box 2". Voit antaa niille myös luokat "box1" ja "box2".
+2. Luo html-tiedostoon h1-otsikko, jossa lukee "Box Test", sekä sen alle kaksi div-elementtiä, joiden sisällä on p-elementissä tekstit "Box 1" ja "Box 2". Voit antaa niille myös luokat "box1" ja "box2".
 3. Css-tiedostossa anna molemmille jokin taustaväri eli background-color. Valitse molemmille myös jokin reunus ja aseta niille keskenään eri määrä paddingia.
+4. Lisää otsikkoon haluamasi varjoefekti.
+5. Lisää laatikoille haluamasi varjoefektit. Ne voivat olla samat tai erit.
 
 __________
 
