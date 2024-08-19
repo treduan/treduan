@@ -1,8 +1,18 @@
 * {
     margin:0;
+    box-sizing: border-box;
 }
 
 .box {
     background-color: rgb(191, 158, 223);
     margin-bottom: 10px;
+    width: 800px;
+    max-width: 80%;
+}
+
+.box1 {
+    padding: 30px;
+}
+.box2 {
+    padding: 50px;
 }
