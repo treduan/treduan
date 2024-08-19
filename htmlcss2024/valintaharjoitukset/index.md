@@ -35,5 +35,7 @@
 1. Luo uusi html-tiedosto nimeltään valintatesti.html demo-kansioon ja luo siihen html-pohja. Kopioi yllä oleva koodi bodyn sisään.
 2. Luo myös valintatesti.css-tiedosto ja linkitä se html-tiedostoon.
 3. Css-tiedoston alkuun lisää marginaalin poisto sekä box-sizing: border-box;.
-4. Anna jokaiselle laatikolle kooksi 200x200 pikseliä, padding 20 pikseliä ja haluamasi reunus.
-5. 
+4. Anna jokaiselle laatikolle kooksi 200x200 pikseliä, padding 20 pikseliä ja haluamasi reunus ja reunuksen pyöristystä kymmenen pikseliä. Lisää siis tarvittavia luokkia.
+5. Anna joka toiselle laatikolle taustaväriksi vaaleansininen ja joka toiselle vaaleankeltainen.
+6. Anna laatikolle numero 7 taustaväriksi violetti.
+7. Muotoile viimeisen divin tekstiä niin, että sen fontti on suurempi ja väriltään vaaleansininen ja teksti on keskitetty. Vaihda taustaväri mustaksi, anna elementille korkeudeksi 200 pikseliä ja leveydeksi 900 pikseliä ja maksimileveydeksi 90 %. Pyöristä vielä kulmia 20 pikseliä.
