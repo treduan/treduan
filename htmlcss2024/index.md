@@ -13,6 +13,7 @@
 
 - [CSS:n perusteet](./cssperusteet/index.md)<base target="_blank">
 - [CSS tekstin muotoilu](./perusmuotoilua/index.md)<base target="_blank">
+- [Box Model](./boxmodel/index.md)<base target="_blank">
 
 ## Palautettavat harjoitukset
 
