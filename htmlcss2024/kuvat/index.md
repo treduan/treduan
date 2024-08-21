@@ -1,6 +1,6 @@
 ## Kuvat
 
-HTML lisää kuvan verkkosivulle, mutta sitä voi käsitellä monella tavalla CSS:llä.
+HTML lisää kuvan verkkosivulle, mutta sitä voi käsitellä monella tavalla CSS:llä. Verkkosivuille sopivat kuvaformaatit ovat jpg, png, gif, svg ja WebP, joskaan viimeisin ei toimi välttämättä kaikilla selaimilla.
 
 ## Koko
 
@@ -48,7 +48,7 @@ Jos kuvan haluaa sävyttää jollakin värillä, taustan väriksi laitetaan halu
     opacity: 0.6;
 }
 ````
-
+____________
 
 ## Demotehtävä 1
 
@@ -57,3 +57,114 @@ Jos kuvan haluaa sävyttää jollakin värillä, taustan väriksi laitetaan halu
 3. Tee kuvalle reunukset. Pyöristä myös kuvan reunoja 20 pikseliä. Voit lisätä myös varjoefektin halutessasi.
 4. Muokkaa kuvan ulkonäköä *filter*-ominaisuudella. Muuta se mustavalkoiseksi tai seepiansävyiseksi.
 5. Lisää kuvalle jokin sinertävä värisävy. 
+
+_____________________
+
+# Taustakuvat
+
+Jollekin elementille voi asettaa taustavärin, mutta sille voi asettaa myös taustakuvan. Yksinkertaisimmillaan taustakuva asetetaan seuraavasti:
+
+````css
+.mydiv {
+    background-image: url("myimage.jpg");
+}
+````
+
+url('path/to/image.jpg') määrittää kuvan sijainnin ja kertoo tiedoston nimen.
+
+## Taustakuvan toistaminen
+
+Oletuksena taustakuva toistuu vaakasuunnassa ja pystysuunnassa täyttääkseen koko elementin. Voit hallita toistokäyttäytymistä *background-repeat* -ominaisuudella.
+
+````css
+.mydiv {
+    background-image: url('myimage.jpg');
+    background-repeat: no-repeat; /* Estää toistamisen */
+}
+````
+
+Muita arvoja:
+
+- repeat-x: Toistaa vain vaakasuunnassa.
+- repeat-y: Toistaa vain pystysuunnassa.
+- repeat: Toistaa molemmissa suunnissa (oletusarvo).
+- no-repeat: Ei toista taustakuvaa.
+
+## Taustakuvan sijainti
+
+Voit määrittää taustakuvan sijainnin käyttämällä background-position -ominaisuutta.
+
+````css
+.mydiv {
+    background-image: url('path/to/image.jpg');
+    background-repeat: no-repeat;
+    background-position: center center; /* Kuva sijoitetaan keskelle */
+}
+````
+
+Sijaintiarvot voivat olla esimerkiksi:
+
+- top left, top center, top right
+- center left, center center, center right
+- bottom left, bottom center, bottom right
+
+Arvoja voidaan myös käyttää pikseleinä tai prosentteina, kuten background-position: 50% 50%;.
+
+## Taustakuvan koko
+
+Taustakuvan kokoa voidaan hallita background-size -ominaisuudella.
+
+````css
+.mydiv {
+    background-image: url('path/to/image.jpg');
+    background-size: cover; /* Täyttää elementin säilyttäen kuvasuhteen */
+}
+````
+
+Muita arvoja:
+
+- contain: Skaalaa kuvan siten, että se mahtuu kokonaan elementtiin säilyttäen kuvasuhteen.
+- cover: Skaalaa kuvan siten, että se täyttää elementin säilyttäen kuvasuhteen.
+
+Voit myös määrittää tarkat mitat, esimerkiksi background-size: 100px 200px;.
+
+## Taustakuvan kiinnittäminen
+
+background-attachment -ominaisuudella voit määrittää, pysyykö taustakuva paikoillaan, kun sivua vieritetään.
+
+````css
+.mydiv {
+    background-image: url('path/to/image.jpg');
+    background-attachment: fixed; /* Kiinnittää taustakuvan ikkunan näkymään */
+}
+````
+
+Arvot:
+
+- scroll: Taustakuva vierii sivun mukana (oletusarvo).
+- fixed: Taustakuva pysyy paikoillaan, kun sivua vieritetään.
+
+## Yhdistetyt ominaisuudet
+
+Voit yhdistää kaikki taustakuvan ominaisuudet background -lyhytkäskyllä.
+
+````css
+.mydiv {
+    background: url('path/to/image.jpg') no-repeat center center / cover fixed;
+}
+````
+
+Tämä lyhytkäsky kattaa kaikki edellä mainitut ominaisuudet:
+
+- Kuva (background-image)
+- Toistaminen (background-repeat)
+- Sijainti (background-position)
+- Koko (background-size)
+- Kiinnittäminen (background-attachment)
+
+_____________
+
+## Demotehtävä 2
+
+1. Luo uusi html-sivu nimeltään imagetest.html ja css-tiedosto nimeltään imagetest.css. Luo html-sivuun html-pohja ja linkitä css-tiedosto.
+2. Lataa Teamsista kuvat mandala.png ja noble-castle.jpg ja siirrä ne joko demokansioon tai demokansiossa olevaan kuvakansioon.
