@@ -17,6 +17,17 @@ Nämä ominaisuudet voi myös yhdistää, jolloin kuva voi pysyä isoilla ruudui
 }
 ````
 
+## Kuvan asettelu
+
+Kuvan oletus on, että sillä on diplay: inline;. Se siis vie vain sen verran tilaa, kuin se välttämättä tarvitsee, eikä se mene automaattisesti omalle rivilleen. Usein haluamme laittaa kuvan keskelle ruutua. Se onnistuu seuraavasti:
+
+````css
+.img {
+    display: block;
+    margin: auto;
+}
+````
+
 ## Reunukset
 
 Kuviin pätee kaikki samat asiat kuin muihin elementteihin. Kuvalle voi siis antaa reunukset ja niitä voi muokata. Niille voi antaa leveyttä, voi muokata väriä ja kulmia. Sille voi myös tehdä varjoefektejä.
