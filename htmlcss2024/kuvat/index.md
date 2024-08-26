@@ -179,3 +179,7 @@ _____________
 
 1. Luo uusi html-sivu nimeltään imagetest.html ja css-tiedosto nimeltään imagetest.css. Luo html-sivuun html-pohja ja linkitä css-tiedosto.
 2. Lataa Teamsista kuvat mandala.png ja noble-castle.jpg ja siirrä ne joko demokansioon tai demokansiossa olevaan kuvakansioon.
+3. Lisätkää sivullenne sisältöä eli otsikoita ja tekstiä sen verran, että sivua on pakko vierittää alaspäin. Näiden ei tarvitse olla järkeviä. Vaihtakaa tekstien väri johonkin muuhun kuin mustaan, jotta ne erottuvat.
+4. Lisätkää taustakuvaksi mandala.png. Vaihtakaa sen koko pieneksi eli 100x100 pikseliä. Katsokaa, että se toistuu koko sivulla. Vaihtakaa se niin, että se toistuu vain pystysuunnassa.
+5. Vaihtakaa taustakuvaksi noble-castle.jpg. Katsokaa, miten se asettuu sivulle. Tarvittaessa laittakaa se täyttämään koko tausta (background-size: cover;).
+6. Kiinnittäkää taustakuva siten, että se pysyy paikoillaan, kun sivua vieritetään alaspäin.
