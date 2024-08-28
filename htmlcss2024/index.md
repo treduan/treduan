@@ -17,6 +17,8 @@
 - [Perusharjoituksia](./valintaharjoitukset/index.md)<base target="_blank">
 - [Värit](./varit/index.md)<base target="_blank">
 - [Kuvat](./kuvat/index.md)<base target="_blank">
+- [Asettelu](./asettelu/index.md)<base target="_blank">
+- [Navigaatio](./navigointi/index.md)<base target="_blank">
 
 ## Palautettavat harjoitukset
 
