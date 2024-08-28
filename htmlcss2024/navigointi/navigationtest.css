@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-horizontal {
+    background-color: #333;
+    padding: 10px 0;
+    margin-bottom: 100px;
+}
+
+.navbar-horizontal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox asettaa elementit vaakasuoraan */
+    justify-content: center; /* Keskittää elementit */
+}
+
+.navbar-horizontal li {
+    margin: 0 15px;
+}
+
+.navbar-horizontal a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar-horizontal a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+.navbar-vertical {
+    background-color: #333;
+    padding: 20px;
+/*    height: 150px; /* Voi olla kiinteä tai dynaaminen korkeus */
+    width: 200px;
+}
+
+.navbar-vertical ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Flexbox asettaa elementit pystysuoraan */
+    align-items: start; /* Kohdistaa elementit vasempaan reunaan */
+}
+
+.navbar-vertical li {
+    margin: 10px 0;
+}
+
+.navbar-vertical a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.navbar-vertical a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}

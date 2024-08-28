@@ -2,7 +2,7 @@
 
 ## Float
 
-*float* on ominaisuus, jolla voidaan siirtää yksittäisiä elementtejä. Se ei sovi suuriin asetteluihin, joihin on nykyään parempiakin vaihtoehtoja, mutta yksinkertaisiin tilanteisiin se toimii. Hyvä esimerkki on elementti, jonka sisällä on kuva, joka halutaan vasemmalle, sekä tekstiä, joka halutaan pitää sen vieressä.
+*float* eli kelluttaminen on ominaisuus, jolla voidaan siirtää yksittäisiä elementtejä. Se ei sovi suuriin asetteluihin, joihin on nykyään parempiakin vaihtoehtoja, mutta yksinkertaisiin tilanteisiin se toimii. Hyvä esimerkki on elementti, jonka sisällä on kuva, joka halutaan vasemmalle, sekä tekstiä, joka halutaan pitää sen vieressä.
 
 ````html
 <div class="content">
