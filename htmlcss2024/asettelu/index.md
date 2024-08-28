@@ -43,11 +43,11 @@ Periaatteessa riittää, että *flex container*:lle määritellään:
 }
 ```
 
-Tämän jälkeen kaikki sen lapset ovat automaattisesti *flex-item*:eja.
+Tämän jälkeen kaikki sen sisällä olevat elementit eli lapset ovat automaattisesti *flex-item*:eja.
 
 ## Alkutoimet
 
-Tallenna seuraava koodi *css-demo2.html*-tiedostoon:
+Tallenna seuraava koodi *flextest.html*-tiedostoon:
 
 ```html
 <!DOCTYPE html>
@@ -58,7 +58,7 @@ Tallenna seuraava koodi *css-demo2.html*-tiedostoon:
         <link rel="stylesheet" href="boxit.css">
     </head>
     <body>
-        <div class="main">
+        <main class="main">
         <div class="subdiv">
             <h1>DIV 1</h1>
         </div>
@@ -71,12 +71,12 @@ Tallenna seuraava koodi *css-demo2.html*-tiedostoon:
         <div class="subdiv widediv">
             <h1>DIV 4</h1>
         </div>
-    </div>
+    </main>
     </body>
 </html>
 ```
 
-Tallenna seuraava koodi *boxit.css* -tiedostoon. *flex-container* on *div*, jonka luokka on *main* ja sen sisällä on *flex-item*:ejä, joiden luokka on *subdiv*. Yksi *subdiv*:estä kuuluu lisäksi luokkaan *highdiv* tai toinen *widediv*.
+Tallenna seuraava koodi *flextest.css* -tiedostoon. *flex-container* on *main*, jonka luokka on *main* ja sen sisällä on *flex-item*:ejä, joiden luokka on *subdiv*. Yksi *subdiv*:estä kuuluu lisäksi luokkaan *highdiv* tai toinen *widediv*.
 
 ```css
 .main {
@@ -161,7 +161,7 @@ flex-grow: 2;
 
 Havainnollistava kuva *flex*in justify-contentista: ![justify-content](flex.jfif)
 
-[Lue lisää flex-box:ista](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)<base target="_blanck">
+[Lue lisää flex-box:ista](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)<base target="_blank">
 
 ## Demoharjoitus 1
 
@@ -180,6 +180,7 @@ Havainnollistava kuva *flex*in justify-contentista: ![justify-content](flex.jfif
     </head>
     <body>
         <header>
+            <h1>Tervetuloa kauppaamme!</h1>
             <nav>
                 <ul>
                     <li>Etusivu</li>
@@ -189,6 +190,8 @@ Havainnollistava kuva *flex*in justify-contentista: ![justify-content](flex.jfif
                 </ul>
             </nav>
         </header>
+        <main>
+            <h2>Tässä ovat tuotteemme</h2>
         <div class="tuotteet">
         <div class="subdiv">
             <h1>Tuote 1</h1>
@@ -207,6 +210,7 @@ Havainnollistava kuva *flex*in justify-contentista: ![justify-content](flex.jfif
             <p>Tuote 4 on loistava.</p>
         </div>
     </div>
+    </main>
     </body>
 </html>
 ````
@@ -276,7 +280,7 @@ Gridillä on mahdollista myös määritellä isompia alueita kuin vain pysty- ja
 }
 ````
 
-Gridin palasten väliin jäävän koon voi säätää käyttämällä *gap*-ominaisuutta. Sen voi säätää yksinään, jolloin joka suuntaan on yhtä paljon tyhjää tilaa, mutta sen voi säätää erikseen myös vaaka- ja pystyrivien kohdalle. Seuraavassa koodissa laitetaan pystyrivien palojen väliin suurempi väli kuin vaakarivin paljoen väliin.
+Gridin palasten väliin jäävän koon voi säätää käyttämällä *gap*-ominaisuutta. Sen voi säätää yksinään, jolloin joka suuntaan on yhtä paljon tyhjää tilaa, mutta sen voi säätää erikseen myös vaaka- ja pystyrivien kohdalle. Seuraavassa koodissa laitetaan pystyrivien palojen väliin suurempi väli kuin vaakarivin palojen väliin.
 
 ````css
 .main {
@@ -315,7 +319,7 @@ Lisää gridin käytöstä voi lukea [täältä](https://css-tricks.com/snippets
             </ul>
         </nav>
         <main class="main">
-            <section>
+            <section class="introduction">
                 <h2>Tässä on otsikko</h2>
                 <p>Kuvailen tässä, kuinka hieno verkkokauppa meillä on 
                     ja miksi juuri tästä verkkokaupasta kannattaa ostaa asioita.</p>
@@ -350,12 +354,17 @@ Lisää gridin käytöstä voi lukea [täältä](https://css-tricks.com/snippets
             <p>Tuote 7 on ihana.</p>
         </div>
     </section>
+    <section class="ad">
+        <div>
+            <p>Tämä teksti tässä on mainosteksti, joka olisi tarkoitus asetella kaikkien tuotteiden oikealle puolelle yhdeksi kapeaksi ja korkeaksi osuudeksi ihan harjoituksen vuoksi. Tällä tavalla saamme yhden uuden tason gridiä käyttöömme, sillä tietenkin sivustolla voi olla sisäkkäin tai vierekkäin monta eri asettelua, jotka käyttävät joko gridiä tai flexiä.</p>
+        </div>    
+    </section>
     </main>
     </body>
 </html>
 ````
 
-2. Asettele sisältö luontevasti käyttämällä gridiä.
+2. Asettele sisältö luontevasti käyttämällä gridiä. Anna tuotteille jokin taustaväri, jotta ne erottuvat selkeästi taustasta. Mainos olisi tarkoitus asetella tuotteiden oikealle puolelle pystyyn. Myös sille voi antaa eri taustavärin kuin tuotteille.
 3. Kokeile kasvattaa *products* osiossa jonkin pysty- tai vaakarivin kokoa suuremmaksi kuin toisten rivien.
 4. Lisää rivien väliin väliä. Testaa lisätä vaakarivien palojen väliin suurempi väli kuin pystyrivien palojen väliin.
 
