@@ -163,6 +163,8 @@ Havainnollistava kuva *flex*in justify-contentista: ![justify-content](flex.jfif
 
 [Lue lisää flex-box:ista](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)<base target="_blank">
 
+Flexboxin käyttöä voi treenata myös hauskalla tavalla pelaten [Flexbox Froggya, onnistuu myös suomeksi](https://flexboxfroggy.com/#fi)<base target="_blank">
+
 ## Demoharjoitus 1
 
 1. Luo uusi html-tiedosto nimeltään asetteludemo1.html. Kopioi siihen allaoleva koodi. Luo sitten CSS-tiedosto, jonka nimi on asetteludemo.css.
@@ -215,7 +217,7 @@ Havainnollistava kuva *flex*in justify-contentista: ![justify-content](flex.jfif
 </html>
 ````
 
-Flexboxin käyttöä voi treenata myös hauskalla tavalla pelaten [Flexbox Froggya, onnistuu myös suomeksi](https://flexboxfroggy.com/#fi)<base target="_blank">
+______________
 
 ## Grid
 
@@ -257,6 +259,8 @@ Voimme vastaavasti määritellä vaakarivien (row) määrän ja koon. Jos haluam
 }
 ````
 
+Käyttämällä ominaisuuksia grid-column-start, grid-column-end, grid-row-start, grid-row-end on mahdollista asetella yksittäiset palaset paikoilleen, kun ensin on asetettu grid-template-columns ja grid-template-rows. Silloin voi käyttää numeroita.
+
 Gridillä on mahdollista myös määritellä isompia alueita kuin vain pysty- ja vaakarivejä, mikä voi olla hyöyllistä, jos rakenteen on tarpeen olla monimutkaisempi. Silloin käytetään jokaisesta gridin alueesta omaa nimitystä, joka lisätään jokaiseen lapsielementtiin ominaisuus *grid-area*, jonka arvoksi annetaan haluttu nimi. Seuraavassa esimerkissä asetellaan kolme palasta suureen gridiin. Pelkän pisteen käyttö tarkoittaa, että palanen on tyhjä.
 
 ````css
@@ -293,7 +297,11 @@ Gridin palasten väliin jäävän koon voi säätää käyttämällä *gap*-omin
 
 Lisää gridin käytöstä voi lukea [täältä](https://css-tricks.com/snippets/css/complete-guide-grid/)<base target="_blank">
 
-## Demotehtävä
+Myös gridin käytöstä löytyy peli, jolla sitä voi harjoitella osoitteesta [cssgridgarden.com](https://cssgridgarden.com/#fi)<base target="_blank">
+
+___________________
+
+## Demotehtävä 2
 
 1. Kopioi uuteen html-tiedostoon seuraava koodi:
 
@@ -369,6 +377,8 @@ Lisää gridin käytöstä voi lukea [täältä](https://css-tricks.com/snippets
 4. Lisää rivien väliin väliä. Testaa lisätä vaakarivien palojen väliin suurempi väli kuin pystyrivien palojen väliin.
 
 
+## Lisää harjoittelua gridistä
 
+Linkin takana [freecodecampin](https://www.freecodecamp.org/news/learn-css-grid-by-building-5-layouts/)<base target="_blank"> harjoituksia gridin käytöstä.
 
 

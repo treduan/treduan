@@ -109,3 +109,7 @@ Sitten lisätään CSS. Tässä käytetään Flexboxin ominaisuutta flex-directi
 1. Luo tiedostot navigationtest.html ja navigationtest.css. Tee html-pohja ja linkitä css.
 
 2. Kopioi ylläolevat navigaatiot html-tiedostoon ja css-koodit css-tiedostoon. Katso, millainen lopputulos on.
+
+3. Säädä marginaaleja ja paddingia ja katso lopputulos.
+
+4. Vaihda navigaatioiden värit johonkin niistä väreistä, mitä viime viikolla etsin color pickeristä. Voit valita pääväriksi jonkin kolmesta sävystä ja hover-efektille joko tummemman tai vaaleamman sävyn samasta väristä. Vaihda tarvittaessa myös tekstin väri niin, että se erottuu selvästi. 
