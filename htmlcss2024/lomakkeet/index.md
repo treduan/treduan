@@ -157,4 +157,5 @@ Tärkeä atribuutti on *required* eli pakollinen. Jos tämä on lisätty *input*
 5. Lomakkeella on tekstialue, johon käyttäjä voi kirjoittaa ruoka-aineallergiansa.
 6. Lomakkeella on alasvetovalikko, josta käyttäjä voi valita neljästä ruoka-annoksesta mieluisensa.
 7. Lomakkeella on valinta, jossa käyttäjä voi valita, tarvitseeko hän aamupalan.
-8. Lomakkeella on napit, joilla lomakkeen voi tyhjentää ja jolla lomakkeen voi lähettää.
+8. Nimi ja puhelinnumero ovat pakollisia tietoja.
+9. Lomakkeella on napit, joilla lomakkeen voi tyhjentää ja jolla lomakkeen voi lähettää.
