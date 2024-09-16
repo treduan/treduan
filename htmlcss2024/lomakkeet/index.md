@@ -74,6 +74,8 @@ Jos haluaa tehdä lomakkeeseen monivalinta napin, silloin useampaan *input*-elem
 
 *date* *input*in tyyppinä avaa päiväyksenvalintaikkunan.
 
+*input*illa on vielä muutamia mahdollisia tyyppejä, jotka votte käydä katsomassa [wwwschoolsista](https://www.w3schools.com/tags/tag_input.asp)<base target="_blank">.
+
 ## Textarea
 
 *textarea* on suurempi tekstikenttä, jonka ainoa tyyppi on teksti, joten sille ei yleensä erikseen anneta tyyppiä. Sen sijaan sille usein määritellään koko pystyriveinä (*cols*) ja vaakariveinä (*rows*).
