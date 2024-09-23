@@ -58,3 +58,10 @@ input:focus {
 }
 ````
 
+## Demotehtävä
+
+1. Jatka ilmoittautumislomakesivua, joka luotiin aikaisemmin.
+2. Lisää alkuun lyhyt teksti, joka kuvaa tapahtumaa. Lisää siihen linkki kuvitteelliselle tapahtumakuvaussivustolle. Määritä sen alkuperäinen väri vihreäksi ja sitten siniseksi, kun siellä on vierailtu.
+3. Lisää lomakkeen lähetysnappeihin hover-efekti, joka muuttaa niiden taustaväriä ja lisää tekstiin alleviivauksen.
+4. Lisää nappeihin myös active-efekti, jolla taustaväri muuttuu uudelleen, kun nappia painetaan pohjaan.
+5. Lisää kaikille kentille focus-efekti, jolla niiden reunukset muuttuvat sinisiksi, kun niihin kirjoitetaan.
