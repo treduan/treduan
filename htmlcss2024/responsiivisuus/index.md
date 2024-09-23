@@ -31,7 +31,7 @@ Sivuston asettelun lisäksi on syytä tarkistaa sivulla käytetyt mitat kuten fo
 
 - rem: Yksikkö, joka perustuu juurielementin (html) fonttikokoon, joka yleensä on 16px. Esimerkiksi 2rem tarkoittaa kaksi kertaa juurielementin fonttikokoa.
 
-Esimerkissä määritellään, että 
+Esimerkissä määritellään, että perusfontti on 12 pikseliä ja yhdessä divissä se on puolitoistakertainen.
 
 ```css
 html {
@@ -45,9 +45,23 @@ html {
 }
 ```
 
+## Kuvat
+
+*img*-tagille voidaan antaa vaihtoehtoiset kuvat käytettäväksi tietyn kokoisilla näytöillä.
+
+````html
+<img 
+  src="image-small.jpg" 
+  srcset="image-small.jpg 500w, image-medium.jpg 1000w, image-large.jpg 1500w"
+  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+  alt="Esimerkkikuva">
+````
+
+Tässä siis *srcset* sisältää kaikki kuvat ja sen, kuinka suurilla näytöillä sitä käytetään. *sizes* sisältää sen, kuinka suuria kuvat ovat. Pilkulla erotetaan eri kuvat.
+
 ## Media query
 
-Media queryt ovat pääasiallinen tapa, millä voimme kirjoittaa CSS-koodiin sääntöjä. Media queryssä määritellään näytön leveyden perusteella raja, milloin jokin sääntö pätee ja milloin ei. 
+Media queryt ovat pääasiallinen tapa, millä voimme kirjoittaa CSS-koodiin sääntöjä eri leveyksistä. Media queryssä määritellään näytön leveyden perusteella raja, milloin jokin sääntö pätee ja milloin ei. 
 
 Esimerkissä ylempi sääntö pätee kaikkiin laitteisiin, joiden leveys on 601 pikseliä tai enemmän (min-width). Silloin käytössä on *grid*-asettelu. Myös fonttikoko on suurempi ja taustaväri erilainen. Alemmassa esimerkissä ruutu on 600 pikseliä tai pienempi (max-width) ja asettelu on silloin *flex*, taustaväri eri ja fontti pienempi.
 
@@ -107,6 +121,6 @@ Pienellä ruudulla taas voi olla järkevämpää valita kuvasta vain tärkein el
 ### Demotehtävä
 
 1. Luo uusi HTML-tiedosto.
-2. Etsi jokin kuva, joka sopii taustakuvaksi leveällä näytöllä (eli kuva, joka on selkeästi korkeuttaan leveämpi. Voit käyttää esimerkiksi LinkedIn-banneriasi). Pienennä tai rajaa siitä PhotoShopilla pienempi kuva, joka sopii mobiiliversioon. 
-3. Aseta kuva taustakuvaksi ``<header>``iin niin, että leveällä näytöllä käytetään leveää kuvaa ja kapealla kapeaa kuvaa. Kirjoita sen päälle jokin otsikko.
-4. Lisää kuvan alle navigointipalkki, jossa on vähintään neljä linkkiä. Asettele se niin, että leveällä näytöllä linkit ovat vierekkäin ja kapealla näytöllä ne ovat allekkain.
+2. Lataa Teamsin kansiosta kolme kuvaa, joissa lukee *noble-castle*. 
+3. Aseta kuvat taustakuvaksi ``<header>``iin niin, että leveällä näytöllä käytetään leveää kuvaa ja kapealla kapeaa kuvaa. Kirjoita sen päälle jokin otsikko.
+4. Lisää kuvan alle navigointipalkki, jossa on vähintään neljä kuvitteellista linkkiä. Asettele se niin, että leveällä näytöllä linkit ovat vierekkäin ja kapealla näytöllä ne ovat allekkain. Helpointa tämä on käyttämällä flexistä ensin flex-direction: row; ja sitten flex-direction: column;
