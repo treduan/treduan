@@ -34,7 +34,7 @@ Teksti: ”Meiltä löydät seuraavia maistuvia marjoja.”
 
 Kuvat mansikoista, vadelmista, mustista viinimarjoista ja punaisista viinimarjoista. Hae kuvat esimerkiksi Pixabaysta. 
 
-Tilaus-sivu 
+### Tilaus-sivu 
 
 Teksti: “Voit tehdä sähköpostitilauksen alla olevan lomakkeen avulla tai soittaa numeroon 045677777.” 
 
