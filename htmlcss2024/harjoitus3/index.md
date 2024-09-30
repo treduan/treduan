@@ -7,6 +7,10 @@ Toteuta orientaatiokurssilla suunniteltu Ohimaan marjatilan sivusto. Ohjeet sivu
 3. Luo lisäksi etusivu ja yhteystietosivu, joiden ulkoasu mukailee pääsivua (suurimman osan CSS:stä voi kopioida tai käyttää kokonaan samaa CSS-tiedostoa). 
 4. Tee sivuista responsiiviset eli että ne toimivat niin tietokoneen kuin mobiililaitteenkin näytöllä.
 
+### Lisätehtävä:
+
+Tee Yhteystiedot-sivulle GoogleMapsilla tai vastaavalla karttasovelluksella upotus, joka näyttää marjatilan sijainnin kartalla. Tähän ei ole ohjetta eli etsi itse, miten tämän voi tehdä.
+
 _________________
 
 
