@@ -14,3 +14,7 @@ Etusivulla pitää olla seuraavat osat:
 Kehitä kaupalle nimi ja tarvittavat tekstit. Valmistele kuvat eli logo sekä tuotekuvat ja mahdolliset muut kuvakkeet (arvostelun tekijöillä voi olla omat avatarkuvat). 
 Mieti sitten muu ulkoasu eli värimaailmat, fontit jne.
 Tee ensin html valmiiksi ja lähde tekemään css ylhäältä alaspäin, ensin isot asettelut ja lopuksi pienet yksityiskohdat.
+
+## Lisätehtävä
+
+Luo myös yhdelle tuotteelle oma sivu. Käy ensin katsomassa muutamasta verkkokaupasta esimerkkejä tuotesivuista ja laadi sitten omasi. Huomioi, että yleensä sivun header-osio on sama kuin etusivulla eli siellä on sama navigaatio ja värimaailma.

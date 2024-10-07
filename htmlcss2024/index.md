@@ -20,11 +20,15 @@
 - [Kuvat](./kuvat/index.md)<base target="_blank">
 - [Asettelu](./asettelu/index.md)<base target="_blank">
 - [Navigaatio](./navigointi/index.md)<base target="_blank">
+- [Efektit](./efektit/index.md)<base target="_blank">
+- [Responsiivisuus](./responsiivisuus/index.md)<base target="_blank">
+- [Animaatiot](./animaatiot/index.md)<base target="_blank">
 
 ## Palautettavat harjoitukset
 
 - [Harjoitus 1 (vapaavalintainen HTML-sivu)](./htmlharjoitus1/index.md)<base target="_blank">
 - [Harjoitus 2 (verkkokaupan etusivu)](./harjoitus2/index.md)<base target="_blank">
+- [Harjoitus 3 (Ohimaan marjatila)](./harjoitus3/index.md)<base target="_blank">
 
 ## Lisätehtävät
 
