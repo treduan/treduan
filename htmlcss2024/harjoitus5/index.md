@@ -1,4 +1,4 @@
-# Harjoitus 4
+# Harjoitus 5
 
 ## Animaatioita ja kuvaefektejä
 
@@ -9,12 +9,6 @@ Harjoitellaan CSS:ää vielä. [Linkin takana](https://preview.themeforest.net/i
 3. Lisää kuviin väriefektit.
 4. Lisää viimeisenä animaatioita.
 
-Vähimmäisvaatimukset:
-- header-osio, jossa on otsikko, navigaatiopalkki ja hakuikoni (ikonista ei tarvitse tapahtua mitään). Hover-efektiksi joko pallo tai alleviivaus.
-- Teksti pystysuunnassa vasemmassa reunassa
-- Ylin kuvaryhmä eli yksi suurempi ja neljä pienempää kuvaa, joiden päällä on tekstiä ja osassa on väriefekti ja kaikissa hover-efekti
-- Suuri kuva, jonka päällä on tekstiä ja jossa on hover-efekti
-- Leveä nappi, jossa on hover-efekti
 
 Kevennykseksi
 
