@@ -71,12 +71,11 @@ ___
 
 ## Demotehtävä 1
 
-1. Avaa Githubista kloonaamasi kansio VisualStudio Codella.
-2. Luo sinne uusi kansio nimeltään HTML.
-3. Luo HTML-kansion sisään kansio nimeltään Demotehtävät.
-4. Luo Demotehtävät-kansioon tiedosto nimeltään demo1.html.
-5. Lisää tiedostoon HTML-pohja yllä olevan esimerkin mukaisesti.
-6. Lisää tiedoston body-osioon otsikko, jossa on oma nimesi, ja lyhyt teksti, jossa kerrot, kuka olet.
+1. Avaa Githubista kloonaamasi kansio Visual Studio Codella.
+2. Luo sinne uusi kansio nimeltään Demotehtävät.
+3. Luo Demotehtävät-kansioon tiedosto nimeltään demo1.html.
+4. Lisää tiedostoon HTML-pohja yllä olevan esimerkin mukaisesti.
+5. Lisää tiedoston body-osioon otsikko (eli ``<h1>``), jossa on oma nimesi, ja lyhyt teksti (eli ``<p>``), jossa kerrot, kuka olet.
 
 _________
 
