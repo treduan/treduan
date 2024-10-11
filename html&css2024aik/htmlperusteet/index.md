@@ -85,7 +85,7 @@ On useampia tapoja, miten HTML-tiedoston voi avata omalla koneella.
 
 Yksinkertaisin on navigoida tietokoneella siihen sijaintiin, jossa tiedosto on, ja kaksoisklikata sitä. Silloin tietokone avaa sivun oletusselaimella.
 
-Vaihtoehtoisesti VisualStudio Codeen on asennettavissa lisäosia, jotka voivat avata tiedoston.
+Vaihtoehtoisesti Visual Studio Codeen on asennettavissa lisäosia, jotka voivat avata tiedoston.
 
 
 ____
@@ -100,7 +100,7 @@ ____________
 
 Visual Studio Code tarjoaa jonkin verran apuja koodin kirjoittamiseen, minkä tulette huomaamaan. Sitä voi käyttää apuna myös HTML-pohjan luomiseen.
 
-Pohja luodaan siten, että ensin luodaan uusi tiedosto, jonka pääte on .html (esimerkiksi *testi.html*). Sitten tyhjässä tiedostossa kirjoitataan huutomerkki ja painetaan enteriä. Sen pitäisi luoda seuraavan näköisen tiedoston:
+Pohja luodaan siten, että ensin luodaan uusi tiedosto, jonka pääte on .html (esimerkiksi *testi.html*). Sitten tyhjässä tiedostossa kirjoitetaan huutomerkki ja painetaan enteriä. Sen pitäisi luoda seuraavan näköisen tiedoston:
 
 
 ````html
@@ -116,6 +116,8 @@ Pohja luodaan siten, että ensin luodaan uusi tiedosto, jonka pääte on .html (
 </body>
 </html>
 ````
+
+Uuden tiedoston oletuskieli on englanti, jonka voi vaihtaa halutessaan suomeen. Tiedoston oletusnimi on "Document", jonka voi myös vaihtaa kuvaavammaksi.
 
 Tuo toinen <meta> vaikuttaa CSS:än ja siihen, miten asiat voisivat asettua sivulle. Sen voi antaa olla paikoillaan, vaikka emme tarvitse sitä pitkään aikaan.
 
