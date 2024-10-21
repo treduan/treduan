@@ -71,12 +71,11 @@ ___
 
 ## Demotehtävä 1
 
-1. Avaa Githubista kloonaamasi kansio VisualStudio Codella.
-2. Luo sinne uusi kansio nimeltään HTML.
-3. Luo HTML-kansion sisään kansio nimeltään Demotehtävät.
-4. Luo Demotehtävät-kansioon tiedosto nimeltään demo1.html.
-5. Lisää tiedostoon HTML-pohja yllä olevan esimerkin mukaisesti.
-6. Lisää tiedoston body-osioon otsikko, jossa on oma nimesi, ja lyhyt teksti, jossa kerrot, kuka olet.
+1. Avaa Githubista kloonaamasi kansio Visual Studio Codella.
+2. Luo sinne uusi kansio nimeltään Demotehtävät.
+3. Luo Demotehtävät-kansioon tiedosto nimeltään demo1.html.
+4. Lisää tiedostoon HTML-pohja yllä olevan esimerkin mukaisesti.
+5. Lisää tiedoston body-osioon otsikko (eli ``<h1>``), jossa on oma nimesi, ja lyhyt teksti (eli ``<p>``), jossa kerrot, kuka olet.
 
 _________
 
@@ -86,7 +85,7 @@ On useampia tapoja, miten HTML-tiedoston voi avata omalla koneella.
 
 Yksinkertaisin on navigoida tietokoneella siihen sijaintiin, jossa tiedosto on, ja kaksoisklikata sitä. Silloin tietokone avaa sivun oletusselaimella.
 
-Vaihtoehtoisesti VisualStudio Codeen on asennettavissa lisäosia, jotka voivat avata tiedoston.
+Vaihtoehtoisesti Visual Studio Codeen on asennettavissa lisäosia, jotka voivat avata tiedoston.
 
 
 ____
@@ -101,7 +100,7 @@ ____________
 
 Visual Studio Code tarjoaa jonkin verran apuja koodin kirjoittamiseen, minkä tulette huomaamaan. Sitä voi käyttää apuna myös HTML-pohjan luomiseen.
 
-Pohja luodaan siten, että ensin luodaan uusi tiedosto, jonka pääte on .html (esimerkiksi *testi.html*). Sitten tyhjässä tiedostossa kirjoitataan huutomerkki ja painetaan enteriä. Sen pitäisi luoda seuraavan näköisen tiedoston:
+Pohja luodaan siten, että ensin luodaan uusi tiedosto, jonka pääte on .html (esimerkiksi *testi.html*). Sitten tyhjässä tiedostossa kirjoitetaan huutomerkki ja painetaan enteriä. Sen pitäisi luoda seuraavan näköisen tiedoston:
 
 
 ````html
@@ -117,6 +116,8 @@ Pohja luodaan siten, että ensin luodaan uusi tiedosto, jonka pääte on .html (
 </body>
 </html>
 ````
+
+Uuden tiedoston oletuskieli on englanti, jonka voi vaihtaa halutessaan suomeen. Tiedoston oletusnimi on "Document", jonka voi myös vaihtaa kuvaavammaksi.
 
 Tuo toinen <meta> vaikuttaa CSS:än ja siihen, miten asiat voisivat asettua sivulle. Sen voi antaa olla paikoillaan, vaikka emme tarvitse sitä pitkään aikaan.
 
