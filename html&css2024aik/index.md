@@ -13,6 +13,8 @@
 
 ## Palautettavat harjoitukset
 
+- 1. [HTML-harjoitus](./htmlharjoitus1/index.md)
+
 ## Lisätehtäviä
 
 ## Linkkejä 
