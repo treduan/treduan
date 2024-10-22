@@ -133,7 +133,7 @@ ________________
 
 ## Demotehtävä 4
 
-1. Lisää css-tiedoston alkuun ``border-sizing: border-box;``. Ovatko laatikot nyt keskenään yhtä leveitä isolla näytöllä?
+1. Lisää css-tiedoston alkuun ``box-sizing: border-box;``. Ovatko laatikot nyt keskenään yhtä leveitä isolla näytöllä?
 
 ____________
 
