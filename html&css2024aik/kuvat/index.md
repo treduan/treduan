@@ -30,7 +30,13 @@ Kuvan oletus on, että sillä on diplay: inline;. Se siis vie vain sen verran ti
 
 ## Reunukset
 
-Kuviin pätee kaikki samat asiat kuin muihin elementteihin. Kuvalle voi siis antaa reunukset ja niitä voi muokata. Niille voi antaa leveyttä, voi muokata väriä ja kulmia. Sille voi myös tehdä varjoefektejä.
+Kuviin pätee kaikki samat asiat kuin muihin elementteihin. Kuvalle voi siis antaa reunukset ja niitä voi muokata. Niille voi antaa leveyttä, voi muokata väriä ja kulmia. Sille voi myös tehdä varjoefektejä. Kulmien pyöristys toimii koodilla:
+
+````css
+.mydiv {
+    border-radius: 10px;
+}
+````
 
 ## Efektit
 
