@@ -12,7 +12,7 @@
 ## CSS
 
 - [CSS:n perusteet](./cssperusteet/index.md)<base target="_blank">
-- [Tekstinkäsittely](./tekstinkasittely/index.md)<base target="_blank">
+- [Tekstinkäsittely](./perusmuotoilua/index.md)<base target="_blank">
 - [Box Model](./boxmodel/index.md)<base target="_blank">
 - [Perusharjoituksia](./valintaharjoitukset/index.md)<base target="_blank">
 
