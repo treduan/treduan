@@ -127,7 +127,7 @@ ______________
 
 # Border-box
 
-Lähtökohtaisesti paddingiä ja borderia ei lasketa elementin kokoon, vaan ainoastaan elementin varsinainen sisältö. Tämän vuoksi voi olla hankalaa arvioida elementtien lopullisia kokoja. Aika usein lisätään määritelmä ``border-sizing: border-box;`` ja se saatetaan laittaa koskemaan koko HTML-tiedosto eli merkitä tähdellä samaan paikkaan kuin ``margin:0;``. Silloin padding ja reunus lasketaan mukaan elementin kokoon.
+Lähtökohtaisesti paddingiä ja borderia ei lasketa elementin kokoon, vaan ainoastaan elementin varsinainen sisältö. Tämän vuoksi voi olla hankalaa arvioida elementtien lopullisia kokoja. Aika usein lisätään määritelmä ``box-sizing: border-box;`` ja se saatetaan laittaa koskemaan koko HTML-tiedosto eli merkitä tähdellä samaan paikkaan kuin ``margin:0;``. Silloin padding ja reunus lasketaan mukaan elementin kokoon.
 
 ________________
 
