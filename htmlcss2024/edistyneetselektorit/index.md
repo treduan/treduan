@@ -58,23 +58,24 @@ Vain "Kappale 1" saa vihreän värin, koska se on suora lapsi.
 
 Attribuuttivalitsimilla voit kohdistaa elementtejä niiden attribuuttien perusteella. Näitä käytetään usein lomakkeissa ja linkeissä.
 
-- [attribuutti]: Kohdistaa kaikki elementit, joilla on kyseinen attribuutti.
+- attribuutti: Kohdistaa kaikki elementit, joilla on kyseinen attribuutti.
 
 ````css
 [type] { border: 1px solid black; }
 ````
 
-- [attribuutti="arvo"]: Kohdistaa kaikki elementit, joilla on täsmällinen attribuutin arvo.
+ attribuutti="arvo": Kohdistaa kaikki elementit, joilla on täsmällinen attribuutin arvo.
 
 ````css
 [type="submit"] { background-color: green; }
 ````
 
-- [attribuutti^="arvo"]: Kohdistaa elementit, joiden attribuutin arvo alkaa tietyllä merkkijonolla.
+ attribuutti^="arvo": Kohdistaa elementit, joiden attribuutin arvo alkaa tietyllä merkkijonolla.
 
 ````css
 [class^="btn"] { font-weight: bold; }
 ````
+
 
 ## Yhdistelmävalitsimet
 
