@@ -22,6 +22,7 @@
 - [Navigaatio](./navigointi/index.md)<base target="_blank">
 - [Efektit](./efektit/index.md)<base target="_blank">
 - [Responsiivisuus](./responsiivisuus/index.md)<base target="_blank">
+- [Edistyneet valitsimet](./edistyneetselektorit/index.md)<base target="_blank">
 - [Animaatiot](./animaatiot/index.md)<base target="_blank">
 
 ## Palautettavat harjoitukset
@@ -33,3 +34,4 @@
 ## Lisätehtävät
 
 - [Lisätehtävä 1 (HTML-tageja)](./lisatehtava1/)<base target="_blank">
+- [Lisätehtävä 2 (Landing Page)](./lisatehtava2/index.md)<base target="_blank">
