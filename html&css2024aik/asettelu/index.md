@@ -183,6 +183,7 @@ Flexboxin käyttöä voi treenata myös hauskalla tavalla pelaten [Flexbox Frogg
     <body>
         <header>
             <h1>Tervetuloa kauppaamme!</h1>
+        </header>
             <nav>
                 <ul>
                     <li>Etusivu</li>
@@ -191,7 +192,6 @@ Flexboxin käyttöä voi treenata myös hauskalla tavalla pelaten [Flexbox Frogg
                     <li>Yhteystiedot</li>
                 </ul>
             </nav>
-        </header>
         <main>
             <h2>Tässä ovat tuotteemme</h2>
         <div class="tuotteet">
