@@ -14,3 +14,5 @@ Tämän kurssin tavoitteita ovat muun muassa seuraavat:
 
 - Yrityselämänedustajien esittäytyminen
 
+- [Projektinhallinta ja Scrum](./projektinhallinta/index.md)<base target="_blank">
+- [Leirikeskusprojekti](./projekti1/index.md)<base target="_blank">

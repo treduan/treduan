@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
+<style>
+.red {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s linear, background-color 2s linear, transform 2s;
+}
+
+.red:hover {
+  width: 300px;
+  background-color:blue;
+  transform: skew(10deg, 30deg);
+} 
 body {
   box-sizing: border-box;
 }
@@ -45,5 +57,8 @@ body {
 <p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
 
 <div class="second"></div>
+
+<div class="red"></div>
+
 </body>
 </html>

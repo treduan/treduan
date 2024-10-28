@@ -1,0 +1,40 @@
+.float-image {
+    float: left; /* Kelluttaa kuvan vasemmalle */
+    margin: 10px; /* Lisää vähän tilaa kuvan ympärille */
+    width: 200px; /* Määrittää kuvan leveyden */
+}
+
+.content {
+    font-size: 16px; /* Tekstin koko */
+    line-height: 1.6; /* Rivikorkeus parantaa luettavuutta */
+}
+
+.navigointi {
+    width: 200px;
+}
+.navigointi ul {
+    list-style-type: none;
+}
+
+.asettelu {
+    display: flex;
+}
+
+.tuoteosio {
+    display: flex;
+    flex-direction: column;
+}
+
+.tuotteet {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.subdiv {
+    background-color: beige;
+    border: 2px solid darkblue;
+    padding: 10px;
+    margin: 10px;
+
+}

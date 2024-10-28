@@ -34,3 +34,4 @@
 ## Lisätehtävät
 
 - [Lisätehtävä 1 (HTML-tageja)](./lisatehtava1/)<base target="_blank">
+- [Lisätehtävä 2 (Landing Page)](./lisatehtava2/index.md)<base target="_blank">
