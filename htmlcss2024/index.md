@@ -24,12 +24,14 @@
 - [Responsiivisuus](./responsiivisuus/index.md)<base target="_blank">
 - [Edistyneet valitsimet](./edistyneetselektorit/index.md)<base target="_blank">
 - [Animaatiot](./animaatiot/index.md)<base target="_blank">
+- [Sijainti](./positio/index.md)<base target="_blank">
 
 ## Palautettavat harjoitukset
 
 - [Harjoitus 1 (vapaavalintainen HTML-sivu)](./htmlharjoitus1/index.md)<base target="_blank">
 - [Harjoitus 2 (verkkokaupan etusivu)](./harjoitus2/index.md)<base target="_blank">
 - [Harjoitus 3 (Ohimaan marjatila)](./harjoitus3/index.md)<base target="_blank">
+- [Harjoitus 4 (Animaatioita ja kuvaefektejä)](./harjoitus4/index.md)<base target="_blank">
 
 ## Lisätehtävät
 
