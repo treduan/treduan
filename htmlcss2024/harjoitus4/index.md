@@ -9,6 +9,15 @@ Harjoitellaan CSS:ää vielä. [Linkin takana](https://preview.themeforest.net/i
 3. Lisää kuviin väriefektit.
 4. Lisää viimeisenä animaatioita.
 
+Vähimmäisvaatimukset:
+
+1. Navigaatiopalkki (voit vaihtaa hover-efektin myös alleviivaukseen, jos et löydä tapaa tehdä pallo).
+2. Sivuston otsikko.
+3. Teksti sivulla pystyssä.
+4. Kuvarypäs, jossa on yksi isompi ja neljä pienempää kuvaa ja kuvien päällä tekstit. Myös hover-efekti, jossa kuvat liikkuvat vähän.
+5. Iso kuva, joka zoomaa lähemmäs.
+6. Nappi, joka vaihtaa väriä ja pitenee hover-efektinä.
+
 
 Kevennykseksi
 
