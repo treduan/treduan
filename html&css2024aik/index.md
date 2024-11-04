@@ -22,6 +22,7 @@
 - [Navigaatio](./navigointi/index.md)<base target="_blank">
 - [Efektit](./efektit/index.md)<base target="_blank">
 - [Responsiivisuus](./responsiivisuus/index.md)<base target="_blank">
+- [Edistynet selektorit](./edistyneetselektorit/index.md)<base target="_blank">
 
 ## Palautettavat harjoitukset
 
