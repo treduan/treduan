@@ -8,6 +8,7 @@
 - [Tekstinkäsittely ja listat](./tekstinkasittely/index.md)<base target="_blank">
 - [Taulukot](./taulukot/index.md)<base target="_blank">
 - [HTML-koodin validointi](./validointi/index.md)<base target="_blank">
+- [Lomakkeet](./lomakkeet/index.md)<base target="_blank">
 
 ## CSS
 
@@ -20,6 +21,7 @@
 - [Asettelu](./asettelu/index.md)<base target="_blank">
 - [Navigaatio](./navigointi/index.md)<base target="_blank">
 - [Efektit](./efektit/index.md)<base target="_blank">
+- [Responsiivisuus](./responsiivisuus/index.md)<base target="_blank">
 
 ## Palautettavat harjoitukset
 
