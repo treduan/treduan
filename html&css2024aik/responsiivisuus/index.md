@@ -108,13 +108,13 @@ Pienellä ruudulla taas voi olla järkevämpää valita kuvasta vain tärkein el
 
  ![linnapuutarhan linna](linnapuutarhalinna.jpg)
 
- ### Testaaminen
+### Testaaminen
 
  Selaimen kehittäjätyökaluissa on mahdollisuus valita mobiilinäkymä sekä säätää selaimen leveyttä siinä näkymässä.
 
  ![Kehittäjätyökalujen mobiilinäyttö](mobiilinaytto.png)
 
- ### Lisätietoa
+### Lisätietoa
 
 - Tutustu @media-säännön käyttöön [@media w3school](https://www.w3schools.com/cssref/css3_pr_mediaquery.asp)
 - Video @media-säännön käytöstä  
