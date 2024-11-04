@@ -31,6 +31,8 @@ Sivuston asettelun lisäksi on syytä tarkistaa sivulla käytetyt mitat kuten fo
 
 - rem: Yksikkö, joka perustuu juurielementin (html) fonttikokoon, joka yleensä on 16px. Esimerkiksi 2rem tarkoittaa kaksi kertaa juurielementin fonttikokoa.
 
+- em: Yksikkö, joka perustuu elementin vanhempi-elementin kokoon. Esimerkiksi jos ``<div>`` -elementille on määritelty fonttikoko 20 pikseliä, 2em tarkoittaisi 40 pikseliä.
+
 Esimerkissä määritellään, että perusfontti on 12 pikseliä ja yhdessä divissä se on puolitoistakertainen.
 
 ```css
@@ -39,9 +41,9 @@ html {
 }
 
 .myDiv {
-    font-size: 1.5em;
-    padding: 0.25em;
-    margin: 0.5em;
+    font-size: 1.5rem;
+    padding: 0.25rem;
+    margin: 0.5rem;
 }
 ```
 
