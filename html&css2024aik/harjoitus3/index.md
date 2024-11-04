@@ -3,7 +3,7 @@
 1. Suunnittele marjatilalle sopiva verkkosivun ulkoasu AdobeXD:n avulla. Suunnittele jokaiselle kolmelle sivulle versio tietokonenäytölle ja kännykkänäytölle.
 2. Luo sitä varten Gitissä olevan Harjoitukset-kansion sisään oma kansio nimeltään Harjoitus 3. Siellä pääsivun nimen kuuluu olla *index.html*. Muille sivuille sopii nimeksi esimerkiksi *tilaus.html* ja *yhteystiedot.html*. Lisää myös kaikille sivuille yhteinen CSS-tiedosto ja linkitä se jokaiselle sivulle. Jos sivullasi on paljon kuvia, voit tehdä niille oman kansion tähän kansioon.
 3. Tee ensin etusivu ja muotoile ne oman suunnitelmasi mukaisesti.
-4. Tee sitten toiset kaksi sivua (voit kopioida header-osion, navigaation ja footer-osion koodin).
+4. Tee sitten toiset kaksi sivua (voit kopioida header-osion, navigaation ja footer-osion koodin). Laita navigaation linkit viemään sivuston toisille sivuille. Jos ne ovat samassa kansiossa, pelkkä tiedoston nimi riittää.
 5. Tee sivuista responsiiviset eli että ne toimivat niin tietokoneen kuin mobiililaitteenkin näytöllä.
 
 ### Lisätehtävä:
