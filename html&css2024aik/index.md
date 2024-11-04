@@ -28,4 +28,6 @@
 
 ## Lisätehtäviä
 
+[Lisätehtävä 1](./lisatehtava2/index.md)<base target="_blank">
+
 ## Linkkejä 
