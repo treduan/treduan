@@ -25,6 +25,7 @@
 - [Edistyneet valitsimet](./edistyneetselektorit/index.md)<base target="_blank">
 - [Animaatiot](./animaatiot/index.md)<base target="_blank">
 - [Sijainti](./positio/index.md)<base target="_blank">
+- [Fontit ja favicon](./fontitfavicon/index.md)<base target="_blank">
 
 ## Palautettavat harjoitukset
 
