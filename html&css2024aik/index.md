@@ -31,6 +31,7 @@
  1. [HTML-harjoitus](./htmlharjoitus1/index.md)<base target="_blank">
  2. [Harjoitus 2 (verkkokaupan etusivu)](./harjoitus2/index.md)<base target="_blank">
  3. [Harjoitus 3 (Ohimaan marjatila)](./harjoitus3/)<base target="_blank">
+ 4. [Harjoitus 4 (Sivun kopiointi)](./harjoitus4/index.md)<base target="_blank"> 
 
 ## Lisätehtäviä
 
