@@ -2,10 +2,9 @@
 
 ## Portfolio
 
-Portfolio on ohjelminnissa sivu, jolla esittelet sitä, millaisia ohjelmointiprojekteja olet tehnyt. Se on tarkoitettu ensisijaisesti mahdollisille työnantajille. Siellä pitäisi olla pieni määrä perustietoja itsestäsi sekä yhteystiedot.
+Portfolio on ohjelmoinnissa sivu, jolla esittelet sitä, millaisia ohjelmointiprojekteja olet tehnyt ja mitkä ovat taitosi. Se on tarkoitettu ensisijaisesti mahdollisille työnantajille. Siellä pitäisi olla pieni määrä perustietoja itsestäsi sekä yhteystiedot. Projekteista kannattaa olla jotain kuvamateriaalia, kirjoitettuna auki perustiedot (mitä ohjelmointikieliä tai kirjastoja on käytetty, jos se on tiimityötä, mikä oli sinun roolisi, mitä opit projektin tekemisestä). Jos projekti on nähtävillä netissä, siihen kannattaa olla linkki. Samoin GitHubin koodiin kannattaa olla linkki.
 
-1. Tee etusivu reseptisivulle, jonka muotoilet käyttäen Bootstrapia. Voit katsoa suunnitteluideoita esimerkiksi [Dribblestä](https://dribbble.com/tags/recipe-website)<base target="_blank">
-2. Sivulla on header, jossa on jokin sopiva logo ja sivuston nimi. Sen alla tai suunnitelmasta riippuen yläpuolella on navigointipalkki, jossa on navigointi pääsivulle, reseptipankkiin, infosivulle ja yhteystietosivulle (tosin vain se etusivu täytyy toteuttaa).
-3. Sivulla on jokin lyhyt esittelyteksti, jossa kerrotaan sivun tarkoituksesta. Lisäksi mielellään jokin kuvituskuva. Sen alla on kolme näytereseptiä (hae resepti netistä), joilla on vähintään yksi kuva kyseisestä ruokalajista, mutta siinä voi olla myös pieni kuvagalleria.
-4. Sivulla pitää olla myös footer, jossa on vähintään copyright-tiedot.
-5. Huolehdi, että sivusto on responsiivinen eli toimii sekä leveällä että kapealla näytöllä.
+Joitakin esimerkkejä Bootstrapilla tehtyihin portfoliohon löytyy [bootstrapmadesta](https://bootstrapmade.com/bootstrap-portfolio-templates/)<base target="_blank">.
+Lisää löytyy [cssauthor-sivustolta](https://cssauthor.com/free-bootstrap-portfolio-templates/)<base target="_blank">. 
+
+

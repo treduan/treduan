@@ -26,6 +26,7 @@
 - [Animaatiot](./animaatiot/index.md)<base target="_blank">
 - [Sijainti](./positio/index.md)<base target="_blank">
 - [Fontit ja favicon](./fontitfavicon/index.md)<base target="_blank">
+- [Bootstrap](./bootstrap/index.md)<base target="_blank">
 
 ## Palautettavat harjoitukset
 
