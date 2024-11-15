@@ -13,4 +13,4 @@ Portfoliosivun ulkoasun tekemiseen pitää käyttää ainakin osittain Bootstrap
 
 ## Reseptisivu
 
-Jos sinulla on jo portfolio, jota haluat käyttää, voit sen sijaan tehdä reseptisivun, joka esittelee muutamia ruokareseptejä. Käydä ulkoasuun ainakin osittain Bootstrapia.
+Jos sinulla on jo portfolio, jota haluat käyttää, voit sen sijaan tehdä reseptisivun, joka esittelee muutamia ruokareseptejä kuvineen. Käydä ulkoasuun ainakin osittain Bootstrapia.
