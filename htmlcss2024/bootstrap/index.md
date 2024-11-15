@@ -31,6 +31,13 @@ Jotta sitä voidaan käyttää, täytyy HTML-tiedostoon linkittää joitakin asi
 
 Useimmat elementit on kannattavaa laittaa luokan *container* sisään. Se antaa niille järkevät marginaalit useimmissa tapauksissa. *container-fluid* puolestaan on koko selaimen levyinen elementti.
 
+````html
+<div class="container">
+  <h1>My First Bootstrap Page</h1>
+  <p>This is some text.</p>
+</div>
+````
+
 ### Grid
 
 CSS:ssä on asettelussa mahdollista käyttää *grid*iä tai muita asettelumenetelmiä, mutta Bootstrapissa se on ensisijainen asettelutyökalu. Bootstrapin gridissä on kaksitoista pystyriviä, joista on mahdollista jakaa tilaa elementeille. Alla olevassa kuvassa on demonstroitu, miten sivun voi jakaa joko tasakokoisiin tai vaihtuvakokoisiin paloihin.
@@ -48,9 +55,9 @@ Jotta pääsemme käyttämään Bootsrapin gridiä, ensin meidän pitää määr
 
 ````html
 <div class="row">
-  <div class="col-sm-3"><p>Here is the first part</p></div>
-  <div class="col-sm-3"><p>Here is the second part</p></div>
-  <div class="col-sm-6"><p>Here is the third part which is wider than the first two</p></div>
+  <div class="col-md-3"><p>Here is the first part</p></div>
+  <div class="col-md-3"><p>Here is the second part</p></div>
+  <div class="col-md-6"><p>Here is the third part which is wider than the first two</p></div>
 </div>
 ````
 
@@ -66,7 +73,7 @@ Jotta pääsemme käyttämään Bootsrapin gridiä, ensin meidän pitää määr
 
 Yksittäiselle elementille voidaan antaa monta eri luokkaa, jolloin ne erotetaan välilyönnillä.
 
-Tekstiä voidaan muotoilla monilla tavoilla Bootstrapilla. Kaikkia eri tapoja on listattu [täällä](https://www.w3schools.com/bootstrap/bootstrap_typography.asp)<base target="_blank">. 
+Tekstiä voidaan muotoilla monilla tavoilla Bootstrapilla. Kaikkia eri tapoja on listattu [täällä](https://www.w3schools.com/bootstrap5/bootstrap_typography.php)<base target="_blank">. 
 
 Esimerkiksi tekstin taustan värin voi säätää sen merkityksen mukaan eli esimerkiksi onnistumisella on vihreä tausta, varoituksella keltainen ja vaaralla tai virheellä punainen. Nämä onnistuvat nopeasti antamalla tekstille luokan *bg-success*, *bg-warning* tai *bg-danger*.
 
@@ -80,15 +87,15 @@ Esimerkiksi tekstin taustan värin voi säätää sen merkityksen mukaan eli esi
 
 ### Kuvat
 
-Kuvia voi nopeasti käsitellä Bootstrapilla eli niille voi lisätä pyöristetyt kulmat (*img-rounded*), niistä voi tehdä täysin pyöristetyt (*img-circle*) tai niille voi antaa kehykset (*img-thumbnail*). *thumbnail*-luokkaa voi hyödyntää esimerkiksi kuvagallerian luomiseen ([ks. esimerkki](https://www.w3schools.com/bootstrap/bootstrap_images.asp)<base target="_blank">).
+Kuvia voi nopeasti käsitellä Bootstrapilla eli niille voi lisätä pyöristetyt kulmat (*img-rounded*), niistä voi tehdä täysin pyöristetyt (*img-circle*) tai niille voi antaa kehykset (*img-thumbnail*). *thumbnail*-luokkaa voi hyödyntää esimerkiksi kuvagallerian luomiseen ([ks. esimerkki](https://www.w3schools.com/bootstrap5/bootstrap_images.php)<base target="_blank">).
 
 ### Taulukot
 
-Taulukoille on monia muotoiluvaihtoehtoja Bootstrapissa. Perustaulukon saa, kun antaa ``<table>`` -elementille luokan *table*. Jos haluaa joka toisen rivin vähän tummemmaksi, luokka voi olla *table.striped*. Luokkia on muutama muukin. 
+Taulukoille on monia muotoiluvaihtoehtoja Bootstrapissa. Perustaulukon saa, kun antaa ``<table>`` -elementille luokan *table*. Jos haluaa joka toisen rivin vähän tummemmaksi, luokka voi olla *table-striped*. Luokkia on muutama muukin. 
 
 Myös yksittäisiä taulukon rivejä voi muotoilla samoilla väreillä kuin tekstiä tai tekstin taustaa eli *success* on vihreä, *danger* on punainen, *warning* on keltainen ja *info* on sininen. 
 
-Lisää taulukoista voi lukea [täältä](https://www.w3schools.com/bootstrap4/bootstrap_tables.asp)<base target="_blank">
+Lisää taulukoista voi lukea [täältä](https://www.w3schools.com/bootstrap5/bootstrap_tables.php)<base target="_blank">
 
 ## Demotehtävä 3
 
@@ -100,7 +107,7 @@ Lisää taulukoista voi lukea [täältä](https://www.w3schools.com/bootstrap4/b
 
 Bootstrap tarjoaa joukon valmiita nappityylejä erilaisiin tilanteisiin. Ne eroavat väriltään ja niissä on valmiit hover-efektit. Ensin jokaisessa pitää olla luokka *btn*, minkä jälkeen sen ominaisuuksia voi tarkentaa. Napit voivat olla joko taustavärillisiä tai vain reunoiltaan väritettyjä.
 
-[Bootstrapin napit](https://www.w3schools.com/bootstrap4/bootstrap_buttons.asp)<base target="_blank">
+[Bootstrapin napit](https://www.w3schools.com/bootstrap5/bootstrap_buttons.php)<base target="_blank">
 
 Lisäksi napin kokoa voi säätää antamalla vielä uuden luokan eli suurentaa *btn-lg*:llä tai pienentää *btn-sm*:llä.
 
@@ -116,13 +123,13 @@ Navigaation väriä voi vaihtaa käyttämällä teksteistä ja napeista tuttuja 
 
 Navigaation voi tehdä myös hampurilaismallisen pienennyksen tai alasvetovalikon.
 
-Lisää navigointipalkin malleista löytyy [täältä](https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp)<base target="_blank">.
+Lisää navigointipalkin malleista löytyy [täältä](https://www.w3schools.com/bootstrap5/bootstrap_navs.php)<base target="_blank"> sekä [täältä](https://www.w3schools.com/bootstrap5/bootstrap_navbar.php)<base target="_blank">.
 
 ### Lomakkeet
 
 Lomakkeita voidaan muotoilla Bootstrapilla. Jos ``<label>`` ja sen vastaava ``<input>`` laitetaan elementtiin, jonka luokka on *form-group*, luo Bootstrap niille oman muotoilun.
 
-Lisää lomakkeista voi lukea [täältä](https://www.w3schools.com/bootstrap4/bootstrap_forms.asp)<base target="_blank">.
+Lisää lomakkeista voi lukea [täältä](https://www.w3schools.com/bootstrap5/bootstrap_forms.php)<base target="_blank">.
 
 ## Demotehtävä 4
 
@@ -137,19 +144,19 @@ Modaali on eräänlainen infoikkuna, joka ilmestyy varsinaisen sivun päälle. T
 Bootstrapilla voi luoda oman modaalin. Muuten se vaatisi JavaScriptiä. Ensin tarvitaan nappi, jolla modaali tulee esiin. Sille annetaan ominaisuudet *data-toggle="modal"* ja *data-target="#myModal"* (eli modaalille annettu id). Itse modaali on ``<div>``, jonka luokka on *modal* ja jolla on id. Sen sisällä on ``<div>``, jonka luokka on *modal-dialog*, jonka sisällä on ``<div>``, jonka luokka on *modal-content*. Sitten päästään varsinaiseen modaalin sisältöön, joka jaetaan *header*iin, *body*yn ja *footer*iin.
 
 ````html 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
   Open modal
 </button>
 
 <!-- The Modal -->
-<div class="modal" id="myModal">
+<div class="modal fade" id="myModal">
   <div class="modal-dialog">
     <div class="modal-content">
 
       <!-- Modal Header -->
       <div class="modal-header">
         <h4 class="modal-title">Modal Heading</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
       </div>
 
       <!-- Modal body -->
@@ -159,7 +166,7 @@ Bootstrapilla voi luoda oman modaalin. Muuten se vaatisi JavaScriptiä. Ensin ta
 
       <!-- Modal footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
       </div>
 
     </div>
@@ -171,7 +178,7 @@ Modaalia voi vielä säätää esimerkiksi luokalla *fade*, joka luo pienen anim
 
 Myös modaalin kokoa voi säätää luokilla *modal-sm*, *modal-lg* ja *modal-xl*.
 
-Lisää voi katsoa [täältä](https://www.w3schools.com/bootstrap4/bootstrap_modal.asp)<base target="_blank">.
+Lisää voi katsoa [täältä](https://www.w3schools.com/bootstrap5/bootstrap_modal.php)<base target="_blank">.
 
 ## Demotehtävä 5
 
