@@ -1,14 +1,14 @@
 # Harjoitukset 1
 
-Nämä harjoitukset perustuvat osioihin Alkeet 1, Taulukot ja Sivuston jakaminen. Luo niille oma kansio, jonka nimi on phpharjoitukset1. Luo tehtäville omat tiedostot nimellä assignment1.php jne, jollei tehtävässä muuta neuvota.
+Nämä harjoitukset perustuvat osioihin Alkeet 1, Taulukot ja Sivuston jakaminen. Luo niille oma kansio, jonka nimi on phpharjoitukset1. Luo tehtäville omat tiedostot nimellä harjoitus1.php, harjoitus2.php jne, jollei tehtävässä muuta neuvota.
 
-## Tehtävä 1
+## Harjoitus 1
 
 Ratkaise funktion avulla:
 
-Aseta arvonlisäveron laskentaa varten vakio ALV ja anna sen arvoksi 0.24. Laske arvonlisäveron määrä seuraavista hinnoista: 10 €, 20 €, 35,5 € ja 1.80 € Tulosta vastaukset ymmärrettävällä tavalla ruudulle (vastaus kertoo mitä on laskettu ja mistä arvosta esim: "Arvonlisävero hinnasta 10 € on 2.5 €.").
+Aseta arvonlisäveron laskentaa varten vakio ALV ja anna sen arvoksi 0.255. Laske arvonlisäveron määrä seuraavista hinnoista: 10 €, 20 €, 35,5 € ja 145.80 € Tulosta vastaukset ymmärrettävällä tavalla ruudulle (vastaus kertoo mitä on laskettu ja mistä arvosta esim: "Arvonlisävero hinnasta 10 € on 2.5 €.").
 
-## Tehtävä 2
+## Harjoitus 2
 
 Tee funktio, joka vertailee kolmea lukua a, b ja c:
 
@@ -23,7 +23,7 @@ Tulosta näkyville myös annetut luvut, esimerkkitulostus: "a=1, b=2, c=3 luvut 
 
 Luo muuttuja ja tallenna siihen satunnaisluku välillä 1-100. [Katso Php:n ohjeet täältä.](https://www.w3schools.com/php/php_math.asp)<base target="_blank">
 
-Tulosta sitten seuraavia riippuen tuloksesta.
+Tulosta sitten seuraavia riippuen tuloksesta. Huomioithan, miten ehtolauseiden järjestys vaikuttaa lopputulokseen.
 
 - Jos luku on välillä 11-49, tulosta "30 is on the small side."(korvaa 30 arvotulla luvulla).
 - Jos luku on välillä 51-89, tulosta "55 is on the large side."
@@ -33,7 +33,7 @@ Tulosta sitten seuraavia riippuen tuloksesta.
 
 ## Tehtävä 4
 
-Tulosta *&* konsoliin kahdeksalle riville niin, että jokaisella rivillä kuviota on arvottu määrä välillä 1-10.
+Tulosta *&* konsoliin kahdeksalle riville niin, että jokaisella rivillä kuviota on arvottu määrä välillä 1-10 käyttäen looppeja.
 
 Lopputulos voi näyttää esimerkiksi seuraavalta:
 
