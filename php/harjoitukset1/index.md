@@ -19,7 +19,7 @@ Tee funktio, joka vertailee kolmea lukua a, b ja c:
 - Muuten tulosta "luvuissa ei ole mitään tolkkua"
 Tulosta näkyville myös annetut luvut, esimerkkitulostus: "a=1, b=2, c=3 luvut ovat nousevassa suuruusjärjestyksessä."
 
-## Tehtävä 3
+## Harjoitus 3
 
 Luo muuttuja ja tallenna siihen satunnaisluku välillä 1-100. [Katso Php:n ohjeet täältä.](https://www.w3schools.com/php/php_math.asp)<base target="_blank">
 
@@ -31,7 +31,7 @@ Tulosta sitten seuraavia riippuen tuloksesta. Huomioithan, miten ehtolauseiden j
 - Jos luku on 50, tulosta "50 is right in the middle!".
 - Jos luku on 42, tulosta "42! You have found the answer to life."
 
-## Tehtävä 4
+## Harjoitus 4
 
 Tulosta *&* konsoliin kahdeksalle riville niin, että jokaisella rivillä kuviota on arvottu määrä välillä 1-10 käyttäen looppeja.
 
@@ -46,11 +46,27 @@ Lopputulos voi näyttää esimerkiksi seuraavalta:
 &&&&&& \
 && 
 
-## Tehtävä 5
+## Harjoitus 5
 
 Luo kaksi taulukkoa, joista yhdessä on viisi etunimeä ja toisessa viisi sukunimeä. Käy taulukot läpi niin, että konsoliin tulostuu sukunimi/etunimi pareja tyylillä: *Virtanen, Timo*. Jokainen pari tulee omalle riville.
 
-## Tehtävä 6
+## Harjoitus 6
+
+Kopioi alla oleva taulukko itsellesi.
+
+````php
+$grades = [6, 4, 9, 8, 4, 7, 8, 4, 6, 9];
+````
+
+Anna taulukko funktiolle, joka tulostaa arvosanojen keskiarvon.
+
+Anna se myös toiselle funktiolle, joka kertoo, montako arvosanaa on ja moniko niistä on hyväksytty (eli arvosana on enemmän kuin 4, jos se on hyväksytty).
+
+Käytä tulostuksessa kokonaisia lauseita.
+
+
+
+## Harjoitus 7
 
 Luo neljä Php-tiedostoa, jotka yhdistät toimivaksi HTML:ksi. Ensimmäisen nimi on *header.php*, jossa on HTML-tiedoston alku sekä *header*, jossa on otsikko (*Tredun uutiset*) ja logokuva (voit valita jonkin vanhoje prjektien kuvan). Toisen nimi on *index.php*, johon tiedostot kootaan. Kolmas on nimeltään *news.php*, jossa on lista uutisartikkeleista, joka tulostetaan sivulle. Listassa pitää olla uutisen nimi ja päivämäärä. Neljännen tiedoston nimi on *footer.php* ja siinä on copyright sekä logo toistettuna. Lisää vielä CSS-tiedosto ja muotoile sivua kevyesti. Tarkista lopuksi validaattorilla, että sivu on oikeaoppista HTML:ää (kun sivu pyörii, katso lähdekoodi ja kopioi se validaattoriin).
 
