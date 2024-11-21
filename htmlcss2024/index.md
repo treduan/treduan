@@ -34,6 +34,7 @@
 - [Harjoitus 2 (verkkokaupan etusivu)](./harjoitus2/index.md)<base target="_blank">
 - [Harjoitus 3 (Ohimaan marjatila)](./harjoitus3/index.md)<base target="_blank">
 - [Harjoitus 4 (Animaatioita ja kuvaefektejä)](./harjoitus4/index.md)<base target="_blank">
+- [Harjoitus 5 (Portfolio)](./harjoitus5/index.md)<base target="_blank">
 
 ## Lisätehtävät
 
