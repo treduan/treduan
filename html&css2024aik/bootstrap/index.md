@@ -186,4 +186,4 @@ Lisää voi katsoa [täältä](https://www.w3schools.com/bootstrap5/bootstrap_mo
 
 ## Demotehtävä 6
 
-1. Lisää sivullesi kolme sellaista elementtiä Bootstrapilla, jota emme ole tunnilla käyneet läpi. Katso elementtejä [w3schoolsista](https://www.w3schools.com/bootstrap5/index.php)<base target="_blank">.
+1. Lisää sivullesi kolme sellaista elementtiä Bootstrapilla, jota emme ole tunnilla käyneet läpi. Katso elementtejä [w3schoolsista](https://www.w3schools.com/bootstrap4/default.asp)<base target="_blank">.
