@@ -9,6 +9,7 @@
 - [Taulukot](./taulukot/index.md)<base target="_blank">
 - [HTML-koodin validointi](./validointi/index.md)<base target="_blank">
 - [Lomakkeet](./lomakkeet/index.md)<base target="_blank">
+- [ Julkaisu ](./julkaisu/index.md)<base target="_blank">
 
 ## CSS
 
