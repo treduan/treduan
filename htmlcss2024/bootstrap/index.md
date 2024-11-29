@@ -87,7 +87,9 @@ Esimerkiksi tekstin taustan värin voi säätää sen merkityksen mukaan eli esi
 
 ### Kuvat
 
-Kuvia voi nopeasti käsitellä Bootstrapilla eli niille voi lisätä pyöristetyt kulmat (*img-rounded*), niistä voi tehdä täysin pyöristetyt (*img-circle*) tai niille voi antaa kehykset (*img-thumbnail*). *thumbnail*-luokkaa voi hyödyntää esimerkiksi kuvagallerian luomiseen ([ks. esimerkki](https://www.w3schools.com/bootstrap5/bootstrap_images.php)<base target="_blank">).
+Kuvia voi nopeasti käsitellä Bootstrapilla eli niille voi lisätä pyöristetyt kulmat (*rounded*), niistä voi tehdä täysin pyöristetyt (*rounded-circle*) tai niille voi antaa kehykset (*img-thumbnail*). ([Lisää kuvista w3schoolsissa](https://www.w3schools.com/bootstrap5/bootstrap_images.php)<base target="_blank">).
+
+Kuvista ja teksteistä voi tehäd myös kortteja (kuvia kuvatekstillä). Lue lisää [w3schoolsista](https://www.w3schools.com/bootstrap5/bootstrap_cards.php)<base target="_blank">.
 
 ### Taulukot
 
