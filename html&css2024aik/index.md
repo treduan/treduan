@@ -9,6 +9,7 @@
 - [Taulukot](./taulukot/index.md)<base target="_blank">
 - [HTML-koodin validointi](./validointi/index.md)<base target="_blank">
 - [Lomakkeet](./lomakkeet/index.md)<base target="_blank">
+- [ Julkaisu ](./julkaisu/index.md)<base target="_blank">
 
 ## CSS
 
@@ -26,6 +27,7 @@
 - [Sijainti](./positio/index.md)<base target="_blank">
 - [Animaatiot](./animaatiot/index.md)<base target="_blank">
 - [Fontit ja favicon](./fontitfavicon/index.md)<base target="_blank">
+- [Bootstrap](./bootstrap/index.md)<base target="_blank">
 
 ## Palautettavat harjoitukset
 
@@ -33,6 +35,7 @@
  2. [Harjoitus 2 (verkkokaupan etusivu)](./harjoitus2/index.md)<base target="_blank">
  3. [Harjoitus 3 (Ohimaan marjatila)](./harjoitus3/)<base target="_blank">
  4. [Harjoitus 4 (Sivun kopiointi)](./harjoitus4/index.md)<base target="_blank"> 
+ 5. [Harjoitus 5 (Portfolio)](./harjoitus5/index.md)<base target="_blank">
 
 ## Lisätehtäviä
 
