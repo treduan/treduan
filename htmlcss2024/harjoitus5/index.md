@@ -7,6 +7,8 @@ Portfolio on ohjelmoinnissa sivu, jolla esittelet sitä, millaisia ohjelmointipr
 Joitakin esimerkkejä Bootstrapilla tehtyihin portfolioihin löytyy [bootstrapmadesta](https://bootstrapmade.com/bootstrap-portfolio-templates/)<base target="_blank">.
 Lisää löytyy [cssauthor-sivustolta](https://cssauthor.com/free-bootstrap-portfolio-templates/)<base target="_blank">. 
 
+Opettajan rautalankamallin portfolio löytyy myös osoitteesta [https://treduan.github.io/portfolio/](https://treduan.github.io/portfolio/)<base target="_blank">. 
+
 Luo siis itsellesi oma portfoliosivu, jolla esittelet itsesi ja jolle voit alkaa lisätä esittelyyn omia ohjelmointiin liittyviä projektejasi.
 
 Portfoliosivun ulkoasun tekemiseen pitää käyttää ainakin osittain Bootstrapia.
