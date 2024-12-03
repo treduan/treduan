@@ -48,8 +48,6 @@ PHP-ohjelman kannalta on oleellista testata lähettikö selain tietyt parametrit
         $name = htmlspecialchars($_GET['name']);
         if(isset($name))
             echo "Hello " . $name;
-        else 
-            echo "Hello, stranger";
     }
      ?>
 ```
