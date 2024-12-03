@@ -3,7 +3,7 @@
 Kun sivu pyydetään palvelimelta, sille voidaan pyynnön mukana erilaisia parametreja. Esim. käyttäjältä voidaan kysyä hänen nimeään. Tämä tieto välitetään palvelimelle osoitekentässä kuljetettavissa muuttujissa. Esimerkiksi *name*-muuttujalle voidaan antaa arvo osoitekentässä:
 
 ```browser
-index.php?name=Tiina
+index.php?name=Anna
 ```
 
 PHP:ssa näin saatuja arvoja kutsutaan superglobaaleiksi muuttujiksi. Ne tallentuvat taulukkoon, jonka nimi on $_GET[]. Superglobaalin muuttujan 'name' saa poimittua taulukosta sen nimen avulla:
@@ -40,7 +40,7 @@ Käytännössä tämä tapahtuu niin, että kaikki erikoismerkit muunnetaan HTML
 
 ## Parametrien tarkistaminen
 
-PHP-ohjelman kannalta on oleellista testata lähettikö selain tietyt parametrit vai eli onko muuttujalle annettu arvo. Sen voi testata *isset()*-funktion avulla. *isset()* - palauttaa totuusarvon, jota voi testata joko perinteisellä if-else - ehtolauseella tai sitä vastaavalla lyhennettyllä muodolla, joka muodostetaan kysymysmerkin avulla (*ternary operator*).
+PHP-ohjelman kannalta on oleellista testata lähettikö selain tietyt parametrit vai ei eli, onko muuttujalle annettu arvo. Sen voi testata *isset()*-funktion avulla. *isset()* - palauttaa totuusarvon, jota voi testata joko perinteisellä if-else - ehtolauseella tai sitä vastaavalla lyhennettyllä muodolla, joka muodostetaan kysymysmerkin avulla (*ternary operator*).
 
 ```php
 <?php

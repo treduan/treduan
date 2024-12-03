@@ -5,7 +5,7 @@
 - [PHP:n alkeet](./alkeet1/index.md)<base target="_blank">
 - [Taulukot](./taulukot/index.md)<base target="_blank">
 - [Sivuston Jakaminen](./sivustonJakaminen/index.md)<base target="_blank">
-- [Parametrit sivustolla](./parametrit/index.md)<base target="_blank">
+- [Parametrit sivustolla ja sanitointi](./parametrit/index.md)<base target="_blank">
 - [Lomakkeet](./lomakkeet/index.md)<base target="_blank">
 - [Istunnot](./istunnot/index.md)<base target="_blank">
 - [Evästeet](./evasteet/index.md)<base target="_blank">
