@@ -14,6 +14,8 @@ _____
 
 ## Backend
 
+- [ Tietokantayhteys ](./pdo/index.md)<base target="_blank">
+- [ CRUD ](./crud/index.md)<base target="_blank">
 _____
 
 ## Olio-ohjelmointi
@@ -24,6 +26,7 @@ ______
 
 - [Harjoitukset 1 (Perusteet ja taulukot)](./harjoitukset1/index.md)<base target="_blank">
 - [Harjoitukset 2 (lomakkeet)](./harjoitukset2/index.md)<base target="_blank">
+- [Harjoitus 3 (ensimmäinen tietokanta)](./harjoitus3/index.md)<base target="_blank">
 
 _____
 
