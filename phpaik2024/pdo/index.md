@@ -4,7 +4,7 @@ PHP:llä voidaan luoda tietokantaan yhteys.
 
 ## Luo tietokanta
 
-Lisää samariumille phpmyadminiin taulu ja tiedot lukemalla [sql-tiedosto](./sql.md)<base target="_blank"> (kopioi linkin takaa sql-tietostoksi).
+Lisää samariumille phpmyadminiin taulu ja tiedot lukemalla [sql-tiedosto](./sql.md)<base target="_blank"> (kopioi linkin takaa sql-tiedostoksi).
 
 - Kirjaudu cPaneliin (https://cpanel.tunnus.treok.io/) ja avaa MySQL Databases
 - Tee uusi tietokanta nimeltä (oma tunnus)_sasp
@@ -59,4 +59,4 @@ Toisessa tiedostossa voimme sitten käyttää *require*a tuomaan kyseisen funkti
 1. Luo ensin ohjeen mukaan kurssia varten tietokanta.
 2. Luo tietokantaan ohjeen mukaan taulu ja syötä sinne tietoja linkin takaa.
 3. Luo uusi kansio, johon luot tiedoston dbfunctions.php. Voit kopioida yllä olevan sisällön, mutta vaihda siihen oman tietokantasi tiedot.
-4. Luo samaan kansioon toinen tiedosto, index.php, johon yhdistät tiedoston dbfunctions.php ja avaat tietokantayhteyden.
+4. Luo samaan kansioon toinen tiedosto, index.php, johon yhdistät tiedoston dbfunctions.php ja avaat tietokantayhteyden. Kun laitat serverin pyörimään ja avaat sivun, siellä pitäisi lukea "Connected successfully", jos kaikki on kunnossa.
