@@ -50,6 +50,17 @@ foreach($games as $game) {
  }  
  ````
 
+ Yksittäisen pelin nimen saa tulostettua sivulle seuraavasti:
+
+ ````php
+ <p>
+    <?php
+    $game = getGameById(3);
+    echo $game["name"];
+    ?>
+ </p> 
+````
+
  Uuden pelin voi lisätä seuraavalla koodilla (huom, täydennä arvot funktion kutsussa):
 
  ````php
