@@ -1,18 +1,16 @@
 ## Evästeet (Cookies)
 
-Evästeet ovat istunnon ohella yksi tapa, millä henkilökohtaista dataa saa tallennettua verkkosivulta, jos ei käytetä tietokantoja.
+Evästeet ovat istunnon ohella yksi tapa, millä henkilökohtaista dataa saa tallennettua verkkosivulta, jos ei käytetä tietokantoja. Evästeet ovat pieniä tiedostoja, jotka verkkosivusto tallentaa käyttäjän selaimeen.
+Niitä käytetään esimerkiksi muistamaan kirjautumistila, kielivalinta tai ostoskorin sisältö seuraavilla vierailuilla.
+Evästeet voivat säilyä selaimen sulkemisen jälkeen ja olla käytettävissä myöhemmin (pysyvät evästeet) tai hävitä automaattisesti, kun selain suljetaan (väliaikaiset evästeet).
+Käyttäjän selain lähettää evästeet automaattisesti palvelimelle jokaisessa pyynnössä.
 
 Käy ensimmäisenä lukemassa linkitetty artikkeli [What are cookies?](https://www.kaspersky.com/resource-center/definitions/cookies)<base target="_blank">.
 
-Luo Word-dokumentti, jossa vastaat seuraaviin kysymyksiin pääosin artikkelin pohjalta. Palauta dokumentti Teamsiin kansioon kanavalla Sähköinen asiakaspalvelu - php.
+## Ero sessioon
 
-1. Miksi HTTP evästeet kehitettiin?
-2. Minne evästeet tallennetaan ja mitä etua siitä on yritysten näkökulmasta?
-3. Mikä on evästeiden toimintaperiaate?
-4. Mihin evästeitä yleensä käytetään?
-5. Mitkä ovat HTTP evästeiden kaksi tyyppiä ja miten ne eroavat toisistaan?
-6. Miten istunto (session) ja evästeet (cookies) eroavat toisistaan (ei löydy artikkelista)?
-7. Miten pääset tarkastelemaan evästeitä ja istuntoa kehittäjätyökaluista (ei löydy artikkelista)? Mitä tietoja artikkelin sivusto tallentaa sinusta (jotkut esimerkit riittävät)?
+- Evästeet tallennetaan käyttäjän selaimeen, ja ne voivat säilyä pitkään, kun taas sessiot ovat yleensä lyhytkestoisia ja tallennetaan palvelimen muistiin.
+- Evästeitä käytetään pitkän aikavälin tiedon säilyttämiseen, kun taas sessioita käytetään aktiivisen istunnon aikaisen tiedon hallintaan.
 
 ## Demotehtävä 1
 
