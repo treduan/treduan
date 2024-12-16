@@ -6,6 +6,8 @@
 
 [ Orientaatio ](./orientoituminen2024/index.md)
 
+[ PHP ](./php2024/index.md)
+
 ## Kurssit 2024-2025 aikuisryhmä
 
 [ HTML & CSS ](./html&css2024aik/index.md)
