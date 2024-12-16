@@ -9,6 +9,8 @@
 - [Lomakkeet](./lomakkeet/index.md)<base target="_blank">
 - [Istunnot](./istunnot/index.md)<base target="_blank">
 - [Evästeet](./evasteet/index.md)<base target="_blank">
+- [Salasanat](./salasanat/index.md)<base target="_blank">
+- [Reititys](./reititys/index.md)<base target="_blank">
 
 _____
 
@@ -16,6 +18,7 @@ _____
 
 - [ Tietokantayhteys ](./pdo/index.md)<base target="_blank">
 - [ CRUD ](./crud/index.md)<base target="_blank">
+- [ MVC-malli ](./mvc/index.md)<base target="_blank">
 
 _____
 
@@ -28,6 +31,7 @@ ______
 - [Harjoitukset 1 (Perusteet ja taulukot)](./harjoitukset1/index.md)<base target="_blank">
 - [Harjoitukset 2 (lomakkeet)](./harjoitukset2/index.md)<base target="_blank">
 - [Harjoitus 3 (ensimmäinen tietokanta)](./harjoitus3/index.md)<base target="_blank">
+- [Harjoitus 4 (arvostelusivu)](./harjoitus4/index.md)<base target="_blank">
 
 _____
 
