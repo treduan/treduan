@@ -11,6 +11,7 @@
 - [Evästeet](./evasteet/index.md)<base target="_blank">
 - [Salasanat](./salasanat/index.md)<base target="_blank">
 - [Reititys](./reititys/index.md)<base target="_blank">
+- [Tiedostot](./tiedostot/index.md)<base target="_blank">
 
 _____
 
@@ -32,6 +33,8 @@ ______
 - [Harjoitukset 2 (lomakkeet)](./harjoitukset2/index.md)<base target="_blank">
 - [Harjoitus 3 (ensimmäinen tietokanta)](./harjoitus3/index.md)<base target="_blank">
 - [Harjoitus 4 (arvostelusivu)](./harjoitus4/index.md)<base target="_blank">
+- [Harjoitus 5 (Tiedostot)](./harjoitukset5/index.md)<base target="_blank">
+- [Harjoitus 6 (reseptipankki)](./harjoitus6/index.md)<base target="_blank">
 
 _____
 
