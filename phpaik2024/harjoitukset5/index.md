@@ -1,6 +1,6 @@
 # Harjoitukset 5
 
-Luo näille harjoituksille oma kansio nimeltään Harjoitukset 7 tai Assignments 7.
+Luo näille harjoituksille oma kansio nimeltään Harjoitukset 5 tai Assignments 5.
 
 ## 1. Rekisteröityminen
 
