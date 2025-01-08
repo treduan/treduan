@@ -207,32 +207,23 @@ Sen läpikäymiseen tarvitaan kaksi sisäkkäistä silmukkaa. Usein käytetään
 
 ````php
 <?php
-// Multidimensional array
-$superheroes = array(
-    "spider-man" => array(
-        "name" => "Peter Parker",
-        "email" => "peterparker@mail.com",
-    ),
-    "super-man" => array(
-        "name" => "Clark Kent",
-        "email" => "clarkkent@mail.com",
-    ),
-    "iron-man" => array(
-        "name" => "Harry Potter",
-        "email" => "harrypotter@mail.com",
-    )
-);
- 
-// Printing all the keys and values one by one
-$keys = array_keys($superheroes);
-for($i = 0; $i < count($superheroes); $i++) {
-    echo $keys[$i] . "{<br>";
-    foreach($superheroes[$keys[$i]] as $key => $value) {
-        echo $key . " : " . $value . "<br>";
+// Kaksiulotteinen taulukko
+$taulukko = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+// Ulompi silmukka käy läpi rivit
+for ($i = 0; $i < count($taulukko); $i++) {
+    // Sisempi silmukka käy läpi sarakkeet
+    for ($j = 0; $j < count($taulukko[$i]); $j++) {
+        // Tulostetaan arvo
+        echo "Elementti [$i][$j]: " . $taulukko[$i][$j] . "\n";
     }
-    echo "}<br>";
 }
 ?>
+
 ````
 
 Lisää kaksiulotteisista taulukoista voi lukea [täältä](https://www.phptutorial.net/php-tutorial/php-multidimensional-array/)<base target="_blank">.
