@@ -1,4 +1,4 @@
-# Harjoitus 6
+# Harjoitus 4
 
 Luomme oman ohjelman käyttäen MVC-mallia, jonka esimerkki löytyy [täältä](https://github.com/otredu/news_2021/tree/master)<base target="_blank">. Aiheena on seurata itse luettuja kirjoja, pelattuja pelejä ja katsottuja elokuvia ja sarjoja, jos on kirjautunut sisään. Sinne siis kirjoitetaan arvosteluja kyseisistä asioista.
 
