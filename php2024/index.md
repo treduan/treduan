@@ -10,11 +10,15 @@
 
 ## Backend
 
+- [PDO (tietokantayhteys)](./pdo/index.md)<base target="_blank">
+- [CRUD](./crud/index.md)<base target="_blank">
+
 ## Olio-ohjelmointi
 
 ## Palautettavat harjoitukset
 
 - [Harjoitukset 1 (Perusteet ja taulukot)](./harjoitukset1/index.md)<base target="_blank">
 - [Harjoitukset 2 (Parametrit ja lomakkeet)](./harjoitukset2/index.md)<base target="_blank">
+- [Harjoitus 3](./harjoitus3/index.md)<base target="_blank">
 
 ## Lisätehtävät
