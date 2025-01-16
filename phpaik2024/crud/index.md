@@ -61,15 +61,21 @@ foreach($games as $game) {
  </p> 
 ````
 
- Uuden pelin voi lisätä seuraavalla koodilla (huom, täydennä arvot funktion kutsussa):
+ Uuden pelin voi lisätä seuraavalla koodilla:
 
  ````php
  function insertNewGame($name, $company, $release) {
     $pdo = connect();
-    $sql = "INSERT INTO test_games (`name`, company, `release`) VALUES (?, ?, ?)";
+    $sql = "INSERT INTO test_games (`name`, `company`, `release`) VALUES (?, ?, ?)";
     $stm = $pdo->prepare($sql);
     $ok = $stm->execute([$name, $company, $release]);
     return $ok;
+````
+
+Uuden pelin funktion kutsu voi näyttää vaikka seuraavalta:
+
+````php
+insertNewGame("Warcraft III", "Blizzard Entertainment", 2002);
 ````
 
 Peliä voi muokata seuraavalla koodilla: 
