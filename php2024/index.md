@@ -7,6 +7,7 @@
 - [Sivuston Jakaminen](./sivustonJakaminen/index.md)<base target="_blank">
 - [Parametrit sivustolla](./parametrit/index.md)<base target="_blank">
 - [Lomakkeet](./lomakkeet/index.md)<base target="_blank">
+- [Ulkoiset tiedostot](./tiedostot/index.md)<base target="_blank">
 
 ## Backend
 
@@ -19,6 +20,6 @@
 
 - [Harjoitukset 1 (Perusteet ja taulukot)](./harjoitukset1/index.md)<base target="_blank">
 - [Harjoitukset 2 (Parametrit ja lomakkeet)](./harjoitukset2/index.md)<base target="_blank">
-- [Harjoitus 3](./harjoitus3/index.md)<base target="_blank">
+- [Harjoitukset 3 (ulkoiset tiedostot)](./harjoitukset7/index.md)<base target="_blank">
 
 ## Lisätehtävät
