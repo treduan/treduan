@@ -15,6 +15,9 @@
 
 ## Olio-ohjelmointi
 
+- [Oliot ja luokat](./oliot1/index.md)<base target="_blank">
+- [Periytyvyys](./periytyvyys/index.md)<base target="_blank">
+
 ## Palautettavat harjoitukset
 
 - [Harjoitukset 1 (Perusteet ja taulukot)](./harjoitukset1/index.md)<base target="_blank">
