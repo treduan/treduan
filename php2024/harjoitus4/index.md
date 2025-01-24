@@ -1,4 +1,4 @@
-# Harjoitukset 3 (luokat ja oliot)
+# Harjoitus 4 (luokat ja oliot)
 
 Nämä harjoitukset voi tehdä yhteen ja samaan tiedostoon, jonka nimi on harjoitukset3.php. Harjoittelemme luokkien ja olioiden luomista ja käsittelyä eli ennen harjoituksien tekemistä tutustu kurssin olio-ohjelmointiosioon tai lue lisää [täältä englanniksi](https://www.phptutorial.net/php-oop/)<base target="_blank">.
 
