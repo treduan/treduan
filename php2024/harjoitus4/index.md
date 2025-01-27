@@ -11,6 +11,8 @@ Nämä harjoitukset voi tehdä yhteen ja samaan tiedostoon, jonka nimi on harjoi
 
 4. Luo molemmista olioista järkevä tulostus.
 
+5. Luo molemmille luokille lomake, jolla voi luoda luokasta olion, ja näytä viimeisin lomakkeella luotu olio tulostuksena lomakkeen alla.
+
 ## Extra
 
 Tutustu olioiden __toString-metodiin [täällä](https://www.phptutorial.net/php-oop/php-__tostring/)<base target="_blank">. Laadi sitten luokkiin omat __toString-metodit.
