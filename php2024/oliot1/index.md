@@ -83,6 +83,17 @@ function __construct($spec, $bree, $na, $birth) {
 
 *constructor*eja voi olla myös useampi, jos jotkut ominaisuudet eivät ole pakollisia eli meillä voisi olla vaikka versio lemmikistä, jossa lemmikin syntymäpäivä ei ole tiedossa, jolloin on *constructor*, josta ei löydy syntymäpäivää.
 
+Jos luokassa on construktorin lisäksi setter-funktiot, construktori kutsuu setter-funktioita seuraavasti:
+
+````php
+function __construct($spec, $bree, $na, $birth) {
+    $this->setSpecies($spec);
+    $this->setBreed($bree);
+    $this->setName($na);
+    $this->setBirthday($birth);
+}
+````
+
 ## Demotehtävä 1
 
 1. Luo oma luokka verkkokaupassa olevasta tuotteesta. Mieti siis, mitä muuttujia tarvitaan esimerkiksi verkkokaupassa olevalla tuotteella. Voisiko tuotteella olla myös omia funktioita? 
