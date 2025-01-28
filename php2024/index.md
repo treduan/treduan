@@ -20,6 +20,9 @@
 - [Olioiden näkyvyys](./olionakyvyys/index.md)<base target="_blank">
 - [Periytyvyys](./periytyvyys/index.md)<base target="_blank">
 
+- [Olioiden kertaus (kysymyksiä kokeeseen valmistautumiseen)]<base target="_blank">
+
+
 
 ## Palautettavat harjoitukset
 
