@@ -9,6 +9,8 @@
 - [Lomakkeet](./lomakkeet/index.md)<base target="_blank">
 - [Ulkoiset tiedostot](./tiedostot/index.md)<base target="_blank">
 
+- [Saavutettavuus](./saavutettavuus/index.md)<base target="_blank">
+
 ## Backend
 
 - [PDO (tietokantayhteys)](./pdo/index.md)<base target="_blank">
