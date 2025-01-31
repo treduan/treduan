@@ -85,3 +85,5 @@ Lomakkeet ovat jossakin määrin haastavia saavutettavuuden suhteen. Niiden käy
 ## Demoharjoitus 2
 1. Asenna Chrome-selaimeesi lisäosa nimeltään Wave.
 2. Käytä opettajan sivustolla Wavea. Mene katsomaan Details-välilehteä. Mitä kaikkea Wave kertoo verkkosivun saavutettavuudesta?
+3. Menkää jollekin vapaasti valittavalle verkkosivulle (esim. Verkkokauppa.com) ja tutkikaa sitä Waven avulla. Tuleeko varoituksia tai suoranaisia virheilmoituksia? Millaisia? Ymmärrätkö, mistä ne johtuvat?
+4. Menkää sitten vielä vero.fi -sivustolle ja testatkaa sitä Wavella. Tuleeko siellä varoituksia tai virheilmoituksia?
