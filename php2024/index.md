@@ -8,13 +8,16 @@
 - [Parametrit sivustolla](./parametrit/index.md)<base target="_blank">
 - [Lomakkeet](./lomakkeet/index.md)<base target="_blank">
 - [Ulkoiset tiedostot](./tiedostot/index.md)<base target="_blank">
+- [Istunnot (session)](./istunnot/index.md)<base target="_blank">
+- [Evästeet (cookies)](./evasteet/index.md)<base target="_blank">
 
 - [Saavutettavuus](./saavutettavuus/index.md)<base target="_blank">
 
 ## Backend
 
 - [PDO (tietokantayhteys)](./pdo/index.md)<base target="_blank">
-- [CRUD](./crud/index.md)<base target="_blank">
+- [CRUD (Create, Read, Update, Delete)](./crud/index.md)<base target="_blank">
+- [Rekisteröityminen ja kirjautuminen](./rekisteroityminen/index.md)<base target="_blank">
 
 ## Olio-ohjelmointi
 
