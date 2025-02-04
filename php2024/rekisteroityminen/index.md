@@ -149,7 +149,7 @@ Tämä funktio palauttaa käyttäjätiedot, jos tietokannasta löytyi kyseinen k
 Lopuksi pitää tehdä uloskirjautuminen. Siihen riittää nappi (mielellään lomakkeen sisällä) etusivulla.
 
 ````php
-function logoutController(){
+    if(isset($_POST["logout"])) {
     session_unset(); //poistaa kaikki muuttujat
     session_destroy();
     setcookie(session_name(),'',0,'/'); //poistaa evästeen selaimesta
