@@ -1,4 +1,4 @@
-# Harjoitus 3
+# Harjoitus 5
 
 Tässä harjoituksessa teemme sivuston, jolle voi lisätä roolipelihahmoja sekä niitä varten hahmoluokkia ja pelattavia rotuja. Vaihtoehtoisesti voit käyttää Johdastus systeemityöhön -kurssilla tehtyä tietokantaa ja sen aihepiiriä, mutta tämän harjoituksen sivustolta pitää löytyä kaikki samat palaset.
 

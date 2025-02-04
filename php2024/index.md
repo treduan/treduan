@@ -35,5 +35,6 @@
 - [Harjoitukset 2 (Parametrit ja lomakkeet)](./harjoitukset2/index.md)<base target="_blank">
 - [Harjoitukset 3 (ulkoiset tiedostot)](./harjoitukset7/index.md)<base target="_blank">
 - [Harjoitus 4 (luokka ja olio)](./harjoitus4/index.md)<base target="_blank">
+- [Harjoitus 5 (roolipelihahmot)](./harjoitus3/index.md)<base target="_blank">
 
 ## Lisätehtävät
