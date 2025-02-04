@@ -144,6 +144,25 @@ function login($username, $password){
 
 Tämä funktio palauttaa käyttäjätiedot, jos tietokannasta löytyi kyseinen käyttäjä ja salasana oli oikein. Muuten se palauttaa falsen. password_verify on PHP:n oma funktio, jolla se tarkistaa, vastaako hashattu salasana annettua salasanaa.
 
+Voimme käyttää funktiota nimeltään isLoggedIn tarkistamaan, onko joku kirjautunut sisään.
+
+````php
+function isLoggedIn(){
+    if(isset($_SESSION['username'], $_SESSION['userid']) && ($_SESSION['session_id'] == session_id())){
+        return true;
+    } else {
+        return false;
+    }
+}
+````
+
+index.php-tiedostoon voimme lisätä seuraavan tarkituksen:
+
+````php
+if(isLoggedIn()) {
+    echo "Kirjautunut sisään";
+}
+````
 ## Uloskirjautuminen
 
 Lopuksi pitää tehdä uloskirjautuminen. Siihen riittää nappi (mielellään lomakkeen sisällä) etusivulla.
