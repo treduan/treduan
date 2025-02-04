@@ -4,7 +4,7 @@ Tässä harjoituksessa teemme sivuston, jolle voi lisätä roolipelihahmoja sek�
 
 ### Tietokanta
 
-Laadi aluksi cPanelin tietokantaasi kolme taulua. Voit nimetä ne esimerkiksi classes, races ja characters. Lisää yhteydet taulujen välille.
+Laadi aluksi cPanelin tietokantaasi kolme taulua. Voit nimetä ne esimerkiksi classes, races ja characters. Lisää yhteydet taulujen välille. Voit myös käyttää opettajan laatimaa [dumpia](dump.sql).
 
 ![taulut](./luokat.png)
 
