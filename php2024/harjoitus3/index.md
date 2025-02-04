@@ -42,6 +42,13 @@ Lisää toiminto hahmon muokkaamiselle ja poistamiselle. Muokkaaminen kannattaa 
 
 Kun näytät select-ohjaimessa tiedon tarvitset if/else-rakennetta. Valittu option saadaan selected-attribuutin avulla.
 
+Hahmon perään voi laittaa linkit, joista muokkaaminen ja poistaminen onnistuvat. Ne voivat näyttää suunnilleen tältä:
+
+````php
+        <a id=<?=$characterid ?> onClick='confirmDelete(<?=$id?>)' href='/delete_character?id=<?=$id?>'>Poista hahmo</a> | 
+        <a href='/update_character?id=<?=$id?>'>Päivitä hahmo</a>
+````
+
 ### Lisätehtävät
 
 Lisää hahmonluontiin strength, dexterity ja wisdom niin, että hahmoa luodessa voi käyttää yhteensä 16 pistettä. Käyttäjä näkee maksimipisteet ja niiden määrä pienenee, kun käyttäjä lisää pisteen johonkin ominaisuuksista.
