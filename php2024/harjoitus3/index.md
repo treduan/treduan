@@ -1,10 +1,10 @@
-# Harjoitus 3
+# Harjoitus 5
 
 Tässä harjoituksessa teemme sivuston, jolle voi lisätä roolipelihahmoja sekä niitä varten hahmoluokkia ja pelattavia rotuja. Vaihtoehtoisesti voit käyttää Johdastus systeemityöhön -kurssilla tehtyä tietokantaa ja sen aihepiiriä, mutta tämän harjoituksen sivustolta pitää löytyä kaikki samat palaset.
 
 ### Tietokanta
 
-Laadi aluksi cPanelin tietokantaasi kolme taulua. Voit nimetä ne esimerkiksi classes, races ja characters. Lisää yhteydet taulujen välille.
+Laadi aluksi cPanelin tietokantaasi kolme taulua. Voit nimetä ne esimerkiksi classes, races ja characters. Lisää yhteydet taulujen välille. Voit myös käyttää opettajan laatimaa [dumpia](dump.sql).
 
 ![taulut](./luokat.png)
 
@@ -41,6 +41,13 @@ Näytä tietokannan hahmot div-elementeissä. Mieti sopiva muotoilu. Kun haet ha
 Lisää toiminto hahmon muokkaamiselle ja poistamiselle. Muokkaaminen kannattaa tehdä omalle sivulle.
 
 Kun näytät select-ohjaimessa tiedon tarvitset if/else-rakennetta. Valittu option saadaan selected-attribuutin avulla.
+
+Hahmon perään voi laittaa linkit, joista muokkaaminen ja poistaminen onnistuvat. Ne voivat näyttää suunnilleen tältä:
+
+````php
+        <a id=<?=$characterid ?> onClick='confirmDelete(<?=$id?>)' href='/delete_character?id=<?=$id?>'>Poista hahmo</a> | 
+        <a href='/update_character?id=<?=$id?>'>Päivitä hahmo</a>
+````
 
 ### Lisätehtävät
 
