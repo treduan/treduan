@@ -11,6 +11,8 @@
 - [Istunnot (session)](./istunnot/index.md)<base target="_blank">
 - [Evästeet (cookies)](./evasteet/index.md)<base target="_blank">
 - [Reititys (routing)](./reititys/index.md)<base target="_blank">
+- [Aika](./aika/index.md)<base target="_blank">
+- [Filtterit](./filtterit/index.md)<base target="_blank">
 
 - [Saavutettavuus](./saavutettavuus/index.md)<base target="_blank">
 
