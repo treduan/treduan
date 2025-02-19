@@ -9,6 +9,7 @@
 - [ Taulukot ](./taulukot/index.md)<base target="_blank">
 - [ HTML-koodin validointi ](./validointi/index.md)<base target="_blank">
 - [ Lomakkeet ](./lomakkeet/index.md)<base target="_blank">
+- [ Julkaisu ](./julkaisu/index.md)<base target="_blank">
 
 ## CSS
 
@@ -22,12 +23,21 @@
 - [Navigaatio](./navigointi/index.md)<base target="_blank">
 - [Efektit](./efektit/index.md)<base target="_blank">
 - [Responsiivisuus](./responsiivisuus/index.md)<base target="_blank">
+- [Edistyneet valitsimet](./edistyneetselektorit/index.md)<base target="_blank">
+- [Animaatiot](./animaatiot/index.md)<base target="_blank">
+- [Sijainti](./positio/index.md)<base target="_blank">
+- [Fontit ja favicon](./fontitfavicon/index.md)<base target="_blank">
+- [Bootstrap](./bootstrap/index.md)<base target="_blank">
 
 ## Palautettavat harjoitukset
 
 - [Harjoitus 1 (vapaavalintainen HTML-sivu)](./htmlharjoitus1/index.md)<base target="_blank">
 - [Harjoitus 2 (verkkokaupan etusivu)](./harjoitus2/index.md)<base target="_blank">
+- [Harjoitus 3 (Ohimaan marjatila)](./harjoitus3/index.md)<base target="_blank">
+- [Harjoitus 4 (Animaatioita ja kuvaefektejä)](./harjoitus4/index.md)<base target="_blank">
+- [Harjoitus 5 (Portfolio)](./harjoitus5/index.md)<base target="_blank">
 
 ## Lisätehtävät
 
 - [Lisätehtävä 1 (HTML-tageja)](./lisatehtava1/)<base target="_blank">
+- [Lisätehtävä 2 (Landing Page)](./lisatehtava2/index.md)<base target="_blank">

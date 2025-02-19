@@ -2,7 +2,7 @@
 
 Bootstrap on muotoilukirjasto, jolla voi osin tai täysin korvata CSS:n käytön HTML:n muotoilussa. Siinä on myös sisään rakennettuja toiminnallisuuksia, joilla voi osin korvata JavaScriptiä. Kun sitä osaa käyttää, on mahdollista luoda siistin näköisiä sivuja nopeammin. Toisaalta yhtä aikaa menettää hieman vapautta tehdä omannäköistä tyyliä. Bootstrapin merkittävin hyöty on siinä, että sitä käyttämällä suurin osa elementeistä on helposti responsiivisia eli ne skaalautuvat näytön leveyden mukaan, kun niitä käytetään oikein. Bootstrapin muotoilut yhdistetään elementin luokkaan eli *class*iin.
 
-Opettelemme käyttämän versiota 4, mutta myös versio 5 on olemassa (kaikki selaimet eivät tue sitä, mistä syystä keskitymme vähän vanhempaan versioon). Emme käy läpi kaikkia Bootstrapin mahdollisuuksia, vaan tutustumme siihen sen verran, että on mahdollista etsiä siitä lisää hyödyllisiä ominaisuuksia. 
+Opettelemme käyttämän versiota 5, joka on julkaistu vuonna 2021, mutta on pieni mahdollisuus, että jokainen ominaisuus ei toimi jokaisella selaimella (esimerkiksi vanhalla Internet Explorerilla). Emme käy läpi kaikkia Bootstrapin mahdollisuuksia, vaan tutustumme siihen sen verran, että ymmärrätte perusperiaatteet ja voitte etsiä siitä lisää hyödyllisiä ominaisuuksia. 
 
 ## Bootstrapin ottaminen käyttöön
 
@@ -15,17 +15,8 @@ Jotta sitä voidaan käyttää, täytyy HTML-tiedostoon linkittää joitakin asi
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <h1>Hello, world!</h1>
@@ -35,7 +26,7 @@ Jotta sitä voidaan käyttää, täytyy HTML-tiedostoon linkittää joitakin asi
 
 ## Bootstrapin ominaisuuksia
 
-Useimmat elementit on kannattavaa laittaa luokan *container* sisään. Se antaa niille järkevät marginaalit useimmissa tapauksissa.
+Useimmat elementit on kannattavaa laittaa luokan *container* sisään. Se antaa niille järkevät marginaalit useimmissa tapauksissa. *container-fluid* puolestaan on koko selaimen levyinen elementti.
 
 ### Grid
 
@@ -160,7 +151,7 @@ Bootstrapilla voi luoda oman modaalin. Muuten se vaatisi JavaScriptiä. Ensin ta
 
       <!-- Modal body -->
       <div class="modal-body">
-        Modal body..
+        <p>Modal body..</p>
       </div>
 
       <!-- Modal footer -->

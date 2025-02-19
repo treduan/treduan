@@ -48,13 +48,13 @@ class pet {
     function getBreed() {
         return $this->breed;
     }
-        function setName($na) {
+    function setName($na) {
         $this->name = $na;
     }
     function getName() {
         return $this->name;
     }
-        function setBirthday($birth) {
+    function setBirthday($birth) {
         $this->birthday = $birth;
     }
     function getBirthday() {
@@ -108,9 +108,9 @@ $rekku->setName("Rekku");
 $rekku->setBirthday("2021/10/21");
 
 $misse->setSpecies("Cat");
-$rekku->setBreed("Norwegian Forestcat");
-$rekku->setName("Misse");
-$rekku->setBirthday("2019/05/25");
+$misse->setBreed("Norwegian Forestcat");
+$misse->setName("Misse");
+$misse->setBirthday("2019/05/25");
 ````
 
 Tosin useammin asetamme muuttujille arvot jo luodessamme ne.

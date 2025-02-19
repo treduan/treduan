@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subdiv {
+    height: auto;
+    width: auto;
+    padding: 1em;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 25px;
+    background-color: lightblue;
+    margin: 5px;
+}
+.highdiv {
+    height: 350px;
+    width: 200px;
+    background-color: lightseagreen;
+    flex-grow: 2;
+}
+
+.widediv {
+    height: 100px;
+    width: 250px;
+    background-color: lightslategray;
+}

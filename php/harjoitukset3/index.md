@@ -9,6 +9,8 @@ Nämä harjoitukset voi tehdä yhteen ja samaan tiedostoon, jonka nimi on harjoi
 
 3. Luo molemmista lapsi-luokista yksi olio ja anna sen ominaisuuksille arvot. Testaa myös, että ne pystyvät käyttämään onnistuneesti *makeSound*-funktiotaan.
 
+4. Luo molemmista olioista järkevä tulostus.
+
 ## Extra
 
 Tutustu olioiden __toString-metodiin [täällä](https://www.phptutorial.net/php-oop/php-__tostring/)<base target="_blank">. Laadi sitten luokkiin omat __toString-metodit.
