@@ -44,3 +44,5 @@
 - [Harjoitus 6 (arvostelusivu)](./harjoitukset6/index.md)<base target="_blank">
 
 ## Lisätehtävät
+
+- [Lisäharjoitus 1 (tietovisa)](./lisaharjoitus1/index.md)<base target="_blank">
