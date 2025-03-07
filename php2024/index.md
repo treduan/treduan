@@ -13,6 +13,7 @@
 - [Reititys (routing)](./reititys/index.md)<base target="_blank">
 - [Aika](./aika/index.md)<base target="_blank">
 - [Filtterit](./filtterit/index.md)<base target="_blank">
+- [Reititys ja uudelleenohjaus](./reititys/index.md)<base target="_blank">
 
 - [Saavutettavuus](./saavutettavuus/index.md)<base target="_blank">
 
@@ -44,3 +45,5 @@
 - [Harjoitus 7 (reseptipankki)](./harjoitus7/index.md)<base target="_blank">
 
 ## Lisätehtävät
+
+- [Lisäharjoitus 1 (tietovisa)](./lisaharjoitus1/index.md)<base target="_blank">

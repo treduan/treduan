@@ -16,9 +16,9 @@ else if ($numb < 90 && $numb > 50)
 $result = "$numb is on the larger side\n";
 else if ($numb < 11 && $numb > 89)
 $result = "$numb is near the extreme\n";
-else if ($numb = 50)
+else if ($numb == 50)
 $result = "$numb is right in the middle\n";
-else if ($numb = 42)
+else if ($numb == 42)
 $result = "$numb! You have found the answer to life.\n";
 else 
 $result = "nyt kyll ei menny hyvin";
