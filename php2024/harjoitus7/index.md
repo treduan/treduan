@@ -1,4 +1,4 @@
-# Harjoitus 8 - Reseptipankki
+# Harjoitus 7 - Reseptipankki
 
 Teemme verkkosivun, jolle käyttäjä voi rekisteröityä ja kirjautua, minkä jälkeen hän voi katsella, lisätä, muokata ja poistaa reseptejä. Lisäksi reseptejä voi suodattaa niiden tyypin mukaan. Reseptin voi luoda tiedostoksi tulostamista varten. Sivustolla on myös sivu, jolta voi lukea eri kategorioista, omat tiedot -sivu (kirjautuneille) ja yhteystiedot -sivu.
 
