@@ -10,6 +10,10 @@
 - [Ulkoiset tiedostot](./tiedostot/index.md)<base target="_blank">
 - [Istunnot (session)](./istunnot/index.md)<base target="_blank">
 - [Evästeet (cookies)](./evasteet/index.md)<base target="_blank">
+- [Reititys (routing)](./reititys/index.md)<base target="_blank">
+- [Aika](./aika/index.md)<base target="_blank">
+- [Filtterit](./filtterit/index.md)<base target="_blank">
+- [Reititys ja uudelleenohjaus](./reititys/index.md)<base target="_blank">
 
 - [Saavutettavuus](./saavutettavuus/index.md)<base target="_blank">
 
@@ -18,6 +22,7 @@
 - [PDO (tietokantayhteys)](./pdo/index.md)<base target="_blank">
 - [CRUD (Create, Read, Update, Delete)](./crud/index.md)<base target="_blank">
 - [Rekisteröityminen ja kirjautuminen](./rekisteroityminen/index.md)<base target="_blank">
+- [MVC-malli](./mvc/index.md)<base target="_blank">
 
 ## Olio-ohjelmointi
 
@@ -33,8 +38,12 @@
 
 - [Harjoitukset 1 (Perusteet ja taulukot)](./harjoitukset1/index.md)<base target="_blank">
 - [Harjoitukset 2 (Parametrit ja lomakkeet)](./harjoitukset2/index.md)<base target="_blank">
-- [Harjoitukset 3 (ulkoiset tiedostot)](./harjoitukset7/index.md)<base target="_blank">
+- [Harjoitukset 3 (ulkoiset tiedostot)](./harjoitukset3/index.md)<base target="_blank">
 - [Harjoitus 4 (luokka ja olio)](./harjoitus4/index.md)<base target="_blank">
 - [Harjoitus 5 (roolipelihahmot)](./harjoitus3/index.md)<base target="_blank">
+- [Harjoitus 6 (arvostelusivu)](./harjoitukset6/index.md)<base target="_blank">
+- [Harjoitus 7 (reseptipankki)](./harjoitus7/index.md)<base target="_blank">
 
 ## Lisätehtävät
+
+- [Lisäharjoitus 1 (tietovisa)](./lisaharjoitus1/index.md)<base target="_blank">
