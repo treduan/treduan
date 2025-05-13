@@ -32,7 +32,7 @@ HTML-tiedostossa ``<html>``-tagin sisällä on vähintään kaksi osaa eli ``<he
 
 ``<head>``in sisään kannattaa laittaa myös tieto käytetystä merkistöstä, jotta varsinkaan suomen kanssa ei tulisi ääkkösongelmaa. Tyypillisimmin käytetty merkistö on UTF-8, mutta myös UTF-16 ja UTF-32 ovat olemassa, mutta ne vaativat enemmän tallennustilaa eivätkä ole suomen tai muidenkaan länsimaisten kielten kannalta olennaisia, joten todennäköisesti UTF-8 soveltuu kaikkeen. Merkistö ilmoitetaan metatagilla, joita voi olla useampiakin. ``<meta charset=”UTF-8”>`` ``<head>``in sisään voidaan myös linkittää ulkopuolisia tyylitiedostoja kuten CSS-tiedostoja tai ulkopuolisia muita tyylikirjastoja.
 
-Näiden lisäksi, jos HTML-pohja generoidaan, sinne tulee rivi: "<meta name="viewport" content="width=device-width, initial-scale=1.0">", joka liittyy siihen, miten sivu toimii kapeammala näytöllä.
+Näiden lisäksi, jos HTML-pohja generoidaan, sinne tulee rivi: ``<meta name="viewport" content="width=device-width, initial-scale=1.0">``, joka liittyy siihen, miten sivu toimii kapeammala näytöllä.
 
 Käyttövalmis HTML-pohja voi siis näyttää seuraavalta:
 
@@ -70,7 +70,7 @@ Perusteksti kirjoitetaan p-tagilla (p = paragraph). Se rivittyy automaattisesti 
         <body>
             <h1>Pääotsikko</h1>
             <h2>Ensimmäinen alaotsikko</h2>
-            <p>Tässä on ensimmäinen kappale, joka varmaan jotenkin liittyy alaotsikkoon.</p>
+            <p>Tässä on ensimmäinen kappale, joka varmaan jotenkin liittyy alaotsikkoon, mutta se on niin pitkä, että joudut scrollaamaan sivusuunnassa, mikä ei ole kauhean kivaa, joten voit katkaista sen.</p>
         </body>
     </html>
 ```
@@ -102,3 +102,35 @@ ____
 ## Demotehtävä 2
 
 1. Etsi tietokoneeltasi Resurssienhallinnan kautta paikka, johon olet tallentanut demo1.html-tiedoston. Tuplaklikkaa sitä ja avaa se selaimeen.
+
+______
+
+## HTML-pohjan oikoluominen
+
+Visual Studio Code tarjoaa jonkin verran apuja koodin kirjoittamiseen, minkä tulette huomaamaan. Sitä voi käyttää apuna myös HTML-pohjan luomiseen.
+
+Pohja luodaan siten, että ensin luodaan uusi tiedosto, jonka pääte on .html (esimerkiksi *testi.html*). Sitten tyhjässä tiedostossa kirjoitataan huutomerkki ja painetaan enteriä. Sen pitäisi luoda seuraavan näköisen tiedoston:
+
+
+````html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+````
+
+Tuo toinen <meta> vaikuttaa CSS:än ja siihen, miten asiat voisivat asettua sivulle. Sen voi antaa olla paikoillaan, vaikka emme tarvitse sitä pitkään aikaan.
+
+
+_________
+
+## Demotehtävä 3
+
+Luo kansioon uusi .html-loppuinen tiedosto, esimerkiksi *htmltesti.html*. Luo siihen HTML-pohja käyttämällä oikotapaa.
