@@ -80,12 +80,6 @@ Jos taulukko on suuri tai jos taulukon osia haluaa muotoilla CSS-määrittelyill
 
 ---
 
-# Rivinvaihto, väliviiva
-
-HTML:ssa on tagit rivinvaihdolle \<br> (*line break*) sekä väliviivalle \<hr> (*horizontal rule*). Näitä voidaan käyttää, jos dokumentin rakenteessa on niille järkevä merkitys, mutta pääosin ulkonäölliset seikat kannattaa tehdä CSS:llä. 
-
----
-
 ## Demotehtävä 1
 
 1. Lisätkää demo1.html-sivullenne johonkin kohtaan ``<hr>`` erottamaan kaksi tekstin osuutta, mieluiten kaksi *section*ia. Lisätkää myös yksi ``<br>`` loogiseen kohtaan katkaisemaan teksti eri riveille.

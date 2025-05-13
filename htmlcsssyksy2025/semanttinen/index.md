@@ -21,7 +21,7 @@ Semanttisia ovat muun muassa:
 - ``<summary>``
 - ``<time>``
 
-HTML-dokumentin ``<body>`` kannattaa jakaa heti alkuun vähintään seuraaviin osiin: ``<header>``, ``<main>`` ja ``<footer>``. Header sisältää yleensä sivuston nimen, mahdollisesti logon sekä mahdollisesti myös esimerkiksi hakukentän. ``<header>``in alapuolella tai mahdollisesti sen sisällä on hyvin usein ``<nav>`` eli navigaatiopalkki, jossa on linkit sivuston muille sivuille. ``<main>``in sisällä on sivuston varsinainen sisältö. ``<footer>`` sisältää muun muassa tekijänoikeudet ja yhteystietoja. Lisäksi sisältö kannattaa jakaa erilaisiin osioihin kuten ``<section>``, ``<article>`` ja ``<aside>``. Nämä sijoitetaan ``<main>``in sisälle. ``<section>`` on selkeä yksittäinen osuus sivustoa, kuten vaikka esittelyteksti pääotsikon alla. ``<article>`` on itsenäinen osakokonaisuus, kuten artikkeliteksti, blogiteksti tai vaikka tuote. ``<aside`` sijoittuu sivulla sivuun ja sisältää yleensä vähemmän merkityksellistä sisältöä kuten mainoksia. Tageja voidaan laittaa sisäkkäin hyvinkin paljon, jos se on tarpeen. Hyvä esimerkki eri osien käytöstä on [ w3schools.com ](https://www.w3schools.com/html/default.asp)<base target="_blank">.
+HTML-dokumentin ``<body>`` kannattaa jakaa heti alkuun vähintään seuraaviin osiin: ``<header>``, ``<main>`` ja ``<footer>``. Header sisältää yleensä sivuston nimen, mahdollisesti logon sekä mahdollisesti myös esimerkiksi hakukentän. ``<header>``in alapuolella tai mahdollisesti sen sisällä on hyvin usein ``<nav>`` eli navigaatiopalkki, jossa on linkit sivuston muille sivuille. ``<main>``in sisällä on sivuston varsinainen sisältö. ``<footer>`` sisältää muun muassa tekijänoikeudet ja yhteystietoja. Lisäksi sisältö kannattaa jakaa erilaisiin osioihin kuten ``<section>``, ``<article>`` ja ``<aside>``. Nämä sijoitetaan ``<main>``in sisälle. ``<section>`` on selkeä yksittäinen osuus sivustoa, kuten vaikka esittelyteksti pääotsikon alla. ``<article>`` on itsenäinen osakokonaisuus, kuten artikkeliteksti, blogiteksti tai vaikka tuote. ``<aside>`` sijoittuu sivulla sivuun ja sisältää yleensä vähemmän merkityksellistä sisältöä kuten mainoksia. Tageja voidaan laittaa sisäkkäin hyvinkin paljon, jos se on tarpeen. Hyvä esimerkki eri osien käytöstä on [ w3schools.com ](https://www.w3schools.com/html/default.asp)<base target="_blank">.
 
 ```HTML 
 <body>
@@ -35,15 +35,15 @@ HTML-dokumentin ``<body>`` kannattaa jakaa heti alkuun vähintään seuraaviin o
             </header>        
             <p>Tässä on ensimmäinen kappale, joka varmaan jotenkin liittyy alaotsikkoon.</p>
         </section>
-                <section>
+        <section>
             <header>
                 <h2>Toinen alaotsikko</h2>
             </header>        
-            <p>Tässä on ensimmäinen kappale, joka varmaan jotenkin liittyy alaotsikkoon.</p>
+            <p>Tässä on kappale, joka varmaan jotenkin liittyy toiseen alaotsikkoon.</p>
         </section>
     </main>
     <footer>
-        <p>Copyright Me</p>
+        <p>Copyright by Me 2025</p>
     </footer>
 </body>
 ```
@@ -53,4 +53,4 @@ HTML-dokumentin ``<body>`` kannattaa jakaa heti alkuun vähintään seuraaviin o
 # Demotehtävä
 
 1. Avaa aiempi demo1.html-sivusi.
-2. Lisää siihen semanttisesti järkevät osuudet eli tässä kohtaa ``<header>``, johon jää oma nimesi, ``<main>``, johon tulee ``<section>``, jonka sisään tulee``<p>``-teksti. Lisää myös ``<footer>``, johon voit kirjoittaa esimerkiksi "Copyright <oma nimi> 2024".
+2. Lisää siihen semanttisesti järkevät osuudet eli tässä kohtaa ``<header>``, johon jää oma nimesi, ``<main>``, johon tulee ``<section>``, jonka sisään tulee``<p>``-teksti. Lisää myös ``<footer>``, johon voit kirjoittaa esimerkiksi "Copyright < oma nimi > 2025".

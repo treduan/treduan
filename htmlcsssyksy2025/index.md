@@ -8,7 +8,6 @@
 - [Semanttinen HTML](./semanttinen/index.md)
 - [Lisättäviä asioita HTML-sivulle](./lisattavat/index.md)
 - [Tekstinkäsittely ja listat](./tekstinkasittely/index.md)
-- [Taulukot](./taulukot/index.md)
 - [HTML-koodin validointi](./validointi/index.md)
 
 ## CSS-teoria
