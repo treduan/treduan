@@ -37,21 +37,33 @@ Lopputulos kapealla näytöllä on tämä:
 
 Jos elementille annetaan taustaväri eli background-color, reunukset tulevat tämän taustan lisäksi.
 
+## Border-radius
+
+Elementin reunoja voi pyöristää border-radius -ominaisuudella. Sille annetaan joko pikseliarvo tai prosenttiarvo.
+
+````
+.mydiv {
+    padding: 8px 15px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+````
+
 ## Box-shadow ja text-shadow
 
 Sekä tekstille että laatikoille voi laittaa varjoefektejä.
 
 Ohjeita ja esimerkkejä tekstien varjoista löytyy [www.w3schools.comista](https://www.w3schools.com/css/css3_shadows.asp)<base target="_blank">.
 
-Ohjeita ja esimerkkejä laatikoiden varjoista löytyy [www.w3schools.comista](https://www.w3schools.com/css/css3_shadows.asp)<base target="_blank">.
+Ohjeita ja esimerkkejä laatikoiden varjoista löytyy [www.w3schools.comista](https://www.w3schools.com/css/css3_shadows_box.asp)<base target="_blank">.
 
 _____________
 
 ## Demotehtävä 1
 
-1. Luo demo-kansioon uusi html-tiedosto nimeltään boxes.html ja uusi css-tiedosto nimeltään boxes.css. Luo html-tiedostoon html-pohja ja linkitä css-tiedosto siihen.
-2. Luo html-tiedostoon h1-otsikko, jossa lukee "Box Test", sekä sen alle kaksi div-elementtiä, joiden sisällä on p-elementissä tekstit "Box 1" ja "Box 2". Voit antaa niille myös luokat "box1" ja "box2".
-3. Css-tiedostossa anna molemmille jokin taustaväri eli background-color. Valitse molemmille myös jokin reunus ja aseta niille keskenään eri määrä paddingia.
+1. Luo demo-kansioon uusi HTML-tiedosto nimeltään boxes.html ja uusi CSS-tiedosto nimeltään boxes.css. Luo HTML-tiedostoon html-pohja ja linkitä CSS-tiedosto siihen.
+2. Luo html-tiedostoon h1-otsikko, jossa lukee "Box Test", sekä sen alle kaksi div-elementtiä, joiden sisällä on p-elementissä tekstit "Box 1" ja "Box 2". Anna niille myös luokat "box1" ja "box2".
+3. CSS-tiedostossa anna molemmille jokin taustaväri eli background-color. Valitse molemmille myös jokin reunus ja aseta niille keskenään eri määrä paddingia.
 4. Lisää otsikkoon haluamasi varjoefekti.
 5. Lisää laatikoille haluamasi varjoefektit. Ne voivat olla samat tai erit.
 
@@ -75,7 +87,7 @@ HTML-sivulla on automaattisesti pikkuinen marginaali olemassa. Yleensä omaa CSS
 
 ## Margin Collapse
 
-Margin collapse on sitä, että jos meillä on allekkain tai vierekkäin kaksi elementtiä, joille on lisätty marginaali, niistä marginaaleista lasketaan vain yksi. Eli toinen marginaali ikään kuin katoaa/kaatuu pois. 
+Margin collapse on sitä, että jos meillä on allekkain tai vierekkäin kaksi elementtiä, joille on lisätty marginaali, niistä marginaaleista lasketaan vain yksi. Eli niistä pienempi marginaali ikään kuin katoaa/kaatuu pois. 
 
 Esimerkissä on kaksi laatikkoa, joilla molemmilla on joka suuntaan marginaalia 30 px. Kuva on otettu aivan selaimen reunasta. Huomaatte, että laatikoiden vasemmalla puolella on sama etäisyys reunasta kuin laatikoiden välillä eli 30 pikseliä eikä tuplia eli kaksi kertaa 30 pikseliä. Tätä margin collapse käytännössä tarkoittaa.
 
@@ -102,7 +114,7 @@ Korkeuden säätäminen on yleensä selkeää ja siihen käytetään hyvin yleis
 
 Leveyttä voidaan säädellä useammalla tavalla. Pikselit ovat yksi mahdollisuus, mutta myös prosentit ovat mahdollisia, mikä tekee leveydestä muuttuvan, kun ruudun leveys vaihtuu.
 
-Lisäksi voidaan määrittää ``max-width``. Se kertoo, mikä on suurin leveys, mikä elementillä voi olla. Tämä voi joissakin tapauksissa selkeyttää eri kokoisten ruutujen kanssa toimimista. Jos elementti on määritelty liian leveäksi kuin ruutu, tulee mahdollisuus kelata sivua sivuttaissuunnassa, mutta tätä haluamme yleensä välttää.
+Lisäksi voidaan määrittää ``max-width``. Se kertoo, mikä on suurin leveys, mikä elementillä voi olla. Tämä voi joissakin tapauksissa selkeyttää eri kokoisten ruutujen kanssa toimimista. Jos elementti on määritelty liian leveäksi ruutuun nähden, tulee mahdollisuus kelata sivua sivuttaissuunnassa, mutta tätä haluamme yleensä välttää.
 
 ````CSS
 .examplediv {
@@ -110,7 +122,7 @@ Lisäksi voidaan määrittää ``max-width``. Se kertoo, mikä on suurin leveys,
     border: 2px solid black;
     margin: 30px;
     height: 400px;
-    width: 800px;
+    width: 1200px;
     max-width: 90%;
 }
 ````
@@ -127,13 +139,13 @@ ______________
 
 # Border-box
 
-Lähtökohtaisesti paddingiä ja borderia ei lasketa elementin kokoon, vaan ainoastaan elementin varsinainen sisältö. Tämän vuoksi voi olla hankalaa arvioida elementtien lopullisia kokoja. Aika usein lisätään määritelmä ``border-sizing: border-box;`` ja se saatetaan laittaa koskemaan koko HTML-tiedosto eli merkitä tähdellä samaan paikkaan kuin ``margin:0;``. Silloin padding ja reunus lasketaan mukaan elementin kokoon.
+Lähtökohtaisesti paddingiä ja borderia ei lasketa elementin kokoon, vaan ainoastaan elementin varsinainen sisältö. Tämän vuoksi voi olla hankalaa arvioida elementtien lopullisia kokoja. Aika usein lisätään määritelmä ``box-sizing: border-box;`` ja se saatetaan laittaa koskemaan koko HTML-tiedosto eli merkitä tähdellä samaan paikkaan kuin ``margin:0;``. Silloin padding ja reunus lasketaan mukaan elementin kokoon ja voimme paremmin hallita elementin kokoa.
 
 ________________
 
 ## Demotehtävä 4
 
-1. Lisää css-tiedoston alkuun ``border-sizing: border-box;``. Ovatko laatikot nyt keskenään yhtä leveitä isolla näytöllä?
+1. Lisää css-tiedoston alkuun ``box-sizing: border-box;``. Ovatko laatikot nyt keskenään yhtä leveitä isolla näytöllä?
 
 ____________
 
@@ -143,7 +155,7 @@ Display on tärkeä ominaisuus, joka säätelee sitä, miten asiat asettuvat ruu
 
 *block* elementti alkaa aina uudelta riviltä ja se vie niin paljon tilaa leveydestä, kuin sitä on saatavilla niin oikealla kuin vasemmallakin. *block* on oletuksena seuraavilla elementeillä: ``<div>, <h1>-<h6>, <p>, <form>, <header>, <footer>, <section>``.
 
-*inline* sen sijaan ei ala uudelta riviltä, ja se vie vain sen verran tilaa, kuin se välttämättä tarvitsee. Esimerkiksi ``<span>, <a>, ja <img>`` ovat tällaisia elementtejä.
+*inline* sen sijaan ei ala uudelta riviltä, ja se vie vain sen verran tilaa, kuin se välttämättä tarvitsee. Esimerkiksi ``<span>``, ``<a>``, ja ``<img>`` ovat tällaisia elementtejä.
 
 *none* poistaa elementin näkyvistä siten, että sen varaama tila täytetään muilla sivun elementeillä, mikäli sellaisia on. On myös toinen tapa tehdä jostakin elementistä näkymätön ja se on *visibility: hidden;*, jolloin elementti vie edelleen vanhan tilan, mutta se vain on poissa näkyviltä.
 

@@ -19,7 +19,7 @@ Nämä ominaisuudet voi myös yhdistää, jolloin kuva voi pysyä isoilla ruudui
 
 ## Kuvan asettelu
 
-Kuvan oletus on, että sillä on diplay: inline;. Se siis vie vain sen verran tilaa, kuin se välttämättä tarvitsee, eikä se mene automaattisesti omalle rivilleen. Usein haluamme laittaa kuvan keskelle ruutua. Se onnistuu seuraavasti:
+Kuvan oletus on, että sillä on ``display: inline;``. Se siis vie vain sen verran tilaa, kuin se välttämättä tarvitsee, eikä se mene automaattisesti omalle rivilleen. Usein haluamme laittaa kuvan keskelle ruutua. Se onnistuu seuraavasti:
 
 ````css
 .img {
@@ -179,7 +179,7 @@ _____________
 
 1. Luo uusi html-sivu nimeltään imagetest.html ja css-tiedosto nimeltään imagetest.css. Luo html-sivuun html-pohja ja linkitä css-tiedosto.
 2. Lataa Teamsista kuvat mandala.png ja noble-castle.jpg ja siirrä ne joko demokansioon tai demokansiossa olevaan kuvakansioon.
-3. Lisätkää sivullenne sisältöä eli otsikoita ja tekstiä sen verran, että sivua on pakko vierittää alaspäin. Näiden ei tarvitse olla järkeviä. Vaihtakaa tekstien väri johonkin muuhun kuin mustaan, jotta ne erottuvat.
-4. Lisätkää taustakuvaksi mandala.png. Vaihtakaa sen koko pieneksi eli 100x100 pikseliä. Katsokaa, että se toistuu koko sivulla. Vaihtakaa se niin, että se toistuu vain pystysuunnassa.
-5. Vaihtakaa taustakuvaksi noble-castle.jpg. Katsokaa, miten se asettuu sivulle. Tarvittaessa laittakaa se täyttämään koko tausta (background-size: cover;).
-6. Kiinnittäkää taustakuva siten, että se pysyy paikoillaan, kun sivua vieritetään alaspäin.
+3. Lisää sivulle sisältöä eli otsikoita ja tekstiä sen verran, että sivua on pakko vierittää alaspäin. Näiden ei tarvitse olla järkeviä. Vaihda tekstien väri johonkin muuhun kuin mustaan, jotta ne erottuvat.
+4. Lisää taustakuvaksi mandala.png. Vaihda sen koko pieneksi eli 100x100 pikseliä. Katso, että se toistuu koko sivulla. Vaihda se niin, että se toistuu vain pystysuunnassa.
+5. Vaihda taustakuvaksi noble-castle.jpg. Katso, miten se asettuu sivulle. Tarvittaessa laita se täyttämään koko tausta (background-size: cover;).
+6. Kiinnitä taustakuva siten, että se pysyy paikoillaan, kun sivua vieritetään alaspäin.

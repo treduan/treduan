@@ -6,11 +6,11 @@ Etusivulla pitää olla seuraavat osat:
 
 1. Header-osio, jossa on logo sekä kaupan nimi.
 
-2. Navigaatiopalkki kuvitteellisille muille sivuille sivustolla (esimerkiksi Kategoriat, Yhteystiedot, Tietoa meistä, Kirjaudu sisään jne). Voi olla suoraan headerin alla tai vasemmassa reunassa tai samalla rivillä logon kanssa. Ostoskori-ikoni ja hakuikoni voivat olla joko navigaatiopalkin osana tai erikseen oikeassa ylänurkassa.
+2. Navigaatiopalkki kuvitteellisille muille sivuille sivustolla (esimerkiksi Kategoriat, Yhteystiedot, Tietoa meistä, Kirjaudu sisään jne). Muista hover-efekti. Ostoskori-ikoni ja hakuikoni voivat olla joko navigaatiopalkin osana tai erikseen oikeassa ylänurkassa.
 
 3. Lyhyt esittelyteksti kaupasta (eli mitä myy ja millainen valikoima kaupalla on).
 
-4. Neljä esimerkkituotetta, jossa on kuva tuotteesta, tuotteen nimi, hinta sekä ostamisnappi (voit näyttää enemmänkin tietoja, mutta nuo riittävät).
+4. Neljä esimerkkituotetta, joissa on kuva tuotteesta, tuotteen nimi, hinta sekä ostamisnappi (voit näyttää enemmänkin tietoja, mutta nuo riittävät).
 
 5. Footer-osio, jossa on pienikokoisempi navigaatio sekä copyright.
 

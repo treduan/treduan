@@ -51,6 +51,10 @@ Siitä saadaan tehtyä vaakatasoinen navigointipalkki muun muassa seuraavalla ko
 }
 ````
 
+Navigaatio näyttää siis tältä:
+
+![Navigaatio](horizontalnav.PNG)
+
 Huomiona, että tässä käytetään nyt *hover*-efektiä eli sitä, mitä tapahtuu, kun hiiri menee tietyn paikan päälle. Silloin linkin tausta muuttuu vaaleammaksi ja sille tulee pyöristetyt reunat. Sopivia efektejä on luonnollisesti muitakin. Esimerkiksi myös tekstin väri voi muuttua, tekstille voi tulla alleviivaus tai sen koko voi muuttua (myöhemmin katsomme sopivia animaatioita, joita voi käyttää hoverin kanssa). 
 
 ## Pystysuuntainen navigointi
