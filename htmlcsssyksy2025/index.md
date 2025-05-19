@@ -9,6 +9,7 @@
 - [Lisättäviä asioita HTML-sivulle](./lisattavat/index.md)
 - [Tekstinkäsittely ja listat](./tekstinkasittely/index.md)
 - [HTML-koodin validointi](./validointi/index.md)
+- [Lomakkeet](./lomakkeet/index.md)
 
 ## CSS-teoria
 
@@ -17,11 +18,15 @@
 - [Box Model](./boxmodel/index.md)
 - [Värit](./varit/index.md)
 - [Kuvat](./kuvat/index.md)
+- [Efektit](./efektit/index.md)
 - [Asettelu](./asettelu/index.md)
 - [Navigaatio](./navigointi/index.md)
-- [Efektit](./efektit/index.md)
 - [Animaatiot](./animaatiot/index.md)
 
 ## Harjoitukset
 
-
+1. [HTML-harjoitus](./htmlharjoitus1/index.md)
+2. [Verkkokaupan etusivu](./harjoitus2/index.md)
+3. [Verkkokaupan tuotesivut ja palautelomake]
+4. [Kuvagalleria animaatioilla]
+5. [Portfoliosivu]
