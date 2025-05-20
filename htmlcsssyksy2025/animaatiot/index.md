@@ -163,11 +163,11 @@ div {
 ````
 ### animation-name ja @keyframes
 
-Animaatio kirjoitataan CSS:ään ikään kuin oman selektorin alle. Se aloitetaan kirjoittamalla säännön eteen *@keyframes*, minkä jälkeen kirjoitetaan animaatiolle kehitetty nimi. Aaltosulkeiden sisään kirjoitetaan animaation alkutilanne ja lopputilanne. Sitten muutettavaan elementtiin voi laittaa *animation-name*-ominaisuuteen arvoksi kehitetty nimi. *animation-duration* kertoo, kuinka kauan animaatio kestää. Alla on koodi, jolla *div* muuttuu punaisesta keltaiseksi neljän sekunnin aikana.
+Animaatio kirjoitetaan CSS:ään ikään kuin oman selektorin alle. Se aloitetaan kirjoittamalla säännön eteen *@keyframes*, minkä jälkeen kirjoitetaan animaatiolle kehitetty nimi. Aaltosulkeiden sisään kirjoitetaan animaation alkutilanne ja lopputilanne. Sitten muutettavaan elementtiin voi laittaa *animation-name*-ominaisuuteen arvoksi kehitetty nimi. *animation-duration* kertoo, kuinka kauan animaatio kestää. Alla on koodi, jolla *div* muuttuu punaisesta keltaiseksi neljän sekunnin aikana.
 
 ````css
 /* The animation code */
-@keyframes example {
+@keyframes fromRedToYellow {
   from {background-color: red;}
   to {background-color: yellow;}
 }
@@ -177,7 +177,7 @@ div {
   width: 100px;
   height: 100px;
   background-color: red;
-  animation-name: example;
+  animation-name: fromRedToYellow;
   animation-duration: 4s;
 }
 ````
@@ -186,7 +186,7 @@ Jos kyse on monimutkaisemmasta animaatiosta, on *@keyframes*issa mahdollista kä
 
 ````css
 /* The animation code */
-@keyframes example {
+@keyframes fromRedToGreen {
   0%   {background-color: red;}
   25%  {background-color: yellow;}
   50%  {background-color: blue;}
@@ -198,7 +198,7 @@ div {
   width: 100px;
   height: 100px;
   background-color: red;
-  animation-name: example;
+  animation-name: fromRedToGreen;
   animation-duration: 4s;
 }
 ````
@@ -264,7 +264,7 @@ Oletuksena on, että animaation loputtua tyyli palaa takaisin alkuperäiseksi el
 
 *backwards* tarkoittaa, että tyyliksi jää *keyframes*in ensimmäinen arvo.
 
-## Demotehtävä
+## Demotehtävä 2
 
 1. Luo uusi HTML-sivu, jolle teet kaksi *div*-elementtiä, joille annat haluamasi luokat (esim. *first* ja *second*).
 2. Luo CSS-tiedosto ja linkitä se HTML-tiedostoon.
