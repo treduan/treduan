@@ -23,6 +23,8 @@ Semanttisia ovat muun muassa:
 
 HTML-dokumentin ``<body>`` kannattaa jakaa heti alkuun vähintään seuraaviin osiin: ``<header>``, ``<main>`` ja ``<footer>``. Header sisältää yleensä sivuston nimen, mahdollisesti logon sekä mahdollisesti myös esimerkiksi hakukentän. ``<header>``in alapuolella tai mahdollisesti sen sisällä on hyvin usein ``<nav>`` eli navigaatiopalkki, jossa on linkit sivuston muille sivuille. ``<main>``in sisällä on sivuston varsinainen sisältö. ``<footer>`` sisältää muun muassa tekijänoikeudet ja yhteystietoja. Lisäksi sisältö kannattaa jakaa erilaisiin osioihin kuten ``<section>``, ``<article>`` ja ``<aside>``. Nämä sijoitetaan ``<main>``in sisälle. ``<section>`` on selkeä yksittäinen osuus sivustoa, kuten vaikka esittelyteksti pääotsikon alla. ``<article>`` on itsenäinen osakokonaisuus, kuten artikkeliteksti, blogiteksti tai vaikka tuote. ``<aside`` sijoittuu sivulla sivuun ja sisältää yleensä vähemmän merkityksellistä sisältöä kuten mainoksia. Tageja voidaan laittaa sisäkkäin hyvinkin paljon, jos se on tarpeen. Hyvä esimerkki eri osien käytöstä on [ w3schools.com ](https://www.w3schools.com/html/default.asp)<base target="_blank">.
 
+Voit myös katsoa [opettajan esimerkkisivun](https://treduan.github.io/structure_example/)<base target="_blank"> perusrakennetta.
+
 ```HTML 
 <body>
     <header>
