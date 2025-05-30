@@ -31,7 +31,7 @@ Ohjelmointi on jatkuvaa kokeilua ja kehittämistä. Gitin avulla voit esimerkiks
 
 3. Kutsu opettaja osalliseksi repositoryyn kohdasta *settings -> manage access -> invite teams or people* 
 
-4. Tee tietokoneellesi *Tiedostot*-kansioon uusi kansio nimeltään *Perehdytys*. Avaa sitten kyseiseen paikkaan *Git Bash* (valitse ensin kansio ja oikealla hiiren napilla saat vaihtoehdon *Avaa päätteessä*). Varmista, että avautuvassa ikkunassa tekstirivin viimeisenä on *perehdytys>*. Silloin olet oikeassa paikassa.
+4. Tee tietokoneellesi *Tiedostot*-kansioon uusi kansio nimeltään *Perehdytys*. Avaa sitten kyseiseen paikkaan *Git Bash* (valitse ensin kansio ja oikealla hiiren napilla saat vaihtoehdon *Avaa päätteessä*). Varmista, että avautuvassa ikkunassa tekstirivin viimeisenä on *Perehdytys>*. Silloin olet oikeassa paikassa.
 
 5. Luo komentorivillä uusi kansio nimeltään *markdown* kirjoittamalla ``mkdir markdown``. Siirry sitten kyseisen kansion sisään kirjoittamalla ``cd markdown``.
 
