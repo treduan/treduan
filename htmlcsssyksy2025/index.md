@@ -2,6 +2,9 @@
 
 ## Markdown ja Windows
 
+- [Markdown](./markdown/index.md)
+- [Gitin perusteet](./gitinperusteet/index.md)
+
 ## HTML-teoria
 
 - [HTML:n perusteet](./htmlperusteet/index.md)
@@ -25,8 +28,9 @@
 
 ## Harjoitukset
 
+[Markdown-harjoitus](./markdownharjoitus/index.md)
 1. [HTML-harjoitus](./htmlharjoitus1/index.md)
 2. [Verkkokaupan etusivu](./harjoitus2/index.md)
-3. [Verkkokaupan tuotesivut ja palautelomake]
-4. [Kuvagalleria animaatioilla]
-5. [Portfoliosivu]
+3. [Verkkokaupan tuotesivut ja palautelomake](./harjoitus3/index.md)
+4. [Kuvagalleria animaatioilla](./harjoitus4/index.md)
+5. [Portfoliosivu](./harjoitus5/index.md)
