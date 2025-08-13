@@ -53,4 +53,4 @@ HTML-dokumentin ``<body>`` kannattaa jakaa heti alkuun vähintään seuraaviin o
 # Demotehtävä
 
 1. Avaa aiempi demo1.html-sivusi.
-2. Lisää siihen semanttisesti järkevät osuudet eli tässä kohtaa ``<header>``, johon jää oma nimesi, ``<main>``, johon tulee ``<section>``, jonka sisään tulee``<p>``-teksti. Lisää myös ``<footer>``, johon voit kirjoittaa esimerkiksi "Copyright < oma nimi > 2025".
+2. Lisää siihen semanttisesti järkevät osuudet eli tässä kohtaa ``<header>``, johon jää oma nimesi otsikkona, ``<main>``, johon tulee ``<section>``, jonka sisään tulee ``<h2`` alaotsikko ja ``<p>``-teksti. Lisää myös ``<footer>``, johon voit kirjoittaa esimerkiksi "Copyright < oma nimi > 2025".
