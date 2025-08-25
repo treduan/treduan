@@ -1,4 +1,4 @@
-# Harjoituksia CSS:n käytössä
+# Perusharjoituksia CSS:n käytössä
 
 ## Harjoitus 1
 
