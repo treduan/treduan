@@ -26,6 +26,8 @@
 - [Navigaatio](./navigointi/index.md)
 - [Animaatiot](./animaatiot/index.md)
 
+- [CSS-valintaharjoituksia](./valintaharjoitukset/index.md)
+
 ## Harjoitukset
 
 [Markdown-harjoitus](./markdownharjoitus/index.md)
