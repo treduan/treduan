@@ -183,15 +183,15 @@ Flexboxin käyttöä voi treenata myös hauskalla tavalla pelaten [Flexbox Frogg
     <body>
         <header>
             <h1>Tervetuloa kauppaamme!</h1>
-            <nav>
-                <ul>
-                    <li>Etusivu</li>
-                    <li>Tuotteet</li>
-                    <li>Laatutakuu</li>
-                    <li>Yhteystiedot</li>
-                </ul>
-            </nav>
-        </header>
+        </header>            
+        <nav>
+            <ul>
+                <li>Etusivu</li>
+                <li>Tuotteet</li>
+                <li>Laatutakuu</li>
+                <li>Yhteystiedot</li>
+            </ul>
+        </nav>
         <main>
             <h2>Tässä ovat tuotteemme</h2>
         <div class="tuotteet">
