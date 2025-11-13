@@ -11,7 +11,6 @@ Opettajan rautalankamallin portfolio löytyy myös osoitteesta [https://treduan.
 
 Luo siis itsellesi oma portfoliosivu, jolla esittelet itsesi ja jolle voit alkaa lisätä esittelyyn omia ohjelmointiin liittyviä projektejasi.
 
-Portfoliosivun ulkoasun tekemiseen pitää käyttää ainakin osittain Bootstrapia.
 
 ## Reseptisivu
 
