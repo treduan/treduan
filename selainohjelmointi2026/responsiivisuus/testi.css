@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.taustakuva {
+    background-image: url("noble-castle-wide.jpg");
+    height: 400px;
+}
+@media screen and (max-width: 800px) {
+    .taustakuva {
+    background-image: url("noble-castle-small.jpg");
+}
+}
