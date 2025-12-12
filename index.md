@@ -2,7 +2,7 @@
 
 ## Kurssit 2025-2026
 
-[ Selainohjelmointi ](./selainohjelmointi)
+[ Selainohjelmointi ](./selainohjelmointi2026/index.md)
 
 [ HTML & CSS ](./htmlcsssyksy2025/)
 
