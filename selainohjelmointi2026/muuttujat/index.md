@@ -75,5 +75,55 @@ Testataan muuttujien luomista ja niiden tyyppejä. Jatketaan selaimen konsolin k
 1. Luo muuttuja *let name = "Oma nimi";*. Tulosta se kirjoittamalla *console.log(name);*. Vaihda muuttujan arvoa eli kirjoita *name = "jonkun muun nimi";*. Tulosta *name* uudelleen. Sen pitäisi olla muuttunut. Luo uudelleen *let name = "Oma nimi;*. Konsolin pitäisi sanoa: *Uncaught SyntaxError: Identifier 'name' has already been declared*. Tämä kertoo, että JavaScript ei anna sinun tehdä kahta samannimistä muuttujaa.
 2. Luo muuttuja *const dogName = "Musti";*. Tulosta *dogName* konsoliin. Yritä vaihtaa *dogName*n arvoa *dogName = "Rekku";*. Konsolin pitäisi sanoa *Uncaught TypeError: Assignment to constant variable.* Tämä kertoo, että *const*-muuttujaa ei voi muuttaa sen jälkeen, kun sille on kerran annettu arvo.
 3. Tarkista muuttujien *name* ja *dogName* tyyppi. Sen voi tehdä kirjoittamalla konsoliin *typeof(name);* ja *typeof(dogName);*. Sen pitäisi olla 'string' molemmissa tapauksissa.
-4. Luo muuttuja ilman arvoa eli *let catName;*. Yritä tulostaa *catName* konsoliin. Konsolin pitäisi ilmoittaa *undefined*, sillä *catName*lle ei ole missään vaiheessa annettu arvoa. Voit varmistaa asian vielä seuraavasti: *console.log("Muuttujan tyyppi on: " + typeof(catName));*. Konsolissa pitäisi lukea *Muuttujan tyyppi on :undefined*. Nyt voit antaa *catName*lle haluamasi arvon. Kokeile uudelleen *console.log("Muuttujan tyyppi on : " + typeof(catName));*. Jos kaikki meni oikein, konsolissa pitäisi lukea *Muuttujan tyyppi on: string*.
+4. Luo muuttuja ilman arvoa eli *let catName;*. Yritä tulostaa *catName* konsoliin. Konsolin pitäisi ilmoittaa *undefined*, sillä *catName*lle ei ole missään vaiheessa annettu arvoa. Voit varmistaa asian vielä seuraavasti: *console.log("Muuttujan tyyppi on: " + typeof(catName));*. Konsolissa pitäisi lukea *Muuttujan tyyppi on :undefined*. Nyt voit antaa *catName*lle haluamasi nimen. Kokeile uudelleen *console.log("Muuttujan tyyppi on : " + typeof(catName));*. Jos kaikki meni oikein, konsolissa pitäisi lukea *Muuttujan tyyppi on: string*.
 
+## Kommentit
+
+JavaScriptissä kommentit kirjoitetaan kahdella kauttaviivalla. Niitä voi lisätä joko omalle rivilleen tai koodin perään
+
+````JS
+// Define variable
+let webSite = "w3schools.com"; //ei tarvi https:ä
+````
+
+## Puolipisteet JavaScriptissä
+
+JavaScriptissä jokainen käsky (lause) päättyy yleensä puolipisteeseen (;).
+Puolipiste kertoo selaimelle, missä yksi käsky loppuu ja seuraava alkaa.
+````js
+let name = "Anna";
+let age = 18;
+let isStudent = true;
+````
+
+### Miksi puolipisteitä käytetään?
+
+JavaScript osaa joskus lisätä puolipisteet itse, mutta ei aina oikein.
+Tämä voi aiheuttaa virheitä, joita on vaikea ymmärtää – etenkin aloittelijalle.
+
+Siksi tässä kurssissa noudatetaan sääntöä:
+
+Kirjoita puolipiste aina jokaisen käskyn loppuun.
+
+Näin:
+
+- koodi on selkeämpää
+- virheitä syntyy vähemmän
+- opit hyvän ja yleisesti käytetyn käytännön
+
+### Puolipiste ja kommentit
+
+Puolipiste kirjoitetaan vain käskyjen loppuun, ei kommenttien.
+````js
+// Tämä on kommentti
+let score = 10; // Puolipiste kuuluu käskyn loppuun
+````
+
+Esimerkkejä oikeasta tavasta
+````js
+let city = "Helsinki";
+let temperature = 12.5;
+let isRaining = false;
+
+// Tulostetaan tietoa konsoliin myöhemmin
+````

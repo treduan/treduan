@@ -60,6 +60,7 @@ let combination = sum(6, 15);
 
 ## Demotehtävä 1
 
-1. Kirjoita funktio nimeltään *print*, joka ottaa vastaan yhden parametrin, joka voi olla nimeltään *text*. Funktion pitää tulostaa sille annettu teksti. Kutsu funktiota ja anna sille merkkijono.
-2. Kirjoita funktio nimeltään *count*. Se ottaa vastaan kaksi parametriä, jotka ovat numeroita. Se kertoo ensimmäisen numeron kolmella ja miinustaa siitä jälkimmäisen numeron. Tulosta funktio konsoliin.
-3. Yhdistä funktioon ehtolauseke (if). Tee fuktio, joka saa kaksi numeroa parametrinä. Se vertailee niitä ja palauttaa niistä suuremman.
+1. Nyt alamme käyttää selaimen konsolin sijaan Visual Studio Codea. Luo Testit-kansioon tiedosto nimeltään *functiontest.js*.
+2. Kirjoita funktio nimeltään *print*, joka ottaa vastaan yhden parametrin, joka voi olla nimeltään *text*. Funktion pitää tulostaa sille annettu teksti. Kutsu funktiota ja anna sille merkkijono.
+3. Jotta saat testattua funktion toimintaa, on avattava konsoli. Lisäksi se on avattava oikeassa kansiossa. Jos kansio on väärä, ei konsoli löydä tiedostoa. Visual Studio Coden kanssa helpointa on klikata hiiren oikealla napilla vasemmasta laidasta sitä kansion nimeä, jonka sisällä tiedosto sijaitsee. Sieltä avautuu valikko, josta voi valita *Open in Integrated Terminal*. JavaScript-tiedosto voidaan ajaa kirjoittamalla ensin *node* ja sen jälkeen tiedoston nimi. Eli tämän tiedoston sisällön saa ajettua kirjoittamalla: *node functiontest.js*.
+4. Kirjoita funktio nimeltään *count*. Se ottaa vastaan kaksi parametriä, jotka ovat numeroita. Se kertoo ensimmäisen numeron kolmella ja miinustaa siitä jälkimmäisen numeron. Tulosta funktio konsoliin.
