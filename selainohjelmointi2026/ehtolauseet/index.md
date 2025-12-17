@@ -24,20 +24,21 @@ Jos ehtoja on useampia, täytyy käyttää lisää operaattoreita.
 
 ## Demotehtävä 1
 
-1. Testaa vertailuoperaatioita. Luo muuttujat *date* ja *date2* ja anna niille jokin eri numeroarvo. Kokeile ensin, ovatko ne samankokoiset konsolissa eli *console.log(date == date2);*. Sitten kokeile vertailla niitä vertailumerkeillä.
-2. Luo muuttuja *date3*, joka on merkkijono, jonka sisällä on numero ja joka on sama kuin *date2*. Testaa, ovatko ne samoja, kun käytät tuplayhtäläisyysmerkkejä. Sitten testaa, ovatko ne samoja, kun käytät kolmoisyhtäläisyysmerkkejä. 
-
+1. Testaa vertailuoperaatioita. Luo muuttujat *time* ja *time2* ja anna niille jokin eri numeroarvo. Kokeile ensin, ovatko ne samankokoiset konsolissa eli *console.log(time == time2);*. Sitten kokeile vertailla niitä vertailumerkeillä.
+2. Luo muuttuja *time3*, joka on merkkijono, jonka sisällä on numero ja joka on sama kuin *time2*. Testaa, ovatko ne samoja, kun käytät tuplayhtäläisyysmerkkejä. Sitten testaa, ovatko ne samoja, kun käytät kolmoisyhtäläisyysmerkkejä. 
+___
 
 JavaScriptissä on muutamia erilaisia ehtolausetyyppejä. Tässä käymme niistä läpi kaksi.
 
-## If /else
+## If / else
 
 JavaScriptissä on kaksi tapaa tehdä ehtolause. Jos ehto on lyhyt sen voi kirjoittaa näin:
 
 ```js
+let pet;
 let a = 10;
 let b = 9;
-a > b ? "kissa" : "koira";
+a > b ? pet = "cat" : pet = "dog";
 ```
 
 Tässä alustettiin ensin muuttujat a ja b. Jos vertailu a > b saa arvon *true*, palautuu "kissa" muuten "koira.
@@ -45,15 +46,106 @@ Tässä alustettiin ensin muuttujat a ja b. Jos vertailu a > b saa arvon *true*,
 Jos tosihaarassa pitää suorittaa enemmän koodia, on parempi käytää if-else-rakennetta (aaltosulkujen sisään voi laittaa useita rivejä koodia ns. koodilohko):
 ```js
 if(a > b){
-  "kissa"
+  pet = "cat"
   } else {
-    "koira"
+    pet = "dog"
     }
 ```
 
 ## Demoharjoitus 2
 
-1. Tee ehtolauseke käyttäen aiempia *date*-muuttujia. Jos *date* on suurempi kuin *date2*, tulosta konsoliin *Bigger*. Jos se on pienempi. tulosta konsoliin *Smaller*.
+1. Tee ehtolauseke käyttäen aiempia *time*-muuttujia. Jos *time* on suurempi kuin *time2*, tulosta konsoliin *Bigger*. Jos se on pienempi. tulosta konsoliin *Smaller*.
+
+## else if
+
+JavaScriptissä on myös *else if*, jolla voidaan ketjuttaa eri ehtoja. Myös pelkkiä if-lausekkeita voi laittaa ketjuun, mutta ne toimivat eri tavalla.
+
+### 1. Useat erilliset if-lauseet
+
+Kun kirjoitat useita if-lauseita peräkkäin, kaikki ehdot tarkistetaan erikseen.
+````js
+let temperature = 30;
+
+if (temperature > 25) {
+  console.log("On lämmin");
+}
+
+if (temperature > 15) {
+  console.log("On melko lämmin");
+}
+````
+Molemmat ehdot ovat totta, joten  molemmat koodilohkot suoritetaan
+
+Käytä tätä, kun:
+
+- Useampi ehto voi olla samaan aikaan totta
+
+- Jokainen ehto tekee oman, erillisen asiansa
+
+````js
+Esimerkki:
+
+let age = 70;
+
+if (age >= 18) {
+  console.log("Täysi-ikäinen");
+}
+
+if (age >= 65) {
+  console.log("Oikeus eläkeläisalennukseen");
+}
+````
+### 2. if – else if – else -ketju
+
+else if -ketjussa ehdot tarkistetaan järjestyksessä, ja kun yksi ehto on tosi, muita ei enää tarkisteta.
+
+````js
+let temperature = 30;
+
+if (temperature > 25) {
+  console.log("On lämmin");
+} else if (temperature > 15) {
+  console.log("On melko lämmin");
+} else {
+  console.log("On kylmä");
+}
+````
+
+Vain yksi viesti tulostuu
+
+Ensimmäinen tosi ehto “voittaa”
+
+Käytä tätä, kun:
+
+- Vaihtoehdot ovat toisiaan poissulkevia
+
+- Haluat valita yhden lopputuloksen
+
+Esimerkki:
+
+````js
+let score = 85;
+
+if (score >= 90) {
+  console.log("Kiitettävä");
+} else if (score >= 70) {
+  console.log("Hyvä");
+} else {
+  console.log("Tarvitsee harjoitusta");
+}
+````
+
+Yleinen nyrkkisääntö
+
+Jos useampi ehto voi olla totta → käytä useita if-lauseita
+Jos vain yksi vaihtoehto saa toteutua → käytä else if -ketjua
+
+## Demoharjoitus 3
+
+1. Luo uusi JavaScript-tiedosto nimeltään *agetest.js*.
+2. Luo funktio nimeltään *checkAge*, joka ottaa vastaan yhden numeron, jota voi kutsua nimellä *age*.
+3. Tee tarkistukset, jotka perustuvat ikään. Jos ikä on vähintään 7, tulosta "Kouluikäinen". Jos ikä on vähintään 18, tulosta täysi-ikäinen. Jos ikä on vähintään 65, tulosta "Eläkeikäinen". Tee tämä ensin pelkillä if-lausekkeilla. Testaa funktiota antamalla sille numerot 5, 15, 25 ja 77. 
+4. Muokkaa funktiota käyttämään else if -rakennetta.
 
 ## Switch case
 
