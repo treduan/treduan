@@ -21,4 +21,8 @@ Tällä kurssilla opiskelemme lisää verkkosivujen tekemisen periaatteita ja al
 
 ## JavaScript
 
-- []
+- [Johdanto](./johdatus/index.md)
+- [Muuttujat ja tyypit](./muuttujat/index.md)
+- [Matemaattiset operaatiot](./matemaattiset/index.md)
+- [Funktiot](./funktiot/index.md)
+- [Ehtolauseet](./ehtolauseet/index.md)
