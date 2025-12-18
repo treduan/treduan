@@ -150,7 +150,7 @@ Jos vain yksi vaihtoehto saa toteutua → käytä else if -ketjua
 ## Switch case
 
 
-*switch*-rakenteen avulla voidaan valita suoritettava koodilohko. Oletuksena on, että tarjolla on joukko vaihtoehtoja, joiden arvot ovat tiedossa.
+*switch*-rakenteen avulla voidaan valita suoritettava koodilohko. Oletuksena on, että tarjolla on joukko vaihtoehtoja, joiden arvot ovat tiedossa. Default-vaihtoehto lopussa voi joko olla viimeinen mahdollinen vaihtoehto tai joissakin tapauksissa esimerkiksi virheilmoitus, jos annettu arvo ei vastaa mitään vaihtoehdoista.
 
 ```js
 switch(language) {
@@ -164,3 +164,25 @@ switch(language) {
     console.log("Hello!")
 }
 ```
+
+## Demoharjoitus 4
+
+1. Luo uusi JavaScript-tiedosto nimeltään *grades.js*.
+2. Luo funktio nimeltään grades, joka ottaa vastaan yhden parametrin.
+3. Luo switch-rakenne, joka tulostaa parametrin perusteella arvion. 5="Arvosanasi on erinomainen", 4="Arvosanasi on kiitettävä", 3="Arvosanasi on hyvä", 2="Arvosanasi on kohtalainen", 1="Arvosanasi on välttävä" ja mikä tahansa muu eli default="Et ole läpäissyt koetta."
+4. Kutsu funktiota arvoilla `1`, `-3`, `5`, `88` ja `"Heippa"`.
+
+## Demoharjoitus 5
+
+Parannetaan edellistä harjoitusta eli lisätään siihen tarkistuksia erilaisten syötteiden varalle.
+ 
+1. Tee funktioon `if – else if – else` -rakenne.
+2. `if`: tarkista, onko annettu parametri numero.  
+   Jos ei ole, tulosta konsoliin:  
+   **"Arvosanan täytyy olla numero."**  
+   *(Vihje: voit käyttää `typeof`-operaattoria.)*
+3. `else if`: tarkista, että arvosana on välillä 0–5.  
+   Jos arvo on pienempi kuin 0 tai suurempi kuin 5, tulosta:  
+   **"Arvosanan pitää olla välillä 1-5."**
+4. `else`: suorita `switch`-rakenne, joka tulostaa arvosanan sanallisen kuvauksen.
+5. Kutsu funktiota arvoilla `1`, `-3`, `5`, `88` ja `"Heippa"`.

@@ -64,3 +64,57 @@ let combination = sum(6, 15);
 2. Kirjoita funktio nimeltään *print*, joka ottaa vastaan yhden parametrin, joka voi olla nimeltään *text*. Funktion pitää tulostaa sille annettu teksti. Kutsu funktiota ja anna sille merkkijono.
 3. Jotta saat testattua funktion toimintaa, on avattava konsoli. Lisäksi se on avattava oikeassa kansiossa. Jos kansio on väärä, ei konsoli löydä tiedostoa. Visual Studio Coden kanssa helpointa on klikata hiiren oikealla napilla vasemmasta laidasta sitä kansion nimeä, jonka sisällä tiedosto sijaitsee. Sieltä avautuu valikko, josta voi valita *Open in Integrated Terminal*. JavaScript-tiedosto voidaan ajaa kirjoittamalla ensin *node* ja sen jälkeen tiedoston nimi. Eli tämän tiedoston sisällön saa ajettua kirjoittamalla: *node functiontest.js*.
 4. Kirjoita funktio nimeltään *count*. Se ottaa vastaan kaksi parametriä, jotka ovat numeroita. Se kertoo ensimmäisen numeron kolmella ja miinustaa siitä jälkimmäisen numeron ja palauttaa lopputuloksen. Tulosta funktio konsoliin.
+
+## Koodilohkot ja aaltosulkeet JavaScriptissä
+
+### Koodilohko
+
+Koodilohko on joukko käskyjä, jotka kuuluvat yhteen ja suoritetaan yhdessä tietyssä tilanteessa.
+
+Esimerkiksi:
+- if-lauseessa: mitä tehdään, jos ehto on tosi
+- funktiossa: mitä funktio tekee, kun sitä kutsutaan
+- silmukassa: mitä toistetaan
+
+### Aaltosulkeet { }
+
+JavaScriptissä koodilohkot merkitään aaltosulkeilla.
+
+````js
+{
+  //Tämä on koodilohko
+}
+````
+
+Kaikki yksien aaltosulkeiden sisällä oleva koodi kuuluu samaan lohkoon. Lohkon sisällä voi olla myös uusia sisälohkoja.
+
+Esimerkki
+
+````js
+const greet = (name) => {
+  console.log("Hello " + name + "!");
+  console.log("Nice to see you!");
+}
+````
+
+### Aaltosulkeet ja sisennykset
+
+Pythonissa sisennys määrittää koodilohkon ja ilman oikeaoppisia sisennyksiä koodi ei toimi.
+
+JavaScriptissä koodilohko määritetään aaltosulkeilla.
+
+Sisennys on silti tärkeä luettavuuden vuoksi, vaikka selain ei sitä vaadi. Koodi siis toimii, vaikka sisennykset olisi tehty väärin. Opettele kuitenkin tekemään sisennykset oikein, jotta koodisi näyttää ammattimaiselta ja siistiltä.
+
+Hyvä tapa:
+
+````js
+if (score > 50) {
+  console.log("Passed");
+}
+````
+
+Toimiva, mutta ei suositeltu:
+
+````js
+if (score > 50) { console.log("Passed"); }
+``
