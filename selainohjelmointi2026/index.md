@@ -10,12 +10,15 @@ Tällä kurssilla opiskelemme lisää verkkosivujen tekemisen periaatteita ja al
 - [Saavutettavuus](./saavutettavuus/index.md)<base target="_blank">
 - [Ulkoasusuunnitelma](./ulkoasusuunnitelma/index.md)<base target="_blank">
 
-- [Taipale-projekti](./taipale/index.md)<base target="_blank">
+- [Taipale-projekti 1](./taipale1/index.md)<base target="_blank">
 
 ### CSS
 - [Fontit ja favicon](./fontitfavicon/index.md)<base target="_blank">
 - [Grid](./grid/index.md)<base target="_blank">
 - [Responsiivisuus](./responsiivisuus/index.md)<base target="_blank">
+
+- [Taipale-projekti 2](./taipale2/index.md)<base target="_blank">
+
 - [Bootstrap](./bootstrap/index.md)<base target="_blank">
 
 
