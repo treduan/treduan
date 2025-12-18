@@ -18,6 +18,7 @@ Tällä kurssilla opiskelemme lisää verkkosivujen tekemisen periaatteita ja al
 - [Responsiivisuus](./responsiivisuus/index.md)<base target="_blank">
 
 - [Taipale-projekti 2](./taipale2/index.md)<base target="_blank">
+- [Julkaisu GitHub Pagesin kautta](./julkaisu/index.md)<base target="_blank">
 
 - [Bootstrap](./bootstrap/index.md)<base target="_blank">
 
