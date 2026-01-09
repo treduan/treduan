@@ -186,3 +186,49 @@ Parannetaan edellistä harjoitusta eli lisätään siihen tarkistuksia erilaiste
    **"Arvosanan pitää olla välillä 1-5."**
 4. `else`: suorita `switch`-rakenne, joka tulostaa arvosanan sanallisen kuvauksen.
 5. Kutsu funktiota arvoilla `1`, `-3`, `5`, `88` ja `"Heippa"`.
+
+
+## Boolean operaattorit: and, or ja not
+
+Kun kirjoitetaan monimutkaisempia ehtolauseita, on usein tarve ottaa huomioon useampi ehto kerrallaan. Se onnistuu loogisten operaattoreiden && (*and*), \|\| (*or*) ja ! (*not*) avulla.
+
+Jos molempien ehtojen vaaditaan olevan totta, käytetään &&-operaattoria, jos riittää että yksikin ehdoista toteutuu käytetään \|\|-operaattoria. Totuusarvon voi käytää toiseksi käyttämällä !-operaattoria. Kaikki seuraavat lausekkeet saavat totuusarvokseen *true*:
+
+```js
+true && true
+true || false
+!false
+```
+
+````js
+const canEnterPool(age, canSwim, withAdult) {
+  if ((age >= 12 && canSwim) || withAdult) {
+    console.log("Saat mennä uimaan.");
+  } else {
+    console.log("Et saa mennä uimaan.");
+  }
+}
+````
+
+## Demoharjoitus 6
+
+1. Luo funktio nimeltä *login*, joka ottaa kolme parametria:
+- username (merkkijono)
+- password (merkkijono)
+- isAdmin (boolean)
+
+2. Käytä ehtolauseessa loogisia operaattoreita. Käyttäjä saa kirjautua sisään, jos:
+- käyttäjänimi on "admin" JA salasana on "porkkana"
+TAI
+- käyttäjä on ylläpitäjä (isAdmin === true)
+
+3. Jos käyttäjän kirjautuminen onnistuu, tulosta ruudulle *Tervetuloa!*, mutta jos hän ei voi, tulosta *Ei pääsyä. Tarkista käyttäjätunnus ja salasana*.
+
+4. Testaa funktiota seuraavilla syötteillä:
+
+````js
+login("admin", "porkkana", false);
+login("user", "porkkana", false);
+login("guest", "test", true);
+login("admin", "wrong", false);
+````
