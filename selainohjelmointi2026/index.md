@@ -21,6 +21,7 @@ Tällä kurssilla opiskelemme lisää verkkosivujen tekemisen periaatteita ja al
 - [Julkaisu GitHub Pagesin kautta](./julkaisu/index.md)<base target="_blank">
 
 - [Bootstrap](./bootstrap/index.md)<base target="_blank">
+- [Microcon-sivu (Bootstrap-harjoitus)](./microcon/index.md)<base target="_blank">
 
 
 ## JavaScript
@@ -30,3 +31,5 @@ Tällä kurssilla opiskelemme lisää verkkosivujen tekemisen periaatteita ja al
 - [Matemaattiset operaatiot](./matemaattiset/index.md)
 - [Funktiot](./funktiot/index.md)
 - [Ehtolauseet](./ehtolauseet/index.md)
+
+## JavaScript selaimessa
