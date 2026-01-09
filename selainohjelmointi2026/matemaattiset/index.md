@@ -39,11 +39,11 @@ Koska JavaScript on dynaamisesti tyypitetty ohjelmointikieli, muuttujan tyyppiä
 
 Jos käyttäjä haluaa vähentää numeron merkkijonosta, se onnistuu, mikäli merkkijono sisältää ainoastaan numeroita. 
 
-![merkkijonosta miinustetaan numero](../kuvat/stringmiinusnumero.PNG)
+![merkkijonosta miinustetaan numero](stringmiinusnumero.PNG)
 
 Kuitenkin jos merkkijonoon, jossa on vain numeroita, yrittää lisätä numeron, tapahtuukin jotain muuta. 
 
-![merkkijonoon lisätään numero](../kuvat/stringplusnumero.PNG)
+![merkkijonoon lisätään numero](stringplusnumero.PNG)
 
 Tässä tapauksessa JavaScript kohtelee molempia ikään kuin ne olisivat merkkijonoja. 
 
