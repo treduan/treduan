@@ -124,3 +124,4 @@ Pienellä ruudulla taas voi olla järkevämpää valita kuvasta vain tärkein el
 2. Lataa Teamsin kansiosta kolme kuvaa, joissa lukee *noble-castle*. 
 3. Aseta kuvat taustakuvaksi ``<header>``iin niin, että leveällä näytöllä käytetään leveää kuvaa ja kapealla kapeaa kuvaa. Kirjoita sen päälle jokin otsikko.
 4. Lisää kuvan alle navigointipalkki, jossa on vähintään neljä kuvitteellista linkkiä. Asettele se niin, että leveällä näytöllä linkit ovat vierekkäin ja kapealla näytöllä ne ovat allekkain. Helpointa tämä on käyttämällä flexistä ensin flex-direction: row; ja sitten flex-direction: column;
+5. Lisää navigointipalkin alle div, jossa on tekstiä. Anna diville jokin taustaväri. Aseta sen leveydeksi 70 %, kun näyttö on leveä, ja 100 %, kun näyttö on kapea.
