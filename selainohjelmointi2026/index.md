@@ -31,5 +31,7 @@ Tällä kurssilla opiskelemme lisää verkkosivujen tekemisen periaatteita ja al
 - [Matemaattiset operaatiot](./matemaattiset/index.md)
 - [Funktiot](./funktiot/index.md)
 - [Ehtolauseet](./ehtolauseet/index.md)
+- [Merkkijonot](./merkkijonot/index.md)
+- [Taulukot](./taulukot/index.md)
 
 ## JavaScript selaimessa
