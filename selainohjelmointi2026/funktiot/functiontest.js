@@ -8,3 +8,5 @@ let info = `Name: Anna
 City: Tampere`;
 
 console.log(info);
+let number = Math.floor(Math.random() * 10 + 1);
+console.log(number);
