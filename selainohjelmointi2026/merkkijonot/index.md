@@ -49,6 +49,22 @@ console.log(word[4]); // a
 ````
 Tästä syystä merkkijonon viimeinen merkki ei ole ``word[word.length]`` vaan ``word[word.length -1]``.
 
+## Merkkijonojen yhdistäminen
+
+Merkkijonoja voi yhdistää plusmerkillä.
+
+````js
+let name = "Anna";
+let message = "Hei " + name + !;
+````
+
+Kuitenkin nykyään koko ajan suositummaksi tulee takakenoviivojen käyttö.
+
+````js
+let name = "Anna";
+let message = `Hei ${name}!`;
+````
+
 ## Yleisimpiä merkkijonometodeja
 
 JavaScriptiin on sisäänrakennettuna useita metodeja, joilla merkkijonoja voi käsitellä helposti.
@@ -81,4 +97,49 @@ Tarkistaa, löytyykö merkkijono toisesta merkkijonosta. Palauttaa totuusarvon (
 let sentence = "JavaScript on kivaa";
 
 console.log(sentence.includes("kivaa")); // true
+````
+
+### indexOf()
+
+Palauttaa merkin tai merkkien ensimmäisen indeksin.
+
+````js
+let text = "kissa";
+
+console.log(text.indexOf("s")); // 2
+`````
+
+Jos merkkiä ei löydy:
+
+````js
+console.log(text.indexOf("x")); // -1
+````
+
+### slice()
+
+Ottaa osan merkkijonosta.
+
+````js
+let text = "JavaScript";
+
+console.log(text.slice(0, 4)); // Java
+````
+
+## Demoharjoitus
+1. Luo muuttuja, jossa on käyttäjän nimi. Tulosta se konsoliin isoilla kirjaimilla.
+2. Alla olevassa muuttujassa on ylimääräisiä välilyöntejä alussa ja lopussa. Poista ne ja tulosta lopputulos konsoliin.
+````js
+let text = "   JavaScript on hauskaa   ";
+````
+3. Tarkista, sisältääkö merkkijono sanan "koodi".
+````js
+let sentence = "Rakastan kirjoittaa koodia JavaScriptillä";
+````
+4. Tulosta merkkijonon ensimmäinen ja viimeinen merkki.
+````js
+let word = "ohjelmointi";
+````
+5. Tulosta sanasta "JavaScript" vain osa "Script".
+````js
+let language = "JavaScript";
 ````
