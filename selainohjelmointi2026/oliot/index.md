@@ -81,11 +81,11 @@ const student = {
 
 student.printInfo();
 ````
-Tässä tapauksessa: *this* viittaa student-olioon ja *this.name* tarkoittaa samaa kuin *student.name*.
+Tässä tapauksessa: *this* viittaa student-olioon ja *this.name* tarkoittaa samaa kuin *student.name*. Muissa yhteyksissä *this* voi viitata myös muihin asioihin.
 
 ## Demotehtävä
 
-1. Luo olio lemmikkieläimestä. Anna sille nimi, laji, rotu ja ikä. Lisää sille myös taulukko suosikkileluista. Lisää vielä funktio, jolla kyseinen eläin ääntelee (esimerkiksi kissan kohdalla konsoliin tulostetaan "Miau").
+1. Luo olio lemmikkieläimestä. Anna sille nimi, laji, rotu ja ikä. Lisää sille myös taulukko suosikkileluista. Lisää vielä funktio, jolla kyseinen eläin ääntelee (esimerkiksi kissan kohdalla konsoliin tulostetaan "*nimi*-niminen *laji* sanoo miau.").
 2. Tulosta erikseen lemmikin nimi ja laji.
 3. Tulosta lemmikin suosikkilelut.
 4. Tulosta lemmikin ääntely kutsumalla sen funktiota.

@@ -35,5 +35,7 @@ Tällä kurssilla opiskelemme lisää verkkosivujen tekemisen periaatteita ja al
 - [Merkkijonot](./merkkijonot/index.md)
 - [Math-kirjasto](./math/index.md)
 - [Taulukot](./taulukot/index.md)
+- [Kaksiulotteiset taulukot](./kaksiulotteiset/index.md)
+- [Oliot](./oliot/index.md)
 
 ## JavaScript selaimessa
