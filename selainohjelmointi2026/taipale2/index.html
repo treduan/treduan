@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+p {
+    margin: 30px;
+}
+h1 {
+    text-align: center;
+}
+.navbar-horizontal {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar-horizontal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox asettaa elementit vaakasuoraan */
+    justify-content: center; /* Keskittää elementit */
+}
+
+.navbar-horizontal li {
+    margin: 0 15px;
+}
+
+.navbar-horizontal a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar-horizontal a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+footer {
+  background: #142929;
+  color: #d4b26a;
+  padding: 1rem;
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Taipaleen leirikeskus</h1>
+    </header>
+    <nav class="navbar-horizontal">
+        <ul>
+            <li><a>Etusivu</a></li>
+            <li><a>Toiminta</a></li>
+            <li><a>Majoitus</a></li>
+            <li><a>Yhteystiedot</a></li>
+            <li><a>Tilat</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Tervetuloa Taipaleen leirintäkeskukseen, Pirkanmaan sydämeen! Meillä voit majoittua kotoisissa mökeissä tai telttailla luonnonläheisesti. Meiltä löytyy myös paikkoja asuntoautoille tai -vaunuille sekä hotellihuoneita päärakennuksesta. Iltaisin kesäkaudella meillä soi usein musiikki salissamme. Talvikaudella tilojamme voi vuokrata monenlaisiin tapahtumiin kuten häihin tai syntymäpäiväjuhliin. Lähistöltä löytyy kiitettävä määrä luontopolkuja laavuineen, kuten myös paljon hyvää vesistöä uimista ja veneilyä varten. Kylpyläosastomme saunoineen lämmittää kovillakin pakkasilla.</p>
+    </main>
+    <footer>
+        <p>Copyright</p>
+    </footer>
+</body>
+</html>
