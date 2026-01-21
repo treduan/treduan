@@ -1,6 +1,6 @@
-# Oliot (objects) eli assosiatiiviset taulukot
+# Oliot (objects)
 
-Oliot ovat periaatteessa taulukoita (joissakin tapauksissa myös kaksiulotteisia taulukoita), joissa jokaiselle alkiolle on annettu jokin nimi. Niitä voi käyttää myös periyttävästi.
+Oliot ovat periaatteessa taulukoita (joissakin tapauksissa myös kaksiulotteisia taulukoita), joissa jokaiselle alkiolle on annettu jokin nimi (avain). Niitä voi käyttää myös periyttävästi.
 
 ## Tietotyyppien kertaus
 
@@ -12,7 +12,7 @@ Kun primitiivinen tyyppi määritellään, se tallentuu *stack*-muistiin. Se on 
 let name = "Anna";
 name = "Nenna";
 ````
-Kuitenkaan muistissa muuttamista ei tapahdu, vaan JavaScript luo uuden muuttujan samalla nimellä ja viittaa aina siihen uusimpaan. Vanhempi katoaa pienen ajan päästä muistista. Siksi primitiivisiä tietotyyppejä kutsutaan muuttumattomiksi (immutable), koska ne vaihdetaan eikä niitä voi muuttaa.
+Kuitenkaan muistissa muuttamista ei tapahdu, vaan JavaScript luo uuden arvon ja asettaa muuttujan viittaamaan siihen. Vanha arvo jää ilman viittausta ja poistuu myöhemmin muistista. Siksi primitiivisiä tietotyyppejä kutsutaan muuttumattomiksi (immutable), koska ne vaihdetaan eikä niitä voi muuttaa.
 
 Oliot (object) sen sijaan tallentuvat eri tavalla. Nopeaan stack-muistiin tallentuu vain referenssi eli viittaus siihen, mihin kohtaan heap-muistia olion varsinainen tieto on tallennettu. Heap on suurempi ja hieman hitaampi muisti kuin stack. Heap-muistiin kirjoitettua tietoa voidaan muuttaa eli sen viittaus pysyy samana, mutta sisältö muuttuu. 
 
@@ -32,7 +32,7 @@ const student = {name: "Mary Sue", birthYear: 2004, studentNumber: 23328799,
 courses: ["JavaScript", "HTML", "CSS", "Project Management"]};
 ````
 
-Oliolla voi olla myös omia funktioita ominaisuuksina. Tässä yksi esimerkki, jossa tulostetaan:
+Oliolla voi olla myös omia funktioita ominaisuuksina, jolloin niitä kutsutaan metodeiksi. Tässä yksi esimerkki, jossa tulostetaan:
 
 ````js
 const student = {name: "Mary Sue", birthYear: 2004, studentNumber: 23328799, 
@@ -42,22 +42,17 @@ printInformation: function() {
 }
 ````
 
-JavaScript-oliot saavat automaattisesti joitakin metodeja *perittynä* niiden prototyypiltä. Esim. jokaisen olion voi tulostaa merkkijonoksi sen JavaScript-olion *toString()*-metodin avulla:
-
-```js
-myObject.toString();
-```
-
 ## Ominaisuuksien valitseminen oliosta
 
-Toisin kuin tavallisessa taulukossa, olion ominaisuuksia ei valita indeksillä, vaan pisteellä. Jos haluamme tulostaa *student*-olioltamme vaikkapa syntymävuoden, se toimii seuraavalla koodilla: 
+Toisin kuin tavallisessa taulukossa, olion ominaisuuksia ei valita indeksillä ja hakasulkeilla, vaan pisteellä ja avaimella eli ominaisuuden nimellä. Jos haluamme tulostaa *student*-olioltamme vaikkapa syntymävuoden, se toimii seuraavalla koodilla: 
 
 ````js
 const student = {name: "Mary Sue", birthYear: 2004, studentNumber: 23328799};
 console.log(student.birthYear);
 ````
 
-Tätä samaa olemme jo käyttäneetkin esimerkiksi Math-kirjaston kanssa, kun olemme arponeet satunnaisia numeroita koodilla ja valinneet siis käyttää funktiota, joka on Math-oliolla:
+Tätä samaa olemme jo käyttäneetkin esimerkiksi Math-kirjaston kanssa, kun olemme arponeet satunnaisia numeroita koodilla ja valinneet siis käyttää metodia, joka on Math-oliolla:
+
 ````js
 let number = Math.random()*10;
 ````
@@ -70,9 +65,23 @@ courses: ["JavaScript", "HTML", "CSS", "Project Management"]};
 console.log(student.courses[1]);
 ````
 
-## This
+## *This* olion metodissa
 
-JavaScriptissä *this* viittaa aina olioon, mutta tilanteesta riippuen se olio voi olla eri. Jos sitä käytetään olion oman funktion sisällä, se viittaa siihen olioon, mikä on yleisin käyttötapa. Jos sitä käytetään yksinään, se viittaa globaaliin olioon eli eri tilanteissa mahdollisesti konsolin tyhjään olioon, samoin muissa kuin olion omissa funktioissa. Tämän olion tyyppi on kuitenkin *object*. On vielä muita mahdollisia tapauksia, mutta niistä keskustellaan, kun opiskelemme uusia asioita.
+Kun funktio on olion ominaisuus, sitä kutsutaan metodiksi.
+Metodin sisällä *this* viittaa siihen olioon, jonka metodia kutsutaan.
+
+````js
+const student = {
+  name: "Mary Sue",
+  birthYear: 2004,
+  printInfo: function() {
+    console.log(this.name);
+  }
+};
+
+student.printInfo();
+````
+Tässä tapauksessa: *this* viittaa student-olioon ja *this.name* tarkoittaa samaa kuin *student.name*.
 
 ## Demotehtävä
 

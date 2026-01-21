@@ -24,11 +24,13 @@ Taulukon alkion voi korvata sijoittamalla ko. indeksiin jotain muuta:
 myList[1] = "uusi arvo";
 ```
 
-Taulukon pituus voi vaihdella, siihen voi lisätä uusia alkoita *push*:in avulla (palauttaa uuden taulukon pituuden ja lisää uuden alkion taulukon loppuun). Alkioita voi poistaa taulukosta *pop*:in avulla (palauttaa taulukon viimeisen alkion, ja poistaa sen samalla taulukosta).
+Taulukon pituus voi vaihdella, siihen voi lisätä uusia alkoita *push*:in avulla (palauttaa uuden taulukon pituuden ja lisää uuden alkion taulukon loppuun). *unshift*:in avulla voidaan lisätä alkio taulukon alkuun. Alkioita voi poistaa taulukosta *pop*:in avulla (palauttaa taulukon viimeisen alkion, ja poistaa sen samalla taulukosta). *shift*:in avulla voidaan poistaa taulukon ensimmäinen alkio ja kaikkien indeksi laskee yhdellä (palauttaa poistettavan alkion arvon).
 
 ```js
 myList.push("butter");
+myList.unshift("milk");
 myList.pop();
+myList.shift();
 ```
 
 Taulukon pituuden saa selville *length*:in avulla.

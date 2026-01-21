@@ -39,4 +39,4 @@ Nämä tehtävät yhdistävät osia Johdanto, Muuttuja ja tyypit, Matemaattiset 
 - 5-6 matkustajaa, 2.9 €/km
 - 7-8 matkustajaa, 3.2 €/km
 8. Tulosta hinta konsoliin muodossa "Matkasi hinta on X €."
-9. Testaa funktiota seuraavilla arvoilla: 4 ja 19, "Kuusi" ja 12, 5 ja -11, -1 ja 22.5.
+9. Testaa funktiota seuraavilla arvoilla: 4 ja 19.3, "Kuusi" ja 12, 5 ja -11, -1 ja 22.5.
