@@ -9,7 +9,7 @@ Jos meillä on koodipalanen, jonka kanssa saatamme olettaa tulevan joitakin onge
 ````js
 const testFunction = (input) => {
     try {
-        cnsole.log("Printing " + input);
+        console.log("Printing " + input);
     }
     catch(error) {
         console.log("There is an error in printing input: " + error.message);
