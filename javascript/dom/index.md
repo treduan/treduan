@@ -18,28 +18,52 @@ Jos haluamme valita sivun ensimmäisen ``<p>``-elementin, voimme tehdä sen seur
 const paragraph = document.querySelector("p");
 ````
 
-Käytännössä siis kutsumme *document*-olion metodia nimeltään *querySelector* ja annamme sille parametrin *"p"*. Luomme siitä uuden muuttujan, jota voimme käsitellä. Voimme valita myös kaikki saman kriteerin täyttävät elementit *querySelectorAll*-metodilla, jolloin saamme taulukon elementeistä. Voimme käyttää valinnassa myös muita kriteerejä kuin elementin nimeä eli *class*ia tai *id*tä. *class*in eteen tulee piste ja *id*n eteen tulee # kuten CSS:äkin. Muuttujan luonnin jälkeen voimme muuttaa sitä esimerkiksi tyylillä: 
+Käytännössä siis kutsumme *document*-olion metodia nimeltään *querySelector* ja annamme sille parametrin *"p"*. Luomme siitä uuden muuttujan, jota voimme käsitellä. Voimme valita myös kaikki saman kriteerin täyttävät elementit *querySelectorAll*-metodilla, jolloin saamme taulukon elementeistä. Voimme käyttää valinnassa myös muita kriteerejä kuin elementin nimeä eli *class*ia tai *id*tä. *class*in eteen tulee piste ja *id*n eteen tulee # kuten CSS:äkin. Muuttujan luonnin jälkeen voimme muuttaa sitä. 
 
-````js
-paragraph.innerHTML = "A new text";
-````
-
-*paragraph*-muuttujan tietotyyppi on *object*, jolla on automaattisesti joukko metodeja, jotka se on perinyt (periytymisestä tulee myöhemmin lisää) sekä joukko ominaisuuksia. *innerHTML* on yksi niistä ominaisuuksista, joita on mahdollista muuttaa. Toisia usein käytettyjä on esimerkiksi *style*, jolla puolestaan on omia ominaisuuksiaan, sillä se käsittelee elementin tyyliä.
+*paragraph*-muuttujan tietotyyppi on *object*, jolla on automaattisesti joukko metodeja, jotka se on perinyt (periytymisestä tulee myöhemmin lisää) sekä joukko ominaisuuksia. Usein käytettyjä on esimerkiksi *style*, jolla puolestaan on omia ominaisuuksiaan, sillä se käsittelee elementin tyyliä. 
 
 ````js
 paragraph.style.display = "none";
 ````
 
-Esimerkissä valitaan muuttujan *style*-ominaisuus ja siltä *display*-ominaisuus. Sille annetaan arvo *"none"*, mikä käytännössä poistaa elementin sivulta.
+Esimerkissä valitaan muuttujan *style*-ominaisuus ja siltä *display*-ominaisuus. Sille annetaan arvo *"none"*, mikä käytännössä poistaa elementin sivulta. Periaatteessa *style*n jälkeen kirjoitetaan CSS-ominaisuus, jota muutetaan, ja sen jälkeen sen uusi arvo, kuten CSS-koodissa.
 
 Näitä asioita voi kirjoittaa joko HTML-koodiin *script*-tagin sisään, erilliseen linkitettyyn tiedostoon tai vaikka selaimen konsoliin. Tosin selaimen konsolin kautta tehdyt muutokset eivät ole pysyviä, sillä ne eivät tallennu HTML-tiedostoon, vaan sivun uudelleenlataaminen poistaa muutokset.
+
+Jos yhden elementin sijaan haluaisimme valita vaikkapa kaikki *p*-elementit, meidän pitäisi käyttää *querySelectAll*ia.
+
+````js
+const paragraphs = document.querySelectorAll("p");
+````
+
+Tällä me saamme *NodeList*in, joka muistuttaa taulukkoa, joskaan ei ole aivan identtinen.
+
+*NodeList*in voi käydä läpi *forEach*-metodilla:
+
+````js
+paragraphs.forEach((paragraph) => {
+  console.log(paragraph.textContent);
+});
+````
+
+Tämä tulostaa kaikkien *p*-elementtien tekstit konsoliin.
+
+````js
+paragraphs.forEach((paragraph) => {
+  paragraph.textContent = "Teksti on muutettu!";
+});
+````
+
+Tässä taas kaikkien tekstit vaihdetaan.
 
 ## Demotehtävä
 
 1. Avaa opettajan tekemä [matkalaskurisivu](https://treduan.github.io/matkalaskuri/)<base target = "_blank">.
 2. Avaa kehittäjätyökalut (näppäinyhdistelmä ctrl+shift+i tai oikean yläreunan kolme pistettä ja sieltä "Lisää työkaluja").
 3. Tutki *elements*-välilehteä ja etsi sieltä kaikki *label*-elementit ja katso niiden tyylit napsauttamalla jotain niistä.
-4. Vaihta *console*-välilehdelle ja ala kirjoittaa JavaScript-koodia.
-5. Valitse kaikki *label*-elementit ja muuta niiden väri punaiseksi (muista, että kyseessä on taulukko).
+4. Vaihda *console*-välilehdelle ja ala kirjoittaa JavaScript-koodia.
+5. Valitse kaikki *label*-elementit ja muuta niiden väri punaiseksi (muista, että kyseessä on *NodeList*).
 6. Muuta myös koko sivun tausta vaaleansiniseksi (aliceblue).
+
+HUOM. Konsoliin kirjoitetut muutokset häviävät sivulta, kun sivu ladataan uudelleen.  
 

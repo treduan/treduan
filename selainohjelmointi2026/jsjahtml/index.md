@@ -19,7 +19,7 @@ JavaScriptiä voi lisätä HTML-koodin sisään. Kopioi seuraava HTML-tiedostoks
 </html>
 ````
 
-Tässä esimerkissä käytetään siis JavaScriptin *alert()*-funktiota, joka on liitetty suoraan nappiin. Näin voi tehdä, jos koodi on erittäin lyhyt.
+Tässä esimerkissä käytetään siis JavaScriptin *alert()*-funktiota, joka on liitetty suoraan nappiin. Näin voi tehdä, jos koodi on erittäin lyhyt, mutta selkeyden vuoksi tapana on erottaa JavaScript, jotta se on helpompaa löytää ja ylläpitää.
 
 ## Esimerkki 2
 
@@ -32,19 +32,19 @@ Jos meidän on tarpeen kirjoittaa hieman pidempi määrä koodia, se kirjoitetaa
   <title>JavaScript alkeita</title>
 </head>
 <body>
+  <h1>Demo 2</h1>
+  <button onClick="kysely()">Kyselynappi</button>
   <script>
-  const kysely = function() {
+  const kysely = () => {
     let name = prompt('Mikä on nimesi');
     alert('Hei ' + name + ', kiva nähdä!');
     }
   </script>
-  <h1>Demo 2</h1>
-  <button onClick="kysely()">Kyselynappi</button>
 </body>
 </html>
 ````
 
-Eli kun Kysely-nappia painetaan, kutsutaan *kysely()*-nimistä JavaScript-funktiota, joka on määritelty *script*-tagissa. Tällä funktiolla ei ole parametrejä tai palautusarvoa, vaan se avaa *prompt*-ikkunan, johon käyttäjä voi kirjoittaa vastauksen esitettyyn kysymykseen (toimii samoin kuin Pythonissa *input*). Käyttäjän antama tieto tallennetaan muuttujaan name ja alert()-ikkunan avulla voidaan tervehtiä käyttäjää hänen omalla nimellään.
+Eli kun Kysely-nappia painetaan, kutsutaan *kysely()*-nimistä JavaScript-funktiota, joka on määritelty *script*-tagissa. Tällä funktiolla ei ole parametrejä tai palautusarvoa, vaan se avaa *prompt*-ikkunan, johon käyttäjä voi kirjoittaa vastauksen esitettyyn kysymykseen (toimii samoin kuin Pythonissa *input*). Käyttäjän antama tieto tallennetaan muuttujaan name ja alert()-ikkunan avulla voidaan tervehtiä käyttäjää hänen omalla nimellään. Script voidaan laittaa ``<head>``iin tai ``<body>``in, mutta otamme tavaksi laittaa scriptit ``body``n loppuun, sillä silloin selain saa ensin ladata HTML:n, ennen kuin sen tarvitsee suorittaa JavaScriptiä.
 
 ## Demotehtävä 1
 
