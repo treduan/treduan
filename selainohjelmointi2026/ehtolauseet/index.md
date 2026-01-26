@@ -183,7 +183,7 @@ Parannetaan edellistä harjoitusta eli lisätään siihen tarkistuksia erilaiste
    *(Vihje: voit käyttää `typeof`-operaattoria.)*
 3. `else if`: tarkista, että arvosana on välillä 0–5.  
    Jos arvo on pienempi kuin 0 tai suurempi kuin 5, tulosta:  
-   **"Arvosanan pitää olla välillä 1-5."**
+   **"Arvosanan pitää olla välillä 0-5."**
 4. `else`: suorita `switch`-rakenne, joka tulostaa arvosanan sanallisen kuvauksen.
 5. Kutsu funktiota arvoilla `1`, `-3`, `5`, `88` ja `"Heippa"`.
 
