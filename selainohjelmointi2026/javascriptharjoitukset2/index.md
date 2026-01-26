@@ -38,7 +38,7 @@ Vihjeitä: typeof, length, toUpperCase(), includes()
 1. Luo funktio ``updateCities()``, joka ottaa parametrinä kaksiulotteisen taulukon.
 2. Tarkista, että parametri on taulukko. Jos ei ole, tulosta virheviesti.
 3. Käy taulukko läpi rivi kerrallaan.
-4. Jos kaupungin asukasluku on alle 100 000, poista kyseinen kaupunki taulukosta käyttäen ``splice``-metodia.
+4. Jos kaupungin asukasluku on alle 100 000, poista kyseinen kaupunki taulukosta käyttäen ``splice``-metodia. Koska ``splice()`` saattaa muuttaa taulukon pituutta, on turvallisempaa käydä taulukko läpi lopusta alkuun.
 5. Jos listaan ei jää yhtään kaupunkia, tulosta "Kaikki kaupungit ovat pieniä."
 5. Tulosta päivitetty kaupunkilista konsoliin muodossa: "Suuria kaupunkeja ovat: *nimi*, *asukasluku*, *toinen nimi*, *asukasluku*" jne (luo niistä uusi merkkijono).
 6. Testaa seuraavilla arvoilla: 

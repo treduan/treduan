@@ -46,12 +46,18 @@ let list = [1, 2, 3];
 console.log(list[10]); // undefined
 ````
 
+Jos haluamme tarkistaa, että jokin muuttuja on taulukko, se onnistu seuraavasti:
+
+````js
+console.log(Array.isArray(myList)); //true
+````
+
 ## Demotehtävä 1
 
-1. Luo taulukko, jossa on viisi päättämääsi numeroa. Tulosta numeroista kolmas konsoliin.
+1. Luo taulukko nimeltään *numberList*, jossa on viisi päättämääsi numeroa. Tulosta numeroista kolmas konsoliin.
 2. Lisää taulukon loppuun yksi numero lisää. Tulosta taulukon pituus niin, että konsolissa lukee *The length of the array is:* + pituus.
 3. Vaihda taulukon kolmas arvo niin, että se on itsensä kerrottuna kahdella. Tulosta se konsoliin.
-
+4. Tee ehtolause, joka tarkistaa, onko *numberList* taulukko. Jos se on, tulosta konsoliin "numberList on taulukko".
 
 ## For-loop
 
