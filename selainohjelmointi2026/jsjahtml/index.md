@@ -44,7 +44,9 @@ Jos meidän on tarpeen kirjoittaa hieman pidempi määrä koodia, se kirjoitetaa
 </html>
 ````
 
-Eli kun Kysely-nappia painetaan, kutsutaan *kysely()*-nimistä JavaScript-funktiota, joka on määritelty *script*-tagissa. Tällä funktiolla ei ole parametrejä tai palautusarvoa, vaan se avaa *prompt*-ikkunan, johon käyttäjä voi kirjoittaa vastauksen esitettyyn kysymykseen (toimii samoin kuin Pythonissa *input*). Käyttäjän antama tieto tallennetaan muuttujaan name ja alert()-ikkunan avulla voidaan tervehtiä käyttäjää hänen omalla nimellään. Script voidaan laittaa ``<head>``iin tai ``<body>``in, mutta otamme tavaksi laittaa scriptit ``body``n loppuun, sillä silloin selain saa ensin ladata HTML:n, ennen kuin sen tarvitsee suorittaa JavaScriptiä.
+Eli kun Kysely-nappia painetaan, kutsutaan *kysely()*-nimistä JavaScript-funktiota, joka on määritelty *script*-tagissa. Tällä funktiolla ei ole parametrejä tai palautusarvoa, vaan se avaa *prompt*-ikkunan, johon käyttäjä voi kirjoittaa vastauksen esitettyyn kysymykseen (toimii samoin kuin Pythonissa *input* mutta vain selaimessa, ei konsolissa). Käyttäjän antama tieto tallennetaan muuttujaan name ja alert()-ikkunan avulla voidaan tervehtiä käyttäjää hänen omalla nimellään. Script voidaan laittaa ``<head>``iin tai ``<body>``in, mutta otamme tavaksi laittaa scriptit ``body``n loppuun, sillä silloin selain saa ensin ladata HTML:n, ennen kuin sen tarvitsee suorittaa JavaScriptiä.
+
+Huom. ``prompt`` toimii, mutta sitä kannattaa käyttää vain testaamiseen, ei oikeilla sivuilla, sillä siihen on vaikeampi saada hyvä tietoturva ja tiedon käsittely. Oikeissa tilanteissa käytetään lomakkeita.
 
 ## Demotehtävä 1
 

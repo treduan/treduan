@@ -37,5 +37,6 @@ Tällä kurssilla opiskelemme lisää verkkosivujen tekemisen periaatteita ja al
 - [Taulukot](./taulukot/index.md)
 - [Kaksiulotteiset taulukot](./kaksiulotteiset/index.md)
 - [Oliot](./oliot/index.md)
+- [JavaScript-harjoitukset 2](./javascriptharjoitukset2/index.md)
 
 ## JavaScript selaimessa
