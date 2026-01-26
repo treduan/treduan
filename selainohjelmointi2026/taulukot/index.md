@@ -83,6 +83,27 @@ for(let i = array.length-1; i >= 0; i--) {
 
 Vinkki: käytä if-lausetta loopin sisällä.
 
+## Splice()
+Metodilla ``splice()`` voidaan poistaa tai lisätä alkioita mihin tahansa osaan taulukkoa. Jos haluamme poistaa alkion, me annamme ``splice()``lle ensimmäisen ja viimeisen indeksin, jonka haluamme poistaa. 
+
+````js
+let fruits = ["Omena", "Banaani", "Päärynä"];
+fruits.splice(1, 1);
+
+console.log(fruits);
+// ["Omena", "Päärynä"]
+````
+
+Jos haluamme korvata alkion, ``splice()``lle annetaan ensimmäisen ja viimeisen indeksin sekä korvattavan arvon.
+
+````js
+let fruits = ["Omena", "Banaani"];
+fruits.splice(1, 1, "Päärynä");
+
+console.log(fruits);
+// ["Omena", "Päärynä"]
+````
+
 ## map ja foreach
 
 *map* ja *foreach* ovat metodeja, jotka toimivat taulukoille. Niiden avulla voidaan toteuttaa toistoa vaativia operaatioita helposti (ilman *for*-looppia). Nämä funktiot ovat ns. *higher order*-funktioita, mikä tarkoittaa, että niille annetaan parametrina funktio. Näiden ero on, että *map* luo aina uuden taulukon. *forEach* vain käy taulukon läpi.
