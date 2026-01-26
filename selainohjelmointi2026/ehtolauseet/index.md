@@ -46,10 +46,10 @@ Tässä alustettiin ensin muuttujat a ja b. Jos vertailu a > b saa arvon *true*,
 Jos tosihaarassa pitää suorittaa enemmän koodia, on parempi käytää if-else-rakennetta (aaltosulkujen sisään voi laittaa useita rivejä koodia ns. koodilohko):
 ```js
 if(a > b){
-  pet = "cat"
-  } else {
-    pet = "dog"
-    }
+  pet = "cat";
+} else {
+    pet = "dog";
+}
 ```
 
 ## Demoharjoitus 2
