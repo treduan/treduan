@@ -117,4 +117,4 @@ Toimiva, mutta ei suositeltu:
 
 ````js
 if (score > 50) { console.log("Passed"); }
-``
+````
