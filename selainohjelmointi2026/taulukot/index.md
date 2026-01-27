@@ -46,12 +46,18 @@ let list = [1, 2, 3];
 console.log(list[10]); // undefined
 ````
 
+Jos haluamme tarkistaa, että jokin muuttuja on taulukko, se onnistu seuraavasti:
+
+````js
+console.log(Array.isArray(myList)); //true
+````
+
 ## Demotehtävä 1
 
-1. Luo taulukko, jossa on viisi päättämääsi numeroa. Tulosta numeroista kolmas konsoliin.
+1. Luo taulukko nimeltään *numberList*, jossa on viisi päättämääsi numeroa. Tulosta numeroista kolmas konsoliin.
 2. Lisää taulukon loppuun yksi numero lisää. Tulosta taulukon pituus niin, että konsolissa lukee *The length of the array is:* + pituus.
 3. Vaihda taulukon kolmas arvo niin, että se on itsensä kerrottuna kahdella. Tulosta se konsoliin.
-
+4. Tee ehtolause, joka tarkistaa, onko *numberList* taulukko. Jos se on, tulosta konsoliin "numberList on taulukko".
 
 ## For-loop
 
@@ -82,6 +88,27 @@ for(let i = array.length-1; i >= 0; i--) {
 3. Tulosta konsoliin vain ne numerot, jotka ovat suurempia kuin 10.
 
 Vinkki: käytä if-lausetta loopin sisällä.
+
+## Splice()
+Metodilla ``splice()`` voidaan poistaa tai lisätä alkioita mihin tahansa osaan taulukkoa. Jos haluamme poistaa alkion, me annamme ``splice()``lle ensimmäisen ja viimeisen indeksin, jonka haluamme poistaa. 
+
+````js
+let fruits = ["Omena", "Banaani", "Päärynä"];
+fruits.splice(1, 1);
+
+console.log(fruits);
+// ["Omena", "Päärynä"]
+````
+
+Jos haluamme korvata alkion, ``splice()``lle annetaan ensimmäisen ja viimeisen indeksin sekä korvattavan arvon.
+
+````js
+let fruits = ["Omena", "Banaani"];
+fruits.splice(1, 1, "Päärynä");
+
+console.log(fruits);
+// ["Omena", "Päärynä"]
+````
 
 ## map ja foreach
 
