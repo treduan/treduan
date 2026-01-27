@@ -76,3 +76,4 @@ console.log(Math.PI); // 3.141592653589793
 1. Luo funktio, joka palauttaa nopan heiton eli satunnaisen numeron välillä 1-6. Tulosta tulos konsoliin muodossa "Nopan tulos on X".
 2. Luo funktio, joka tulostaa sille annetun luvun kolmella eri pyöristysmenetelmällä eli Math.floor(), Math.ceil() ja Math.round(). Testaa sitä arvoilla 4.7, 8.2 ja 67.553.
 3. Luo funktio, joka ottaa vastaan neljä eri lukua ja se tulostaa niistä suurimman ja pienimmän muodossa "Suurin luku on X ja pienin luku on Y".
+4. Luo funktio *calculateCircleArea*, joka ottaa vastaan ympyrän säteen. Tulosta funktiossa ympyrän ympärys. Lasku toimii tavalla PI * säde toiseen (π × r²). 
