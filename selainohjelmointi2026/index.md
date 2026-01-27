@@ -39,4 +39,7 @@ Tällä kurssilla opiskelemme lisää verkkosivujen tekemisen periaatteita ja al
 - [Oliot](./oliot/index.md)
 - [JavaScript-harjoitukset 2](./javascriptharjoitukset2/index.md)
 
+- [Lisäharjoituksia 1 (perusteet)](https://otredu.github.io/js/harjoitukset-perusrakenteet1.html)
+- [Lisäharjoituksia 2](https://otredu.github.io/js/harjoitukset-perusrakenteet2.1.html)
+
 ## JavaScript selaimessa
