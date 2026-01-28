@@ -88,11 +88,11 @@ button.addEventListener("click", function () {
 
 ## Elementin piilottaminen ja tuominen näkyviin
 
-JavaScriptillä voimme tehdä elementtejä näkyviksi tai piilottaa niitä. Tässä on esimerkkikoodi, miten tekstiä klikkaamalla voi näyttää lisätiedot ja saada ne pois näkyvistä.
+JavaScriptillä voimme tehdä elementtejä näkyviksi tai piilottaa niitä. Tässä on esimerkkikoodi, miten tekstiä klikkaamalla voi näyttää lisätiedot ja saada ne pois näkyvistä. Infoteksti ei aluksi ole näkyvissä, sillä luokka *hidden* on heti käytössä.
 
 ````html
 <p id="toggleInfo">Näytä lisätiedot</p>
-<p id="info">Tässä ovat ne lisätiedot, jotka halutaan näyttää.</p>
+<p id="info" class="hidden">Tässä ovat ne lisätiedot, jotka halutaan näyttää.</p>
 ````
 ````css
 .hidden {
