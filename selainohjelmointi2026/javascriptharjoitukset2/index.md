@@ -15,10 +15,10 @@ Vihjeitä: typeof, length, toUpperCase(), includes()
 
 ## Harjoitus 2
 1. Kirjoita funktio getGreeting(), joka saa parametriksi taulukon.
-2. Funktio tarkistaa, saiko se taulukon.
+2. Funktio tarkistaa, saiko se taulukon. Jos ei, tulosta virheilmoitus.
 3. Funktio palauttaa taulukosta satunnaisen alkion (käytä Math.random()).
 4. Tulosta arvottu alkio konsoliin.
-5. Testaa funktiota arvoilla ``let greetings1 = ["Moi", "Hei", "Terve"];`` ja ``"Moikka`` ja ``let greetings2 = ["Moikka", "Päivää", "Moro", "Huomenta", "Heipparallaa"]``.
+5. Testaa funktiota arvoilla ``let greetings1 = ["Moi", "Hei", "Terve"];`` ja ``"Moikka"`` ja ``let greetings2 = ["Moikka", "Päivää", "Moro", "Huomenta", "Heipparallaa"]``.
 
 ## Harjoitus 3
 1. Luo funktio *calculateAverage()*, joka ottaa vastaan opiskelija-olion.
