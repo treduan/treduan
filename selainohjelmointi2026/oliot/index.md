@@ -65,6 +65,14 @@ courses: ["JavaScript", "HTML", "CSS", "Project Management"]};
 console.log(student.courses[1]);
 ````
 
+Jos haluamme tarkistaa, onko oliolla jotain tiettyä avainta, siihen on useampi tapa, mutta suositelluin on seuraavanlainen:
+
+````js 
+if ("birthYear" in student) {
+    console.log("Student has birth year.");
+}
+````
+
 ## *This* olion metodissa
 
 Kun funktio on olion ominaisuus, sitä kutsutaan metodiksi.
@@ -82,14 +90,6 @@ const student = {
 student.printInfo();
 ````
 Tässä tapauksessa: *this* viittaa student-olioon ja *this.name* tarkoittaa samaa kuin *student.name*. Muissa yhteyksissä *this* voi viitata myös muihin asioihin.
-
-Jos haluamme tarkistaa, onko oliolla jotain tiettyä avainta, siihen on useampi tapa, mutta suositelluin on seuraavanlainen:
-
-````js 
-if ("birthYear" in student) {
-    console.log("Student has birth year.");
-}
-````
 
 ## Demotehtävä
 
