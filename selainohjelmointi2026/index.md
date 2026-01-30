@@ -43,3 +43,7 @@ Tällä kurssilla opiskelemme lisää verkkosivujen tekemisen periaatteita ja al
 - [Lisäharjoituksia 2](https://otredu.github.io/js/harjoitukset-perusrakenteet2.1.html)
 
 ## JavaScript selaimessa
+
+- [JavaScript ja HTML](./jsjahtml/index.md)
+- [DOM](./dom/index.md)
+- [Tapahtumat](./tapahtumat/index.md)
