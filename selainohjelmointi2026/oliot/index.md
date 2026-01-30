@@ -83,6 +83,14 @@ student.printInfo();
 ````
 Tässä tapauksessa: *this* viittaa student-olioon ja *this.name* tarkoittaa samaa kuin *student.name*. Muissa yhteyksissä *this* voi viitata myös muihin asioihin.
 
+Jos haluamme tarkistaa, onko oliolla jotain tiettyä avainta, siihen on useampi tapa, mutta suositelluin on seuraavanlainen:
+
+````js 
+if ("birthYear" in student) {
+    console.log("Student has birth year.");
+}
+````
+
 ## Demotehtävä
 
 1. Luo olio lemmikkieläimestä. Anna sille nimi, laji, rotu ja ikä. Lisää sille myös taulukko suosikkileluista. Lisää vielä funktio, jolla kyseinen eläin ääntelee (esimerkiksi kissan kohdalla konsoliin tulostetaan "*nimi*-niminen *laji* sanoo miau.").
