@@ -40,9 +40,15 @@ function changeColor() {
 }
 ````
 
+## Demotehtävä 1
+1. Luo uusi HTML-tiedosto. Lisää siihen yksi nappi ja yksi tekstikappale. Anna molemmille eri id.
+2. Lisää ja linkitä JavaScript-tiedosto.
+3. Tee koodi JavaScript-tiedostoon, että kun nappia painetaan, vaihtuu tekstin väri punaiseksi.
+4. Muokkaa koodia niin, että painamalla nappia saat värin vaihtumaan edestakaisin punaisen ja mustan välillä.
+
 ## Sama tapahtuma useammalle elementille
 
-Kuvitellaan, että meillä on tilanne, jossa HTML-dokumentissa on useampi nappi, joiden haluamme vaihtavan väriä. Silloin meidän pitää laittaa kaikkiin nappeihin sama *class*, jotta voimme valita ne kaikki *querySelectorAll*n avulla.
+Kuvitellaan, että meillä on tilanne, jossa HTML-dokumentissa on useampi nappi, joiden haluamme vaihtavan väriä. Silloin meidän pitää laittaa kaikkiin nappeihin sama *class*, jotta voimme valita ne kaikki *querySelectorAll*n avulla. Saman id:n voi laittaa vain yhteen elementtiin.
 
 ````html
 <button class="colorButton">Nappi 1</button>

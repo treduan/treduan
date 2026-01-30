@@ -26,3 +26,11 @@ const info = document.querySelector("#info");
 show.addEventListener("click", function () {
   info.classList.toggle("hidden");
 });
+
+const buttons = document.querySelectorAll(".colorsButton");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", function () {
+    button.style.backgroundColor = "violet";
+  });
+});
