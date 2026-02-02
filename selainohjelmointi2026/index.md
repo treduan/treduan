@@ -48,3 +48,5 @@ Tällä kurssilla opiskelemme lisää verkkosivujen tekemisen periaatteita ja al
 - [DOM](./dom/index.md)
 - [Tapahtumat](./tapahtumat/index.md)
 - [Lomakekäsittely](./lomakekasittely/index.md)
+
+- [Selainharjoitus 1 (Microconin ohjelmailmoittautuminen)](./microcon2/index.md)
