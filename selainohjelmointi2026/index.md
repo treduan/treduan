@@ -47,3 +47,4 @@ Tällä kurssilla opiskelemme lisää verkkosivujen tekemisen periaatteita ja al
 - [JavaScript ja HTML](./jsjahtml/index.md)
 - [DOM](./dom/index.md)
 - [Tapahtumat](./tapahtumat/index.md)
+- [Lomakekäsittely](./lomakekasittely/index.md)
