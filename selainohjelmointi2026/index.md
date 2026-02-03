@@ -51,3 +51,5 @@ Tällä kurssilla opiskelemme lisää verkkosivujen tekemisen periaatteita ja al
 
 - [Selainharjoitus 1 (Microconin ohjelmailmoittautuminen)](./microcon2/index.md)
 - [Selainharjoitus 2 (Taipale 3)](./taipale3/index.md)
+
+- [Pelilogiikkaa JavaScriptillä](./pelijavascriptilla/index.md)

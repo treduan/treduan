@@ -1,0 +1,3 @@
+# Pelilogiikkaa
+
+Tutustu oheisen [pelin koodiin](https://github.com/otredu/js-games/tree/master/game-demo). Kloonaa koodi itsellesi. Avaa se liveserverillä. Kokeile muuttaa koodia niin, että esineet liikkuvat eri tavalla (esim. eri erineet eri nopeuksilla) ja/tai pelaaja liikkuu eri tavalla. Lisää peliin pisteenlasku niin, että ruudulla näkyvät pisteet (saat itse päättää paljonko pisteitä kustakin esineestä saa, tuleeko jostain miinuspisteitä jne). Lisää *game over*-ilmoitus kun pisteet menevät alle nollan tai pelaajan "elämät" loppuvat. Voit myös halutessasi tehdä täysin oman pelin hyödyntäen valmista koodia.
