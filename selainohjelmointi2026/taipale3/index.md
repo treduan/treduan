@@ -4,18 +4,18 @@ Nyt lisäämme Taipaleen leirikeskuksen sivuille toiminnallisuuksia, joille on t
 
 1. Toiminta-sivulla on teksti, jossa lukee "Katso kesän 2026 esiintyjät tästä". Painamalla tekstiä esiin tulee tekstiosuus, jossa on lueteltu tulevia keikkoja. Painamalla terkstiä uudelleen, lista katoaa. Vaihtoehtoisesti voit etsiä nuolen kuvan ja käyttää sitä nappina. Voit käyttää alla olevaa listaa keikoista.
 
-Aurinkosilta – perjantai 12.6.2026 klo 20.00
-Kalliorannan Kaiku – lauantai 13.6.2026 klo 21.00
-Revontuliyö – perjantai 19.6.2026 klo 22.00
-Särö & Sammal – lauantai 20.6.2026 klo 20.30
-Hiljainen Hiekka – perjantai 26.6.2026 klo 21.00
-Vanhat Varjot – lauantai 27.6.2026 klo 22.00
-Keskiyön Kaarna – perjantai 3.7.2026 klo 20.30
-Järvenselkä – lauantai 4.7.2026 klo 21.30
-Pohjoistuuli & Valo – perjantai 10.7.2026 klo 22.00
-Liekkiheinä – lauantai 11.7.2026 klo 20.00
+    Aurinkosilta – perjantai 12.6.2026 klo 20.00
+    Kalliorannan Kaiku – lauantai 13.6.2026 klo 21.00
+    Revontuliyö – perjantai 19.6.2026 klo 22.00
+    Särö & Sammal – lauantai 20.6.2026 klo 20.30
+    Hiljainen Hiekka – perjantai 26.6.2026 klo 21.00
+    Vanhat Varjot – lauantai 27.6.2026 klo 22.00
+    Keskiyön Kaarna – perjantai 3.7.2026 klo 20.30
+    Järvenselkä – lauantai 4.7.2026 klo 21.30
+    Pohjoistuuli & Valo – perjantai 10.7.2026 klo 22.00
+    Liekkiheinä – lauantai 11.7.2026 klo 20.00
 
-Liput voit ostaa vastaanotosta.
+    Liput voit ostaa vastaanotosta.
 
 2. Majoitus-sivulle lisätään useampia pieniä lomakkeita (osin keskenään samankaltaisia, joten osin koodia voi kopioda). Nämä lomakkeet avautuvat klikkaamalla tekstiä (luo tekstille hover-efekti) tai voit tehdä teksteistä vaihtoehtoisesti napit. 
 - Pienelle mökille avautuu oma lomake, jossa otsikkona on "Varaa pieni mökki 70 € per yö". Lisäksi siellä on lomake, joka kysyy varaajan nimen, sähköpostiosoitteen, puhelinnumeron, saapumispäivämäärän ja lähtöpäivämäärän. Kaikki ovat pakollisia tietoja. Kun lomake lähetetään, tee lisävalidointi nimelle ja varmista, että päivämäärä on tulevaisuudessa. Anna käyttäjälle palautetta niin virheistä kuin lomakkeen lähettämisestä. Lähettämisen jälkeisessä onnistumisviestissä lukee: "Varausvahvistus on lähetetty osoitteeseen (tähän sähköpostiosoite, joka lomakkeelle laitettiin). Loppusumma on (laske tähän summa)".
