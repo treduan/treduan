@@ -1,6 +1,6 @@
 ## Microcon 2 - ohjelmailmoittautuminen
 
-Nyt Microconille haetaan ohjelmia eli meidän täytyy tehdä sivulle ilmoittautumislomake.
+Nyt Microconille haetaan ohjelmia eli meidän täytyy tehdä sivulle ilmoittautumislomake. Tee tämä harjoitus *JavaScript-harjoitukset*-kansioon.
 
 1. Luo uusi HTML-sivu nimeltään *microcon-ilmo.html* ja sille CSS-tiedosto sekä JavaScript-tiedosto. Linkitä ne keskenään.
 2. Sivulla on otsikko "Microconin ohjelma" ja teksti "Jokainen con-tapahtuma tarvitsee ohjelmaa. Jos sinulla on mielessäsi ohjelmanumero, joka sopisi tapahtuman teemaan, voit laittaa hakemuksen conitealle alta löytyvällä lomakkeella. Päätökset siitä, otetaanko ohjelma mukaan, tehdään vähintään kuukautta ennen tapahtumaa." sekä nappi, jossa lukee "Avaa ilmoittautumislomake". 
