@@ -29,7 +29,7 @@ SELECT CustomerName FROM Customers
     WHERE Country = 'Sweden';
 ````
 
-Voimme tehdä myös muunlaisia vertailuja eli esimerkiksi voimme valita näytettäviksi vain sellaiset, joissa jokin summa on tietyn rajan ylittävä. Esimerkiksi taulusta *OrderDetails* voimme valita vain tilaukset, joissa määrä ylittää kymmenen.
+Voimme tehdä myös muunlaisia vertailuja eli esimerkiksi voimme valita näytettäviksi vain sellaiset, joissa jokin summa on tietyn rajan ylittävä. Esimerkiksi taulusta *OrderDetails* voimme valita vain tilaukset, joissa määrä ylittää kymmenen. Vertailuoperaattorit ovat enimmäkseen samat kuin vaikkapa JavaScriptissä, mutta yhtä kuin on pelkkä yksi ``=`` ja erisuuri kuin on ``<>``.
 
 ````sql
 SELECT * FROM OrderDetails 
@@ -96,3 +96,149 @@ WHERE CustomerName LIKE 'A%';
 ````
 
 Prosenttimerkki ``%`` on niinsanottu jokerimerkki eli siinä kohtaa voisi olla mitä tahansa merkkejä mikä tahansa määrä. Jos haluamme jonkin tietyn merkkimäärän, voimme käyttää sen sijaan alalyöntejä ``_``, jotka esittävät yhtä merkkiä.
+
+Joskus saatamme haluta tietää, mitä ainutlaatuisia sisältöjä tietokannassa on eli emme halua nähdä asioista lukumääriä. Silloin voimme käyttää sanaa ``DISTINCT``.
+
+Esimerkissä etsimme kaikki eri maat, joita Customers-taulussa esiintyy.
+
+````sql
+SELECT DISTINCT Country
+FROM Customers;
+````
+
+Voimme myös järjestää tuloksia haluamallamme tavalla käyttäen sanoja ``ORDER BY`` ja järjestyksen nousevaa tai laskevaa käskyä ``ASC`` ja ``DESC``. ``ASC`` tarkoittaa, että mennään aakkosissa A:sta Ä:hän. ````ASC`` on oletus. Meidän pitää valita sarake, jonka mukaisesti järjestäminen tehdään.
+
+Tässä esimerkissä järjestetään tulokset maan nimen mukaan kasvavaan järjestykseen.
+````sql
+SELECT CustomerName, Country
+FROM Customers
+ORDER BY Country ASC;
+````
+
+Tässä taas asiakkaan nimen mukaan laskevaan järjestykseen.
+````sql
+SELECT CustomerName, Country
+FROM Customers
+ORDER BY CustomerName DESC;
+````
+
+Tulosten määrää voidaan myös rajoittaa, mitä ajoittain halutaan tehdä, jos tietokanta on valtavan suuri. Silloin käytetään sanaa ``LIMIT`` ja haluttua lukumäärää.
+
+````sql
+SELECT *
+FROM Customers
+ORDER BY CustomerID DESC
+LIMIT 5;
+````
+
+Voimme myös muokata sarakkeiden nimiä eli käyttää aliasta, jos näin haluamme. Esimerkiksi sarakkeen nimen kääntäminen suomeksi tai jollekin toiselle kielelle voisi olla tällainen tilanne. Silloin käytämme sarakkeen nimen perässä sanaa ``AS``, minkä jälkeen kirjoitamme nimen, jota haluamme tuloksissa käyttää.
+
+Esimerkissä haluamme suomentaa *CustomerName*n sanalla *Asiakas* ja *Country* *Maa*.
+
+````sql
+SELECT CustomerName AS Asiakas, Country AS Maa
+FROM Customers;
+````
+
+Meillä voi sarakkeissa olla myös tyhjiä eli ``NULL``-arvoja ja joskus meidän pitää pystyä käsittelemään niitä. Useimmiten meidän pitää tarkistaa, onko jokin sarake ``NULL`` tai ei.
+
+Tässä valitaan kaikki asiakkaat, joiden kontakti on ``NULL`` käyttämällä ilmausta ``IS NULL``.
+
+````sql
+SELECT *
+FROM Customers
+WHERE ContactName IS NULL;
+````
+
+Ja vastaavasti versio, jossa kontakti ei ole ``NULL``.
+
+````sql
+SELECT *
+FROM Customers
+WHERE ContactName IS NOT NULL;
+````
+
+## Yleisimpiä funktioita
+
+Kyselyissä voimme myös käyttää joukkoa funktioita. Ne eivät muokkaa tietokantaa, vaan ainoastaan kyselyn tuloksia.
+
+Käyttämällä funktiota ``COUNT()`` voimme laskea rivien määrän. Jos laitamme sisään asteriskin ``COUNT(*)``, saamme laskettua kaikki rivit, jos taas laitamme sulkeisiin jonkin sarakkeen nimen ``COUNT(Country)``, lasketaan vain rivit, joiden sarake ei ole ``NULL``.
+
+````sql
+SELECT COUNT(*) 
+FROM Customers;
+````
+
+``SUM`` laskee sarakkeiden arvojen yhteenlasketun summan. Sarakkeiden arvojen täytyy olla numeerisia (myöhemmin katsomme sarakkeiden tyypit).
+
+````sql
+SELECT SUM(Quantity)
+FROM OrderDetails;
+````
+
+``AVG`` laskee sarakkeen keskiarvon ohittaen ``NULL``-arvot.
+
+````sql
+SELECT AVG(Quantity)
+FROM OrderDetails;
+````
+
+``MIN`` hakee sarakkeen pienimmän arvon ja ``MAX`` hakee sarakkeen suurimman arvon.
+
+````sql
+SELECT MAX(Quantity)
+FROM OrderDetails;
+````
+``ROUND``illa saamme pyöristettyä numeron haluttuun desimaalimäärään.
+
+````sql
+SELECT ROUND(AVG(Quantity), 2)
+FROM OrderDetails;
+````
+
+Tekstiä voidaan muokata ``UPPER`` ja ``LOWER`` funktioilla, jotka muuttavat tekstin isoille tai pienille kirjaimille.
+
+``LENGTH`` (tai joissakin versioissa ``LEN``) laskee merkkijonon pituuden.
+
+``GROUP BY`` kokoaa yhteen rivit, joilla on sama arvo tietyssä sarakkeessa.
+
+Tässä esimerkissä luodaan sarakkeet jokaiselle maalle ja lasketaan maista löytyvien asiakkaiden määrä.
+
+````sql
+SELECT Country, COUNT(*) AS AsiakkaidenMaara
+FROM Customers
+GROUP BY Country;
+````
+
+Samaan kyselyyn on mahdollista laittaa useampia sarakkeita. Kaikki pitää muistaa mainita ``GROUP BY``-osiossa.
+
+Tässä esimerkissä haetaan maat ja kaupungit samassa kyselyssä.
+
+````sql
+SELECT Country, City, COUNT(*) AS Asiakkaita
+FROM Customers
+GROUP BY Country, City
+ORDER BY Country;
+````
+
+``HAVING`` voi lisätä ehtoja ryhmien perusteella, eli jos meillä on ``GROUP BY`` ja mahdollisesti funktioita. Eli ``WHERE`` ei voi käyttää esimerkiksi ``COUNT(*)``ia, mutta ``HAVING`` voi. ``HAVING`` suoritetaan ``GROUP BY``n jälkeen.
+
+Alla olevassa esimerkissä lasketaan jokaisen maan asiakkaiden määrä, jos määrä on isompi kuin 5.
+````sql
+SELECT Country AS Maa, COUNT(*) AS Asiakkaita
+FROM Customers
+GROUP BY Country
+HAVING COUNT(*) > 5
+ORDER BY Country;
+````
+
+## Demotehtävä
+
+Tee joukko kyselyitä w3schoolsin tietokannasta.
+
+1. Hae asiakkaiden nimet ja maat, jotka ovat Ranskasta.
+2. Hae kaikki tilausrivit (OrderDetails), jossa tuotteen määrä (Quantity) on suurempi kuin 20. Järjestä tulokset kappalemäärän mukaan suurimmasta pienimpään.
+3. Hae lista eri kaupungeista USA:ssa.
+4. Hae kaikki kaupungit, joiden nimi alkaa kirjaimella *S* ja jotka sijaitsevat Saksassa.
+5. Hae kaikkien sellaisten asiakkaiden nimet ja kaupungit, jotka ovat Saksasta tai Itävallasta, mutta eivät ole Berliinistä. Järjestä asiakkaan nimen mukaan aakkosjärjestykseen.
+6. Selvitä, missä maissa on täsmälleen kolme asiakasta. Näytä maa ja asiakasmäärä. (Tarvitset ``HAVING``ia.)
