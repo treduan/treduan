@@ -25,6 +25,6 @@ CREATE TABLE Students (
 );
 ````
 
-Tämä koodi lisää viiteavaimen ``group_id``-sarakkeelle. ``REFERENCES``in jälkeen kerrotaan, mihin tauluun yhdistetään, ja suluissa on sen taulun sarake, johon yhdistys tehdään (useimmiten id).
+Tämä koodi lisää viiteavaimen ``group_id``-sarakkeelle. ``REFERENCES``in jälkeen kerrotaan, mihin tauluun yhdistetään, ja suluissa on sen taulun sarake, johon yhdistys tehdään (useimmiten se on id).
 
 Kun teemme tauluja tällä tavalla, meidän on luotava ensin ryhmä, sillä opiskelijaa ei voi lisätä, jos sille yritetään antaa ryhmä, jota ei ole olemassa.
