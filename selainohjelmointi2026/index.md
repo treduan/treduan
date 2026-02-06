@@ -53,3 +53,4 @@ Tällä kurssilla opiskelemme lisää verkkosivujen tekemisen periaatteita ja al
 - [Selainharjoitus 2 (Taipale 3)](./taipale3/index.md)
 
 - [Pelilogiikkaa JavaScriptillä](./pelijavascriptilla/index.md)
+- [Lisää tehtäviä (HTML, CSS ja JavaScript)](./javascriptlisa/index.md)
