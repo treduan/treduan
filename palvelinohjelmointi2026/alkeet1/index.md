@@ -1,20 +1,20 @@
-# Alkeet 1
+# PHP:n alkeet 1
 
-Php:n syntaksissa on paljon yhteneväisyyksiä JavaScriptin kanssa, mutta erojakin löytyy. Käymme läpi Php:n ominaisuuksia.
+PHP:n syntaksissa on paljon yhteneväisyyksiä JavaScriptin kanssa, mutta erojakin löytyy. Käymme läpi PHP:n ominaisuuksia.
 
 ## Tiedostot ja ajaminen
 
-Jotta Php-tiedostoja saa ajettua, täytyy tiedoston pääte olla .php. Php-koodi alkaa aina tagilla ``<?php``. Jos tiedosto sisältää vain Php-koodia, ei sulkutagia tarvita, mutta jos Php-koodi on esimerkiksi HTML:n seassa, pitää Php-koodin jälkeen olla myös sulkutag eli ``?>``. Periaatteessa Php-tiedosto voi näyttää tavalliselta HTML-tiedostolta ja siihen voi normaalisti linkittää tyylitiedoston jne, mutta sen sekaan voi lisätä Php-koodia.
+Jotta PHP-tiedostoja saa ajettua, täytyy tiedoston pääte olla .php. PHP-koodi alkaa aina tagilla ``<?php``. Jos tiedosto sisältää vain PHP-koodia, ei sulkutagia tarvita, mutta jos PHP-koodi on esimerkiksi HTML:n seassa, pitää PHP-koodin jälkeen olla myös sulkutag eli ``?>``. Periaatteessa PHP-tiedosto voi näyttää tavalliselta HTML-tiedostolta ja siihen voi normaalisti linkittää tyylitiedoston jne, mutta sen sekaan voi lisätä PHP-koodia.
 
-Useimmiten Php-koodi ajetaan suoraan verkkoselaimessa, mutta tiedoston koodin voi myös ajaa myös konsolista komennolla ``php index.php``.
+Useimmiten PHP-koodi ajetaan suoraan verkkoselaimessa, mutta tiedoston koodin voi myös ajaa myös konsolista komennolla ``php index.php``.
 
-Voit myös käynnistää Php:n sisäänrakennetun web-palvelimen komennolla ``php -S localhost:8888``. Periaatteessa jokin muukin portti kelpaa, mutta 8888 on perinteisin. Silloin kyseisessä sijainnissa pitää olla tiedosto, jonka nimi on *index.php*.
+Voit myös käynnistää PHP:n sisäänrakennetun web-palvelimen komennolla ``php -S localhost:8888``. Periaatteessa jokin muukin portti kelpaa, mutta 8888 on perinteisin. Silloin kyseisessä sijainnissa pitää olla tiedosto, jonka nimi on *index.php*.
 
 Konsoliin tai verkkosivulle saa kirjoitettua asioita *echo*-komennolla. Sitä voi käyttää myös lyhennetyssä muodossa eli ``<?= "How are you?" ?>``.
 
 ## Muuttujat
 
-Muuttujiin voi tallentaa Php:ssä samoja tietoja kuin JavaScriptissäkin. Näkyvänä erona on se, että Php:ssä muuttujan edessä on aina dollarin ($) merkki niin sitä määriteltäessä kuin siihen viitatessakin. Muuttujien nimissä käytetään yleisesti camelcase, merkintätapaa eli moniosaisen muuttujan jälkimmäisten osien ensimmäinen kirjain kirjoitetaan isolla kirjaimella.
+Muuttujiin voi tallentaa PHP:ssä samoja tietoja kuin JavaScriptissäkin. Näkyvänä erona on se, että PHP:ssä muuttujan edessä on aina dollarin ($) merkki niin sitä määriteltäessä kuin siihen viitatessakin. Muuttujien nimissä käytetään yleisesti camelcase, merkintätapaa eli moniosaisen muuttujan jälkimmäisten osien ensimmäinen kirjain kirjoitetaan isolla kirjaimella.
 
 Merkkijonoja ja muuttujia voi yhdistää merkkijonoiksi pisteellä (.) eli plussaa ei käytetä muihin kuin laskutoimituksiin. Muuttujia voi käyttää merkkijonojen sisällä joustavammin eli niitä ei ole pakko yhdistää pisteellä muun merkkijonon kanssa.
 
@@ -31,13 +31,13 @@ echo "Nice to meet you.";
 ````
 
 ## Demotehtävä 1
-1. Kopioi ylläoleva Php-koodi ja tallenna se tiedostoon, jonka nimi on *greeting.php*.
+1. Kopioi ylläoleva PHP-koodi ja tallenna se tiedostoon, jonka nimi on *greeting.php*.
 2. Vaihda muuttujien arvot ja tallenna.
 3. Aja koodi konsolista komennolla *php greeting.php*.
 
 ## Muuttujien tietotyypit
 
-Php ei ole vahvasti tyypitetty ohjelmointikieli kuten ei ole JavaScriptkään. Silti muuttujilla on olemassa tietotyypit. Php:ssä ne ovat: 
+PHP ei ole vahvasti tyypitetty ohjelmointikieli kuten ei ole JavaScriptkään. Silti muuttujilla on olemassa tietotyypit. PHP:ssä ne ovat: 
 
 - String (merkkijonot)
 - Integer (kokonaisluvut)
@@ -46,7 +46,7 @@ Php ei ole vahvasti tyypitetty ohjelmointikieli kuten ei ole JavaScriptkään. S
 - Array (taulukko)
 - Object (olio)
 - NULL
-- Resource (referenssi ulkoiseen resurssiin kuten teitokantakyselyyn)
+- Resource (referenssi ulkoiseen resurssiin kuten tietokantakyselyyn)
 
 Jos haluat tarkistaa jonkin muuttujan tietotyypin ja arvon, se onnistuu koodilla esimerkiksi seuraavasti:
 
@@ -59,7 +59,7 @@ Jos haluat tarkistaa jonkin muuttujan tietotyypin ja arvon, se onnistuu koodilla
 
 ## Funktiot
 
-Kuten JavaScriptissäkin, Php:ssä on funktioita. Niille voi sekä antaa parametrejä että ne voivat palauttaa paluuarvoja. Functio aloitetaan sanalla *function*, minkä jälkeen tulee funktion nimi, suluissa mahdolliset parametrit ja aaltosulkeiden sisällä varsinainen sisältö. Tyypillisesti Php:ssä käytetään sn. snakecase -nimeämistä eli jos funktion nimi on moniosainen, eri osat erotetaan alaviivalla.
+Kuten JavaScriptissäkin, PHP:ssä on funktioita. Niille voi sekä antaa parametrejä että ne voivat palauttaa paluuarvoja. Funktio aloitetaan sanalla *function*, minkä jälkeen tulee funktion nimi, suluissa mahdolliset parametrit ja aaltosulkeiden sisällä varsinainen sisältö. Tyypillisesti PHP:ssä käytetään sn. snakecase -nimeämistä eli jos funktion nimi on moniosainen, eri osat erotetaan alaviivalla.
 
 ````php
     <?php
@@ -117,10 +117,11 @@ Funktiot voivat sisältää myös ehtolauseita, joissa operoidaan ylläolevilla 
 ````php
 <?php
 function wear_jacket($temperature) {
-    if($temperature <= 10)
+    if($temperature <= 10) {
         return "You need a jacket."
-    else
+    } else {
         return "A jacket is not necessary."
+    }
 }
 <p>During the cold months mom says: <?= wear_jacket(-5)></p>
 <p>In summer mom says: <?=wear_jacket(25)></p>
