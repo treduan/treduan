@@ -7,6 +7,7 @@
 - [Tietokannan luominen](./tietokannanluonti/)
 - [Tietojen käsittely tauluissa](./tiedonkasittelytaulussa/)
 - [Viiteavaimet](./viiteavaimet/index.md)
+- [Poistotoiminnot](./tietojenpoisto/)
 
 ## PHP
 

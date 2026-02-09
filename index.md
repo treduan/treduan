@@ -2,6 +2,8 @@
 
 ## Kurssit 2025-2026
 
+[Palvelinohjelmointi](./palvelinohjelmointi2026/)
+
 [ Selainohjelmointi ](./selainohjelmointi2026/index.md)
 
 [ HTML & CSS ](./htmlcsssyksy2025/)
