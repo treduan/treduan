@@ -9,6 +9,8 @@
 - [Viiteavaimet](./viiteavaimet/index.md)
 - [Poistotoiminnot](./tietojenpoisto/)
 
+- [Tietokantaharjoitus](./tietokantaharjoitus/index.md)
+
 ## PHP
 
 ## WordPress-kehitys
