@@ -1,6 +1,6 @@
 ## Taulujen yhdistäminen
 
-Samassa tietokannassa on usein monta eri taulua. Meidänkin testitietokannassamme on nyt yksi taulu opiskelijalle ja kurssille. Näillä ei kuitenkaan vielä ole minkäänlaista yhteyttä, vaikka loogista olisi ajatella, että opiskelijalla voisi olla kursseja useampikin yhtä aikaa.
+Samassa tietokannassa on usein monta eri taulua. Usein taulujen välille luodaan yhteyksiä ja hakuja.
 
 ## Foreign Key
 
@@ -81,3 +81,90 @@ FROM Students s
 LEFT JOIN Groups g
 ON s.group_id = g.id;
 ````
+
+## Demotehtävä 1
+1. Tee haku, jossa etsit kaikki opiskelijat, joiden ryhmän nimi on Ohjelmistokehitys (eli lisää hakuun ``WHERE``-ehto).
+
+## Liitostaulut
+
+Yllä oleva tilanne onnistuu, kun yhdellä opiskelijalla voi olla vain yksi ryhmä.
+
+Mutta jos meillä on tilanne, jossa meillä on opiskelijoita ja kursseja ja jokaisella kurssilla voi olla monta opiskelijaa ja jokaisella opiskelijalla monta kurssia, joudumme tekemään jotain erilaista.
+
+Oletetaan, että meillä on nyt seuraavanlaiset opiskelija ja kurssi:
+
+````sql
+CREATE TABLE Students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL
+);
+````
+
+````sql
+CREATE TABLE Courses (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL
+);
+````
+
+Jotta saamme nämä yhdistettyä niin, että kummallakin voi olla monta kumpaakin, meidän täytyy tehdä liitostaulu eli käytännössä taulu, joka pitää sisällään listan molemmista. Tässä tapauksessa se voisi olla nimeltään *Enrollments*.
+
+````sql
+CREATE TABLE Enrollments (
+    student_id INT,
+    course_id INT,
+    PRIMARY KEY (student_id, course_id),
+    FOREIGN KEY (student_id) REFERENCES Students(id),
+    FOREIGN KEY (course_id) REFERENCES Courses(id)
+);
+````
+
+Tämä taulu ei tarvitse omaa id:tä, sillä yksi ja sama opiskelija ei voi olla samalla kurssilla kahta kertaa, joten joka kerta saamme uniikin yhdistelmän student_id:stä ja course_id:stä (huom. jos meillä voisi olla tilanne, että yhdellä opiskelijalla voisi olla monta samaa kurssia, me tarvitsisimme sarakkeen kappalemäärille).
+
+Lisäksi taulussa voi olla lisää tietoja. Loogista voisi olla esimerkiksi ilmoittautumispäivä tai arvosana.
+
+````sql
+CREATE TABLE Enrollments (
+    student_id INT,
+    course_id INT,
+    enrollment_date DATE,
+    grade INT,
+    PRIMARY KEY (student_id, course_id),
+    FOREIGN KEY (student_id) REFERENCES Students(id),
+    FOREIGN KEY (course_id) REFERENCES Courses(id)
+);
+````
+
+Tauluun voi lisätä opiskelijan seuraavasti:
+
+````sql
+INSERT INTO Enrollments (student_id, course_id)
+VALUES (1, 2);
+````
+
+Jos haluamme hakea opiskelijan ja hänen kurssinsa, se onnistuu seuraavasti:
+
+````sql
+SELECT s.name, c.name
+FROM Enrollments e
+JOIN Students s ON e.student_id = s.id
+JOIN Courses c ON e.course_id = c.id;
+````
+
+Ja jos haluamme hakea kaikki opiskelijat tietyllä kurssilla, se onnistuu näin:
+
+````sql
+SELECT s.name
+FROM Enrollments e
+JOIN Students s ON e.student_id = s.id
+JOIN Courses c ON e.course_id = c.id
+WHERE c.name = "Ohjelmistokehitys";
+````
+
+## Demotehtävä 2
+
+1. Luo uusi taulu nimeltään Hobbies. Sillä pitää olla vähintään sarakkeet id (pääavain, automaattinen) ja name (merkkijono, max 150 merkkiä, pakollinen).
+2. Lisää tauluun vähintään kolme eri harrastusta.
+3. Koska yhdellä opiskelijalla voi olla monta harrastusta ja harrastuksessa monta opiskelijaa, luo myös liitostaulu nimeltään StudentHobbies. Siinä pitää olla student_id, hobby_id, jotka ovat viiteavaimia, sekä yhdistelmäavain molempiin tauluihin.
+4. Lisää vähintään kaksi harrastusta samalle opiskelijalle.
+5. Hae tämän opiskelijan nimi ja kaikki hänen harrastuksensa samalla haulla.
