@@ -78,6 +78,17 @@ CREATE TABLE Students (
         ON UPDATE CASCADE
 );
 ````
+Viiteavaimen muokkaaminen MariaDB:n kanssa menee seuraavasti:
+
+````sql
+ALTER TABLE students
+ADD CONSTRAINT fk_students_group
+FOREIGN KEY (group_id)
+REFERENCES groups(id)
+ON DELETE SET NULL
+ON UPDATE CASCADE;
+````
+
 2. Hae ensin opiskelijat ja heidän ryhmiensä nimet käyttäen ``LEFT JOIN``ia. Tarvittaessa lisää opiskelijoita niin, että sinulla on vähintään kaksi eri ryhmää ja kolme opiskelijaa, joista kaksi on keskenään samassa ryhmässä.
 
 3. Poista ryhmistä ensimmäinen. Hae uudelleen opiskelijat ja heidän ryhmänsä.
