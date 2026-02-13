@@ -21,7 +21,6 @@ Voit valita tietokannan aiheeksi jonkin seuraavista:
 - Laadi kysely jossa haet tietoja kahdesta tai useammasta taulusta INNER JOIN-liitoksen avulla.
 - Laadi kysely jossa käytät funktiota. Voit esimerkiksi hakea tietyn taulun tietueitten lukumäärän.
 - Laadi kysely jossa käytät funktiota ja ryhmittelet tiedot.
-- Laadi yksi INSERT-kysely jossa lisäät testitietueen.
 - Laadi yksi UPDATE-kysely jossa päivität testitietuetta.
 - Laadi yksi DELETE-kysely jossa poistat testitietueen.
 4. Aja tämä sql-tiedosto c-Panelissa (voit ajaa myös komento kerrallaan halutessasi).
