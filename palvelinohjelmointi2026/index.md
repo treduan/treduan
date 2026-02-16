@@ -13,4 +13,15 @@
 
 ## PHP
 
+- [PHP:n alkeet](./alkeet1/index.md)
+- [Taulukot](./taulukot/index.md)
+
+- [PHP-harjoitukset 1](./phpharjoitus1/index.md)
+
+- [Sivuston jakaminen PHP:llä](./sivustonJakaminen/index.md)
+- [Parametrit sivustolla](./parametrit/index.md)
+- [Lomakkeiden käsittely PHP:llä](./lomakkeet/index.md)
+
+- [PHP-harjoitukset 2](./harjoitukset2/index.md)
+
 ## WordPress-kehitys
