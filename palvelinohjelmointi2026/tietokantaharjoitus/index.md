@@ -24,4 +24,4 @@ Voit valita tietokannan aiheeksi jonkin seuraavista:
 - Laadi yksi UPDATE-kysely jossa päivität testitietuetta.
 - Laadi yksi DELETE-kysely jossa poistat testitietueen.
 4. Aja tämä sql-tiedosto c-Panelissa (voit ajaa myös komento kerrallaan halutessasi).
-5. Ota kuvakaappaus tietokannan rakenteesta ja tallenna se png-tiedostona kansioosi.
+5. Ota kuvakaappaus tietokannan rakenteesta ja tallenna se png-tiedostona kansioosi. Löydät rakenteen kuvan, kun klikkaat pelkkää tietokannan nimeä vasemmalta ja yläoikealta valitset "Suunnittelija"-välilehden.
