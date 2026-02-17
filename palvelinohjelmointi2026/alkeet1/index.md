@@ -70,8 +70,6 @@ Kuten JavaScriptissäkin, PHP:ssä on funktioita. Niille voi sekä antaa paramet
     ?>
 ````
 
-## Ehtolauseet
-
 ### Matemaattiset operaattorit
 
 PHP:ssä toimivat samat matemaattiset operaattorit kuin JavaScriptissäkin:
@@ -133,6 +131,67 @@ function wear_jacket($temperature) {
 2. Luo funktio, jossa on ehtolauseke, joka palauttaa sopivan tervehdyksen riippuen siitä, mikä kellonaika sille annetaan. Eli se vastaa "Good morning!" aamulla ja aamupäivällä, "Good afternoon!" iltapäivällä, "Good evening!" alkuillasta ja "Good night!" myöhään illalla ja yöllä.
 3. Tulosta tulos konsoliin.
 
+
+## Switch-case
+
+switch-rakenne on vaihtoehto useille peräkkäisille if- ja else if -lauseille.
+Sitä käytetään silloin, kun samaa muuttujaa verrataan useisiin eri arvoihin.
+
+````php
+<?php
+$grade = 3;
+
+switch ($grade) {
+    case 5:
+        echo "Erinomainen";
+        break;
+
+    case 4:
+        echo "Kiitettävä";
+        break;
+
+    case 3:
+        echo "Hyvä";
+        break;
+
+    default:
+        echo "Tuntematon arvosana";
+}
+?>
+````
+
+Voit myös yhdistää useita vaihtoehtoja:
+
+````php
+<?php
+$day = "lauantai";
+
+switch ($day) {
+    case "lauantai":
+    case "sunnuntai":
+        echo "Viikonloppu";
+        break;
+
+    default:
+        echo "Arkipäivä";
+}
+?>
+````
+
+## Demotehtävä 3
+
+1. Luo muuttuja $month, johon tallennetaan kuukauden nimi merkkijonona (esim. "heinäkuu").
+
+2. Kirjoita switch-rakenne, joka tulostaa vuodenaikaa kuvaavan viestin seuraavasti:
+
+"joulukuu", "tammikuu", "helmikuu" → "Talvikausi leirikeskuksessa."
+"maaliskuu", "huhtikuu", "toukokuu" → "Kevät tuo retkeilijöitä."
+"kesäkuu", "heinäkuu", "elokuu" → "Kesäkausi on vilkkaimmillaan!"
+"syyskuu", "lokakuu", "marraskuu" → "Syksy on rauhallisempaa aikaa."
+Muut arvot → "Tuntematon kuukausi."
+
+Muista käyttää break-lausetta jokaisen vaihtoehdon lopussa.
+
 ## Kommenttimerkit
 
 PHP:ssä toimivat samat kommenttimerkit kuin JavaScriptissä:
@@ -157,3 +216,109 @@ Harjoittelemme Php:n perussyntaksia käyttäen w3schoolsin materiaaleja. Sieltä
 1. Tee [w3schoolin PHP-harjoitukset](https://www.w3schools.com/php/php_exercises.asp)<base target="_blank">. Lue ensin kyseinen osio. Osiot ovat Variables, Echo/Print, Data Types, Strings, Numbers, Math, Constants, Operators, If...Else...Elseif, Switch ja Functions.
 
 2. Tee [w3schoolin PHP-quiz](https://www.w3schools.com/php/php_quiz.asp)<base target="_blank">. Samat osiot.
+
+## Näkyvyys (scope)
+
+Kaikki koodi ei näy kaikkialle muualle. Tätä kutsutaan nimellä scope eli näkyvyys.
+
+PHP:ssä muuttujan näkyvyys riippuu siitä, missä se on määritelty ja onko se funktion sisällä vai ulkopuolella
+
+Yleisin sääntö on: Funktion sisällä luotu muuttuja ei näy funktion ulkopuolelle.
+
+### Funktion sisäinen näkyvyys
+
+Alla oleva koodi ei toimi, koska $name on luotu funktion sisällä eikä sitä voi käyttää funktion ulkopuolella.
+
+````php
+<?php
+function myFunction() {
+    $name = "Anna";
+    return "Moi";
+}
+
+echo $name;
+?>
+````
+
+Tämä aiheuttaa virheen, koska $name on olemassa vain funktion sisällä eikä sitä ole määritelty funktion ulkopuolella.
+
+### Muuttujan palauttaminen funktiosta
+
+Jos haluamme käyttää arvoa funktion ulkopuolella, meidän pitää palauttaa se:
+
+````php
+<?php
+function myFunction() {
+    $name = "Anna";
+    return $name;
+}
+
+$name = myFunction();
+echo $name;
+?>
+````
+
+### Globaali muuttuja PHP:ssä
+
+Eri ohjelmointikielissä on lieviä eroja siinä, miten globaalit muuttujat näkyvät. JavaScriptissä globaalit muuttujat näkyvät laajalle, mutta PHP:ssä funktio ei automaattisesti näe globaalisti määriteltyjä muuttujia.
+
+Alla oleva koodi ei toimi, vaikka $name on määritelty ennen funktiota:
+
+````php
+<?php
+function myFunction($item) {
+    echo $item . $name;
+}
+
+$name = "Anna";
+myFunction("Something ");
+?>
+````
+Funktion sisällä $name ei ole näkyvissä, ellei sitä tuoda erikseen käyttöön.
+
+### Globaalin muuttujan käyttäminen funktiossa
+
+Globaalin muuttujan voi tuoda funktion sisälle avainsanalla global.
+
+````php
+<?php
+function myFunction($item) {
+    global $name;
+    echo $item . $name;
+}
+
+$name = "Anna";
+myFunction("Something ");
+?>
+````
+
+### Lohkon näkyvyys (block scope) PHP:ssä
+
+JavaScriptissä muuttujat voivat olla näkyvissä vain aaltosulkeiden sisällä (block scope).
+PHP toimii hieman eri tavalla.
+
+Esimerkiksi if-lauseessa luotu muuttuja näkyy myös sen ulkopuolella:
+
+````php
+<?php
+if (true) {
+    $name = "Anna";
+}
+
+echo $name;
+?>
+````
+
+Tämä toimii PHP:ssä, koska if, for ja while eivät luo omaa scopea samalla tavalla kuin JavaScriptissä.
+
+Myös for-silmukan muuttuja jää näkyviin silmukan jälkeen:
+
+````php
+<?php
+for ($i = 0; $i < 3; $i++) {
+    echo $i;
+}
+
+echo $i; // $i on edelleen olemassa
+?>
+````
