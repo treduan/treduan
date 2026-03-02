@@ -52,4 +52,4 @@ Seuraavana palasena olisi sivun varsinainen sisältö, jossa voi olla ohjelmoint
 2. *header.php*-tiedostoon tulee HTML-sivun alku sekä *header*, jossa on otsikko, ja navigointi. Teemana on uutissivu eli otsiko voi olla vaikka Tredun uutiset. Navigoinnissa voi olla esimerkiksi Etusivu, Tuoreimmat, Kaikki uutiset, Arkisto, Toimitus.
 3. *articles.php*-tiedostoon tulee esimerkkiartikkeli, johon kuuluu artikkelin nimi, kirjoittaja, julkaisuajankohta, kuva ja tekstiä (tässä tapauksessa teksti voi olla lorem ipsumia tms).
 4. *footer.php*-tiedostoon tulee footerille tyypillisiä asioita kuten copyright sekä HTML-tiedoston sulkutagit.
-5. Yhdistä nämä tiedostot toisiinsa *index.php*-tiedostossa ja tarkista, että ne toimivat.
+5. Yhdistä nämä tiedostot toisiinsa *index.php*-tiedostossa ja tarkista, että ne toimivat. Eli avaa terminaali ja kirjoita sinne *php -S localhost:8888* ja mene sitten selaimessa osoitteeseen *localhost:8888*.
