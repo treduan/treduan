@@ -24,4 +24,12 @@
 
 - [PHP-harjoitukset 2](./harjoitukset2/index.md)
 
+- [Aika](./aika/index.md)
+- [Istunnot](./istunnot/index.md)
+- [Evästeet](./evasteet/index.md)
+- [Tiedostot](./tiedostot/index.md)
+
+- [Harjoitukset 3](./harjoitukset3/index.md)
+
+
 ## WordPress-kehitys
