@@ -31,5 +31,10 @@
 
 - [Harjoitukset 3](./harjoitukset3/index.md)
 
+- [PDO](./pdo/index.md)
+- [CRUD](./crud/index.md)
+
+- [Harjoitus 4](./harjoitukset4/index.md)
+
 
 ## WordPress-kehitys
