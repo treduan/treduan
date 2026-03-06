@@ -4,7 +4,7 @@ Evästeet ovat istunnon ohella yksi tapa, millä henkilökohtaista dataa saa tal
 
 Käy ensimmäisenä lukemassa linkitetty artikkeli [What are cookies?](https://www.kaspersky.com/resource-center/definitions/cookies)<base target="_blank">.
 
-Luo Word-dokumentti, jossa vastaat seuraaviin kysymyksiin pääosin artikkelin pohjalta. Palauta dokumentti Teamsiin kansioon kanavalla Sähköinen asiakaspalvelu - php.
+Luo Markdown-dokumentti, jossa vastaat seuraaviin kysymyksiin pääosin artikkelin pohjalta. Palauta dokumentti GitHubin kautta.
 
 1. Miksi HTTP evästeet kehitettiin?
 2. Minne evästeet tallennetaan ja mitä etua siitä on yritysten näkökulmasta?
