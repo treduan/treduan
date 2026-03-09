@@ -48,14 +48,14 @@ Sitten meidän täytyy tehdä tarkistuksia, kun lomake on lähetetty:
     }
 ````
 
-Tässä tarkistetaan syötteet ja sanitoidaan ne cleanUpInput-funktion avulla, jossa tehdään ``trim()`` eli tyhjien välilyöntien poisto sekä ``htmlspecialchars()`` eli sanitointi. Nämä on laitettu yhteen funktioon, jotta vältämme toisota. Jos kaikki on kunnossa, kutsutaan addUser-fuktiota, jolle lähetetään kaikki tiedot. Sen jälkeen käyttäjä viedään etusivulle eli index.php-sivulle. Jos taas rekisteröityminen ei toimi, käyttäjälle annetaan virheviesti.
+Tässä tarkistetaan syötteet ja sanitoidaan ne cleanUpInput-funktion avulla. Jos kaikki on kunnossa, kutsutaan addUser-fuktiota, jolle lähetetään kaikki tiedot. Sen jälkeen käyttäjä viedään etusivulle eli index.php-sivulle. Jos taas rekisteröityminen ei toimi, käyttäjälle annetaan virheviesti.
 
-``cleanUpInput()`` näyttää seuraavalta:
+cleanUpInput on itse rakennettu funktio, joka poistaa mahdolliset tyhjät välilyönnit sekä sanitoi syötteen. Se näyttää seuraavalta:
 
 ````php
 function cleanUpInput($userinput){
     $input = trim($userinput);
-    $cleaninput = htmlspecialchars($input);
+    $cleaninput = filter_var($input,FILTER_SANITIZE_STRING);
     return $cleaninput;
 }
 ````
