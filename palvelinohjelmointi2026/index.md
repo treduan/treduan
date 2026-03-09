@@ -36,5 +36,10 @@
 
 - [Harjoitus 4](./harjoitukset4/index.md)
 
+- [MVC-malli](./mvc/index.md)
+- [Rekisteröityminen ja kirjautuminen](./rekisteroityminen/index.md)
+
+- [Harjoitus 5](./harjoitukset5/index.md)
+
 
 ## WordPress-kehitys
