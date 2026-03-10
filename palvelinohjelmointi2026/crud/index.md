@@ -21,7 +21,7 @@ Ensin tämän fuktion pitäisi hakea kaikki pelit tietokannasta:
  } 
  ````
 
-Funktion kutsu palauttaa taulukon, joka sisältää assosiatiivisia taulukoita. Jos haluamme luoda verkkosivulle listan kaikista noudetuista pelien nimistä, se onnistuu seuraavalla koodilla:
+Funktion kutsu palauttaa taulukon, joka sisältää assosiatiivisia taulukoita. Ensin tarvitsemme HTML-pohjan. Jos haluamme luoda verkkosivulle listan kaikista noudetuista pelien nimistä, se onnistuu seuraavalla koodilla, joka lisätään HTML-sivun body-osioon:
 
 ````php
 <ul>
@@ -50,6 +50,14 @@ foreach($games as $game) {
  }  
  ````
 
+ HTML-osiossa voi lukea esimerkiksi:
+
+ ````php
+ $one_game = getGameById(4);
+echo "<p> Yksi peli: " . $one_game["name"] .", " . $one_game["company"] . "</p>";
+````
+
+
  Uuden pelin voi lisätä seuraavalla koodilla (huom, täydennä arvot funktion kutsussa):
 
  ````php
@@ -59,6 +67,12 @@ foreach($games as $game) {
     $stm = $pdo->prepare($sql);
     $ok = $stm->execute([$name, $company, $release]);
     return $ok;
+ }
+````
+Funktion kutsu voi näyttää esimerkiksi seuraavalta:
+
+````php
+insertNewGame("World of Warcraft", "Blizzard", 2004);
 ````
 
 Peliä voi muokata seuraavalla koodilla: 
@@ -71,6 +85,12 @@ Peliä voi muokata seuraavalla koodilla:
     $ok = $stm->execute([$name, $company, $release, $id]);
     return $ok;
 } 
+````
+
+Kutsu voi näyttää seuraavalta:
+
+````php
+insertNewGame("World of Warcraft: Burning Crusade", "Blizzard", 2007, 18);
 ````
 
 Ja seuraava koodi poistaa pelin id:n perusteella:
@@ -87,6 +107,13 @@ Ja seuraava koodi poistaa pelin id:n perusteella:
      return $ok;
  }  
  ````
+
+ Poistamisen kutsu näyttää seuraavalta:
+
+ ````php
+ deleteGame(18);
+ ````
+
 
 ## Demotehtävä 1
 
@@ -140,7 +167,18 @@ Ensin siis tarkistetaan, onko *deletedid*tä asetettu, jos se on asetettu, haeta
 
 Lisäämistä varten tarvitaan lomake.
 
-Luodaan siis uusi PHP-tiedosto, jolle lomake laitetaan. Lomake tarvitsee kolme kenttää eli Name, Company ja Year sekä tallennusnapin. Lisäksi alkuun pitää liittää tiedosto, jolla tietokantaan luodaan yhteys sekä funktio, jolla kirjan voi lisätä.
+Lomake tarvitsee kolme kenttää eli Name, Company ja Year sekä tallennusnapin.
+
+````php
+<form> 
+    <label>Name <input type="text" name="name"></label>
+    <label>Company <input type="text" name="company"></label>
+    <label>Release year <input type="number" name="year" min=1950 max=2026></label>
+    <input type="submit" value="Add a new game" name="add">
+</form>
+````
+
+Sitten tarkistamme, onko lomake lähetetty. Lisäksi teemme tarkistuksen, että kaikki syöte on toimivaa, mitä varten meillä on erillinen funktio.
 
 ````php 
 // tarkista, onko muuttujat asetettu
@@ -157,7 +195,7 @@ if (isset($_GET["name"], $_GET["company"], $_GET["year"])) {
   }
 }
 // funktio saa kaikki lomakkeen tiedot ja tarkistaa, täyttävätkö ne ehdot
-function checkInput($name, $company, $year): boolean {
+function checkInput($name, $company, $year) {
   $inputIsFine = false;
   if (strlen($name >= 2) || strlen($company >= 2) || $year > 1950) {
     $inputIsFine = true;
@@ -177,22 +215,70 @@ Lisätään siis pelien listaan seuraava koodi, jotta saamme siihen linkin:
 <?php
 $games = getAllGames();
     foreach($games as $game) {
-        echo $game["name"] . " " . $game["company"] . " " . $game["release"]. "<a href='./index.php?deletedid=" . $game["gameid"] . "'>Remove</a>" . "<a href='./edit.php?editedid=" . $game["gameid"] . "'>muokkaa</a>" . "<br>";
+        echo $game["name"] . " " . $game["company"] . " " . $game["release"]. "<a href='./index.php?deletedid=" . $game["gameid"] . "'>Remove</a>" . " " . "<a href='./edit.php?editedid=" . $game["gameid"] . "'>Muokkaa</a>" . "<br>";
     }
 ?>
 ````
 
-Jos muokkaaminen halutaan tehdä oikein hyvin, ensin sivulla haetaan kyseinen peli id:n avulla ja vanhat arvot laitetaan kenttiin oletusarvoiksi. Lomake voi siis näyttää seuraavalta:
+Tehdään muokkaamista varten oma sivu nimeltään edit.php. Jos muokkaaminen halutaan tehdä oikein hyvin, ensin sivulla haetaan kyseinen peli id:n avulla ja vanhat arvot laitetaan kenttiin oletusarvoiksi. Lisätään tähän tiedostoon myös getGamebyId() ja updateGame() -funktiot. Lomake voi siis näyttää seuraavalta:
 
 ````php
 <?php
   require "./dbfunctions.php";
-  require "./index.php";
   $id = $_GET["editedid"];
   $game = getGameById($id);
+
+function updateGame($name, $company, $release, $id) {
+  $pdo = connect();
+  $sql = "UPDATE test_games SET `name`=?, company=?, `release`=? WHERE gameid=?";
+  $stm = $pdo->prepare($sql);
+  $ok = $stm->execute([$name, $company, $release, $id]);
+  return $ok;
+}
+function getGameById($id) {
+  $pdo = connect();
+  $sql = "SELECT * FROM test_games WHERE gameid=?";
+  $stm = $pdo->prepare($sql);
+  $stm->execute([$id]);
+  $game = $stm->fetch(PDO::FETCH_ASSOC);
+  return $game;
+} 
+// tarkista, onko muuttujat asetettu
+if (isset($_GET["name"], $_GET["company"], $_GET["release"], $_GET["gameid"])) {
+    //luo muuttujat ja sanitoi ne
+    echo "Lomake lähetetty";
+    $name = htmlspecialchars($_GET["name"]);
+    $company = htmlspecialchars($_GET["company"]);
+    $release = htmlspecialchars($_GET["release"]);
+    // käytä apufunktiota, joka tarkistaa vielä syötteen tiedot
+    if (checkInput($name, $company, $release)) {
+      $ok = updateGame($name, $company, $release, $_GET["gameid"]);
+      header("Location: ./index.php");
+    } else {
+      echo "<p>Failed to update the game. Input is not valid.</p>";
+    }
+  }
+  // funktio saa kaikki lomakkeen tiedot ja tarkistaa, täyttävätkö ne ehdot
+  function checkInput($name, $company, $release) {
+    $inputIsFine = false;
+    if (strlen($name >= 2) || strlen($company >= 2) || $release > 1950) {
+      $inputIsFine = true;
+    } 
+    // palautetaan totuusarvo
+    return $inputIsFine;
+  }
 ?>
-<h3>Muokkaa peliä</h3>
-<form action="" method="POST">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>Muokkaa peliä</h1>
+<form action="" method="get">
     <label for="name">Name</label><br>
     <input type="text" name="name" id="" value="<?= $game['name'] ?>"><br>
     <label for="company">Company</label><br>
@@ -202,6 +288,8 @@ Jos muokkaaminen halutaan tehdä oikein hyvin, ensin sivulla haetaan kyseinen pe
     <input type="hidden" name="gameid" value="<?= $game['gameid'] ?>">
     <input type="submit" value="Save">
 </form>
+</body>
+</html>
 ````
 
 Muutoin voidaan toimia hyvin pitkälle samoin kuin uuden pelin luomisen kanssa, mutta toki epäonnistuessa teksti on eri.
