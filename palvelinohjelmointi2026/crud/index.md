@@ -90,7 +90,7 @@ Peliä voi muokata seuraavalla koodilla:
 Kutsu voi näyttää seuraavalta:
 
 ````php
-insertNewGame("World of Warcraft: Burning Crusade", "Blizzard", 2007, 18);
+updateGame("World of Warcraft: Burning Crusade", "Blizzard", 2007, 18);
 ````
 
 Ja seuraava koodi poistaa pelin id:n perusteella:
