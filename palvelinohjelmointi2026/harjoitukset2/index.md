@@ -16,7 +16,7 @@ Huom! Jos kenttään kirjoitetaan suomalainen desimaali pilkulla, pitää laskut
 
 ### Tehtävä 1
 
-Tee harjoituksille palautussivu. Sillä pitää olla header, jossa lukee "PHP-harjoitukset 2". Sen alla on navigaatiopalkki, johon tulee linkki jokaiseen harjoitukseen. Luo nämä omaan tiedostoon, jotta saat linkitettyä sen jokaiseen harjoitukseen. Etusivulle eli index.php-sivulle liität jonkin kuvan ja kerrot, että kyseisellä sivustolla on joukko harjoituslomakkeita. Lopuksi laadit vielä footerin, jossa on copyright. Myös se pitää yhdistää jokaisen harjoituksen sivulle. Tee CSS:n avulla sivustosta siisti.
+Tee harjoituksille palautussivu. Sillä pitää olla header, jossa lukee "PHP-harjoitukset 2". Sen alla on navigaatiopalkki, johon tulee linkki jokaiseen harjoitukseen. Luo nämä omaan tiedostoon, jotta saat linkitettyä sen jokaiseen harjoitukseen. Etusivulle eli index.php-sivulle liität jonkin kuvan ja kerrot, että kyseisellä sivustolla on joukko harjoituslomakkeita. Lopuksi laadit vielä footerin, jossa on copyright. Myös se pitää yhdistää jokaisen harjoituksen sivulle. Tee CSS:n avulla sivustosta siisti. Sinulla kuuluu siis lopulta olla kymmenen tiedostoa (index.php, header.php, footer.php, CSS-tiedosto, kuvatiedosto ja jokaiselle viidelle lomaketehtävälle omat tiedostot + mahdolliselle lisätehtävlle oma).
 
 ### Tehtävä 2
 
