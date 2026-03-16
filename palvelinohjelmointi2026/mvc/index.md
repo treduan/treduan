@@ -50,7 +50,7 @@ Lisää article-taululle uusi kenttä *section* (varchar 50)
 Lisää newArticle.view.php:ssa kovakoodattu select-ohjain uutisosaston valinnalle. Valinnassa vaihtoehdot "Kotimaa", "Ulkomaat" ja "Viihde".
 
 Lisää uusi muuttuja $section mukaan article.php:n addArticle-funktiolle.
-Lisää articleManagement.php:ssa addArticleController()-funktiolle uusi kenttäsi.
+Lisää articleManagement.php:ssa addArticleController()-funktiolle uusi kenttäsi. Lopuksi näytä osasto articles.view.php -tiedostossa.
 
 ### Artikkelien hakeminen osaston mukaan
 
