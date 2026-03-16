@@ -41,5 +41,13 @@
 
 - [Harjoitus 5](./harjoitukset5/index.md)
 
+- [Oliot (object)](./oliot1/index.md)
+- [Olioiden näkyvyys](./olionakyvyys/index.md)
+- [Periytyvyys](./periytyvyys/index.md)
+
+- [Olioiden kertaus kokeeseen](./oliokertaus/index.md)
+
+- [Harjoitus 6 (oliot ja periytyvyys)](./harjoitus6/index.md)
+
 
 ## WordPress-kehitys
