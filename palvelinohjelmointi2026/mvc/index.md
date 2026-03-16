@@ -54,7 +54,8 @@ Lisää articleManagement.php:ssa addArticleController()-funktiolle uusi kenttä
 
 ### Artikkelien hakeminen osaston mukaan
 
-Kopioi select-ohjaimesi articles.view.php:lle. Lisää submit-painike sekä näiden ympärille form.
+Teemme vielä uutisten suodatuksen osastojen mukaan. Sitä varten teemme lomakkeen, jossa on select-valikko. Siinä on vaihtoehdot "Kotimaa", "Ulkomaat" ja "Viihde", joten uutisen osastossakin (valutessasi siinä voi olla myös vaihtoehto "Kaikki"). Lisäksi on lähetysnappi. Anna selectin nameksi "section" ja lomakkeen metodiksi post.
+
 Muutetaan articleManagement.php:ssa viewArticlesController()-funktiota
 
 ````php
