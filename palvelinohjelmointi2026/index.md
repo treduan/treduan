@@ -38,6 +38,7 @@
 
 - [MVC-malli](./mvc/index.md)
 - [Rekisteröityminen ja kirjautuminen](./rekisteroityminen/index.md)
+- [Reititys](./reititys/index.md)
 
 - [Harjoitus 5](./harjoitukset5/index.md)
 
