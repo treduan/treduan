@@ -4,7 +4,7 @@ PHP:ssä reititys on prosessi, joka määrittää, miten HTTP-pyynnöt ohjataan 
 
 Tavallisesti reititys perustuu URL-osoitteisiin ja niiden polkuihin. Esimerkiksi, kun käyttäjä pyytää tiettyä URL-osoitetta, reititysjärjestelmä ohjaa pyynnön tiettyyn koodilohkoon, joka käsittelee kyseisen pyynnön ja määrittää mitä näytetään käyttäjälle.
 
-Tässä alla on mahdollisimman yksinkertainen reitin, joka on *index.php* -nimisessä tiedostossa. Lisäksi samalla sivustolla on sivut *about.php* ja *404.php*. Muuttuja $route hakee sivuston osoiterivistä osoitteen, jonka mukaisesti se vaihtaa näkymän. Oletuksena on, että sopivaa ei löydy, jolloin näytetään *404.php*.
+Tässä alla on mahdollisimman yksinkertainen reitin, joka on *index.php* -nimisessä tiedostossa. Lisäksi samalla sivustolla on sivut *home.php*, *about.php* ja *404.php*. Muuttuja $route hakee sivuston osoiterivistä osoitteen, jonka mukaisesti se vaihtaa näkymän. Oletuksena on, että sopivaa ei löydy, jolloin näytetään *404.php*.
 
 ````php
 <?php
@@ -13,17 +13,17 @@ $route = $_SERVER['REQUEST_URI'];
 
 switch ($route) {
     case '/' :
-        require __DIR__ . '/views/index.php';
+        require './views/home.php';
         break;
     case '' :
-        require __DIR__ . '/views/index.php';
+        require './views/index.php';
         break;
     case '/about' :
-        require __DIR__ . '/views/about.php';
+        require './views/about.php';
         break;
     default:
         http_response_code(404);
-        require __DIR__ . '/views/404.php';
+        require '../views/404.php';
         break;
 }
 ````
