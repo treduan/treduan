@@ -49,5 +49,7 @@
 
 - [Harjoitus 6 (oliot ja periytyvyys)](./harjoitus6/index.md)
 
+- [Taitaja semifinaali 2025 (lisätehtävä)](https://github.com/webkehitys/taitaja2025/tree/main/semifinaali)
+
 
 ## WordPress-kehitys
