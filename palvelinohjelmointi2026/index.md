@@ -56,3 +56,14 @@
 
 
 ## WordPress-kehitys
+
+- [Sisällönhallintajärjestelmät](./verkkokauppa/jarjestelmat/index.md)
+- [WordPress](./verkkokauppa/wordpress/index.md)
+- [Verkkokaupan ominaisuuksia](./verkkokauppa/verkkokaupat/index.md)
+- [Artikkelit ja kommentit](./verkkokauppa/artikkelit/index.md)
+- [Asetukset](./verkkokauppa/asetukset/index.md)
+- [Käyttäjäroolit](./verkkokauppa/kayttajat/index.md)
+- [Teemat](./verkkokauppa/teemat/index.md)
+- [Lisäosat (plugins)](./verkkokauppa/lisaosat/index.md)
+- [WooCommerce](./verkkokauppa/woocommerce/index.md)
+- [SEO](./verkkokauppa/SEO/index.md)
