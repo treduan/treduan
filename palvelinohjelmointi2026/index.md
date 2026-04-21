@@ -38,8 +38,32 @@
 
 - [MVC-malli](./mvc/index.md)
 - [Rekisteröityminen ja kirjautuminen](./rekisteroityminen/index.md)
+- [Reititys](./reititys/index.md)
 
 - [Harjoitus 5](./harjoitukset5/index.md)
 
+- [Oliot (object)](./oliot1/index.md)
+- [Olioiden näkyvyys](./olionakyvyys/index.md)
+- [Periytyvyys](./periytyvyys/index.md)
+
+- [Olioiden kertaus kokeeseen](./oliokertaus/index.md)
+
+- [Harjoitus 6 (oliot ja periytyvyys)](./harjoitus6/index.md)
+
+- [Harjoitus 7 (reseptipankki)](./harjoitus7/index.md)
+
+- [Taitaja semifinaali 2025 (lisätehtävä)](https://github.com/webkehitys/taitaja2025/tree/main/semifinaali)
+
 
 ## WordPress-kehitys
+
+- [Sisällönhallintajärjestelmät](./verkkokauppa/jarjestelmat/index.md)
+- [WordPress](./verkkokauppa/wordpress/index.md)
+- [Verkkokaupan ominaisuuksia](./verkkokauppa/verkkokaupat/index.md)
+- [Artikkelit ja kommentit](./verkkokauppa/artikkelit/index.md)
+- [Asetukset](./verkkokauppa/asetukset/index.md)
+- [Käyttäjäroolit](./verkkokauppa/kayttajat/index.md)
+- [Teemat](./verkkokauppa/teemat/index.md)
+- [Lisäosat (plugins)](./verkkokauppa/lisaosat/index.md)
+- [WooCommerce](./verkkokauppa/woocommerce/index.md)
+- [SEO](./verkkokauppa/SEO/index.md)

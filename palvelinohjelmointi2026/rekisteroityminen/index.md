@@ -88,7 +88,7 @@ Tiedät, että rekisteröityminen on onnistunut, jos olet siirtynyt takaisin etu
 
 ## Kirjautuminen
 
-Kun rekisteröityminen on saatu tehtyä, voidaan tehdä sisäänkirjautuminen sekä myös uloskirjautuminen. Sisäänkirjautumiselle tehdään jälleen oma sivu nimeltään login.php.
+Kun rekisteröityminen on saatu tehtyä, voidaan tehdä sisäänkirjautuminen sekä myös uloskirjautuminen. Aloita istunto etusivulla koodilla ``session_start();`` Sisäänkirjautumiselle tehdään jälleen oma sivu nimeltään login.php.
 
 ````php
 <h2 class="centered">Login</h2>
