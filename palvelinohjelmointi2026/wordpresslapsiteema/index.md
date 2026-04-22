@@ -1,5 +1,30 @@
 # Lapsiteeman luominen WordPressissa
 
+## WordPress-tiedostojen lataus omalle koneelle
+
+Jotta voimme muokata WordPress-tiedostoja, haluamme ne omalle koneellemme Visual Studio Codeen. Niitä voi muokata myös cpanelissa, mutta käyttöliittymä on kömpelömpi ja hankala käyttää.
+
+1. Lataa Visual Studio Codeen laajennus nimeltään SFTP, tekijä liximomo.
+2. Luo uusi kansio, jolle annat nimen TechFix ja avaa se uuteen ikkunaan Visual Studio Codessa.
+3. Luo confic-tiedosto painamalla ``Ctrl + Shift + P`` ja kirjoittamalla SFTP: Config. Siten luot itsellesi sftp.json-tiedoston.
+4. Muokkaa tiedostoa, jotta se osaa ottaa yhteyden cpaneliin. Lisää osuus salasanalle.
+
+````json
+{
+  "host": "annmet.treok.io",
+  "username": "annmet",
+  "password": "********",
+  "protocol": "sftp",
+  "port": 22,
+  "remotePath": "/home/annmet/public_html/",
+  "uploadOnSave": true
+}
+````
+5. Saat ladattua tiedostot konelle, kun painat ``Ctrl + Shift + P`` ja kirjoitat STFP: Download Project.
+6. Saat muutokset näkyviin, kun olet tallentanut tiedostot ja päivität WordPress-sivun.
+
+## Lapsiteema
+
 Lapsiteema (child theme) on teema, joka perii ulkoasun ja toiminnallisuuden toiselta teemalta (parent theme).
 
 Tätä käytetään, jotta sivua voi muokata turvallisemmin, eivätkä päivitykset riko muutoksiasi.
