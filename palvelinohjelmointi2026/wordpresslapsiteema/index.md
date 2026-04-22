@@ -16,7 +16,7 @@ Jotta voimme muokata WordPress-tiedostoja, haluamme ne omalle koneellemme Visual
   "password": "********",
   "protocol": "sftp",
   "port": 22,
-  "remotePath": "/home/annmet/public_html/",
+  "remotePath": "/home/annmet/public_html/techfix",
   "uploadOnSave": true
 }
 ````
