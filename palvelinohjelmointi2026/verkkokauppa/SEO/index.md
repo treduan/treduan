@@ -50,7 +50,7 @@ Lisätään omalle WordPress-verkkosivulle hakukoneoptimointia. Käy ensimmäise
 
 Artikkelia mukaillen:
 
-1. Mieti muutama avainsana, jotka sopivat Lähimmäisenrakkaus ry:n sivulle.
+1. Mieti muutama avainsana, jotka sopivat verkkokauppasi sivulle.
 2. Tee niillä avainsanoilla muutama Google-haku ja katso, millaisia sivustoja avainsanat nostavat esiin. Käy vilkaisemassa niistä muutamaa ja lukaise pikaisesti niiden tekstejä ja katso, millaisia sanoja siellä käytetään aihepiiristä.
 3. Lisää määrittelemiäsi avainsanoja oman verkkosivusi teksteihin eli osin metateksteihin, otsikoihin ja leipätekstiin (tarvittaessa lisää tällainen).
 
