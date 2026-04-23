@@ -67,3 +67,6 @@
 - [Lisäosat (plugins)](./verkkokauppa/lisaosat/index.md)
 - [WooCommerce](./verkkokauppa/woocommerce/index.md)
 - [SEO](./verkkokauppa/SEO/index.md)
+- [Lapsiteema](./wordpresslapsiteema/index.md)
+
+- [TechFix-sivu](./techfix/index.md)
