@@ -4,10 +4,11 @@
 
 Jotta voimme muokata WordPress-tiedostoja, haluamme ne omalle koneellemme Visual Studio Codeen. Niitä voi muokata myös cpanelissa, mutta käyttöliittymä on kömpelömpi ja hankala käyttää.
 
-1. Lataa Visual Studio Codeen laajennus nimeltään SFTP, tekijä liximomo.
-2. Luo uusi kansio, jolle annat nimen TechFix ja avaa se uuteen ikkunaan Visual Studio Codessa.
-3. Luo confic-tiedosto painamalla ``Ctrl + Shift + P`` ja kirjoittamalla SFTP: Config. Siten luot itsellesi sftp.json-tiedoston.
-4. Muokkaa tiedostoa, jotta se osaa ottaa yhteyden cpaneliin. Lisää osuus salasanalle.
+1. Luo uusi WordPress sivusto. Anna sille nimeksi techfix, sillä teemme sivun tietokonehuoltoyritykselle. Ota talteen uusi adminin käyttäjänimi ja salasana.
+2. Lataa Visual Studio Codeen laajennus nimeltään SFTP, tekijä liximomo.
+3. Luo uusi kansio, jolle annat nimen TechFix ja avaa se uuteen ikkunaan Visual Studio Codessa.
+4. Luo confic-tiedosto painamalla ``Ctrl + Shift + P`` ja kirjoittamalla SFTP: Config. Siten luot itsellesi sftp.json-tiedoston.
+5. Muokkaa tiedostoa, jotta se osaa ottaa yhteyden cpaneliin. Lisää osuus salasanalle.
 
 ````json
 {
@@ -20,8 +21,8 @@ Jotta voimme muokata WordPress-tiedostoja, haluamme ne omalle koneellemme Visual
   "uploadOnSave": true
 }
 ````
-5. Saat ladattua tiedostot konelle, kun painat ``Ctrl + Shift + P`` ja kirjoitat STFP: Download Project.
-6. Saat muutokset näkyviin, kun olet tallentanut tiedostot ja päivität WordPress-sivun.
+6. Saat ladattua tiedostot konelle, kun painat ``Ctrl + Shift + P`` ja kirjoitat STFP: Download Project.
+7. Saat muutokset näkyviin, kun olet tallentanut tiedostot ja päivität WordPress-sivun.
 
 ## Lapsiteema
 
@@ -29,8 +30,8 @@ Lapsiteema (child theme) on teema, joka perii ulkoasun ja toiminnallisuuden tois
 
 Tätä käytetään, jotta sivua voi muokata turvallisemmin, eivätkä päivitykset riko muutoksiasi. Huomiona, että on olemassa kahdenlaisia teemoja. Lapsiteeman luominen toimii niin sanotuissa klassisissa teemoissa, joissa käytetään paljon PHP-pohjaisia palasia. Uusimmat teemat ovat kuitenkin usein niin sanottuja block-pohjaisia, jolloin lapsiteeman luominen ei ole lähellekään yhtä helppoa eikä kannatettavaa. Teemme lapsiteeman siis klassisesta teemasta.
 
-1. Luo uusi WordPress sivusto. Anna sille nimeksi techfix, sillä teemme sivun tietokonehuoltoyritykselle. Ota talteen uusi adminin käyttäjänimi ja salasana.
-2. Etsi ja lataa hallintapaneelista teema Twenty Twenty-One. Se on klassinen teema.
+
+1. Etsi ja lataa hallintapaneelista teema Twenty Twenty-One. Se on klassinen teema.
 2. Mene kansioon ``/wp-content/themes/``
 3. Luo uusi kansio nimeltään ``techfix-theme``.
 4. Avaa kansio ja luo sinne tiedosto nimeltään style.css.
