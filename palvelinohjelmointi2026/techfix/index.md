@@ -8,7 +8,9 @@ Teemme kaikki WordPressillä sivuston tietokonehuoltoyritykselle, joka on nimelt
 2. Käytä lapsiteemaa, joko uutta tai aiemmin demossa aloittamaasi.
 3. Tee lapsiteemaan muutoksia. Vaihda vähintään yhden osion taustaväri, otsikon väri tai fontti sekä linkkien ulkoasu.
 4. Kopioi vähintään yksi tiedosto vanhempiteemasta (esimerkiksi page.php) ja tee siihen selkeä muutos, esimerkiksi lisää siihen elementti.
-5. Tee oma pieni plugin, joka käyttää joko ``add_action``ia tai ``add_filter``ia ja aktivoi se käyttöön.
+
+Extra: Tee oma pieni plugin, joka käyttää joko ``add_action``ia tai ``add_filter``ia ja aktivoi se käyttöön.
+
 
 ## Sisältö
 
