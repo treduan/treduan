@@ -16,7 +16,7 @@ Oleelliset erot näiden välillä kiteytyvät joustavuudessa ja lähestymistavas
 
 ## Scrum
 
-Scrum on ketterän kehityksen malli, joka keskittyy tuottamaan arvoa nopeissa iteraatioissa ja tukemaan tiimin itseohjautuvuutta. Scrum-menetelmä jakaa projektin lyhyisiin, ennalta määrättyihin aikajaksoihin, joita kutsutaan sprinteiksi (yleensä 1–4 viikkoa). Jokaisen sprintin lopussa syntyy toimiva ohjelmiston osa, joka on valmis testattavaksi ja arvioitavaksi. Scrum-malli korostaa tiimin jäsenten välistä yhteistyötä, jatkuvaa parantamista ja nopeaa palautteen hyödyntämistä.
+Scrum on ketterän kehityksen malli, joka keskittyy tuottamaan arvoa nopeissa vaiheissa ja tukemaan tiimin itseohjautuvuutta. Scrum-menetelmä jakaa projektin lyhyisiin, ennalta määrättyihin aikajaksoihin, joita kutsutaan sprinteiksi (yleensä 1–4 viikkoa). Jokaisen sprintin lopussa syntyy toimiva ohjelmiston osa, joka on valmis testattavaksi ja arvioitavaksi. Scrum-malli korostaa tiimin jäsenten välistä yhteistyötä, jatkuvaa parantamista ja nopeaa palautteen hyödyntämistä.
 
 Scrumissa on kolme tärkeää roolia: tuoteomistaja, joka vastaa projektin vaatimusten määrittelystä ja priorisoinnista; scrum master, joka varmistaa, että tiimi noudattaa scrum-prosessia ja poistaa esteitä; sekä tiimi, joka koostuu kehittäjistä ja muista projektin toteutukseen osallistuvista jäsenistä. Työtä ohjaavat scrumin seremonioihin kuuluvat sprintin suunnittelupalaveri, päivittäiset lyhyet kokoukset (daily stand-ups), sprintin katselmointi ja retrospektiivi, jossa arvioidaan kehitystä ja tunnistetaan parannettavia asioita.
 
@@ -24,7 +24,9 @@ Scrum-menetelmän avulla tiimi voi sopeutua muuttuviin vaatimuksiin ja parantaa 
 
 ## Scrumin vaiheet
 
-Scrum-sprintti on rajattu aikajakso, jossa tiimi keskittyy toteuttamaan tiettyjä toiminnallisuuksia projektin tavoitteiden mukaisesti. Sprintti alkaa sprintin suunnittelupalaverilla, jossa tuoteomistaja ja tiimi määrittelevät sprintin tavoitteet ja valitsevat backlogista (tehtävälistasta) priorisoidut tehtävät sprinttiin. Tämän suunnittelun tarkoituksena on varmistaa, että kaikilla on yhteisymmärrys siitä, mitä sprintissä saavutetaan ja mitkä tehtävät ovat ensisijaisia.
+Scrum-sprintti on rajattu aikajakso, jossa tiimi keskittyy toteuttamaan tiettyjä toiminnallisuuksia projektin tavoitteiden mukaisesti. 
+
+Sprintti alkaa sprintin suunnittelupalaverilla, jossa tuoteomistaja ja tiimi määrittelevät sprintin tavoitteet ja valitsevat backlogista (tehtävälistasta) priorisoidut tehtävät sprinttiin. Tämän suunnittelun tarkoituksena on varmistaa, että kaikilla on yhteisymmärrys siitä, mitä sprintissä saavutetaan ja mitkä tehtävät ovat ensisijaisia.
 
 Sprintin aikana tiimi pitää päivittäisiä, lyhyitä kokouksia (daily stand-ups), joissa käydään läpi edistyminen ja mahdolliset esteet. Näiden kokousten avulla voidaan varmistaa, että kaikki ovat ajan tasalla ja että ongelmiin voidaan reagoida nopeasti.
 
