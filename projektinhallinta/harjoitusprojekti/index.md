@@ -7,6 +7,7 @@ Rakennatte yksinkertaisen verkkosovelluksen, jossa käyttäjä voi:
 - selata tapahtumia
 - tarkastella yksittäisen tapahtuman tietoja
 - ilmoittautua tapahtumaan
+- nähdä, onko tapahtumassa tilaa
 
 Projektin pääpaino on **projektinhallinnan harjoittelussa**, ei täydellisessä teknisessä toteutuksessa.
 
@@ -64,7 +65,7 @@ Miettikää itse:
 
 ## Tekninen toteutus (kevyt ohjeistus)
 
-Voitte toteuttaa projektin esimerkiksi:
+Voitte toteuttaa projektin esimerkiksi
 
 - HTML + CSS
 - JavaScript
@@ -81,7 +82,7 @@ Teidän tulee:
 - sopia, kuka tekee mitä
 - käyttää versionhallintaa (Git)
 
-Kaikkien tulee osallistua projektiin.
+Kaikkien tulee osallistua projektiin, mutta osallistujat voivat keskittyä eri osiin. Tarkempi tehtävänjako tehdään, kun projektin toteutus aloitetaan.
 
 ---
 

@@ -53,7 +53,7 @@ Nykyään ohjelmistokehityksessä käytetään useimmiten ketteriä menetelmiä.
 
 ## Scrum
 
-Scrum on yksi tunnetuimmista ketterän kehityksen malleista.
+Scrum on yksi tunnetuimmista ja käytetyimmistä ketterän kehityksen malleista.
 
 Siinä projekti jaetaan lyhyisiin sprinteihin (yleensä 1–4 viikkoa), ja jokaisen sprintin lopussa syntyy toimiva osa ohjelmaa.
 
@@ -86,7 +86,7 @@ Scrumissa on kolme keskeistä roolia:
 - valitaan tärkeimmät tehtävät ja toissijaiset tehtävät  
 
 ### Daily
-- joka päivä pidetään lyhyt keskustelu työn etenemisestä eli mitä on tehty, mitä seuraavaksi tehdään ja onko työn tekemisessä esteitä  
+- joka päivä pidetään lyhyt keskustelu työn etenemisestä eli mitä taskeja on tehty, mitä seuraavaksi tehdään ja onko työn tekemisessä esteitä  
 
 ### Sprint review
 - esitellään valmis työ  
@@ -104,19 +104,18 @@ Tässä projektissa käytämme Scrumia yksinkertaistetussa muodossa.
 
 Scrum ei ole erillinen teoria, vaan tapa tehdä tämä projekti.
 
-- koko projekti toimii yhtenä sprinttinä  
+- koko testiprojekti toimii yhtenä sprinttinä  
 - tehtävät tulevat user storyista  
 - etenemistä seurataan projektiseinällä  
 
 ---
 
-## Tehtävä: Scrum käytännössä
+## Scrum käytännössä
 
 ### 1. Sprint planning
-- Valitkaa tiimillenne scrum master, joka on vastuussa palavereista
-- Valitkaa 3–5 user storya  
-- Pilkkokaa ne taskeiksi  
-- Lisätkää taskit projektiseinälle  
+- Valitkaa tiimillenne scrum master, joka on vastuussa palavereista. Scrum master tulee tekemään myös itse nettisivua, mutta pikkuisen pienemmässä määrin
+- Pohtikaa, kuinka monta projektiseinällä olevaa taskia ehditte tehdä neljän koulupäivän mittaisen sprintin aikana
+- Jos teillä on **Ready** -niminen sarake projektiseinällä, siirtäkää siihen sarakkeeseen kaikki taskit, jotka uskotte ehtivänne tehdä  
 
 ---
 
@@ -125,7 +124,7 @@ Pitäkää lyhyt (max viisi minuuttia) keskustelu:
 
 - Mitä tein viimeksi?  
 - Mitä teen seuraavaksi?  
-- Onko esteitä?  
+- Onko esteitä? Miten tiimi voi auttaa? 
 
 ---
 

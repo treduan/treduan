@@ -70,3 +70,13 @@
 - [Lapsiteema](./wordpresslapsiteema/index.md)
 
 - [TechFix-sivu](./techfix/index.md)
+
+## Projektinhallinta
+
+- [Mikä on projekti?](../projektinhallinta/projekti/index.md)
+- [Harjoitusprojektin vaatimukset](../projektinhallinta/harjoitusprojekti/index.md)
+- [Esitutkimus](../projektinhallinta/esitutkimus/index.md)
+- [Userstory](../projektinhallinta/userstoryt/index.md)
+- [Käyttötapauskaavio](../projektinhallinta/usercasediagram/index.md)
+- [Projektiseinä](../projektinhallinta/projektiseina/index.md)
+- [Projektinhallintateoria](../projektinhallinta/projektinhallintateoriat/index.md)

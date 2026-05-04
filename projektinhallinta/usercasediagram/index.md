@@ -53,7 +53,7 @@ Se kuvaa vain:
 - selaa asuntoja
 - tarkastelee asunnon tietoja
 - lähettää hakemuksen
-- lisää asunto (admin)
+- lisää asuntoja (admin)
 - käsittelee hakemuksia (admin)
 
 Kaaviossa nämä yhdistetään toisiinsa.

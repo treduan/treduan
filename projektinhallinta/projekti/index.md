@@ -20,7 +20,7 @@ Ohjelmistoprojekti tarkoittaa ohjelman, sovelluksen tai järjestelmän suunnitte
 | Ei tarvitse dokumentoida paljon | Asioista pitää viestiä muille |
 | Virheet vaikuttavat vain sinuun | Virheet vaikuttavat koko tiimiin |
 
-Projektissa tärkeintä ei ole vain koodi, vaan myös **yhteistyö**. Tyypillisesti projektitiimi koostuu henkilöistä, joilla on keskenään erilaisia vahvuuksia, joten nämä vahvuudet ja erikoistumiset tukevat toisiaan.
+Projektissa tärkeintä ei ole vain koodi, vaan myös **yhteistyö**. Tyypillisesti projektitiimi koostuu henkilöistä, joilla on keskenään erilaisia vahvuuksia, joten nämä vahvuudet ja erikoistumiset tukevat toisiaan. Silloin tällöin voidaan puhua myös yksilöprojektista, jolloin korostetaan tietyn ohjelmistokokonaisuuden suunnittelua ja toteutusta tietyllä ajanjaksolla.
 
 ---
 
@@ -101,7 +101,7 @@ Hyvä projekti:
 - on tehty yhteistyössä
 - pysyy budjetissa
 
-Mutta tärkeintä opiskelussa on **mitä opitte projektin aikana**
+Mutta tärkeintä opiskeluprojektissa on **mitä opitte projektin aikana**
 
 ---
 
@@ -114,17 +114,5 @@ Mutta tärkeintä opiskelussa on **mitä opitte projektin aikana**
 - Kustannukset paisuvat
 
 Näitä vältetään hyvällä projektinhallinnalla.
-
----
-
-## Yhteenveto
-
-Ohjelmistoprojekti ei ole pelkkää koodaamista.
-
-Se on:
-- suunnittelua
-- yhteistyötä
-- ongelmanratkaisua
-- jatkuvaa oppimista
 
 

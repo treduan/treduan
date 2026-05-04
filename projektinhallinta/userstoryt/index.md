@@ -83,10 +83,8 @@ Se pitää pilkkoa pienemmiksi tehtäviksi.
 
 **Mahdollisia taskeja:**
 - luo hakemuslomake
-- lisää lomakkeeseen kentät (nimi, yhteystiedot jne.)
-- lisää lähetä-painike
 - käsittele lomakkeen lähetys
-- tallenna tiedot
+- tallenna käsitellyt tiedot tietokantaan
 
 Yksi user story = useita taskeja
 
@@ -111,9 +109,7 @@ Aloitetaan tärkeimmistä
 
 ## Kuinka monta user storya tarvitaan?
 
-Tähän projektiin riittää yleensä:
-
-noin 4–8 user storya
+Tähän projektiin riittää noin 4–8 user storya
 
 Liikaa:
 - vaikea hallita

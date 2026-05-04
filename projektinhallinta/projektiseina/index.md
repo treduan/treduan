@@ -22,7 +22,7 @@ Ilman projektiseinää:
 
 Projektiseinä auttaa:
 - jakamaan työtä
-- seuraamaan etenemistä
+- seuraamaan etenemistä yhdessä
 - pitämään projektin hallinnassa
 
 ---
@@ -68,12 +68,12 @@ Taski on:
 
 Projektista riippuen tehtävät voivat olla esimerkiksi:
 
-- luo tapahtumalistaus
-- lisää nappi ilmoittautumiseen
+- luo asuntolistaus
+- lisää nappi lisätietojen katsomista varten
 - näytä lisätiedot klikkauksella
-- lisää viesti “tapahtuma täynnä”
+- lisää hakulomake sivulle
 
-Taskit tulevat usein **user storyista**.
+Taskit tulevat usein **user storyista** pilkkomalla niitä pieniksi paloiksi.
 
 ---
 
@@ -198,4 +198,4 @@ Etu:
 
 1. Yksi tiimistä luo projektille GitHub-repon ja sitten projektiseinän ja kutsuu muut tiimin jäsenet mukaan 
 2. Lisätkää vähintään 5–10 taskia  
-3. Jakakaa ensimmäiset tehtävät tiimin kesken. Jokaiselle tulee siis aluksi vain yksi task.  
+3. Jakakaa ensimmäiset tehtävät tiimin kesken. Jokaiselle tulee siis aluksi vain yksi task, joka olisi tarkoitus aloittaa ensimmäisenä.  

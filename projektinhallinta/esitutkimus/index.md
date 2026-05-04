@@ -172,13 +172,3 @@ Suunnitelkaa tiimissä esitutkimus omasta projektistanne eli tapahtumailmoittaut
 3. Listatkaa käyttäjäroolit  
 4. Kirjoittakaa keskeisimmät toiminnot  
 5. Päättäkää vähintään 3 asiaa, joita ette toteuta  
-
-
----
-
-## Yhteenveto
-
-Esitutkimus on projektin perusta.
-
-👉 Jos tämä vaihe tehdään huonosti, koko projekti kärsii.  
-👉 Jos tämä tehdään hyvin, kaikki seuraava on helpompaa.
