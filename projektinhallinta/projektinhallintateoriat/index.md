@@ -143,3 +143,48 @@ Vastatkaa kirjallisesti:
 ---
 
 Tässä on linkki viralliseen suomenkieliseen [scrum-oppaaseen](https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-Finnish.pdf)<base target="_blank">
+
+## Tehtävä: Onko Scrum hyvä tapa tehdä projekteja?
+
+## Vaihe 1: Tutustukaa materiaaliin (lyhyesti)
+
+Selatkaa [scrum-opasta](https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-Finnish.pdf)<base target="_blank">
+
+Lukekaa erityisesti:
+- sprintti
+- daily
+- review
+- retrospective
+
+Teidän ei tarvitse ymmärtää kaikkea täydellisesti.
+
+---
+
+## Vaihe 2: Keskustelkaa tiimissä
+
+Keskustelkaa seuraavista kysymyksistä:
+
+### Hyödyt
+- Mikä Scrumissa vaikuttaa hyödylliseltä?
+- Miten se voisi auttaa teidän projektissa?
+
+---
+
+### Haasteet
+- Mikä Scrumissa vaikuttaa vaikealta tai turhalta?
+- Mikä voisi mennä pieleen?
+
+---
+
+### Vertailu
+- Tuntuuko Scrum paremmalta kuin “tehdään vaan ilman suunnitelmaa”?
+- Miksi / miksi ei?
+
+---
+
+## Vaihe 3: Valitkaa tärkeimmät havainnot
+
+Valitkaa tiiminä:
+
+- 2 asiaa, jotka ovat Scrumin suurimmat hyödyt  
+- 2 asiaa, jotka voivat olla ongelmia  

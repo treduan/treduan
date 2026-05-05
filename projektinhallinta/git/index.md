@@ -83,20 +83,6 @@ Kun työ on valmis:
 
 ---
 
-## Konfliktit (conflicts)
-
-Konflikti syntyy, kun:
-- kaksi henkilöä muokkaa samaa tiedostoa koodissa  
-
-Git ei automaattisesti tiedä kumpi on oikein.
-
-Silloin:
-- konflikti pitää ratkaista käsin  
-
-Git ei estä virheitä, vaan se antaa työkalut niiden hallintaan. Virheitä estetään kommuunikaatiolla.
-
----
-
 ## Hyvä työskentelytapa
 
 1. Tee uusi branch, nimeä se joko omalla nimelläsi tai taskin nimellä
@@ -111,8 +97,162 @@ Git ei estä virheitä, vaan se antaa työkalut niiden hallintaan. Virheitä est
 
 Gitillä voi:
 - katsoa aiempia committeja  
-- nähdä mitä on muuttunut  
+- nähdä mitä on muutettu ja kuka sen on tehnyt  
 - palauttaa vanhan version  
 
-Tämä on yksi Gitin tärkeimmistä ominaisuuksista. Tästä syystä kannattaa myös kiinnittää huomiota commitin viestiin.
+Tämä on yksi Gitin tärkeimmistä ominaisuuksista. Tästä syystä kannattaa myös kiinnittää huomiota commitin viestiin, sillä se helpottaa oikean commitin löytymistä.
 
+## Tärkeät komennot
+
+````bash
+git clone
+git add .
+git commit -m "viesti"
+git push
+git pull
+git checkout -b branch-nimi
+git merge branch-nimi
+````
+
+## Harjoitus 1
+
+### Lähtötilanne
+
+- Teillä on yhteinen GitHub-repository  
+- Kaikki on lisätty siihen mukaan  
+- Repository on tyhjä  
+
+---
+
+### Vaihe 1: Repositoryn kloonaus
+
+Avaa terminaali ja suorita:
+
+````bash
+git clone REPOSITORY_URL
+````
+
+### Vaihe 2: Luo tiedosto
+
+````bash
+touch index.html
+````
+
+Lisää tiedostoon myös HTML-pohja ja tallenna se normaaliin tapaan.
+
+### Vaihe 3: Ensimmäinen commit
+
+Lisää tiedosto Gitiin (komentorivillä tämä vaihe pitää muistaa)
+
+````bash
+git add .
+````
+
+Tee commit
+
+````bash
+git commit -m "Added index.html"
+````
+
+Ja lopuksi lähetä commit GitHubiin:
+
+````bash
+git push
+````
+
+### Vaihe 4: hakekaa muutokset kaikille
+
+Muut ryhmän jäsenet tekevät pullin.
+
+````bash
+git pull
+````
+
+Nyt kaikilla pitäisi olla sama koodipohja samassa repositoryssa.
+
+### Vaihe 5: Jokainen tekee branchin
+
+Jaatte jokaiselle jonkin pikkuisen asian, jonka he tekevät samaan tiedostoon. Sitten jokainen tekee oman branchin.
+
+````bash
+git checkout -b oma-nimi-feature
+````
+
+Esimerkiksi: ``git checkout -b anna-header``
+
+### Vaihe 6: Tehkää muutoksia
+
+Jokainen tekee omassa branchissaan jonkin muutoksen, joka erottuu (ei tarvitse olla järkevä, tämä sivu voidaan myöhemmin poistaa). Tallentakaa muutokset.
+
+### Vaihe 7: Commit ja push omassa branchissa
+
+````bash
+git add .
+git commit -m "Added the header to index.html"
+git push -u origin anna-header
+````
+
+### Vaihe 8: Yhdistä branchit (merge)
+
+Valitkaa yksi henkilö, joka tekee yhdistämisen. Hän tekee seuraavan:
+
+````bash
+git checkout main
+git pull
+git merge anna-header
+git push
+````
+
+Lopuksi kaikki tekevät:
+
+````bash
+git pull
+````
+
+Nyt kaikilla pitäisi olla sama koodipohja jälleen.
+
+## Branchin poistaminen
+
+### Milloin branch voidaan poistaa?
+
+Branch voidaan poistaa, kun:
+
+- sen sisältämät muutokset on yhdistetty (merge) main-branchiin  
+- työ on valmis eikä branchia enää tarvita  
+- kaikki tiimin jäsenet ovat tietoisia muutoksista  
+
+---
+
+### Miten branch poistetaan paikallisesti
+
+Poista branch omalta koneelta:
+
+````bash
+git branch -d anna-header
+````
+
+Poista branch myös GitHubista:
+
+````bash
+git push origin --delete anna-header
+````
+
+## Git-konfliktit
+
+### Mikä on konflikti?
+
+Konflikti syntyy, kun Git ei pysty automaattisesti yhdistämään muutoksia.
+
+👉 Tämä tapahtuu yleensä, kun:
+- kaksi henkilöä muokkaa samaa kohtaa tiedostossa  
+- muutokset ovat ristiriidassa keskenään  
+
+---
+
+## Milloin konflikteja syntyy?
+
+### Tilanne 1: Sama rivi muuttuu
+
+Henkilö A:
+```html
+<h1>Tervetuloa</h1>
