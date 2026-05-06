@@ -80,3 +80,4 @@
 - [Käyttötapauskaavio](../projektinhallinta/usercasediagram/index.md)
 - [Projektiseinä](../projektinhallinta/projektiseina/index.md)
 - [Projektinhallintateoria](../projektinhallinta/projektinhallintateoriat/index.md)
+- [Edistyneempi Git](../projektinhallinta/git/index.md)
