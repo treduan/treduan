@@ -254,5 +254,56 @@ Konflikti syntyy, kun Git ei pysty automaattisesti yhdistämään muutoksia.
 ### Tilanne 1: Sama rivi muuttuu
 
 Henkilö A:
-```html
+````html
 <h1>Tervetuloa</h1>
+````
+
+Henkilö B:
+````html
+<h1>Tapahtumat</h1>
+````
+
+Git ei tiedä, kumpi on oikea versio. Kun yritetään tehdä pull tai merge, syntyy konflikti.
+
+## Miltä konflikti näyttää?
+
+Git lisää tiedostoon merkinnät:
+````
+<<<<<<< HEAD
+<h1>Tervetuloa</h1>
+=======
+<h1>Tapahtumat</h1>
+>>>>>>> branch-nimi
+````
+HEAD = nykyinen versio
+branch-nimi = yhdistettävä versio
+
+## Konfliktin ratkaisu
+
+Avaa tiedosto ja etsi konfliktimerkinnät
+
+````html
+<<<<<<<
+=======
+>>>>>>>
+````
+Ylempi vastaa sinulla olevaa versiota ja alempi versiota, jota yrität joko ottaa itsellesi tai mergetä.
+
+Tässä kohtaa pitää valita jompikumpi tai yhdistää versiot tai kirjoittaa uusi versio.
+
+Seuraavaksi poistetaan 
+
+````html
+<<<<<<<
+=======
+>>>>>>>
+````
+
+Lopputuloksen pitäisi olla tavallinen kooditiedosto.
+
+Viimeisenä tehdään 
+
+````bash
+git add .
+git commit -m "Resolved conflict"
+````
