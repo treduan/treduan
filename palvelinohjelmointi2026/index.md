@@ -81,3 +81,5 @@
 - [Projektiseinä](../projektinhallinta/projektiseina/index.md)
 - [Projektinhallintateoria](../projektinhallinta/projektinhallintateoriat/index.md)
 - [Edistyneempi Git](../projektinhallinta/git/index.md)
+- [Git projektissa](https://otredu.github.io/github/projektityo.html)
+- [Ennen toteutuksen alkua](../projektinhallinta/suunnitelmat/index.md)
