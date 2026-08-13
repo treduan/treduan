@@ -42,7 +42,7 @@ Ohjelmointi on jatkuvaa kokeilua ja kehittämistä. Gitin avulla voit esimerkiks
 8. Seuraavaksi lisäämme kansion ja tiedoston Gitiin seuraavilla komennoilla:
 
 - ``git init``
-- ``git add``
+- ``git add .``
 - ``git commit -m "Start"``
 - ``git remote add origin <liitä tähän oman repositorysi osoite>``
 - ``git push -u origin master``
@@ -53,7 +53,7 @@ Ohjelmointi on jatkuvaa kokeilua ja kehittämistä. Gitin avulla voit esimerkiks
 
 11. Tee uusi commit ja lisää muutokset GitHibiin.
 ``git commit -m "Esittelytekstiä"``
-``git push -u origin master``
+``git push -u origin main``
 
 Gitiä voi käyttää myös Visual Studio Coden kautta, jolloin komentoriville ei ole pakko kirjoittaa asioita.
 
