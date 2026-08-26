@@ -62,4 +62,4 @@ HSL on harvoin käytössä, joten siitä voi lukea lisää [täältä](https://w
 ## Demotehtävä
 
 1. Avaa [w3schoolsin color picker](https://www.w3schools.com/colors/colors_picker.asp?colorhex)<base target="_blank">.
-2. Valitse kolme eri väriä, joista valitset lisäksi yhden vaaleamman ja yhden tummemman värisävyn. Kirjoita ne itsellesi esimerkiksi Word-dokumenttiin ylös sekä HEX-värinä että RGB-värinä. Tallenna värisävyt paikkaan, mistä löydät ne myöhempää käyttöä varten.
+2. Valitse kolme eri väriä, joista valitset lisäksi yhden vaaleamman ja yhden tummemman värisävyn. Kirjoita ne itsellesi Markdown-dokumenttiin Demo-kansioon ylös sekä HEX-värinä että RGB-värinä. 
